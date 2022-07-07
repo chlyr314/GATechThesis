@@ -9,69 +9,36 @@
 \usepackage{times}  %set Times New Roman as the font
 \usepackage[explicit]{titlesec}  %title control and formatting
 \usepackage[titles]{tocloft}  %table of contents control and formatting
-%\usepackage[backend=bibtex, sorting=none, bibstyle=ieee]{biblatex}  %reference 
-%%manager
+\usepackage[backend=bibtex, sorting=none, bibstyle=ieee]{biblatex}  %reference manager
 \usepackage[bookmarks=true, hidelinks]{hyperref}
 \usepackage[page]{appendix}  %for appendices
 \usepackage{rotating}  %for rotated, landscape images
 \usepackage{ulem}  %for underlined section titles
-\usepackage{xcolor}
-\usepackage{bookmark}
-\usepackage{nomencl}
-\usepackage{enumitem}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage[caption=false]{subfig}
-\usepackage[acronym,nomain,toc,nonumberlist]{glossaries}
-\usepackage[backend=bibtex, sorting=none, 
-bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
-\addbibresource{references.bib}
 
-\makenomenclature
-\makeglossaries
-\input{acronyms}
-%\renewcommand{\nomname}{\Large Nomenclature}
-\setlength{\nomitemsep}{-\parsep}% reduce vertical gap btween nomenclature 
-
-% MISC COMMANDS 
-\newcommand{\bvec}[1]{\vec{\boldsymbol{#1}}}
-\newcommand{\bhat}[1]{\hat{\boldsymbol{#1}}}
-\newcommand{\bmat}[1]{\mathbf{#1}}
-\newcommand{\sfrac}[2]{{}^#1{\mskip -5mu/\mskip -3mu}_#2}
-\DeclareMathOperator*{\Assem}{\text{\huge $\Lambda$}}
-
-\graphicspath{{./figures/}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% RUN THE COMMAND BELOW WHENEVER NOMENCLATURE CHANGES
-% makeindex thesis.nlo -s nomencl.ist -o thesis.nls
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%entries
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Add your bibliography file here
-
+\bibliography{references}
 
 % prevent certain fields in references from printing in bibliography
-%\AtEveryBibitem{\clearfield{issn}}
-%\AtEveryBibitem{\clearlist{issn}}
+\AtEveryBibitem{\clearfield{issn}}
+\AtEveryBibitem{\clearlist{issn}}
 
-%\AtEveryBibitem{\clearfield{language}}
-%\AtEveryBibitem{\clearlist{language}}
+\AtEveryBibitem{\clearfield{language}}
+\AtEveryBibitem{\clearlist{language}}
 
-%\AtEveryBibitem{\clearfield{doi}}
-%\AtEveryBibitem{\clearlist{doi}}
+\AtEveryBibitem{\clearfield{doi}}
+\AtEveryBibitem{\clearlist{doi}}
 
-%\AtEveryBibitem{\clearfield{url}}
-%\AtEveryBibitem{\clearlist{url}}
+\AtEveryBibitem{\clearfield{url}}
+\AtEveryBibitem{\clearlist{url}}
 
-%\AtEveryBibitem{%
-%  \ifentrytype{online}
-%    {}
- %   {\clearfield{urlyear}\clearfield{urlmonth}\clearfield{urlday}}}
+\AtEveryBibitem{%
+  \ifentrytype{online}
+    {}
+    {\clearfield{urlyear}\clearfield{urlmonth}\clearfield{urlday}}}
 
 %%%%%%%%%%%%%%%%%%%%%%
 % Start of Document
@@ -90,21 +57,14 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Approval Page
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\pagenumbering{roman}
 
 \input{approvalPage.tex}
-\setcounter{page}{2}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Abstract
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{abstract.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Epigraph
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\input{epigraph.tex}
+\input{epigraph.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Dedication
@@ -115,6 +75,11 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Acknowledgments
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{roman}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+\setcounter{page}{5} % set the page number appropriately based on the number of intro pages
+\input{acknowledgements.tex}
 
 %\addtocontents{toc}{\cftpagenumbersoff{chapter}} 
 
@@ -139,8 +104,7 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 
 %format title font size and position (this also applys to list of figures and list of tables)
 \titleformat{\chapter}[display]
-{\normalfont\bfseries\filcenter}{\chaptertitlename\ 
-\thechapter}{0pt}{{\Large #1}}
+{\normalfont\bfseries\filcenter}{\chaptertitlename\ \thechapter}{0pt}{\MakeUppercase{#1}}
 
 \renewcommand\contentsname{Table of Contents}
 
@@ -155,14 +119,6 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % List of figures and tables
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\addcontentsline{toc}{chapter}{List of Figures}
-\begin{singlespace}
-	\setlength\cftbeforefigskip{\baselineskip}  %manually set spacing between 
-	%entries
-	\listoffigures
-\end{singlespace}
-
-\clearpage
 
 \addcontentsline{toc}{chapter}{List of Tables}
 \begin{singlespace}
@@ -172,29 +128,19 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 
 \clearpage
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Nomenclature
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\addcontentsline{toc}{chapter}{Nomenclature}
-\input{nomenclature.tex}
-\printnomenclature
+\addcontentsline{toc}{chapter}{List of Figures}
+\begin{singlespace}
+\setlength\cftbeforefigskip{\baselineskip}  %manually set spacing between entries
+\listoffigures
+\end{singlespace}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Acronyms
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\addcontentsline{toc}{chapter}{Acronyms}
-\printglossary[type=\acronymtype]
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Acknowledgements
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{acknowledgements.tex}
+\clearpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This is the Summary (abstract should be separate document)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\input{summary.tex}
+\input{summary.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -266,16 +212,13 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 % References
 %%%%%%%%%%%%%%%%
 
-%\begin{singlespace}  % use single-line spacing for multi-line text within a 
-%%single reference
-	%\setlength\bibitemsep{\baselineskip}  %manually set separataion betwen 
-	%%items in bibliography to double space
-	%\printbibliography[title={References}]
-%\end{singlespace}
+\begin{singlespace}  % use single-line spacing for multi-line text within a single reference
+	\setlength\bibitemsep{\baselineskip}  %manually set separataion betwen items in bibliography to double space
+	\printbibliography[title={References}]
+\end{singlespace}
 
-\addcontentsline{toc}{chapter}{References}  %add References section to Table of 
-%Contents
-\printbibliography 
+\addcontentsline{toc}{chapter}{References}  %add References section to Table of Contents
+
 %%%%%%%%%%%%%%%%
 % Vita 
 % Only for PhD students

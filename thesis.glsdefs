@@ -1,0 +1,56 @@
+\glsdefs@newdocentry{nlp}%
+{%
+name={NLP},%
+sort={NLP},%
+type={acronym},%
+first={Non-Linear Programming\glsspace (NLP)},%
+firstplural={Non-Linear Programming\acrpluralsuffix \glsspace (NLP\acrpluralsuffix )},%
+text={NLP},%
+plural={NLP\acrpluralsuffix },%
+description={Non-Linear Programming},%
+descriptionplural={Non-Linear Programming\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Non-Linear Programming},%
+longplural={Non-Linear Programmings},%
+short={NLP},%
+shortplural={NLPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fem}%
+{%
+name={FEM},%
+sort={FEM},%
+type={acronym},%
+first={Finite Element Method\glsspace (FEM)},%
+firstplural={Finite Element Method\acrpluralsuffix \glsspace (FEM\acrpluralsuffix )},%
+text={FEM},%
+plural={FEM\acrpluralsuffix },%
+description={Finite Element Method},%
+descriptionplural={Finite Element Method\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Finite Element Method},%
+longplural={Finite Element Methods},%
+short={FEM},%
+shortplural={FEMs},%
+counter={page},%
+parent={},%
+%
+}%
+

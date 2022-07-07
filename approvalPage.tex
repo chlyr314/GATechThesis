@@ -1,28 +1,29 @@
-%% Define your committee members. If you have less than 6, simple delete/comment the unused lines
-
-\newcommand{\committeeMemberOne}{Dr. Burdell, Advisor}
-\newcommand{\committeeMemberOneDepartment}{School of Myths}
+\newcommand{\committeeMemberOne}{Kostas Papakonstantinou}
+\newcommand{\committeeMemberOneDepartment}{Associate Professor of \yourSchool}
 \newcommand{\committeeMemberOneAffiliation}{Georgia Institute of Technology}
+\newcommand{\Advisor}{Dissertation Advisor}
+\newcommand{\Chair}{Chair of Committee}
 
-\newcommand{\committeeMemberTwo}{Dr. Two}
-\newcommand{\committeeMemberTwoDepartment}{School of Mechanical Engineering}
-\newcommand{\committeeMemberTwoAffiliation}{Georgia Institute of Technology}
+\newcommand{\committeeMemberTwo}{Gordon Warn}
+\newcommand{\committeeMemberTwoDepartment}{Associate Professor of \yourSchool}
 
-\newcommand{\committeeMemberThree}{Dr. Three}
-\newcommand{\committeeMemberThreeDepartment}{School of Electrical Engineering}
-\newcommand{\committeeMemberThreeAffiliation}{Georgia Institute of Technology}
+\newcommand{\committeeMemberThree}{Pinlei Chen}
+\newcommand{\committeeMemberThreeDepartment}{Assistant Professor of \yourSchool}
 
-\newcommand{\committeeMemberFour}{Dr. Four}
-\newcommand{\committeeMemberFourDepartment}{School of Computer Science}
-\newcommand{\committeeMemberFourAffiliation}{Georgia Institute of Technology}
 
-\newcommand{\committeeMemberFive}{Dr. Five}
-\newcommand{\committeeMemberFiveDepartment}{School of Public Policy}
-\newcommand{\committeeMemberFiveAffiliation}{Georgia Institute of Technology}
+\newcommand{\committeeMemberFour}{Tong Qiu}
+\newcommand{\committeeMemberFourDepartment}{Professor of \yourSchool}
 
-\newcommand{\committeeMemberSix}{Dr. Six}
-\newcommand{\committeeMemberSixDepartment}{School of Nuclear Engineering}
-\newcommand{\committeeMemberSixAffiliation}{Georgia Institute of Technology}
+
+\newcommand{\committeeMemberFive}{Reuben Kraft}
+\newcommand{\committeeMemberFiveDepartment}{Associate Professor of Mechanical 
+Engineering}
+%\newcommand{\committeeMemberFiveAffiliation}{Georgia Institute of Technology}
+
+\newcommand{\committeeMemberSix}{Patrick Fox}
+\newcommand{\committeeMemberSixDepartment}{Professor of \yourSchool}
+\newcommand{\Head}{Head of Department of \yourSchool}
+%\newcommand{\committeeMemberSixAffiliation}{Georgia Institute of Technology}
 
 \newcommand{\approvalDay}{11}
 \newcommand{\approvalMonth}{January}
@@ -33,104 +34,41 @@
 % the template
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+The dissertation of Charilaos 
+Lyritsakis was reviewed and approved* by the following:
+\begin{singlespace}
 
-\begin{titlepage}
-\begin{singlespacing}
-\begin{center}
 
-\textbf{\MakeUppercase{\thesisTitle}}\\
-\vspace{10\baselineskip}
-
-\end{center}
-\vfill
-
-%Define minipages, depending on how many authors there are
-\ifdefined\committeeMemberFour
-
-Approved by:
-\vspace{2\baselineskip}		%adjust the number in front of "\baselineskip" for alignment
-
-\begin{minipage}[b]{0.4\textwidth}
-	
+\vspace{2\baselineskip}
+\hspace{0.03\textwidth}
+\begin{minipage}[b]{0.8\textwidth}
 	\committeeMemberOne\\
 	\committeeMemberOneDepartment\\
-	\textit{\committeeMemberOneAffiliation}\\
+	\Advisor\\
+	\Chair
+	\vspace{1.7\baselineskip}
 	
 	\committeeMemberTwo\\
-	\committeeMemberTwoDepartment\\
-	\textit{\committeeMemberTwoAffiliation}\\
+	\committeeMemberTwoDepartment
+	\vspace{1.7\baselineskip}
 	
 	\committeeMemberThree\\
-	\committeeMemberThreeDepartment\\
-	\textit{\committeeMemberThreeAffiliation}\\
-	
-	\vspace{2\baselineskip}		%adjust the number in front of "\baselineskip" for alignment
-	
-\end{minipage}
-\hspace{0.1\textwidth}
-\begin{minipage}[b]{0.4\textwidth}
+	\committeeMemberThreeDepartment
+	\vspace{1.7\baselineskip}
 	
 	\committeeMemberFour\\
-	\committeeMemberFourDepartment\\
-	\textit{\committeeMemberFourAffiliation}\\
+	\committeeMemberFourDepartment
+	\vspace{1.7\baselineskip}
 	
-	\ifdefined\committeeMemberSix
 	\committeeMemberFive\\
-	\committeeMemberFiveDepartment\\
-	\textit{\committeeMemberFiveAffiliation}\\
+	\committeeMemberFiveDepartment
+	\vspace{1.7\baselineskip}
 	
 	\committeeMemberSix\\
 	\committeeMemberSixDepartment\\
-	\textit{\committeeMemberSixAffiliation}\\
-	
-	Date Approved: \approvalMonth{} \approvalDay, \approvalYear
-	\vspace{1\baselineskip}		%adjust the number in front of "\baselineskip" for alignment
-	
-	\else
-	
-	\committeeMemberFive\\
-	\committeeMemberFiveDepartment\\
-	\textit{\committeeMemberFiveAffiliation}\\
-		
-	Date Approved: \approvalMonth{} \approvalDay, \approvalYear
-	\vspace{5\baselineskip}		%adjust the number in front of "\baselineskip" for alignment
-	
-	\fi
-	
+	\Head
 \end{minipage}
+\end{singlespace}
+\vspace{2.5\baselineskip}
 
-\else
-
-\hspace{0.6\textwidth}
-\begin{minipage}[b]{0.4\textwidth}
-	
-	Approved by:
-	\vspace{2\baselineskip}		%adjust the number in front of "\baselineskip" for alignment
-	
-	\committeeMemberOne\\
-	\committeeMemberOneDepartment\\
-	\textit{\committeeMemberOneAffiliation}\\
-	
-	\committeeMemberTwo\\
-	\committeeMemberTwoDepartment\\
-	\textit{\committeeMemberTwoAffiliation}\\
-	
-	\committeeMemberThree\\
-	\committeeMemberThreeDepartment\\
-	\textit{\committeeMemberThreeAffiliation}\\
-	
-	\vspace{2\baselineskip}		%adjust the number in front of "\baselineskip" for alignment
-	
-	Date Approved: \approvalMonth{} \approvalDay, \approvalYear
-	\vspace{\baselineskip}		%adjust the number in front of "\baselineskip" for alignment
-	
-\end{minipage}
-
-\fi
-
-
-
-
-
-\end{singlespacing}
-\end{titlepage}
+* Signatures are on file in the Graduate School.

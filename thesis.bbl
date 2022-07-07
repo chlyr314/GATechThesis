@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 2.6 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,85 +16,450 @@
   {}
 \endgroup
 
-\entry{ref1}{book}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Kernighan}{K.}%
-     {Brian~W.}{B.~W.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Ritchie}{R.}%
-     {Dennis~M.}{D.~M.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Prentice-Hall, Inc.}%
-  }
-  \strng{namehash}{KBWRDM1}
-  \strng{fullhash}{KBWRDM1}
-  \field{title}{{The C Programming Language Second Edition}}
-  \field{year}{1988}
-\endentry
+\datalist[entry]{none/global//global/global}
+  \entry{Reissner1}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RE}{%
+         family={Reissner},
+         familyi={R\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{RE1}
+    \strng{fullhash}{RE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1007/BF01602645
+    \endverb
+    \field{number}{5}
+    \field{pages}{795\bibrangedash 804}
+    \field{title}{On one-dimensional finite-strain beam theory: The plane
+  problem}
+    \field{volume}{23}
+    \field{journaltitle}{Zeitschrift f{\"u}r Angewandte Mathematik und Physik
+  ZAMP}
+    \field{year}{1972}
+  \endentry
 
-\entry{ref2}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Burdell}{B.}%
-     {George~P.}{G.~P.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Real Books, Inc.}%
-  }
-  \strng{namehash}{BGP1}
-  \strng{fullhash}{BGP1}
-  \field{title}{{Myths and Their Origins}}
-  \field{year}{2016}
-\endentry
+  \entry{Simo1}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SJ}{%
+         family={Simo},
+         familyi={S\bibinitperiod},
+         given={J.C.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SJ1}
+    \strng{fullhash}{SJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/0045-7825(85)90050-7
+    \endverb
+    \field{number}{1}
+    \field{pages}{55\bibrangedash 70}
+    \field{title}{A finite strain beam formulation. {The} three-dimensional
+  dynamic problem. {Part} {I}}
+    \field{volume}{49}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+    \field{year}{1985}
+  \endentry
 
-\entry{ref3}{article}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Einstein}{E.}%
-     {A.}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Podolsky}{P.}%
-     {B.}{B.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Rosen}{R.}%
-     {N.}{N.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {American Physical Society}%
-  }
-  \strng{namehash}{EAPBRN1}
-  \strng{fullhash}{EAPBRN1}
-  \verb{doi}
-  \verb 10.1103/PhysRev.47.777
-  \endverb
-  \field{issue}{10}
-  \field{pages}{777\bibrangedash 780}
-  \field{title}{Can Quantum-Mechanical Description of Physical Reality Be
-  Considered Complete?}
-  \verb{url}
-  \verb http://link.aps.org/doi/10.1103/PhysRev.47.777
-  \endverb
-  \field{volume}{47}
-  \field{journaltitle}{Phys. Rev.}
-  \field{year}{1935}
-  \warn{\item Invalid format of field 'month'}
-\endentry
+  \entry{Simo2}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SJ}{%
+         family={Simo},
+         familyi={S\bibinitperiod},
+         given={J.C.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=VQL}{%
+         family={Vu-Quoc},
+         familyi={V\bibinithyphendelim Q\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SJVQL1}
+    \strng{fullhash}{SJVQL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/0045-7825(86)90079-4
+    \endverb
+    \field{number}{1}
+    \field{pages}{79\bibrangedash 116}
+    \field{title}{A three-dimensional finite-strain rod model. {Part} {II}:
+  Computational aspects}
+    \field{volume}{58}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+    \field{year}{1986}
+  \endentry
 
-\lossort
-\endlossort
+  \entry{Simo3}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SJ}{%
+         family={Simo},
+         familyi={S\bibinitperiod},
+         given={J.C.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=VQL}{%
+         family={Vu-Quoc},
+         familyi={V\bibinithyphendelim Q\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ASME}%
+    }
+    \strng{namehash}{SJVQL1}
+    \strng{fullhash}{SJVQL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1115/1.3171870
+    \endverb
+    \field{number}{53}
+    \field{pages}{849\bibrangedash 854}
+    \field{title}{On the dynamics of flexible beams under large overall
+  motions--- The plane case: {Part} {I}}
+    \field{volume}{4}
+    \field{journaltitle}{Journal of Applied Mechanics}
+    \field{year}{1986}
+  \endentry
 
+  \entry{Neuenhofer}{article}{}
+    \name{author}{2}{}{%
+      {{hash=NA}{%
+         family={Neuenhofer},
+         familyi={N\bibinitperiod},
+         given={Ansgar},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FFC}{%
+         family={Filippou},
+         familyi={F\bibinitperiod},
+         given={Filip\bibnamedelima C},
+         giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{NAFFC1}
+    \strng{fullhash}{NAFFC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1061/(ASCE)0733-9445(1998)124:6(704)
+    \endverb
+    \field{number}{6}
+    \field{pages}{704\bibrangedash 711}
+    \field{title}{Geometrically nonlinear flexibility-based frame finite
+  element}
+    \field{volume}{124}
+    \field{journaltitle}{Journal of Structural Engineering}
+    \field{year}{1998}
+  \endentry
+
+  \entry{Schulz}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SM}{%
+         family={Schulz},
+         familyi={S\bibinitperiod},
+         given={Mauro},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FFC}{%
+         family={Filippou},
+         familyi={F\bibinitperiod},
+         given={Filip\bibnamedelima C},
+         giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{SMFFC1}
+    \strng{fullhash}{SMFFC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1002/1097-0207(20010210)50:4<761::AID-NME50>3.0.CO
+    \verb ;2-2
+    \endverb
+    \field{number}{4}
+    \field{pages}{761\bibrangedash 785}
+    \field{title}{Non-linear spatial Timoshenko beam element with curvature
+  interpolation}
+    \field{volume}{50}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
+    \field{year}{2001}
+  \endentry
+
+  \entry{Cardona}{book}{}
+    \name{author}{2}{}{%
+      {{hash=CA}{%
+         family={Cardona},
+         familyi={C\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Geradin},
+         familyi={G\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{2}{%
+      {John Wiley}%
+      {Sons}%
+    }
+    \strng{namehash}{CAGM1}
+    \strng{fullhash}{CAGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1017/S0001924000012343
+    \endverb
+    \field{title}{Flexible Multibody Dynamics: A Finite Element Approach}
+    \list{location}{1}{%
+      {UK}%
+    }
+    \field{year}{2001}
+  \endentry
+
+  \entry{Hodges}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HD}{%
+         family={Hodges},
+         familyi={H\bibinitperiod},
+         given={D.H.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HD1}
+    \strng{fullhash}{HD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.2514/3.8861
+    \endverb
+    \field{number}{12}
+    \field{pages}{1825\bibrangedash 1827}
+    \field{title}{Proper definition of curvature in nonlinear beam kinematics}
+    \field{volume}{22}
+    \field{journaltitle}{American Institute of Aeronautics and Astronautics
+  Journal}
+    \field{year}{1984}
+  \endentry
+
+  \entry{Luenberger}{book}{}
+    \name{author}{2}{}{%
+      {{hash=LD}{%
+         family={Luenberger},
+         familyi={L\bibinitperiod},
+         given={D.G.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{LDYY1}
+    \strng{fullhash}{LDYY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1007/978-0-387-74503-9
+    \endverb
+    \field{title}{Linear and Nonlinear Programming}
+    \list{location}{1}{%
+      {New York,NY}%
+    }
+    \field{year}{2008}
+  \endentry
+
+  \entry{Washizu}{book}{}
+    \name{author}{1}{}{%
+      {{hash=WK}{%
+         family={Washizu},
+         familyi={W\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Pergamon Press}%
+    }
+    \strng{namehash}{WK1}
+    \strng{fullhash}{WK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9780080176536}
+    \field{title}{Variational Methods in Elasticity and Plasticity}
+    \field{year}{1975}
+  \endentry
+
+  \entry{SimoHughes}{book}{}
+    \name{author}{2}{}{%
+      {{hash=SJ}{%
+         family={Simo},
+         familyi={S\bibinitperiod},
+         given={J.C.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hughes},
+         familyi={H\bibinitperiod},
+         given={T.J.R},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{SJHT1}
+    \strng{fullhash}{SJHT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1007/b98904
+    \endverb
+    \field{title}{Computational Inelasticity}
+    \list{location}{1}{%
+      {New York,NY}%
+    }
+    \field{year}{1998}
+  \endentry
+
+  \entry{Andriotis}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ACP}{%
+         family={Andriotis},
+         familyi={A\bibinitperiod},
+         given={Cas\bibnamedelima P.},
+         giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=PKG}{%
+         family={Papakonstantinou},
+         familyi={P\bibinitperiod},
+         given={Kas\bibnamedelima G.},
+         giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=KVK}{%
+         family={Koumousis},
+         familyi={K\bibinitperiod},
+         given={Vas\bibnamedelima K.},
+         giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{ACP+1}
+    \strng{fullhash}{ACPPKGKVK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1061/(ASCE)EM.1943-7889.0001483
+    \endverb
+    \field{number}{10}
+    \field{pages}{04018096}
+    \field{title}{Nonlinear programming hybrid beam-column element formulation
+  for large-displacement elastic and inelastic analysis}
+    \field{volume}{144}
+    \field{journaltitle}{Journal of Engineering Mechanics}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Crisfield3}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CM}{%
+         family={Crisfield},
+         familyi={C\bibinitperiod},
+         given={M.A.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CM1}
+    \strng{fullhash}{CM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/0045-7949(81)90108-5
+    \endverb
+    \field{number}{1--3}
+    \field{pages}{55\bibrangedash 62}
+    \field{title}{A fast incremental/iterative solution procedure that handles
+  "snap-through"}
+    \field{volume}{13}
+    \field{journaltitle}{Computers \& Structures}
+    \field{year}{1981}
+  \endentry
+
+  \entry{Cowper}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CG}{%
+         family={Cowper},
+         familyi={C\bibinitperiod},
+         given={G.R.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Mechanical Engineers}%
+    }
+    \strng{namehash}{CG1}
+    \strng{fullhash}{CG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1115/1.3625046
+    \endverb
+    \field{number}{2}
+    \field{pages}{335\bibrangedash 340}
+    \field{title}{The shear coefficient in Timoshenko's beam theory}
+    \field{volume}{33}
+    \field{journaltitle}{Journal of Applied Mechanics}
+    \field{year}{1966}
+  \endentry
+\enddatalist
 \endinput

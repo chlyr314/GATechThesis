@@ -6,10 +6,366 @@
 
 %Begin individual appendices, separated as chapters
 
-\chapter{Experimental Equipment}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\chapter{Experimental Equipment}\label{appendix:A}
 
-\chapter{Data Processing}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Explicit expressions of the formulation are provided in this
+Appendix. We note that operations involving the symbol $\nabla$ map scalars to
+vectors and vectors to matrices. For example, if $f:\mathbb{R}^p\rightarrow 
+\mathbb{R}$ and
+$\bvec{v}:\mathbb{R}^p\rightarrow\mathbb{R}^q$, then $\nabla
+f:\mathbb{R}^p\rightarrow\mathbb{R}^p$ and
+$\nabla\bvec{v}:\mathbb{R}^p\rightarrow\mathbb{R}^{p\times q}$.
+
+The Lagrangian function is used here, as presented in Eq.
+(\ref{eq:langrT}):
+\begin{gather}
+	\mathcal{L}(\bvec{y}, \bvec{d}_g,\bvec{\lambda}) =
+	U-W+\bvec{\lambda}^T\bvec{h}_g
+	\label{eq:globalL}
+\end{gather}
+
+\noindent where it is also reminded that $\bvec{y} = \begin{bmatrix}
+	\bvec{y}_1^T & \bvec{y}_2^T & \cdots & \bvec{y}_m^T
+\end{bmatrix}^T$, $\bvec{y}_i = \begin{bmatrix}
+	\bvec{q}_i & \phi_i
+\end{bmatrix}^T$ and $\bvec{q}_i = \begin{bmatrix}
+	\epsilon_i & \gamma_i & \kappa_i
+\end{bmatrix}^T$. The number $m$ designates the \emph{total} number of
+integration points in the structure.
+
+\subsection{Gradient of strain energy}
+The gradient of $U$ is expressed as:
+\begin{gather}
+	\nabla U = \begin{bmatrix}
+		\nabla_{\mathbf{y}}U\\ \nabla_{\mathbf{d}_g}U\\ 
+		\nabla_{\mathbf{\lambda}}U
+	\end{bmatrix}\nonumber
+\end{gather}
+
+\noindent The gradient with respect to the strain vector $\bvec{y}$ gives the
+stress resultants at all cross-sections and has the following form for a
+particular cross-section $i$:
+\begin{gather}
+	\nabla_{\mathbf{y}_i}U = \begin{bmatrix}
+		w_iN_i\\ w_iV_i\\ w_iM_i\\ 0
+	\end{bmatrix} = w_i\begin{bmatrix}
+		\bvec{F}_{sec}^{(i)}\\ 0
+	\end{bmatrix}
+	\label{eq:straingrad}
+\end{gather}
+
+\noindent it is usually computed by numerical integration of Eqs.
+(\ref{eq:fsecx}) over the cross-section height. In the case of elastic
+analysis, the above vector can be computed explicitly for each cross-section,
+since then $\bvec{F}_{sec}^{(i)} = \begin{bmatrix}
+	EA\epsilon_i & k_sGA\gamma_i & EI\kappa_i
+\end{bmatrix}^T$.
+
+The gradients of $U$ with respect to both $\bvec{d}_g$ and $\bvec{\lambda}$
+provide zero vectors:
+\begin{gather}
+	\nabla_{\mathbf{d}_g}U = \bvec{0}\in\mathbb{R}^{3N}\quad\text{and}\quad
+	\nabla_{\mathbf{\lambda}}U = \bvec{0}\in\mathbb{R}^{s}\nonumber
+\end{gather}
+
+\noindent where $s=m + 3n_{el}$, $n_{el}$ being the number of elements.
+Finally, we then get:
+\begin{gather}
+	\nabla U = \begin{bmatrix}
+		\nabla_{\mathbf{y}}U\\ \bvec{0}\\ \bvec{0}
+	\end{bmatrix}
+\end{gather}
+\subsection{Gradient of constraints}
+
+We restate the constraints equations from Eqs.
+(\ref{eq:impsd1})-(\ref{eq:impsd2}):
+\begin{gather}
+	\bvec{h}_g = \begin{bmatrix}
+		\bvec{h}_g^A\\ \bvec{h}_g^B
+	\end{bmatrix} =
+	\begin{bmatrix}
+		\bmat{V}_1\bvec{d}_g - \bmat{\Lambda}^T\bigg[\sum_{i=1}^n
+		w_i\bmat{R}_i(\bvec{q}_i+\bvec{E}_1) - \ell\bvec{E}_1\bigg]\\
+		\bvec{\phi}-\bmat{V}_2\bvec{d}_g - \bmat{T}\bvec{\kappa}
+	\end{bmatrix}\nonumber
+\end{gather}
+
+\noindent For notational simplicity, we assume here only one element
+in the derivations that follow. When more elements are used, their
+corresponding constraint vectors are stacked in vector form as
+$\bvec{h} = \begin{bmatrix}
+	\ \bvec{h}_g^{1\ T}& \bvec{h}_g^{2\ T}& \cdots & \bvec{h}_g^{n_{el}\ T}
+\end{bmatrix}^T$.
+The gradient with respect to the strain vector
+$\bvec{y}_i$ at a particular cross-section is given by:
+\begin{gather}
+	\nabla_{\mathbf{y}_i}\bvec{h}_g^A = \begin{bmatrix}
+		\nabla_{\mathbf{q}_i}\bvec{h}_g^A &\ \dfrac{d \bvec{h}_g^A}{d\phi_i}
+	\end{bmatrix} = -w_i\bmat{\Lambda}^T\begin{bmatrix}
+		\bmat{R}_i &\
+		\bmat{R}_i\bmat{X}[\bvec{q}_i+\bvec{E}_1]
+	\end{bmatrix}\nonumber
+\end{gather}
+
+\noindent where:
+\begin{gather}
+	\frac{d\bmat{R}_i}{d\phi_i} = \bmat{R}_i\bmat{X}\quad\text{and}\quad
+	\bmat{X} = \begin{bmatrix}
+		0 & -1 & 0\\
+		1 &  0 & 0\\
+		0 &  0 & 0
+	\end{bmatrix}\nonumber
+\end{gather}
+
+\noindent The gradient of $\bvec{h}_g^B$ with respect to strain vector
+$\bvec{y}_i$, is:
+\begin{gather}
+	\nabla_{\mathbf{y}_i}\bvec{h}_g^B = \begin{bmatrix}
+		\nabla_{\mathbf{q}_i}\bvec{h}_g^B & \dfrac{d \bvec{h}_g^B}{d\phi_i}
+	\end{bmatrix} = \begin{bmatrix}
+		\bvec{0} & \bvec{0} & -\bmat{T}\hat{\mathbf{E}}_i & \hat{\mathbf{E}}_i
+	\end{bmatrix}\nonumber
+\end{gather}
+
+\noindent where $\hat{\mathbf{E}}_i\in\mathbb{R}^n$ is a unit vector with the
+$i$-th component equal to one.
+\noindent Collectively, we have:
+\begin{gather}
+	\nabla_{\mathbf{y}_i}\bvec{h}_g = \begin{bmatrix}
+		-w_i\bmat{\Lambda}^T\bmat{R}_i & -w_i\bmat{\Lambda}^T
+		\bmat{R}_i\bmat{X}[\bvec{q}_i+\bvec{E}_1]\\
+		[\bvec{0}\quad \bvec{0}\quad -\bmat{T}\hat{\mathbf{E}}_i] & 
+		\hat{\mathbf{E}}_i
+	\end{bmatrix}
+	\label{eq:con1}
+\end{gather}
+
+\noindent The gradient with respect to the displacement vector is derived in a
+straightforward manner by simple derivations:
+\begin{gather}
+	\nabla_{\mathbf{d}_g}\bvec{h}_g = \begin{bmatrix}
+		\bmat{V}_1 \\ -\bmat{V}_2
+	\end{bmatrix}
+	\label{eq:congradisp}
+\end{gather}
+
+\begin{gather}
+	\bmat{V}_1 = \begin{bmatrix}
+		-\bmat{I} & \bmat{I}
+	\end{bmatrix}\quad\text{,}\quad
+	\bmat{V}_2 = \begin{bmatrix}
+		\bvec{0} & \bvec{0} & \bvec{1} & \bvec{0} & \bvec{0} & \bvec{0}
+	\end{bmatrix}\nonumber\\
+	\bmat{I} = \begin{bmatrix}
+		1 & 0 & 0\\
+		0 & 1 & 0\\
+		0 & 0 & 1
+	\end{bmatrix}\quad\text{,}\quad \bvec{0},\bvec{1}\in\mathbb{R}^n,\quad 
+	\bvec{0}=\begin{bmatrix}
+		0 & \cdots & 0
+	\end{bmatrix}^T,\quad \bvec{1}=\begin{bmatrix}
+		1 & \cdots & 1
+	\end{bmatrix}^T\nonumber
+\end{gather}
+
+\noindent Finally, the gradient with respect to the vector $\bvec{\lambda}$
+gives a zero matrix:
+\begin{gather}
+	\nabla_{\mathbf{\lambda}}\bvec{h}_g = 
+	\bmat{0}\in\mathbb{R}^{(n+3)\times(n+3)}
+\end{gather}
+
+\noindent The total constraints gradient is then expressed in block matrix
+form as:
+\begin{gather}
+	\nabla\bvec{h}_g = \begin{bmatrix}
+		\nabla_{\mathbf{y}_1}\bvec{h}_g & \nabla_{\mathbf{y}_2}\bvec{h}_g &
+		\cdots & \nabla_{\mathbf{y}_n}\bvec{h}_g & 
+		\nabla_{\mathbf{d}_g}\bvec{h}_g &
+		\nabla_{\mathbf{\lambda}}\bvec{h}_g
+	\end{bmatrix}\nonumber
+\end{gather}
+
+\noindent Note that in the case of small displacements, only the
+expression $\nabla_{\mathbf{y}_i}\bvec{h}_g^A$ has to be modified, so that
+the strain-displacement relations reduce to the classical linear Timoshenko
+theory:
+\begin{gather}
+	\nabla_{\mathbf{y}_i}\bvec{h}_g^A =-w_i\bmat{\Lambda}^T\begin{bmatrix}
+		1 & -\phi_i & 0 & -\gamma_i\\
+		0 & 1 & 0 & 1\\
+		0 & 0 & 1 & 0
+	\end{bmatrix}\nonumber
+\end{gather}
+
+\noindent with the vector of constraints $\bvec{h}_g^A$ being:
+\begin{gather}
+	\bvec{h}^A_g = \bmat{V}_1\bvec{d}_g - \bmat{\Lambda}^T\bigg[\sum_{i=1}^n
+	w_i[\hat{\bmat{R}}_i(\bvec{q}_i+\bvec{E}_1) -\bvec{g}_i] - 
+	\ell\bvec{E}_1\bigg]
+\end{gather}
+
+\noindent where:
+\begin{gather}
+	\hat{\bmat{R}}_i = \begin{bmatrix}
+		1 & -\phi_i & 0\\
+		\phi_i & 1 & 0\\
+		0 & 0 & 1
+	\end{bmatrix},\quad \bvec{g}_i = \begin{bmatrix}
+		0\\ \epsilon_i\phi_i\\ 0
+	\end{bmatrix}\nonumber
+\end{gather}
+\noindent The vector $\bvec{g}_i$ is added in order to eliminate the second
+order term $\epsilon_i\phi_i$ arising from the imposition of the small
+displacement assumption $\sin\phi_i \approx \phi_i$, $\cos\phi_i\approx1$ in Eq.
+(\ref{eq:impsd1}).
+\subsection{Gradient of the potential energy}
+
+The potential energy due to external loads $\bvec{P}$ is:
+\begin{gather}
+	W = \sum_{j=1}^{N}\bvec{P}_j^T\bvec{d}_{g,j} = \bvec{d}_g^T\bvec{P}\nonumber
+\end{gather}
+
+\noindent The gradient of the potential energy is, again, straightforward in its
+derivation as it only depends on the displacement vector:
+\begin{gather}
+	\nabla W = \begin{bmatrix}
+		\nabla_{\mathbf{y}}W\\ \nabla_{\mathbf{d}_g}W\\ 
+		\nabla_{\mathbf{\lambda}}W
+	\end{bmatrix}\nonumber
+\end{gather}
+
+\noindent with $\nabla_{\mathbf{y}}W = \bvec{0}\in\mathbb{R}^m$,
+$\nabla_{\mathbf{d}_g}W = \bvec{P}$ and $\nabla_{\mathbf{\lambda}}W =
+\bvec{0}\in\mathbb{R}^{n+3}$ for one element. Thus, we have:
+\begin{gather}
+	\nabla W = \begin{bmatrix}
+		\bvec{0}\\ \bvec{P}\\ \bvec{0}	\end{bmatrix}
+\end{gather}
+
+\subsection{Gradient of the Lagrangian}
+
+We substitute in Eqs. (\ref{eq:eqtot}) the explicit expressions derived here
+in the Appendix:
+\begin{gather}
+	\nabla_{\mathbf{y}_i}\mathcal{L} = w_i\begin{bmatrix}
+		\bvec{F}_{sec}^{(i)} \\ 0
+	\end{bmatrix} + \begin{bmatrix}
+		-w_i\bmat{\Lambda}^T\bmat{R}_i & -w_i\bmat{\Lambda}^T
+		\bmat{R}_i\bmat{X}[\bvec{q}_i+\bvec{E}_1]\\
+		[\bvec{0}\quad \bvec{0}\quad -\bmat{T}\hat{\mathbf{E}}_i] & 
+		\hat{\mathbf{E}}_i
+	\end{bmatrix}^T\bvec{\lambda}
+	\label{eq:A7}
+\end{gather}
+\begin{gather}
+	\nabla_{\mathbf{d}_g}\mathcal{L} = -\begin{bmatrix}
+		\bvec{0}\\ \bvec{P}\\ \bvec{0}	\end{bmatrix} + \begin{bmatrix}
+		\bmat{V}_1 \\ -\bmat{V}_2
+	\end{bmatrix}^T\bvec{\lambda}
+\end{gather}
+\begin{gather}
+	\nabla_{\mathbf{\lambda}}\mathcal{L} = \bvec{h}_g
+\end{gather}
+
+\chapter{Hessian of the Lagrangian}\label{appendix:B}
+The Hessian form in Eq. (\ref{eq:hess}), is restated here:
+\begin{gather}
+	\bmat{H} = 	\begin{bmatrix}
+		\nabla^2_{\mathbf{yy}}\mathcal{L} & \bmat{0} & 
+		\nabla_{\mathbf{y}}\bvec{h}^T_g\\
+		\bmat{0} & \bmat{0} & \nabla_{\mathbf{d_g}}\bvec{h}^T_g\\
+		\nabla_{\mathbf{y}}\bvec{h}_g & \nabla_{\mathbf{d_g}}\bvec{h}_g & 
+		\bmat{0}\\
+	\end{bmatrix}\nonumber
+\end{gather}
+
+\noindent The gradients of $\bvec{h}_g$ have been derived in the previous
+section.  Thus, for the complete specification of the second order information
+we need only to determine the second derivative matrix with respect to the
+strain vector $\bvec{y}$. Since different integration points are independent of
+one another, then it is clear
+that $\nabla^2_{\mathbf{y}_i\mathbf{y}_j}\mathcal{L}=\bmat{0}$ for $i\neq j$.
+Therefore, the matrix $\nabla^2_{\mathbf{yy}}\mathcal{L}$ has a block diagonal
+form:
+\begin{gather}
+	\nabla^2_{\mathbf{yy}}\mathcal{L} = \begin{bmatrix}
+		\nabla^2_{\mathbf{y}_i\mathbf{y}_i}\mathcal{L} &\bmat{0} &\cdots & 
+		\bmat{0} \\
+		\bmat{0} & \nabla^2_{\mathbf{y}_i\mathbf{y}_i}\mathcal{L} &\cdots 
+		&\bmat{0} \\
+		\vdots & \ddots & &\vdots \\
+		\bmat{0} & \cdots &\bmat{0} & 
+		\nabla^2_{\mathbf{y}_m\mathbf{y}_m}\mathcal{L}
+	\end{bmatrix}\nonumber
+\end{gather}
+
+\noindent and making use of Eq. (\ref{eq:equivS}) gives:
+\begin{gather}
+	\nabla^2_{\mathbf{y}_i\mathbf{y}_i}\mathcal{L} =
+	\nabla^2_{\mathbf{y}_i\mathbf{y}_i}U
+	+ \nabla_{\mathbf{y}_i}([\nabla_{\mathbf{y}_i}\bvec{h}_g]^T\bvec{\lambda})
+	\label{eq:secdev}
+\end{gather}
+
+\noindent As already seen, the second derivative matrix of the strain
+energy yields the generalized section stiffness of cross-section $i$:
+\begin{gather}
+	\nabla^2_{\mathbf{y}_i\mathbf{y}_i}U = w_i\begin{bmatrix}
+		\bmat{k}_{sec}^{(i)} & \bmat{0}\\
+		\bmat{0} & 0
+	\end{bmatrix}\nonumber
+\end{gather}
+
+\noindent where $\bmat{k}_{sec}^{(i)}$ is given by Eq. 
+(\ref{eq:FIB_STIFF_CONTRIB}) after
+numerical integration of the cross-section. We only now need to derive
+the explicit
+form for the second term of the right hand side in Eq. (\ref{eq:secdev}). To 
+this
+end, we separate the Lagrange multiplier vector into two parts, which correspond
+to vectors $\bvec{h}_h^A$ and $\bvec{h}_h^B$ respectively:
+\begin{gather}
+	\bvec{\lambda} = \begin{bmatrix}
+		\bvec{\lambda}^A\\ \bvec{\lambda}^B
+	\end{bmatrix}\nonumber
+\end{gather}
+
+\noindent Eq. (\ref{eq:A7}) can be now restated as:
+\begin{gather}
+	\nabla_{\mathbf{y}_i}\mathcal{L} = w_i\begin{bmatrix}
+		\bvec{F}_{sec}^{(i)} \\ 0
+	\end{bmatrix} - w_i\begin{bmatrix}
+		\bmat{R}_i^T\bmat{\Lambda} \\
+		[\bvec{q}_i+\bvec{E}_1]^T\bmat{X}^T\bmat{R}_i\bmat{\Lambda}
+	\end{bmatrix}\bvec{\lambda}^A + \begin{bmatrix}
+		\bvec{0}^T \\ \bvec{0}^T \\ -\hat{\mathbf{E}}_i^T\bmat{T}^T \\ 
+		\hat{\mathbf{E}}_i^T
+	\end{bmatrix}\bvec{\lambda}^B
+	\label{eq:this}
+\end{gather}
+
+\noindent Noticing that the gradient of $\bvec{h}_g^B$ yields components 
+independent of
+strains, we conclude that the second derivatives of $\mathcal{L}$ will include
+only the part $\bvec{\lambda}^A$, as:
+\begin{gather}
+	\nabla^2_{\mathbf{y}_i\mathbf{y}_i}\mathcal{L} =
+	\nabla^2_{\mathbf{y}_i\mathbf{y}_i}U
+	+ \bmat{Z}_i
+	\label{eq:second}
+\end{gather}
+
+\noindent where:
+\begin{gather}
+	\bmat{Z}_i = \begin{bmatrix}
+		\ \ \ \bmat{0}_{(3\times 3)} & \bvec{t}_i\\ \bvec{t}_i^T &
+		\bvec{t}_i^T\bmat{X}[\bvec{q}_i+\bvec{E}_1]
+	\end{bmatrix}\quad\text{and}\quad \bvec{t}_i =
+	-w_i\bmat{X}^T\bmat{R}_i^T\bmat{\Lambda}\bvec{\lambda}^A\nonumber
+\end{gather}
+
+\noindent and the second derivative matrix of the Lagrangian is now fully
+determined.
 
 \end{appendices}
