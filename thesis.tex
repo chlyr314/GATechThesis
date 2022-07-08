@@ -12,6 +12,7 @@
 %\usepackage[backend=bibtex, sorting=none, bibstyle=ieee]{biblatex}  %reference 
 %%manager
 \usepackage[bookmarks=true, hidelinks]{hyperref}
+\usepackage[figurename=Fig.,labelfont=bf,labelsep=period]{caption}
 \usepackage[page]{appendix}  %for appendices
 \usepackage{rotating}  %for rotated, landscape images
 \usepackage{ulem}  %for underlined section titles
@@ -21,10 +22,17 @@
 \usepackage{enumitem}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{bm}
 \usepackage[caption=false]{subfig}
+\usepackage[skins]{tcolorbox}
+\usepackage[export]{adjustbox}
+\usepackage{booktabs}
+\usepackage{tikz}
 \usepackage[acronym,nomain,toc,nonumberlist]{glossaries}
 \usepackage[backend=bibtex, sorting=none, 
 bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
+
 \addbibresource{references.bib}
 
 \makenomenclature
@@ -41,6 +49,14 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 \DeclareMathOperator*{\Assem}{\text{\huge $\Lambda$}}
 
 \graphicspath{{./figures/}}
+
+\newcounter{boxcounter}
+\newcommand{\step}{\refstepcounter{boxcounter}}
+
+\newcommand{\sprofs}[1]{\includegraphics[width=4.6cm,height=1.6cm,valign=m]{#1}}
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % RUN THE COMMAND BELOW WHENEVER NOMENCLATURE CHANGES

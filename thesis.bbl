@@ -461,5 +461,545 @@
     \field{journaltitle}{Journal of Applied Mechanics}
     \field{year}{1966}
   \endentry
+
+  \entry{Simo1986}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SJ}{%
+         family={Simo},
+         familyi={S\bibinitperiod},
+         given={JC},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Taylor},
+         familyi={T\bibinitperiod},
+         given={RL839299},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{SJTR1}
+    \strng{fullhash}{SJTR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1002/nme.1620220310
+    \endverb
+    \field{number}{3}
+    \field{pages}{649\bibrangedash 670}
+    \field{title}{A return mapping algorithm for plane stress elastoplasticity}
+    \field{volume}{22}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
+    \field{year}{1986}
+  \endentry
+
+  \entry{Papachristidis2010}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PA}{%
+         family={Papachristidis},
+         familyi={P\bibinitperiod},
+         given={Aristidis},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Fragiadakis},
+         familyi={F\bibinitperiod},
+         given={Michalis},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Papadrakakis},
+         familyi={P\bibinitperiod},
+         given={Manolis},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{PA+1}
+    \strng{fullhash}{PAFMPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{553\bibrangedash 572}
+    \field{title}{A 3D fibre beam-column element with shear modelling for the
+  inelastic analysis of steel structures}
+    \field{volume}{45}
+    \field{journaltitle}{Computational Mechanics}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Saritas2009}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SA}{%
+         family={Saritas},
+         familyi={S\bibinitperiod},
+         given={Afsin},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FFC}{%
+         family={Filippou},
+         familyi={F\bibinitperiod},
+         given={Filip\bibnamedelima C},
+         giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{SAFFC1}
+    \strng{fullhash}{SAFFC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{9}
+    \field{pages}{1115\bibrangedash 1123}
+    \field{title}{Frame element for metallic shear-yielding members under
+  cyclic loading}
+    \field{volume}{135}
+    \field{journaltitle}{Journal of Structural Engineering}
+    \field{year}{2009}
+  \endentry
+
+  \entry{Ceresa2009}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CP}{%
+         family={Ceresa},
+         familyi={C\bibinitperiod},
+         given={Paola},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Petrini},
+         familyi={P\bibinitperiod},
+         given={Lorenza},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=PR}{%
+         family={Pinho},
+         familyi={P\bibinitperiod},
+         given={Rui},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Sousa},
+         familyi={S\bibinitperiod},
+         given={Romain},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{CP+1}
+    \strng{fullhash}{CPPLPRSR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{565\bibrangedash 586}
+    \field{title}{A fibre flexure--shear model for seismic analysis of
+  RC-framed structures}
+    \field{volume}{38}
+    \field{journaltitle}{Earthquake Engineering \& Structural Dynamics}
+    \field{year}{2009}
+  \endentry
+
+  \entry{Gregori2007}{article}{}
+    \name{author}{4}{}{%
+      {{hash=GJN}{%
+         family={Gregori},
+         familyi={G\bibinitperiod},
+         given={J\bibnamedelima Navarro},
+         giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=SPM}{%
+         family={Sosa},
+         familyi={S\bibinitperiod},
+         given={P\bibnamedelima Miguel},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=PMF}{%
+         family={Prada},
+         familyi={P\bibinitperiod},
+         given={MA\bibnamedelima Fern{\'a}ndez},
+         giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=FFC}{%
+         family={Filippou},
+         familyi={F\bibinitperiod},
+         given={Filip\bibnamedelima C},
+         giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{GJN+1}
+    \strng{fullhash}{GJNSPMPMFFFC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{12}
+    \field{pages}{3404\bibrangedash 3419}
+    \field{title}{A 3D numerical model for reinforced and prestressed concrete
+  elements subjected to combined axial, bending, shear and torsion loading}
+    \field{volume}{29}
+    \field{journaltitle}{Engineering Structures}
+    \field{year}{2007}
+  \endentry
+
+  \entry{Kagermanov2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KA}{%
+         family={Kagermanov},
+         familyi={K\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CP}{%
+         family={Ceresa},
+         familyi={C\bibinitperiod},
+         given={Paola},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{KACP1}
+    \strng{fullhash}{KACP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{10}
+    \field{pages}{04017132}
+    \field{title}{Fiber-section model with an exact shear strain profile for
+  two-dimensional RC frame structures}
+    \field{volume}{143}
+    \field{journaltitle}{Journal of Structural Engineering}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Simo2006}{book}{}
+    \name{author}{2}{}{%
+      {{hash=SJC}{%
+         family={Simo},
+         familyi={S\bibinitperiod},
+         given={Juan\bibnamedelima C},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=HTJ}{%
+         family={Hughes},
+         familyi={H\bibinitperiod},
+         given={Thomas\bibnamedelima JR},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Science \& Business Media}%
+    }
+    \strng{namehash}{SJCHTJ1}
+    \strng{fullhash}{SJCHTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Computational inelasticity}
+    \field{volume}{7}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Wilkins1963}{report}{}
+    \name{author}{1}{}{%
+      {{hash=WML}{%
+         family={Wilkins},
+         familyi={W\bibinitperiod},
+         given={Mark\bibnamedelima L},
+         giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WML1}
+    \strng{fullhash}{WML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Calculation of elastic-plastic flow}
+    \list{institution}{1}{%
+      {California Univ Livermore Radiation Lab}%
+    }
+    \field{type}{techreport}
+    \field{year}{1963}
+  \endentry
+
+  \entry{Dodds1987}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DJRH}{%
+         family={Dodds\bibnamedelima Jr},
+         familyi={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={Robert\bibnamedelima H},
+         giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{DJRH1}
+    \strng{fullhash}{DJRH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{767\bibrangedash 779}
+    \field{title}{Numerical techniques for plasticity computations in finite
+  element analysis}
+    \field{volume}{26}
+    \field{journaltitle}{Computers \& Structures}
+    \field{year}{1987}
+  \endentry
+
+  \entry{DeAngelis2015}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DAF}{%
+         family={De\bibnamedelima Angelis},
+         familyi={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+         given={Fabio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=TRL}{%
+         family={Taylor},
+         familyi={T\bibinitperiod},
+         given={Robert\bibnamedelima L},
+         giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Emerald Group Publishing Limited}%
+    }
+    \strng{namehash}{DAFTRL1}
+    \strng{fullhash}{DAFTRL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1108/EC-06-2014-0138
+    \endverb
+    \field{number}{8}
+    \field{title}{An efficient return mapping algorithm for elastoplasticity
+  with exact closed form solution of the local constitutive problem}
+    \field{volume}{32}
+    \field{journaltitle}{Engineering Computations}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Clausen2006}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CJ}{%
+         family={Clausen},
+         familyi={C\bibinitperiod},
+         given={Johan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DL}{%
+         family={Damkilde},
+         familyi={D\bibinitperiod},
+         given={Lars},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=AL}{%
+         family={Andersen},
+         familyi={A\bibinitperiod},
+         given={Lars},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{CJ+1}
+    \strng{fullhash}{CJDLAL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1002/nme.1595
+    \endverb
+    \field{number}{6}
+    \field{pages}{1036\bibrangedash 1059}
+    \field{title}{Efficient return algorithms for associated plasticity with
+  multiple yield planes}
+    \field{volume}{66}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Hopperstad1995}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HO}{%
+         family={Hopperstad},
+         familyi={H\bibinitperiod},
+         given={OS},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Remseth},
+         familyi={R\bibinitperiod},
+         given={S},
+         giveni={S},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{HORS1}
+    \strng{fullhash}{HORS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1002/nme.1620380404
+    \endverb
+    \field{number}{4}
+    \field{pages}{549\bibrangedash 564}
+    \field{title}{A return mapping algorithm for a class of cyclic plasticity
+  models}
+    \field{volume}{38}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
+    \field{year}{1995}
+  \endentry
+
+  \entry{Scherzinger2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SWM}{%
+         family={Scherzinger},
+         familyi={S\bibinitperiod},
+         given={William\bibnamedelima M},
+         giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SWM1}
+    \strng{fullhash}{SWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.cma.2016.11.026
+    \endverb
+    \field{pages}{526\bibrangedash 553}
+    \field{title}{A return mapping algorithm for isotropic and anisotropic
+  plasticity models using a line search method}
+    \field{volume}{317}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Hartloper2021}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HAR}{%
+         family={Hartloper},
+         familyi={H\bibinitperiod},
+         given={Alexander\bibnamedelima R},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=dCeSA}{%
+         prefix={de\bibnamedelima Castro\bibnamedelima e},
+         prefixi={d\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  e\bibinitperiod},
+         family={Sousa},
+         familyi={S\bibinitperiod},
+         given={Albano},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LDG}{%
+         family={Lignos},
+         familyi={L\bibinitperiod},
+         given={Dimitrios\bibnamedelima G},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{HAR+1}
+    \strng{fullhash}{HARSAdCeLDG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1061/(ASCE)ST.1943-541X.0002964
+    \endverb
+    \field{number}{4}
+    \field{pages}{04021031}
+    \field{title}{Constitutive modeling of structural steels: nonlinear
+  isotropic/kinematic hardening material model and its calibration}
+    \field{volume}{147}
+    \field{journaltitle}{Journal of Structural Engineering}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Simo1985}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SJC}{%
+         family={Simo},
+         familyi={S\bibinitperiod},
+         given={Juan\bibnamedelima C},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=TRL}{%
+         family={Taylor},
+         familyi={T\bibinitperiod},
+         given={Robert\bibnamedelima Leroy},
+         giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SJCTRL1}
+    \strng{fullhash}{SJCTRL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/0045-7825(85)90070-2
+    \endverb
+    \field{number}{1}
+    \field{pages}{101\bibrangedash 118}
+    \field{title}{Consistent tangent operators for rate-independent
+  elastoplasticity}
+    \field{volume}{48}
+    \field{journaltitle}{Computer methods in applied mechanics and engineering}
+    \field{year}{1985}
+  \endentry
+
+  \entry{Ortiz1985}{article}{}
+    \name{author}{2}{}{%
+      {{hash=OM}{%
+         family={Ortiz},
+         familyi={O\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+      {{hash=PEP}{%
+         family={Popov},
+         familyi={P\bibinitperiod},
+         given={Egor\bibnamedelima Paul},
+         giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{OMPEP1}
+    \strng{fullhash}{OMPEP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1002/nme.1620210902
+    \endverb
+    \field{number}{9}
+    \field{pages}{1561\bibrangedash 1576}
+    \field{title}{Accuracy and stability of integration algorithms for
+  elastoplastic constitutive relations}
+    \field{volume}{21}
+    \field{journaltitle}{International journal for numerical methods in
+  engineering}
+    \field{year}{1985}
+  \endentry
 \enddatalist
 \endinput

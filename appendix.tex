@@ -6,7 +6,7 @@
 
 %Begin individual appendices, separated as chapters
 
-\chapter{Experimental Equipment}\label{appendix:A}
+\chapter{}\label{appendix:A}
 
 Explicit expressions of the formulation are provided in this
 Appendix. We note that operations involving the symbol $\nabla$ map scalars to
@@ -268,7 +268,7 @@ in the Appendix:
 	\nabla_{\mathbf{\lambda}}\mathcal{L} = \bvec{h}_g
 \end{gather}
 
-\chapter{Hessian of the Lagrangian}\label{appendix:B}
+\chapter{}\label{appendix:B}
 The Hessian form in Eq. (\ref{eq:hess}), is restated here:
 \begin{gather}
 	\bmat{H} = 	\begin{bmatrix}
@@ -367,5 +367,140 @@ only the part $\bvec{\lambda}^A$, as:
 
 \noindent and the second derivative matrix of the Lagrangian is now fully
 determined.
+
+\chapter{}\label{appendix:APPENDIX_C}
+
+First, we express the effective stress vector $\bvec{\zeta}_{n+1}$ purely in
+terms $\lambda$, using 
+eq. (\ref{eq:CORRECTOR_EFFECTIVE}) and the fact that $\bvec{n} =
+\sqrt{\frac{3}{2}}\frac{\bmat{V}\bvec{\zeta}}{\Vert\bvec{\zeta}\Vert_{\bm{V}}}$:
+\begin{equation}
+	\left[\bmat{I}+\frac{\lambda\sqrt{\frac{3}{2}}}{\Vert\bvec{\zeta}_{n+1}\Vert_{\bm{V}}}\bigg[\bmat{C}^{el}\bmat{V}+H_{kin}\bmat{I}\bigg]\right]\bvec{\zeta}_{n+1}
+	= \bvec{\zeta}^{TR}_{n+1}
+	\label{eq:EFFECTIVE_TRIAL}
+\end{equation}
+In the first phase of a plastic step we assume that no plastic flow occurs
+(Elsatic Prediction), therefore, for the purposes of the iterative strategy we
+can consider the following identity:
+\begin{equation}
+	f_{n+1} = 0 \rightarrow
+	\Vert\bvec{\zeta}_{n+1}\Vert_{\bm{V}}= q_n +
+	\lambda\sqrt{\frac{2}{3}}\frac{\partial q_n}{\partial e^{pl}_n}
+	\label{eq:APPROX_VERT}
+\end{equation}
+In the case of linear isotropic hardening, eq. (\ref{eq:APPROX_VERT}) is exact
+since $\frac{\partial q}{\partial e^{pl}} = H_{iso}$.
+Otherwise the isotropic modulus used in the context of the fully implicit 
+integration is replaced with the one at the previous step for the purposes of
+the iterative strategy and only for that. This technique is done so that
+$\bvec{\zeta}_{n+1}$ is recast only in terms of $\lambda$.
+Substituting (\ref{eq:APPROX_VERT}) into (\ref{eq:EFFECTIVE_TRIAL}) and solving
+for $\bvec{\zeta}_{n+1}$ we get:
+\begin{equation}
+	\bvec{\zeta}_{n+1} = \bmat{\Omega}\bvec{\zeta}^{TR}_{n+1}
+	\label{eq:ZETA2}
+\end{equation}
+\noindent  
+Let $a_1 = E+\frac{3}{2}H_{kin} + \frac{\partial q_n}{\partial e^{pl}_n}$ and 
+$a_2 = 3G+\frac{3}{2}H_{kin} + \frac{\partial q_n}{\partial e^{pl}_n}$. Then:
+\begin{equation}
+	\bmat{\Omega} =
+	\left[\bmat{I}+\frac{\lambda\sqrt{\frac{3}{2}}}{q_n +
+		\lambda\sqrt{\frac{2}{3}}\frac{\partial q_n}{\partial
+			e^{pl}_n}}\bigg[\bmat{C}^{el}\bmat{V}+H_{kin}\bmat{I}\bigg]\right]^{-1}
+			 =
+	\text{diag}\bigg(\frac{q_n+\lambda\frac{\partial q_n}{\partial
+			e^{pl}_n}}{q_n+\lambda a_1},\ \frac{q_n+\lambda\frac{\partial 
+			q_n}{\partial
+			e^{pl}_n}}{q_n+\lambda a_2}\bigg)
+	\label{eq:OMEGA}
+\end{equation}
+
+Substitution of (\ref{eq:ZETA2}) into $f_(\bvec{\zeta}_{n+1},q_{n+1})\equiv
+f_{n+1}=0$ yields the scalar equation to be solved iteratively for $\lambda$:
+\begin{equation}
+	f_{n+1} =
+	\sqrt{\frac{3}{2}}\sqrt{(\bvec{\zeta}^{TR}_{n+1})^T
+		\bmat{\Omega}\bmat{V}\bmat{\Omega}\bvec{\zeta}^{TR}_{n+1}}- q_{n+1}=0
+	\label{eq:SCALAR_FUN}
+\end{equation}
+The derivative of $f_{n+1}$ with respect to $\lambda$ involves finding the
+derivative of the diagonal matrix $\bmat{\Omega}$ and a chain rule with respect
+to $q_{n+1}$. It can be found that the derivative is:
+\begin{equation}
+	\frac{\text{d} f_{n+1}}{\text{d} \lambda} =
+	-\frac{1}{q_n}\left[\frac{n_{11}\zeta_{11}^{TR}(E+
+		\frac{3}{2}H_{kin})}{(1+\frac{\lambda a_1}{q_n})^2}+
+	\frac{n_{12}\zeta_{12}^{TR}(3G+ \frac{3}{2}H_{kin})}
+	{(1+\frac{\lambda a_2}{q_n})^2}  \right] - (1+\lambda)\frac{\partial
+		q_{n+1}}{\partial e^{pl}_{n+1}}
+	\label{eq:F_DIFF}
+\end{equation}
+%\noindent and the local Newton iterations become:
+%\begin{equation}
+%	\lambda^{j+1} = \lambda^j - 
+%\frac{f_{n+1}^j}{(\frac{\text{d}f_{n+1}}{\text{d}\lambda})^j}
+%	\label{eq:LOCAL_NEWTON}
+%\end{equation}
+%Initialization of the local Newton method with the Elastic Predictor step taken
+%as initialization: $\lambda^0=0,\
+%q_{n+1}^0=q_{n+1}^{TR},\ \bvec{\zeta}_{n+1}^0=\bvec{\zeta}^{TR}_{n+1}$.
+
+
+\chapter{}\label{appendix:APPENDIX_D}
+
+For the inversion of the block matrix (\ref{eq:DIFF_SYSTEM}) we perform block
+elimination considering $\bmat{A} =
+\bmat{C}^{el}+\lambda\bmat{B}-
+\lambda 
+^2\bmat{B}_{n+1}\bigg[H_{kin}\bmat{V}+\lambda\bmat{B}_{n+1}\bigg]^{-1}\bmat{B}_{n1+}$
+as
+the Schur complement. Notice that while the matrix
+$\lambda\bmat{B}_{n+1}$ is not invertible, the diagonal ones are.
+Omitting the subscript refering to the step, inversion of 
+system (\ref{eq:DIFF_SYSTEM}) yields:
+\begin{equation}
+	\begin{bmatrix}
+		\text{d}\bvec{\sigma}\\
+		\text{d}\bvec{\alpha}
+	\end{bmatrix} = \begin{bmatrix}
+		[\bm{\Xi}]_{11} &  [\bm{\Xi}]_{12}\\
+		[\bm{\Xi}]_{21} &  [\bm{\Xi}]_{22}\\
+	\end{bmatrix}\begin{bmatrix}
+		\text{d}\bvec{\epsilon}-\text{d}\lambda\bvec{n}\\
+		\text{d}\lambda\bvec{n}\\
+	\end{bmatrix}
+	\label{eq:INVERSE_SYS}
+\end{equation}
+and define $\bmat{\Gamma} = 
+\lambda\bmat{B}\bigg(H_{kin}^{-1}\bmat{V}+\lambda\bmat{B}\bigg)^{-1}$.
+Then, 
+for the block matrices $[\bm{\Xi}_{ij}]$ we have:
+\begin{itemize}
+	\item $[\bm{\Xi}_{11}] = \bmat{A}^{-1}$, the inverse of the Schur 
+	complement.
+	\item $[\bm{\Xi}_{12}] = [\bm{\Xi}_{11}]\bmat{\Gamma}$
+	\item $[\bm{\Xi}_{21}] = [\bm{\Xi}_{12}]^T$
+	\item $[\bm{\Xi}_{22}] = 
+	\bigg(H_{kin}^{-1}\bmat{V}+\lambda\bmat{B}\bigg)^{-1} + 
+	\bmat{\Gamma}[\bm{\Xi}_{11}]\bmat{\Gamma}$
+\end{itemize}
+\noindent where the fact that matrices $\bmat{B}$ and $\bmat{\Gamma}$ are 
+symmetric was used.
+The vector $\bvec{N}$ in (\ref{eq:CONSISTENT TANGENT MOD}) is given by:
+\begin{equation}
+	\bvec{N} = \frac{\bigg[[\bm{\Xi}_{11}] + 
+		[\bm{\Xi}_{12}]\bigg]\bvec{n}}{\Vert\bvec{n} \Vert_{\bm{T}}}
+	\label{eq:NORMAL_N}
+\end{equation}
+\noindent with $\bmat{T} = [\bm{\Xi}_{11}] + [\bm{\Xi}_{22}] + [\bm{\Xi}_{12}]
++ [\bm{\Xi}_{21}]$. Finally, parameter $\delta$ is defined as:
+\begin{equation}
+	\delta = \frac{\frac{\partial q}{\partial 
+			e^{pl}}}{\Vert\bvec{n} \Vert^2_{\bm{T}}}
+\end{equation}
+
+The calculation can be simplified significantly if second and higher order 
+terms in $\lambda$ are ignored.
 
 \end{appendices}

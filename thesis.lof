@@ -1,9 +1,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Undeformed and deformed configurations of the beam.}}{4}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Integration of curvature shape functions.}}{11}{figure.2.2}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Typical element representing one member.}}{13}{figure.2.3}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Solutions process stages. Quantities $\mathbf {K}^e$ and $\vec {\boldsymbol {F}}_{int}$ stand for stiffness matrix and internal nodal force vector for element $e$ respectively.}}{24}{figure.2.4}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Undeformed and deformed configurations of the beam.\relax }}{4}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Integration of curvature shape functions.\relax }}{11}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Typical element representing one member.\relax }}{13}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Solutions process stages. Quantities $\mathbf {K}^e$ and $\vec {\bm {F}}_{int}$ stand for stiffness matrix and internal nodal force vector for element $e$ respectively.\relax }}{24}{figure.caption.11}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Feasible space and yield locus for the $J_2$ model. At the boundary of the ellipse, $\sqrt {3J_2}=q$.\relax }}{29}{figure.caption.12}%
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
