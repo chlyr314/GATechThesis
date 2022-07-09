@@ -51,11 +51,14 @@ curvature gradients due to plastic hinge formation, in the case of inelastic
 analysis.
 
 This chapter starts with a brief outline of the beam geometric description 
-while adhering to the derivations by Cardona \& Geradin\cite{Cardona}, follwed 
-by the hybrid \acrshort{nlp} formulation for the element. The chapter concludes 
-with implementation details, where special attention is given to the block 
+while adhering to the derivations by Cardona \& Geradin\cite{Cardona}, followed 
+by the hybrid \acrshort{nlp} formulation for the element. The third section is 
+devoted to implementation details, where special attention is given to the 
+block 
 elimination technique used for the reduction of the linear system involving the 
-Hessian matrix. 
+Hessian matrix. Finally, the chapter concludes with a set of numerical examples 
+where the focus is the Hybrid \acrshort{nlp} element performance with respect 
+to coarse mesh discretizations in nonlinear analysis. 
 
 %%%%%%%%%%%%%%%%%%%%% CHAPTER 2 - SECTION 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Geometrically-Exact Model}\label{section:CH2-S2}
@@ -1032,7 +1035,7 @@ results in a fast return mapping algorithm.
 \begin{figure}[t]
 	\centering
 	\includegraphics[scale=0.6]{FIG4_PROCESS}
-	\caption{Solutions process stages. Quantities $\bmat{K}^e$ and
+	\caption{Solution process stages. Quantities $\bmat{K}^e$ and
 		$\bvec{F}_{int}$ stand for stiffness matrix and internal nodal force 
 		vector
 		for element $e$ respectively.}
@@ -1066,3 +1069,357 @@ generally includes parameters associated with section rotations and Lagrange
 multipliers, and is greatly simplified if small displacement assumptions
 are used.
 
+
+
+%%%%%%%%%%%%%%%%%%%%% CHAPTER 2 - SECTION 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Numerical Examples}\label{section:CH2-S5}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In this section we present the capabilities and efficiency of the proposed
+element in a number of well-known benchmark examples. In cases where analytical
+solutions are available, they are included in the comparisons. Our results are
+compared against the ones achieved i) with the structural FEM software
+OpenSees\cite{OpenSees}, using its flexibility-based beam element
+\cite{Neuenhofer,Neuenhofer2} with five quadrature points and fiber section
+integration, and ii) with the FEM software Abaqus\cite{Abaqus}, using
+plane-stress modeling for the frame members. For the
+elastic analyses, reduced integration linear quadrilateral elements (CPS4R) were
+used in Abaqus to avoid shear-locking, while for the elastoplastic
+simulations, reduced integration quadratic quadrilaterals (CPS8R) elements
+were used instead. For all cases the Gauss-Legendre
+quadrature rule is used for approximating the integrals in Eqs.
+(\ref{eq:tpe2}),(\ref{eq:cintform}). For the elastoplastic analyses, we assume
+a linear isotropic hardening law and the elastoplastic modulus is given
+as a percentage $r$ of the elastic modulus $E$. Moreover, we assume a
+rigid rectangular cross-section shape for all cases, with shear coefficient
+$k_s=0.870$\cite{Cowper}. For all examples, the SI units corresponding to
+material and geometric properties are Pa and $m$, while for the load units
+Newton(N) is used. The convergence termination criterion for the iterative
+procedure was $10^{-7}$ for all cases. Shear deformation is
+allowed to occur in all analyses unless stated otherwise.
+
+
+\subsection{Cantilever with tip load}
+
+In this first example we demonstrate the element performance with fully 
+nonlinear assumptions against available analytical solutions, 
+as well as its locking-free behavior when small displacement assumptions
+hold.
+
+\subsubsection{Nonlinear analyses}
+Both elastic and inelastic geometrically nonlinear cases are
+considered. One
+element and six integration points are used, with the beam assumed to be
+inextensible, and the results are presented in Fig. 
+(\ref{fig:FIG5_cantielastic}). 
+The elastic
+case assumed $EI=10$, $L=1$ and shear-rigid response for comparison purposes 
+with available exact equilibrium paths\cite{bisshopp}, while the inelastic
+case allows for shear effects to take place with $GA_s=500$. In order to
+maintain consistency with the attributes $EI=10$ and $L=1$, we used $E=200\times
+10^9$ for Young's modulus and prescribed the height of the cross-section to be
+$h=0.02$, which is now required in order to carry out the cross-sectional
+stress-update.
+For the material nonlinearity example, the yield stress is 
+$\sigma_y=180\times10^7$ with a tangent-to-elastic modulus
+ratio $r=3\%$ and results are compared against Abaqus and OpenSees. 
+As can be seen in
+Fig. (\ref{fig:FIG5_cantielastic}), in both cases remarkable accuracy is 
+achieved
+with just one element. Slight differences between the Abaqus quadrilateral 
+model and
+the beam models are observed when extensive plastification takes place. In 
+Table \ref{table:table1} we also provide distinct comparisons with exact
+values for the elastic case. It is clear
+that when the normalized load is equal to 1, displacements remain small, and
+thus, only $n=4$ quadrature points suffice to achieve small absolute error. At
+the maximum load level, however, $n=6$ quadrature points 
+were required for highly accurate results. 
+For the shear-rigid case exact solutions are computed from numerical evaluation 
+of the
+elliptic integrals that describe the problem. The reader can also consult Table
+1 in \cite{Mattiasson} for a wide range of values reported. Additional results
+pertaining to the elastic shear-flexible case are also reported in Table
+\ref{table:table1}. For this case, we used again $GA_s=500$, $EI=10$, $L=1$ and 
+compared against available 
+analytical solutions from\cite{Batista2}, where the normalized load
+level therein is held constant and equal to 1. The values corresponding to the
+maximum normalized load equal to 10 are also reported. Although exact solutions
+are not available for this load level to compare against, we can see that the 
+relative
+change in the transverse and axial displacement with respect to the shear-rigid
+case is consistent and about $5.30\%$ and $5.40\%$,
+respectively.
+
+\begin{figure*}[b]
+	\centering
+	\subfloat[Elastic
+	analysis]{{\includegraphics[width=6.6cm]{FIG5_cantiElastic_Review.pdf}}}%
+	\qquad
+	\subfloat[Inelastic
+	analysis]{{\includegraphics[width=6.5cm]{FIG5_cantiPlastic_Review.pdf}}}%
+	\caption{Geometrically nonlinear analyses of cantilever.}%
+	\label{fig:FIG5_cantielastic}%
+\end{figure*}
+
+\begin{table*}[t]\centering
+	\caption{Comparison of tip normalized displacements for different load 
+	levels
+		for elastic response.}
+	\noindent\makebox[\textwidth]{
+		\begin{tabular}{@ {}ccccccccc@ {}}\toprule[2pt]
+			& & & \multicolumn{3}{c}{Shear Rigid}  & 
+			\multicolumn{3}{c}{Shear Flexible}\\
+			\cmidrule(r{.15em}l{.10em}){4-6} \cmidrule(r{0.15em}l){7-9}
+			& $\frac{PL^2}{EI}$& $n$ & Exact & Present & Error & Exact & 
+			Present & Error\\
+			\midrule[0.9pt]
+			\multirow{2}*{$\displaystyle\frac{\delta_2}{L}$}&$1$ & 4 & 
+			0.3017207 & 0.3017206 & 1.12E-07 & 0.3178138 & 0.3178137 & 
+			1.64E-07\\
+			& $10$ & 6 & 0.8106090 & 0.8106113 & 2.32E-06 & - & 0.8536137 & - 
+			\\
+			\midrule%\addlinespace[3pt]
+			\multirow{2}*{$\displaystyle\frac{L-\delta_1}{L}$}& 1 & 4 & 
+			0.9435668 &
+			0.9435666 & 1.82E-07 & 0.9386844 & 0.9386842 & 1.75E-07 \\
+			& $10$ & 6 & 0.4450044 & 0.4450017 & 2.62E-06 & - & 0.4208910 & -\\
+			\bottomrule[1.5pt]
+		\end{tabular}
+		
+	}
+	\label{table:table1}
+\end{table*}
+
+In Fig. (\ref{fig:FIG6_MQN}) we see how the moment and curvature
+distributions change based on the beam deformations for both cases of Fig.
+(\ref{fig:FIG5_cantielastic}), captured at distinct
+load levels. The moment values at the left fixed end are also reported on
+the graphs. The observed nonlinear distributions for the elastic case are due 
+to the
+deformed shape of the beam being drastically different from its initial
+configuration. As seen, an important feature of the formulation is its ability 
+to capture curvature localization when plastic hinges are also formed. In 
+displacement-based conventional beam elements, a fine mesh is in constrast 
+required in the areas where plastification is expected.
+
+\begin{figure}[b]
+	\centering
+	\hspace*{-0.47cm}\subfloat[Elastic.]{\includegraphics[scale=0.5]{FIG6_ElasticMQN.pdf}\label{fig:elasticMQN}}\\
+	\hspace*{-0.47cm}\subfloat[Inelastic.]{\includegraphics[scale=0.5]{FIG6_PlasticMQN.pdf}\label{fig:plasticMQN}}
+	\caption{Moment and curvature distributions for the nonlinear 
+		analyses of the cantilever - one element with $n=6$ quadrature points.}
+	\label{fig:FIG6_MQN}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Shear-locking}
+Shear locking may occur in shear deformable elements undergoing bending.
+Due to inconsistent interpolation of fields that are naturally related, spurious
+shear stresses develop and the element response appears to be stiffer,
+particularly as the beam slenderness is increased. Appropriate numerical
+treatments include using field consistent higher order elements or applying
+reduced numerical integration \cite{Reddy,Prathap,ZienShear}. Here, we perform
+small displacement elastic analyses for various length-to-thickness
+ratios. The tip displacement ratios of $\delta_T/\delta_B$ and $\delta/\delta_B$
+are then plotted against the length to thickness ratio $L/h$, where $\delta_B$
+and $\delta_T$ denote the Bernoulli and Timoshenko displacements respectively.
+Only one element is used with two integration points. The section dimensions
+are kept fixed, while the length $L$ of the beam varies. Results, along
+with used data are shown in Fig. (\ref{fig:FIG7_lock}), where it can be seen 
+that the
+proposed element exhibits locking-free behavior.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.9]{FIG7_locking.pdf}
+	\caption{Influence of $L/h$ on the tip deflection and comparison with
+		analytical solution.}
+	\label{fig:FIG7_lock}
+\end{figure}
+
+
+\subsection{Lee's frame}
+Lee's frame is a well-known benchmark for geometrically nonlinear capabilities
+of beam-column element formulations.  It was first analyzed by Seng-Lip Lee
+et.al. in
+\cite{Lee} where the exact solution to the problem was also provided. We
+first consider here the classic case, where the frame is pinned on both 
+supports.
+An investigation on the effect of shear flexibility to the elastic response
+is also carried out by varying the length-to-thickness ratio, while maintaining
+large-displacement assumptions. It is demonstrated that for ratios smaller than
+five, the equilibrium path ceases to be similar to the shear-rigid case. Lastly,
+we investigate the response of the same frame when both supports are fixed. This
+again leads to a drastically different response, with abrupt changes in the
+equilibrium path.  In all cases, the centerline is assumed inextensible.
+
+\subsubsection{Frame with pinned supports}\label{leespinned}
+
+An elastic, geometrically nonlinear analysis is first performed.
+The minimum number of elements that can be used for this specific example is 
+three
+and a 4-point quadrature is applied for each element, whereas twelve flexibility
+elements are required in OpenSees to achieve comparable accuracy.
+For the elastoplastic analysis, again three elements are used in our
+simulation with eight integration points,
+whereas fourteen flexibility elements are now required in OpenSees for 
+comparable
+accuracy. The yield stress is $\sigma_y=1.3\times 10^{9}$ and the
+tangent-to-elastic modulus \ratio is $r=3.00\%$. In the elastic
+analysis, the
+frame members are also considered shear-rigid, in order to remain consistent
+to the initial assumptions in the original investigation\cite{Lee}.
+Results are shown in Fig. (\ref{fig:FIG8_LeesPinned}), with the colored
+markers corresponding to the deformed profiles of the same color shown in
+Fig. (\ref{fig:FIG9_LeesPinnedProfiles}).
+
+\begin{figure*}[t]
+	\centering
+	\subfloat[Elastic 
+	analysis]{{\includegraphics[width=7.cm]{FIG8_LeesElastic.pdf}}}%
+	\qquad
+	\subfloat[Inelastic 
+	analysis]{{\includegraphics[width=7.cm]{FIG8_LeesPlastic.pdf}}}%
+	\caption{Geometrically nonlinear analyses of Lee's frame with pinned
+		supports.}%
+	\label{fig:FIG8_LeesPinned}%
+\end{figure*}
+
+\begin{figure*}[b]
+	\centering
+	\subfloat[Elastic 
+	profiles]{{\includegraphics[width=6.5cm]{FIG9_ElasticProfiles.pdf} }}%
+	\qquad
+	\subfloat[Inelastic 
+	profiles]{{\includegraphics[width=6.5cm]{FIG9_PlasticProfiles.pdf} }}%
+	\caption{Deformation profiles for Lee's frame with pinned supports.}%
+	\label{fig:FIG9_LeesPinnedProfiles}%
+\end{figure*}
+\clearpage
+In Fig. (\ref{fig:FIG10_shearEffectLees}), results related to shear flexibility
+effects on the frame's response are shown.  As previously mentioned, in 
+\cite{Lee}
+the members are assumed to be shear rigid, effectively adhering to the Bernoulli
+assumptions. In this example, we relax this assumption and examine how the
+slenderness decrease affects the structural response. As seen in the figure,
+four different length-to-thickness ratios are examined and the equilibrium
+path gradually deviates from the shear-rigid case. For ratio $L/h=4$, the
+equilibrium path is drastically different and the structure, after entering the
+snap-back region, follows a rather complex equilibrium branch. Note that around
+$\delta/L=0.5$, the structure exits its current branch and continues on a 
+similar
+path as in the previous cases.
+
+\begin{figure*}[t]
+	\centering
+	\includegraphics[scale=1]{FIG10_ElasticLHcomp.pdf}
+	\caption{Effect of shear flexibility on Lee's frame response. }
+	\label{fig:FIG10_shearEffectLees}
+\end{figure*}
+
+\subsubsection{Frame with fixed supports}
+This variation of the benchmark problem results in a response that exhibits
+a dramatic snap-back, with abrupt changes in the stiffness sign along the
+equilibrium path for the nonlinear elastic problem.
+Seven integration points are used here per element and, again, one element
+per member, to achieve the same accuracy as with
+the Abaqus plane stress model, which terminated prematurely. 
+In contrast, twenty
+elements are necessary in OpenSees for comparable results. The geometric
+and material properties are the same as in Sec. (\ref{leespinned}) (see Fig.
+(\ref{fig:FIG8_LeesPinned})). For the inelastic analysis, five integration
+points are sufficient, since the response is now fairly smooth overall,
+in comparison to the elastic case. All members
+are shear flexible in these examples, however the contribution of shear
+deformation to the overall responses is negligible for both elastic and
+inelastic cases.
+The response and deformation profiles for both analyses are shown in Figs.
+(\ref{fig:FIG11_LeesFixed}),(\ref{fig:FIG12_LeesFixedProfiles}) respectively.
+
+\begin{figure*}[h]
+	\centering
+	%\subfloat[Elastic
+	%profiles]{{\includegraphics[width=5.6cm]{FixedElasticProfiles_Review.pdf} 
+			%}}%
+	\subfloat[Elastic
+	profiles]{\includegraphics[width=6.5cm]{FIG12_FixedElasticProfiles_Review.pdf}}%
+	\qquad
+	\subfloat[Inelastic 
+	profiles]{{\includegraphics[width=6.5cm]{FIG12_FixedPlasticProfiles.pdf} 
+	}}%
+	\caption{Deformation profiles for Lee's frame with fixed supports.}%
+	\label{fig:FIG12_LeesFixedProfiles}%
+\end{figure*}
+
+\clearpage
+\begin{figure*}[t]
+	\centering
+	%\subfloat[Elastic
+	%analysis]{{\includegraphics[width=8.2cm]{LeesFixedElastic_Review.pdf}}}%
+	\subfloat[Elastic
+	analysis]{\includegraphics[width=7.cm]{FIG11_LeesFixedElastic_Review.pdf}}%
+	\qquad
+	\subfloat[Inelastic 
+	analysis]{{\includegraphics[width=7.cm]{FIG11_LeesFixedPlastic.pdf}}}%
+	\caption{Geometrically nonlinear analyses of Lee's frame with fixed
+		supports.}%
+	\label{fig:FIG11_LeesFixed}%
+\end{figure*}
+
+\subsection{Two-Storey frame}
+
+In this example a two-story frame with one bay is analyzed, first studied
+regarding its plastic limit load in \cite{horne}. It was also later used as a
+benchmark example by Santos \cite{Santos1}, for the performance of a nonlinear
+beam finite element based on complementary energy principles. The example
+is slightly modified here, however the rectangular cross-section
+dimensions of the structural members and their length $L$ have been
+chosen so their the slenderness remains in accordance with
+\cite{Santos1}. The yield stress is $\sigma_y=0.9\times 10^6$, and the
+tangent-to-elastic modulus ratio is $r=3\%$. The full frame
+characteristics and discretization are shown in Fig. 
+(\ref{fig:FIG13_santosStruct}).
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.7\textwidth]{FIG13_struct.pdf}
+	\caption{Two-storey portal frame discretization.}
+	\label{fig:FIG13_santosStruct}
+\end{figure}
+
+The minimum number of hybrid elements for this example is eight and the number
+of integration points per element for the elastic and plastic analyses are
+seven and ten, respectively. For the OpenSees analyses, 36 and 48 elements
+were used in total for the elastic and inelastic analyses. In both cases,
+however, the OpenSees analyses stopped prematurely. Results are
+demonstrated in Fig. (\ref{fig:FIG14_SantosAn}), showing excellent agreement 
+with
+Abaqus results, while the relevant deformation profiles are
+provided in Fig. (\ref{fig:FIG15_SantosProfiles}).
+
+\begin{figure*}[b]
+	\centering
+	\subfloat[Elastic 
+	analysis]{{\includegraphics[width=7.cm]{FIG14_SantosElasticPaperFig.pdf} }}%
+	\qquad
+	\subfloat[Inelastic 
+	anaysis]{{\includegraphics[width=7.cm]{FIG14_SantosPlasticPaperFig.pdf} }}%
+	\caption{Geometrically nonlinear analyses of the two-storey frame.}%
+	\label{fig:FIG14_SantosAn}%
+\end{figure*}
+
+\clearpage
+\begin{figure*}
+	\centering
+	\subfloat[Elastic 
+	profiles]{{\includegraphics[width=6.5cm]{FIG15_SantosElasticProfiles.pdf} 
+	}}%
+	\qquad
+	\subfloat[Inelastic 
+	profiles]{{\includegraphics[width=6.5cm]{FIG15_SantosPlasticProfiles.pdf} 
+	}}%
+	\caption{Deformation profiles for two-storey frame.}%
+	\label{fig:FIG15_SantosProfiles}%
+\end{figure*}

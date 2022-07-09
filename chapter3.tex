@@ -50,23 +50,6 @@ of the fully implicit Euler scheme. In addition we derive the expression for
 the consistent tangent modulus at a fiber, which is required to ensure 
 quadratic rates of convergence for the global Newton method.
 
-\subsection{Notation}
-Furthermore, boldface lowercase letters indicate second order tensor. Wherever 
-the same letters appear with an overhead arrow, this indicates the vector 
-notation for the tensor represented with that letter. The notation adopted 
-herein is the following:
-\begin{equation*}
-	\boldsymbol{\sigma} = \begin{bmatrix}
-		\sigma_{11} & \sigma_{12} & \sigma_{13} \\
-		\sigma_{12} & \sigma_{22} & \sigma_{23} \\
-		\sigma_{13} & \sigma_{23} & \sigma_{33} \\
-	\end{bmatrix}\rightarrow \bvec{\sigma} = \begin{bmatrix}
-	\sigma_{11} & \sigma_{22} & \sigma_{33} & \sigma_{12} & \sigma_{23} & 
-	\sigma_{13}
-\end{bmatrix}^T
-\end{equation*}
-
-For strain tensors, components for which $i\neq j$ are multiplied by 2.
 
 %%%%%%%%%%%%%%%%%%%%  SECTION 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Three-dimensional Constitutive Model}\label{section:CH3-S2}
@@ -199,17 +182,17 @@ the back stress tensor in Eq. (\ref{eq:BACK_STRESS}) deviatoric.
 
 In active stress space $\mathcal{S}$ the yield function is 
 $\Phi = \sqrt{\sigma_{11}^2 + 3\sigma_{12}^2}-q$ describes an ellipse, shown
-in \ref{fig:FIG5_YIELDLOCUS}, with
+in \ref{fig:FIG16_YIELDLOCUS}, with
 semi-major and semi-minor axes $\sigma_y$, $\sqrt{3}^{}/3\sigma_y$, 
 respectively.
 
 \begin{figure}[t]
 	\centering
-	\includegraphics[scale=0.8]{FIG5_YIELDLOCUS}
+	\includegraphics[scale=0.8]{FIG16_YIELDLOCUS}
 	\caption{Feasible space and yield locus for the $J_2$ model. At the 
 	boundary of the ellipse,
 		$\sqrt{3J_2}=q$.}
-	\label{fig:FIG5_YIELDLOCUS}
+	\label{fig:FIG16_YIELDLOCUS}
 \end{figure}
 
 When kinematic
@@ -435,7 +418,7 @@ It is convenient to recast system (\ref{eq:FIBER_DISCR_SYSTEM})
 purely in terms of stress by utilizing
 (\ref{eq:DISCR_EFFECTIVE}),(\ref{eq:FIBER_CONSTITUTIVE_LAW_DISCR}),(\ref{eq:FIBER_BACK_STRESS_DISCR}):
 
-\begin{minipage}{0.35\linewidth}
+\hspace{-0.3cm}\begin{minipage}{0.4\linewidth}
 	\hspace{1.7cm}\begin{tabular}[]{c}
 		\textbf{Stress rate system}\\
 		\specialrule{2.pt}{1pt}{-15pt}
@@ -450,15 +433,16 @@ purely in terms of stress by utilizing
 		\label{eq:REDUCED_RATE_SYS}
 	\end{subequations}
 \end{minipage}
-\begin{minipage}{0.6\linewidth}
+\begin{minipage}{0.55\linewidth}
 	\hspace{1.7cm}\begin{tabular}[]{c}
 		\textbf{Discretized system}\\
-		\specialrule{2.pt}{1pt}{-15pt}
+		\specialrule{1.5pt}{2.5pt}{-15pt}
 	\end{tabular}
 	\begin{subequations}
 		\begin{align}
 			\bvec{\zeta}_{n+1} &= \bvec{\zeta}_n +
-			\bmat{C}^{el}\Delta\bvec{\epsilon}_{n+1}-\lambda\bmat{Z}\bvec{n}_{n+1}\label{eq:EFF_DISCR1}\\
+			\bmat{C}^{el}\Delta\bvec{\epsilon}_{n+1}-\lambda\bmat{Z}\bvec{n}_{n+1}
+			\label{eq:EFF_DISCR1}\\
 			q_{n+1} &= q_n + \lambda\frac{\partial q_{n+1}}{\partial
 				e_{n+1}^{pl}}\label{eq:YIELD_DISCR2}
 		\end{align}
@@ -559,8 +543,10 @@ following system:
 \begin{subequations}
 	\begin{equation}
 		\begin{bmatrix}
-			\bmat{C}^{el}+\lambda\bmat{B}_{n+1} & -\lambda\bmat{B}_{n+1}\\
-			-\lambda\bmat{B}_{n+1} & H_{kin}^{-1}\bmat{V}+\lambda\bmat{B}_{n+1}
+			\bmat{C}^{el}+\lambda\bmat{\Psi}_{n+1} & 
+			-\lambda\bmat{\Psi}_{n+1}\\
+			-\lambda\bmat{\Psi}_{n+1} & 
+			H_{kin}^{-1}\bmat{V}+\lambda\bmat{\Psi}_{n+1}
 		\end{bmatrix}\begin{bmatrix}
 			\text{d}\bvec{\sigma}_{n+1}\\
 			\text{d}\bvec{\alpha}_{n+1}
@@ -579,9 +565,9 @@ following system:
 	\label{eq:DIFF_SYS_YIELD}
 \end{subequations}
 
-\noindent where $\bmat{B}$ is given as follows:
+\noindent where $\bmat{\Psi}$ is given as follows:
 \begin{equation}
-	\bmat{B} = \frac{\partial\bvec{n}}{\partial \bvec{\zeta}}=
+	\bmat{\Psi} = \frac{\partial\bvec{n}}{\partial \bvec{\zeta}}=
 	\frac{\partial^2 f}{\partial \bvec{\zeta}^2} = \frac{1}{\Vert
 		\bvec{\zeta}\Vert_{\bm{V}}}\left[ \bmat{V}-\bvec{n}\bvec{n}^T\right]
 	\label{eq:B}
@@ -614,13 +600,6 @@ Once the stress update on a particular fiber has been carried out, its
 contribution to the stress resultant vector and the section stiffness are
 accounted for via a midpoint integration rule along the section height (see Eqs.
 (\ref{eq:STRESS_RES_CONJUGATE}), (\ref{eq:FIB_STIFF_CONTRIB}).
-
-Notice that while in the present formulation $C_{21}=C_{12}$, this will not be
-the case if a generalized integration rule is used for the rate equations. In
-such a scenario, if enforcement of the plastic consistency does not correspond
-to the interior time $t_a\in[t_n, t_{n+1}]$ chosen, that is $\Phi_a=0$, then 
-the consistenttangent will not be symmetric. For more details on this refer to
-\cite{Ortiz1985}.
 
 % ~~~~~~~~~~~~~~~~~~~~~~ BOX 1  ~~~~~~~~~~~~~~~~~~~~~``
 {
@@ -693,7 +672,7 @@ the consistenttangent will not be symmetric. For more details on this refer to
 			\hspace{-0.15cm}\begin{minipage}[t]{0.3\linewidth}
 				\begin{alignat*}{2}
 					\blacksquare\hspace{0.3cm}	&\bvec{\zeta}_{n+1} &&=
-					[\bm{\Omega}(\lambda)]\bvec{\zeta}_{n+1}^{TR}\\
+					\bm{\Omega}(\lambda)\bvec{\zeta}_{n+1}^{TR}\\
 					\blacksquare\hspace{0.3cm}	&\bvec{\epsilon}^{pl}_{n+1} &&= 
 					\bvec{\epsilon}^{pl}_n + \lambda\bvec{n}_{n+1}\\
 					\blacksquare\hspace{0.3cm}	&\bvec{\alpha}_{n+1} &&= 
@@ -719,9 +698,773 @@ the consistenttangent will not be symmetric. For more details on this refer to
 			$$\bmat{C}=\bmat{C}_c^{pl} = 
 			\bmat{\Xi}_{11}-\frac{\bvec{N}_{n+1}\bvec{N}_{n+1}^T}{1+\delta_{n+1}}$$
 		\end{enumerate}
-		See Appendix \ref{appendix:APPENDIX_C} for $[\bm{\Omega}(\lambda)]$.
+		See Appendix \ref{appendix:APPENDIX_C} for $\bm{\Omega}(\lambda)$.
 		\step\label{Box:BOX1}
 	\end{tcolorbox}
 }
+\clearpage
+
+Notice that while in the present formulation $C_{21}=C_{12}$, this will not be
+the case if a generalized integration rule is used for the rate equations. In
+such a scenario, if enforcement of the plastic consistency does not correspond
+to the interior time $t_a\in[t_n, t_{n+1}]$ chosen, that is $\Phi_a=0$, then 
+the consistenttangent will not be symmetric. For more details on this refer to
+\cite{Ortiz1985}.
+
+%%%%%%%%%%%%%%%%%%%%  SECTION 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Numerical Examples}\label{section:CH3-S5}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%  EXAMPLE 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Accuracy of the proposed algorithm}    % EXAMPLE 1
+
+Iso-error maps are commonly used to test the accuracy of return-mapping 
+algorithms in elastoplasticity\cite{DeSouza2011}. The contours are generated by 
+imposing a family of stress or strain prescribed loadings from a selected point 
+on the yield surface which cause further plastification (no unloading). For 
+each load incrementation, the error is computed as the relative difference 
+between the stress predicted by the proposed algorithm and ``exact"" stress. 
+The exact stress is typically found by imposing the same increment in a number 
+of sequencial subincrements, $n_s$. A convergence analysis is required to 
+ensure that subincrementation indeed converges to a stress point. In the 
+present study it was found that for $n_s\geq 500$ the stress components had 
+achieved convergence with respect to the first 7 decimal points. Therefore, we 
+use $n_s = 500$. The error plotted is given by:
+\begin{equation}
+	err = \frac{\Vert 
+		\bvec{\sigma}^*-\bvec{\sigma}\Vert}{\Vert\bvec{\sigma}^*\Vert}\cdot 100
+	\label{eq:ERROR}
+\end{equation}
+\noindent where $\bvec{\sigma}^*$ is the exact stress vector and 
+$\bvec{\sigma}$ the one predicted by the proposed scheme by solving in one 
+step. The three points on the yield surface that are selected and shown
+in Fig. \ref{fig:FIG17_ISO_MAP_SCENARIOS} correspond to an initial state of 
+pure shear (A), mixed 
+state where $\sigma_{11,0}=\sigma_{12,0}$ (B) and a pure uniaxial stress state 
+(C). 
+For each of these initial states the family of strain increments are imposed 
+along the directions shown, with range up to 
+$\Delta\Vert\bvec{\epsilon}\Vert=5\epsilon_y$, where $\epsilon_y$ is the yield 
+strain in tension/compression. The material data used are: $E=2.1\times 10^5,\ 
+\sigma_y = 2.4\times 10^2$ and Poisson's ratio $\nu=0.3$. For the hardening 
+cases, linear isotropic and 
+kinematic moduli were prescribed as follows: $H_{iso}=H_{kin} = 10^4$.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.8]{FIG17_SCENARIOS}
+	\caption{Points of interest on yield surface and direction of load 
+		increments.}
+	\label{fig:FIG17_ISO_MAP_SCENARIOS}
+\end{figure}
+
+The parameters associated with the horizontal and vertical axes, $a_1,\ a_2$, 
+are defined in the following way: $a_1=\Delta\bvec{\epsilon}_1^{}/\epsilon_y$, 
+$a_2=\Delta\bvec{\epsilon}_2^{}/\epsilon_y$. As  can be seen from figures 
+\ref{fig:FIG18_ISO_MAPS_PERF_PLAST}, \ref{fig:FIG19_ISO_MAPS_HARD}, the 
+relative error 
+remains small even for quite large increments in the strain vector. Note also 
+that for along the semi-major and semi-minor axes in the cases of pure uniaxial 
+state and pure shear respectively, the return mapping gives the exact stress 
+even without subincrementation. The same is true for point B when the strain 
+increments are along a direction around $68^{\circ}$ with respect to $a_1$ axis.
+
+\begin{figure}[b]
+	
+	\subfloat[Point A]{%
+		\hspace{-0.2cm}\includegraphics[width=0.33\textwidth]{FIG18_A_ISOMAP_PERF_PLAST}%
+		\label{fig:FIG18_A_ISOMAP_PERF_PLAST}%
+	}
+	\subfloat[Point B]{%
+		\includegraphics[width=0.33\textwidth]{FIG18_B_ISOMAP_PERF_PLAST}%
+		\label{fig:FIG18_B_ISOMAP_PERF_PLAST}%
+	}
+	\subfloat[Point C]{%
+		\includegraphics[width=0.33\textwidth]{FIG18_C_ISOMAP_PERF_PLAST}%
+		\label{fig:FIG18_C_ISOMAP_PERF_PLAST}%
+	}
+	\caption{Iso-error maps for a perfectly plastic material.}
+	\label{fig:FIG18_ISO_MAPS_PERF_PLAST}
+\end{figure} 
+
+\begin{figure}[t]
+	
+	\subfloat[Point A]{%
+		\hspace{-0.2cm}\includegraphics[width=0.33\textwidth]{FIG19_A_ISOMAP_HARD}%
+		\label{fig:FIG19_A_ISOMAP_HARD}%
+	}
+	\subfloat[Point B]{%
+		\includegraphics[width=0.33\textwidth]{FIG19_B_ISOMAP_HARD}%
+		\label{fig:FIG19_B_ISOMAP_HARDT}%
+	}
+	\subfloat[Point C]{%
+		\includegraphics[width=0.33\textwidth]{FIG19_C_ISOMAP_HARD}%
+		\label{fig:FIG19_C_ISOMAP_HARD}%
+	}
+	\caption{Iso-error maps for combined linear isotropic and kinematic 
+		hardening.}
+	\label{fig:FIG19_ISO_MAPS_HARD}
+\end{figure} 
+
+%%%%%%%%%%%%%%%%%%%%  EXAMPLE 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Performance against non-monotonic strain histories}
+
+In this benchmark we investigate the performance of the proposed algorithm 
+against the three dimensional/axisymmetric procedure typically implemented in 
+beam elements when shear-flexure interaction is taken into account using a 
+multiaxial law at the fiber level. We also compare it with the plane stress 
+projection 
+algorithm by Simo\cite{Simo1985}, which we followed in our derivations. In the 
+former approach, the return mapping using an implicit integration results in 
+the so-called radial return, which doesn't require iterations in the case of 
+$J_2$ with perfect plasticity or linear hardening\cite{Wilkins1963}. In 
+constrast, the latter requires iterations since the topology of the stress 
+space is not as simple as the von Mises cylinder anymore. We show below the 
+drastic performance boost when 
+using the present algorithm. As already state earlier, this is mainly due to 
+the fact that we avoid an additional Newton procedure to enforce the zero 
+transverse stress condition. The results for each scenario are shown in the 
+tables below. A perfectly plastic material was assumed and both the average 
+execution time $t$(sec) and the total number of iterations, $N_i$ are 
+considered as performance metrics. The \textit{additional} iterations during 
+purely elastic steps are also included in parentheses for the 3D and Simo's 
+plane stress algorithm.  Moreover, for each scenario, four 
+different incrementations of the strain history are employed, shown in Fig. 
+\ref{fig:FIG20_STRAIN_HISTORIES}, and the effect of 
+this scaling on the performance is highlighted. Parameter $a$ determines the 
+increment ``length'': $\alpha = 
+\Vert\Delta\bvec{\epsilon}\Vert^{}/\epsilon_y$. Material data are the same as 
+in the previous example. 
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.7]{FIG20_STRAIN_HISTORIES}
+	\caption{The four different strain histories imposed, with the unstresses 
+		configuration as initial point.}
+	\label{fig:FIG20_STRAIN_HISTORIES}
+\end{figure}
+
+As can be seen from the Tables \ref{table:TABLE_1}-\ref{table:TABLE_4}, the 
+proposed scheme offers significant speed-up compared to the other two methods. 
+It should be highlighted that the 3D algorithm outperforms the one proposed by 
+Simo because a perfectly plastic $J_2$ was used. In 
+general, it too would require internal iterations to determine $\lambda$, in 
+addition to the outer level Newton procedure to enforce the stress constraints. 
+For Scenario 4, shown in Table \ref{table:TABLE_4}, both the 3D and plane 
+stress algorithms did $[440,\ 188,\ 84,\ 62]$ elastic iterations corresponding 
+to values of parameter $\alpha$: $[0.10,\ 0.25,\ 0.40,\ 0.50]$.
+
+
+
+
+\begin{table*}   % TABLE 1 - EXAMPLE 2
+	\setlength{\tabcolsep}{9pt}
+	\caption{Results for Scenario 1, perfect plasticity.}
+	%	\noindent\makebox[\textwidth]{
+		\begin{tabular}{@ {}lccccccccc@ {}}\toprule\toprule[0.4pt]
+			Algorithm & Exact & \multicolumn{2}{c}{$\alpha=0.10$} & 
+			\multicolumn{2}{c}{$\alpha=0.25$} &
+			\multicolumn{2}{c}{$\alpha=0.40$}  &
+			\multicolumn{2}{c}{$\alpha=0.50$}\\
+			\cmidrule(r{0.60cm}l{0.40cm}){3-4} 
+			\cmidrule(r{0.43cm}l{0.42cm}){5-6}
+			\cmidrule(r{0.43cm}l{0.42cm}){7-8} 
+			\cmidrule(r{0.10cm}l{0.45cm}){9-10}
+			& $(\sigma_{11},\sigma_{12})$ & $t$\textsuperscript{a} & $N_i$ & 
+			$t$ & $N_i$ & 
+			$t$ & $N_i$ & $t$ & $N_i$\\
+			\midrule[0.5pt]
+			Proposed & {\small (1.617,1.023)} & 0.57 & 29 & 0.44 & 13 & 0.40 & 
+			8 & 0.38 &  5 \\
+			3D & & 1.40 & 46(20) & 0.83 & 20(8) & 0.65 & 11(4) & 0.56 
+			& 6(2) \\
+			Simo     &  & 1.64 & 165(19) & 1.13 & 88(7) & 0.96 & 64(3) & 0.83 & 
+			55(1) \\
+			\cmidrule{3-10}
+			Error(\%)\textsuperscript{b}     &  & \multicolumn{2}{c}{$1.32$} & 
+			\multicolumn{2}{c}{$3.00$} & \multicolumn{2}{c}{$5.16$} & 
+			\multicolumn{2}{c}{$8.05$}\\
+			\bottomrule\bottomrule[0.5pt]\addlinespace[3pt]
+			\multicolumn{8}{l}{\textsuperscript{a} Measured in $\times 10^{-3}$ 
+				sec.}\\
+			\multicolumn{8}{l}{\textsuperscript{b} Relative error in converged 
+				stress per increment scenario.}
+		\end{tabular}
+		\label{table:TABLE_1}
+		%	}
+\end{table*}
+
+\begin{table*}   % TABLE 2 - EXAMPLE 2
+	\setlength{\tabcolsep}{6.5pt}
+	\caption{Results for Scenario 2, perfect plasticity.}
+	%	\noindent\makebox[\textwidth]{
+		\begin{tabular}{@ {}lccccccccc@ {}}\toprule[0.5pt]\toprule
+			Algorithm & Exact & \multicolumn{2}{c}{$\alpha=0.10$} & 
+			\multicolumn{2}{c}{$\alpha=0.25$} &
+			\multicolumn{2}{c}{$\alpha=0.40$}  &
+			\multicolumn{2}{c}{$\alpha=0.50$}\\
+			\cmidrule(r{0.63cm}l{0.35cm}){3-4} 
+			\cmidrule(r{0.63cm}l{0.40cm}){5-6}
+			\cmidrule(r{0.52cm}l{0.40cm}){7-8} 
+			\cmidrule(r{0.30cm}l{0.33cm}){9-10}
+			& $(\sigma_{11},\sigma_{12})$ & $t$\textsuperscript{a} & $N_i$ & 
+			$t$ & $N_i$ & 
+			$t$ & $N_i$ & $t$ & $N_i$\\
+			\midrule[0.5pt]
+			Proposed & {\small (1.173,1.208)} & 0.33 & 524 & 0.16 & 234 & 0.10 
+			& 144 & 0.08 & 108 \\
+			3D    &                 & 1.24 & 849(97) & 0.61 & 394(40) & 0.31 
+			& 196(17) & 0.23 & 143(11) \\
+			Simo     &  & 2.09 & 2791(96) & 1.17 & 1363(39) & 0.57 
+			& 790(15) & 0.42& 596(10) \\
+			\cmidrule{3-10}
+			Error(\%)     &  & \multicolumn{2}{c}{$2.32$} & 
+			\multicolumn{2}{c}{$5.00$} & \multicolumn{2}{c}{$10.10$} & 
+			\multicolumn{2}{c}{$13.35$}\\
+			\bottomrule[0.5pt]\bottomrule[0.5pt]\addlinespace[3pt]
+			\multicolumn{8}{l}{\textsuperscript{a} Numbers in executiont time 
+				columns are measured in $\times 10^{-2}$ s.}\\
+		\end{tabular}
+		\label{table:TABLE_2}
+		%	}
+\end{table*}
+
+\begin{table*}    % TABLE 3 - EXAMPLE 2
+	\caption{Results for Scenario 3, perfect plasticity.}
+	%\noindent\makebox[\textwidth]{
+		\begin{tabular}{@ {}lccccccccc@ {}}\toprule\toprule
+			Algorithm & Exact & \multicolumn{2}{c}{$\alpha=0.10$} & 
+			\multicolumn{2}{c}{$\alpha=0.25$} &
+			\multicolumn{2}{c}{$\alpha=0.40$}  &
+			\multicolumn{2}{c}{$\alpha=0.50$}\\
+			\cmidrule(r{0.65cm}l{0.30cm}){3-4} 
+			\cmidrule(r{0.60cm}l{0.30cm}){5-6}
+			\cmidrule(r{0.52cm}l{0.37cm}){7-8} 
+			\cmidrule(r{0.33cm}l{0.30cm}){9-10}
+			& $(\sigma_{11},\sigma_{12})$ & $t$\textsuperscript{a} & $N_i$ & 
+			$t$ & $N_i$ & $t$ & $N_i$ & $t$ & $N_i$\\
+			\midrule[0.8pt]
+			Proposed & {\small (1.628,1.018)} & 0.35 & 546 & 0.16 & 237 & 0.11 
+			& 147 & 0.09 &  126 \\
+			3D &  & 1.15 & 920(115) & 0.61 & 405(50) & 0.31 & 194(22) & 0.29 & 
+			167(16) \\
+			Simo     &  & 2.20 & 2711(114) & 1.42 & 1307(50) & 0.55 & 789(20) & 
+			0.48 & 685(14) \\
+			\cmidrule{3-10}
+			Error(\%)     &  & \multicolumn{2}{c}{$1.15$} & 
+			\multicolumn{2}{c}{$2.51$} & \multicolumn{2}{c}{$5.40$} & 
+			\multicolumn{2}{c}{$5.80$}\\
+			\bottomrule\bottomrule[0.5pt]\addlinespace[3pt]
+			\multicolumn{8}{l}{\textsuperscript{a} Numbers in execution time 
+				columns are measured in $\times 10^{-2}$ s.}
+		\end{tabular}
+		\label{table:TABLE_3}
+		%	}
+\end{table*}
+
+\begin{table*}
+	\setlength{\tabcolsep}{9.7pt}
+	\caption{Results for Scenario 4, five cycles, perfect plasticity. One 
+		cycle: A-B-C-A.}
+	%\noindent\makebox[\textwidth]{
+		\begin{tabular}{@ {}lccccccccc@ {}}\toprule\toprule[0.5pt]
+			Algorithm & Exact &
+			\multicolumn{2}{c}{$\alpha=0.10$} &
+			\multicolumn{2}{c}{$\alpha=0.25$} &
+			\multicolumn{2}{c}{$\alpha=0.40$} &
+			\multicolumn{2}{c}{$\alpha=0.50$}\\
+			\cmidrule(r{0.38cm}l{0.40cm}){3-4} 
+			\cmidrule(r{0.43cm}l{0.45cm}){5-6}
+			\cmidrule(r{0.43cm}l{0.45cm}){7-8} 
+			\cmidrule(r{0.09cm}l{0.43cm}){9-10}
+			& $(\sigma_{11},\sigma_{12})$ & $t$\textsuperscript{a} & $N_i$ & 
+			$t$ & $N_i$ & $t$ & $N_i$ & $t$ & $N_i$\\
+			\midrule[0.5pt]
+			Proposed & {\small (2.196,0.559)} & 0.92 & 1500 & 0.44 & 678 & 0.22 
+			& 392 & 0.19  & 345 \\
+			3D &                    & 3.50 & 2500 & 1.61 & 1130 & 0.77 & 490 & 
+			0.69 & 445 \\
+			Simo     &                        & 5.20 & 7497 & 2.93 & 4519 & 
+			1.60 & 2352 & 1.38& 2122 \\
+			\cmidrule{3-10}
+			Error(\%)     &  & \multicolumn{2}{c}{$0.19$} & 
+			\multicolumn{2}{c}{$0.40$} & \multicolumn{2}{c}{$0.84$} & 
+			\multicolumn{2}{c}{$0.91$}\\
+			\bottomrule\bottomrule[0.5pt]\addlinespace[3pt]
+			\multicolumn{8}{l}{\textsuperscript{a} Numbers in execution time 
+				columns are measured in $\times 10^{-2}$ s.}
+		\end{tabular}
+		\label{table:TABLE_4}
+		
+		%	}
+\end{table*}
+
+
+%%%%%%%%%%%%%%%%%%%%  EXAMPLE 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Plastic collapse of a doubly clamped beam}
+
+In this example we investigate the collapse load of a doubly clamped beam, 
+shown in fig. \ref{fig:FIG21_CLAMPED_BEAM}, for two slenderness rations, 
+$L^{}/h$: $20$ and $4$, where $h$ is 
+the cross-section height. We conduct 
+analysis using both uncoupled and coupled, multiaxial, constitutive models at 
+the fiber level and compare result, for each case, with the lower bound 
+collapse load as predicted by limit analysis.
+
+ In addition, we showcase the 
+influence of numerical quadrature in predicting the analytical solution in the 
+slender case. More specifically, we compare Gauss-Legendre and Gauss-Lobatto 
+quadratures. The quadrature rule used is crucial for both flexibility-based 
+beam elements and the hybrid one presented and used herein, since, in both 
+formulations, accuracy relies more on the precision of integration rather than 
+mesh density. Lastly, each cross-section is discretized into 15 layers.
+
+The shear strain distribution function, $k_q\varphi(X_2)$, is assumed to be 
+parabolic and defined as follows:
+\begin{equation}
+	\varphi(X_2) = (1-4\frac{X_2^2}{h^2})
+	\label{eq:SHEAR_DISTR_FUN}
+\end{equation}
+\noindent where $k_q$ is a parameter introduced in order to establish shear 
+strain energy equivalnce between assumed and exact distributions. For that 
+matter, it is convenient to consider the uniform shear strain-average force 
+hypothesis coupled with the corresponding shear coefficient as a representation 
+of the exact one, assuming elastic behavior:
+\begin{equation}
+	\mathcal{U}_{shear}^{exact}=k_s\mathcal{U}_{shear}^{unif} = 
+	\mathcal{U}_{shear}^{quad}\Longleftrightarrow 
+	\frac{1}{2}k_sGA\gamma ^2=\frac{1}{2}G k_q^2\bigg(\int_A \varphi(X_2)^2 dA 
+	\bigg) \gamma ^2
+	\label{eq:SHEAR_COEFF}
+\end{equation}
+\noindent where $k_s$ is the shear coefficient for uniform shear strain 
+assumption. For rectangular sections with $\nu=0.3$, 
+$k_s=0.886$ and solving eq. \ref{eq:SHEAR_COEFF} for $k_q$ we 
+get:
+\begin{equation}
+	k_q = \sqrt{\frac{k_s A}{\int_A \varphi(X_2)^2 dA}}
+	\label{eq:QUAD_COEFF}
+\end{equation}
+
+A first observation from fig \ref{fig:FIG22_EQUILIBRIUM_PATHS} is that 
+Gauss-Legendre quadrature tends to overestimate the capacity load in both edges 
+of the slenderness spectrum and . Gauss-Lobatto quadrature, in contrast, is 
+more accurate and converges to the ``exact'' capacity from ``below''. In 
+addition, it provides accuracy with juts 5 quadrature points whereas even with 
+9 points, Gauss-Legendre still is not as accurate and converges from ``above''. 
+The results are in agreement with the ones reported by Papachristidis et 
+al.\cite{Papachristidis2010} in a similar investigation but using a flexibility 
+element.
+
+When it comes to the influence of slenderness in the plastic capacity, the 
+collapse 
+load for the $L^{}/h$ case predicted by the multiaxial constitutive law is 
+lower than the one based on limit analysis. Interestingly, the uncoupled 
+constitutive law results in a purely flexural collapse mode, thus yielding a 
+ultimate load coinciding with the theoretical from limit analysis. When the 
+beam is slender, both coupled and uncoupled constitutive laws result, 
+expectably, in a flexure-dominant mode. The results are summarized in Table 
+\ref{table:TABLE_5} and Fig. \ref{fig:FIG22_EQUILIBRIUM_PATHS}. In Fig. 
+\ref{fig:FIG23} the stress distributions for $\sigma_{11}$, $\sigma_{12}$ and 
+the von Mises stress, $\sigma_{VM}=\sqrt{3J_2}$ are presented at three 
+different load levels indicate dy point A, B and C (see Fig. 
+\ref{fig:FIG22_B}). 
+The plastic zone propagation is also shown. We observe that the lower 
+capacity as captured by the multiaxial model in the $L^{}/h=4$ case, which Fig. 
+\ref{fig:FIG23} pertains to, is due to shear plastification of the -shrinking- 
+elastic core.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.9]{FIG21_CLAMPED_BEAM}
+	\caption{Geometry, initial and final configuration of clamped beam, along 
+		with cross-section dimensions.}
+	\label{fig:FIG21_CLAMPED_BEAM}
+\end{figure}
+
+\noindent\makebox[\textwidth][c]{
+	\begin{minipage}{0.7\textwidth}
+		\vskip15pt
+		\captionof{table}{Collapse moments and loads for clamped beam.}
+		\begin{tabular}{@ {}ccccc@ 
+				{}}\toprule[0.4pt]\toprule[0.4pt]\addlinespace[-2pt]
+			&  & \multicolumn{3}{c}{Collapse load, 
+				$P_u(kN)$\textsuperscript{a}}\\ 
+			\cmidrule{3-5}
+			$L^{}/h$ & $M_p(kN\cdot m)$ & Limit Analysis & Uncoupled & Coupled\\
+			\midrule[0.5pt]\addlinespace[-2pt]
+			$20$ & $3.75\cdot 10^2$ & $6.00\cdot 10^2$ & $\approx 6.00\cdot 
+			10^2$ & $\approx 6.00\cdot 10^2$\\ \addlinespace[-2pt]
+			$4$  & $9.37\cdot 10^3$ & $1.50\cdot 10^4$ & $\approx 1.50\cdot 
+			10^4$ & $\approx 1.43\cdot 10^4$\\ \addlinespace[-2pt]
+			\bottomrule[0.4pt]\bottomrule[0.4pt]\addlinespace[-3pt]
+			\multicolumn{5}{l}{\small Material data: $E=200\ GPa$, 
+				$\sigma_y=200\ 
+				MPa$.}\\ \addlinespace[-9pt]
+			\multicolumn{5}{l}{\textsuperscript{a} \small For coupled and 
+				uncoupled loads, 5 Gauss-Lobatto points are assumed.}
+		\end{tabular}
+		
+		\label{table:TABLE_5}
+	\end{minipage}
+}
+
+\begin{figure}[t]
+	\centering
+	\subfloat[$L^{}/h=20$]{%
+		\hspace{-0.2cm}\includegraphics[width=0.45\textwidth]{FIG22_A_CLAMPED_LH20}%
+		\label{fig:FIG22_A}%
+	}
+	\subfloat[$L^{}/h=4$]{%
+		\includegraphics[width=0.45\textwidth]{FIG22_B_CLAMPED_LH4}%
+		\label{fig:FIG22_B}%
+	}
+	\caption{Load-deflection plots for different slenderness ratios. Influence 
+		of quadrature type and number of points.}
+	\label{fig:FIG22_EQUILIBRIUM_PATHS}
+\end{figure} 
+
+\begin{figure}
+	\centering
+	\setlength\tabcolsep{1pt}
+	%\settowidth\rotheadsize{Plastification}
+	\begin{tabular}{c|ccc}
+		& \textbf{A} : $P=10000\ kN$  & \textbf{B} : $P=13900\ 
+		kN$              
+		& \textbf{C} : $P = 14340\ kN$\\
+		\midrule
+		P.Z.         & \sprofs{FIG23_PlastP10000.pdf}     & 
+		\sprofs{FIG23_PlastP13900.pdf}     & \sprofs{FIG23_PlastP14340.pdf}\\
+		$\sigma_{VM}$& \sprofs{FIG23_PlastP10000_VM.pdf}  & 
+		\sprofs{FIG23_PlastP13900_VM.pdf}  & \sprofs{FIG23_PlastP14340_VM.pdf}\\
+		$\sigma_{11}$     & \sprofs{FIG23_PlastP10000_SXX.pdf} & 
+		\sprofs{FIG23_PlastP13900_SXX.pdf} & 
+		\sprofs{FIG23_PlastP14340_SXX.pdf}\\
+		$\sigma_{12}$       & \sprofs{FIG23_PlastP10000_SXY.pdf} & 
+		\sprofs{FIG23_PlastP13900_SXY.pdf} & \sprofs{FIG23_PlastP14340_SXY.pdf}
+	\end{tabular}
+	\caption{Case $L^{}/h=4$. Spread of Plastic Zone (P.Z.) and stress 
+		distribution for von 
+		Mises, axial and shear stress at three different load levels.}
+	\label{fig:FIG23}
+\end{figure}
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%  EXAMPLE 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Cyclic loading of shear link}\label{CH3EX4}
+
+In this example we are examining the response of a metallic shear link 
+(Fig.\ref{fig:FIG24A}) 
+with a symmetric wide flange cross-section under displacement-controlled cyclic 
+loading. The specimen we are concerned with was part of an experimental 
+investigation by Hjelmstad \& Popov\cite{Hjelmstad1983} and later was 
+numerically analyzed by Saritas \& Filippou\cite{Saritas2009} using a mixed 
+beam element formulation with shear-flexure interaction at the fiber level. In 
+our analsys the specimen was modelled using one hybrid element with 5 
+Gauss-Lobatto points and 31 layers at each section with five layers on each 
+flange. 
+
+The specimen length is $L=28$ in. and the cross-section type is W $18\ \times\ 
+40$ with basic dimensions 
+specified as follows: total height $h=17.88$ in., flange width $b=5.985$ in., 
+web and flange thickness, $t_w=0.314$ in. and $t_F=0.521$ in. respectively. The 
+material properties are summarized in Table \ref{table:TABLE6}, while the 
+displacement history, in 
+accordance with Hjelmstad \& Popov's experiment, is shown in 
+Fig.\ref{fig:FIG24B} The plastic 
+modulus corresponding to linear kinematic hardening was determined from  
+uniaxial data to be $H_{kin}=102$ kips/in${}^2$. A nonlinear hardening law was 
+specified for the isotropic part, which is given as follows:
+\begin{equation}
+	q(e^{pl}) = \sigma_y + C(1-\text{exp}(-\rho e^{pl}))
+	\label{eq:NONLIN_ISOTROPIC_HARD}
+\end{equation}
+\noindent where $C=\sigma_u-\sigma_y$, $\sigma_u$, $\sigma_y$ the ultimate and 
+yield stresses respectively and $\epsilon_u$, $\epsilon_y$ the corresponding 
+strains. Parameter $\rho$ is specified as 
+$\rho=20$ in this analysis. The shear strain distribution is again assumed to 
+be quadratic, where $k_s=0.466$ and, using eq. (\ref{eq:QUAD_COEFF}),  
+$k_q=1.33$.
+
+\begin{figure}[t]
+	\centering
+	\subfloat[Structure.]{
+		\begin{minipage}[c]{0.4\linewidth}
+			%\captionsetup{type=figure}
+			\includegraphics[scale=0.8]{FIG24_Structure}%
+			%\caption{Structure.}
+			\label{fig:FIG24A}%
+		\end{minipage}
+	}
+	%\subfloat[Structure.]{%
+		%	
+		%\hspace{-0.2cm}\includegraphics[width=0.45\textwidth]{FIG11_Structure}%
+		%	\label{fig:FIG11A}%
+		%	}
+	\subfloat[Displacement-controlled loading history.]{%
+		\hspace{0.3cm}\begin{minipage}{0.55\linewidth}
+			\includegraphics[scale=0.6]{FIG24_DISPHIST}%
+			\label{fig:FIG24B}%
+		\end{minipage}
+		%\includegraphics[width=0.45\textwidth]{FIG11_DISPHIST}%
+		%\label{fig:FIG11B}%
+	}
+	\caption{Geometry of the specimen and displacement-controlled loading 
+		history.}
+	\label{fig:FIG24}
+\end{figure} 
+
+\begin{table}[b]
+	\centering
+	\begin{minipage}{0.8\linewidth}
+		\caption{Material properties for Example \ref{CH3EX4}.}
+		\begin{tabular}{ccccccc}
+			\toprule\toprule
+			\vtop{\hbox{\strut \hspace{.25cm}Section}\hbox{\strut W 
+			$18\times40$}} 
+			& \vtop{\hbox{\strut \hspace{0.5cm}$\sigma_y$}\hbox{\strut 
+					($\text{kips}^{}/\text{in}^2$)}}  &         
+					\vtop{\hbox{\strut 
+					\hspace{0.5cm}$\sigma_u$}\hbox{\strut 
+					($\text{kips}^{}/\text{in}^2$)}} &
+			\vtop{\hbox{\strut \hspace{2.5pt}$\epsilon_y$}\hbox{\strut (\%)}} & 
+			\vtop{\hbox{\strut \hspace{2.5pt}$\epsilon_u$}\hbox{\strut (\%)}} 
+			&\vtop{\hbox{\strut \hspace{0.5cm}$E$}\hbox{\strut 
+					($\text{kips}^{}/\text{in}^2$)}} & \vtop{\hbox{\strut 
+					\hspace{0.4cm}$H_{kin}$}\hbox{\strut 
+					($\text{kips}^{}/\text{in}^2$)}} \\
+			\midrule
+			Web & 39.5 & 60.1 & 1.8 & 22 & 28,300 & 102 \\
+			Flange & 35.0 & 58.5 & 1.4 & 24 & 28,000 & 102\\
+			\bottomrule\bottomrule
+		\end{tabular}
+		\label{table:TABLE6}
+	\end{minipage}
+\end{table}
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.9]{FIG25_HISTORIES}
+	\caption{Experimental and numerical results for the specimen.}
+	\label{fig:FIG25}
+\end{figure}
+
+As can be seen from Fig.\ref{fig:FIG25}, during the first cycle we have 
+satisfactory agreement between the present analysis and the experimental 
+result, while for all cycles after the third, we have almost excellent match 
+between all cyclic histories shown. For the second and third cycles, with peak 
+displacement at $1$ inch, the present analysis exhibits a more abrupt yielding. 
+This happens because most of the core becomes plastified within a smaller range 
+of increments. While the hardening rules adopted might affect this behavior, it 
+is the assumed shear strain distribution that playes a central role in 
+transitioning from the elastic to plastic regime. Formulations that also 
+consider shear stress distribution functions along the cross-section, section 
+warping or even more accurate shear strain distribution models can definitely 
+improve the approximation. We can also observe that both numerical models show 
+identical accuracy during the unloading steps and a noticable discrepancy with 
+the experimental analysis. As explained in \cite{Saritas2009}, this is due to 
+improper restraint of the specimen during the experiment.
+
+%%%%%%%%%%%%%%%%%%%%  EXAMPLE 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Elastoplastic post-buckling behavior of two-beam structure}
+
+This problem has been previously analyzed in \cite{Argyris1982,Ridha1971}. The 
+structure, shown in Fig.\ref{fig:FIG26_STRUCTURE}, enters its inelastic regime 
+imediatelly after the buckling 
+load is reached, whereby point B starts moving inwards. In 
+Fig.\ref{fig:FIG26_COMPARISON} we compare the 
+results we get using just 3 hybrid elements and 5 Gauss-Lobatto points in each 
+element with Argyris et al.\cite{Argyris1982}. In addition, we include the 
+inelastic analysis, which demonstrates that plastification starts immediately 
+after then instability. The material and geometric data are shown in 
+Table \ref{table:TABLE7}. Again, we highlight the impact of a coupled 
+multiaxial law by 
+investigating a variation of this problem. For all cases, inelastic response 
+with kinematic hardening is assumed. The convergence rates in residual norm and 
+energy norms for the case of thick members is also shown in Tables 
+\ref{table:TABLE8}, \ref{table:TABLE9}. As can be seen from 
+Fig.\ref{fig:FIG27_PLASTIC} for the inelastc analysis of 
+the thick member variation, the equilibrium paths corresponding to a coupled 
+and uncoupled constitutive law tend to diverge shortly after the start of 
+plastic deformation.
+
+\begin{table}
+	\centering
+ 	\begin{minipage}{0.7\textwidth}
+ 		%\vskip-10pt
+ 		\caption{Member geometric and material data.}
+ 		\label{table:TABLE7}
+ 		\begin{tabular}{@ {}ccccccc@ {}}\toprule\toprule
+ 			Member & $E (\frac{\text{kN}}{\text{cm}^2})$ & 
+ 			$H_{kin}(\frac{\text{kN}}{\text{cm}^2})$ & 
+ 			$\sigma_y(\frac{\text{kN}}{\text{cm}^2})$ & $h_s(\text{cm})$ & 
+ 			$h_t(\text{cm})$ & $b(\text{cm})$\\
+ 			\midrule[0.5pt]
+ 			\circled{1} & $6.86\times 10^3$ & $2.84\times 10^2$ & $26.20$ & 
+ 			$1.91$ & $8.00$ & $2.54$ \\ \addlinespace[3pt]
+ 			\circled{2} & $6.86\times 10^3$ & $2.84\times 10^2$ & $33.10$ & 
+ 			$1.91$ & $8.00$ & $2.54$ \\
+ 			\bottomrule\bottomrule[0.5pt]\addlinespace[3pt]
+ 		\end{tabular}
+ 	\end{minipage}
+\end{table}
+
+\clearpage
+\begin{figure}[t]
+	\centering
+	\subfloat[Structure.]{%
+		\hspace{-0.2cm}\includegraphics[width=0.45\textwidth]{FIG26_A_STRUCTURE}%
+		\label{fig:FIG26_STRUCTURE}%
+	}
+	\subfloat[Load vs deflection at point B.]{%
+		\includegraphics[width=0.45\textwidth]{FIG26_B_COMPARISON}%
+		\label{fig:FIG26_COMPARISON}%
+	}
+	\caption{Geometry and loading of two-beam structure. Comparison of load vs 
+		deflection curves for different cases.}
+	\label{fig:FIG26}
+\end{figure} 
+
+\begin{figure}[b]
+	\centering
+	\subfloat[Elastic.]{%
+		\hspace{-0.2cm}\includegraphics[width=0.45\textwidth]{FIG27_A_ELASTIC_COMPARISON}%
+		\label{fig:FIG27_ELASTIC}%
+	}
+	\subfloat[Plastic.]{%
+		\includegraphics[width=0.45\textwidth]{FIG27_B_PLASTIC_COMPARISON}%
+		\label{fig:FIG27_PLASTIC}%
+	}
+	\caption{Influence of slenderness and constitutive model on the response 
+		for elastic and elastoplastic behavior.}
+	\label{fig:FIG27}
+\end{figure} 
+
+\clearpage
+ The full post-buckling elastoplastic equilibrium curve for 
+the slender model is also provided for comparison. In 
+Fig.\ref{fig:FIG27_ELASTIC} the post-buckling response of both slender and 
+thick 
+models are illustrated. In the former, both uniaxial and multiaxial 
+constitutive models yield identical results, assuming an infinite yield stress.
+
+As we reduce the slenderness, slight differences arise compared to a purely 
+uniaxial behavior at the fiber. This is mainly due to the assumed strain 
+distribution, which is user defined and not accounted in the purely flexural 
+model.
+
+
+%% RESIDUAL NORM
+\begin{table}
+	\centering
+	\begin{minipage}{0.8\linewidth}
+		\caption{Convergence in residual norm during steps 5, 15, 25 35. 
+			$\mathcal{\epsilon}_{tol}=10^{-10}$.}
+		\label{table:TABLE8}
+		\begin{tabular}{@ {}cllll@ {}}\toprule\toprule
+			iters. & \hspace{0.8cm} 
+			5 & \hspace{0.7cm} 15 & \hspace{0.7cm} 25 & \hspace{0.8cm} 35 \\
+			\midrule
+			1 & $1.000000\cdot 10^0$     & $1.000000\cdot 10^0$     & 
+			$1.000000\cdot 10^0$     & $1.000000\cdot 10^0$ \\
+			2 & $1.251499\cdot 10^{-2}$  & $1.988783\cdot 10^{-2}$ & 
+			$1.737845\cdot 10^{-3}$  & $6.187773\cdot 10^{-2}$ \\
+			3 & $2.132711\cdot 10^{-5}$  & $1.066255\cdot 10^{-5}$ & 
+			$1.824164\cdot 10^{-6}$  & $4.214041\cdot 10^{-3}$ \\
+			4 & $9.483080\cdot 10^{-10}$ & $4.882520\cdot 10^{-10}$ & 
+			$2.229120\cdot 10^{-11}$ & $6.111545\cdot 10^{-5}$ \\
+			5 & $5.150000\cdot 10^{-14}$ & $7.790000\cdot 10^{-13}$ & 
+			$4.800000\cdot 10^{-14}$ & $1.218231\cdot 10^{-8}$  \\
+			6 &  & &  & $7.110000\cdot 10^{-14}$\\
+			\bottomrule\bottomrule[0.5pt] %\addlinespace[3pt]
+		\end{tabular}
+	\end{minipage}
+\end{table}
+\begin{table}%% ENERGY NORM 
+	\centering
+	\begin{minipage}{0.8\linewidth}
+		\caption{Convergence in energy norm during steps 5, 15, 25, 35.%
+			$\ \mathcal{\epsilon}_{tol}=10^{-10}$.}
+		\label{table:TABLE9}
+		\begin{tabular}{@ {}cllll@ {}}\toprule\toprule
+			iters.  & 
+			\hspace{0.8cm} 5 & \hspace{0.7cm} 15 & \hspace{0.7cm} 25 & 
+			\hspace{0.8cm} 35 \\
+			\midrule
+			1 & $1.000000\cdot 10^0$    &  $1.000000\cdot 10^0$  & 
+			$1.000000\cdot 10^0$ & $1.000000\cdot 10^0$ \\
+			2 & $3.050574\cdot 10^{-4}$  &  $1.065944\cdot 10^{-4}$ & 
+			$2.618542\cdot 10^{-2}$ & $1.188951\cdot 10^{-2}$ \\
+			3 & $2.235712\cdot 10^{-5}$  &  $5.373434\cdot 10^{-5}$ & 
+			$4.974768\cdot 10^{-5}$ & $1.495507\cdot 10^{-4}$ \\
+			4 & $1.532842\cdot 10^{-8}$  &  $2.585263\cdot 10^{-9}$ & 
+			$1.551550\cdot 10^{-7}$ & $1.706384\cdot 10^{-5}$ \\
+			5 & $6.283000\cdot 10^{-12}$ &  $1.962000\cdot 10^{-12}$ & 
+			$1.687900\cdot 10^{-11}$ & $3.948037\cdot 10^{-7}$  \\
+			7 &  & &  & $5.157400\cdot 10^{-11}$ \\
+			\bottomrule\bottomrule[0.5pt] %\addlinespace[3pt]
+		\end{tabular}
+	\end{minipage}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%  EXAMPLE 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Three story frame with shear links}
+
+The three-story four-bay steel frame, first analyzed in \cite{Amir2022}, is 
+shown in Fig. \ref{fig:FIG28_STRUCTURE}, where the diagonal braces are ignored. 
+Gravity loads are 
+derived from the material and geometric properties of the elements and, for 
+simplicity, are assumed to be acting on frame joints only. The values for each 
+joint gravity load are shown in Table \ref{table:TABLE10}. 
+
+\begin{figure}[t]
+	\centering
+	\subfloat[Frame structure.]{%
+		\hspace{-0.2cm}\includegraphics[width=0.45\textwidth]{FIG28_STRUCTURE}%
+		\label{fig:FIG28_STRUCTURE}%
+	}
+	\subfloat[Equilibrium paths.]{%
+		\includegraphics[width=0.45\textwidth]{FIG28_EQPATHS}%
+		\label{fig:FIG28_EQPATHS}%
+	}
+	\caption{Geometry of the steel frame and \ref{fig:FIG28_EQPATHS} response 
+		curves for three different models.}
+	\label{fig:FIG28}
+\end{figure}
+
+\begin{table*}[h]
+	\centering
+	\begin{minipage}{0.7\linewidth}
+		\caption{Vertical gravity loads at nodes.}
+		\begin{tabular}{cccccccccc}
+			\toprule\toprule
+			Nodes                         & 2,18 & 3,19 & 4,20& 6,14 & 7,15 & 
+			8,16 & 10 & 11 & 12 \\
+			\midrule
+			$\downarrow P_i \text{(kN)}$  & 240  & 220  & 145 & 340 & 300 & 190 
+			& 255 & 215 & 120 \\
+			\bottomrule\bottomrule
+			\label{table:TABLE10}
+		\end{tabular}
+	\end{minipage}
+\end{table*}
+
+A static pushover analysis is then conducted by with respect to the 
+superimposed horizontal loads on nodes 2,3, 
+and 4. For the discretization we used one hybrid element per member, 27 
+elements in 
+total, and five Gauss-Lobatto quadrature points per element. All members have 
+the same yield stress and Young's modulus: $\sigma_y = 290$ MPa, $E = 210$ GPa, 
+and the Poisson's ratio is set to $\nu= 0.3$. Perfect plasticity is assumed and 
+both material and geometric nonlinearity options are activated for the 
+analysis. In Fig. \ref{fig:FIG28_EQPATHS} we show the results we get for 3 
+different modelling 
+options regarding the constitutive law at the fiber level. Both the purely 
+flexural model and the uncoupled elastoplastic model, whereby shear and axial 
+states on fibers are uniaxial and do not interract, yield the same response 
+curve and collapse load. In contrast, the coupled multiaxial model predicts, 
+again, a lower plastic capacity load. 
+
 
 

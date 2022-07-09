@@ -1,2 +1,26 @@
 \chapter{Introduction and Background}
 
+
+\subsection{Notation}
+Unless state otherwise, boldface lowercase letters indicate second order 
+tensor. Wherever 
+the same letters appear with an overhead arrow, this indicates the vector 
+notation for the tensor represented with that letter. The convention adopted 
+herein for storing second order tensors in a vector object is the following:
+\begin{equation*}
+	\boldsymbol{\sigma} = \begin{bmatrix}
+		\sigma_{11} & \sigma_{12} & \sigma_{13} \\
+		\sigma_{12} & \sigma_{22} & \sigma_{23} \\
+		\sigma_{13} & \sigma_{23} & \sigma_{33} \\
+	\end{bmatrix}\rightarrow \bvec{\sigma} = \begin{bmatrix}
+		\sigma_{11} & \sigma_{22} & \sigma_{33} & \sigma_{12} & \sigma_{23} & 
+		\sigma_{13}
+	\end{bmatrix}^T
+\end{equation*}
+
+For strain tensors, components for which $i\neq j$ are multiplied by 2.
+
+In addition, any boldface letter, lowercase or uppercase, with an overhead 
+arrow indicates a vector object. In constrast, matrices are represented 
+exclusively by uppercase, non-italic, boldface letters. Finally, normal font 
+letters indicate scalar quantities.

@@ -451,12 +451,12 @@ to $q_{n+1}$. It can be found that the derivative is:
 
 For the inversion of the block matrix (\ref{eq:DIFF_SYSTEM}) we perform block
 elimination considering $\bmat{A} =
-\bmat{C}^{el}+\lambda\bmat{B}-
+\bmat{C}^{el}+\lambda\bmat{\Psi}-
 \lambda 
-^2\bmat{B}_{n+1}\bigg[H_{kin}\bmat{V}+\lambda\bmat{B}_{n+1}\bigg]^{-1}\bmat{B}_{n1+}$
+^2\bmat{\Psi}_{n+1}\bigg[H_{kin}\bmat{V}+\lambda\bmat{\Psi}_{n+1}\bigg]^{-1}\bmat{\Psi}_{n1+}$
 as
 the Schur complement. Notice that while the matrix
-$\lambda\bmat{B}_{n+1}$ is not invertible, the diagonal ones are.
+$\lambda\bmat{\Psi}_{n+1}$ is not invertible, the diagonal ones are.
 Omitting the subscript refering to the step, inversion of 
 system (\ref{eq:DIFF_SYSTEM}) yields:
 \begin{equation}
@@ -464,8 +464,8 @@ system (\ref{eq:DIFF_SYSTEM}) yields:
 		\text{d}\bvec{\sigma}\\
 		\text{d}\bvec{\alpha}
 	\end{bmatrix} = \begin{bmatrix}
-		[\bm{\Xi}]_{11} &  [\bm{\Xi}]_{12}\\
-		[\bm{\Xi}]_{21} &  [\bm{\Xi}]_{22}\\
+		\bm{\Xi}_{11} &  \bm{\Xi}_{12}\\
+		\bm{\Xi}_{21} &  \bm{\Xi}_{22}\\
 	\end{bmatrix}\begin{bmatrix}
 		\text{d}\bvec{\epsilon}-\text{d}\lambda\bvec{n}\\
 		\text{d}\lambda\bvec{n}\\
@@ -473,31 +473,31 @@ system (\ref{eq:DIFF_SYSTEM}) yields:
 	\label{eq:INVERSE_SYS}
 \end{equation}
 and define $\bmat{\Gamma} = 
-\lambda\bmat{B}\bigg(H_{kin}^{-1}\bmat{V}+\lambda\bmat{B}\bigg)^{-1}$.
+\lambda\bmat{\Psi}\bigg(H_{kin}^{-1}\bmat{V}+\lambda\bmat{\Psi}\bigg)^{-1}$.
 Then, 
 for the block matrices $[\bm{\Xi}_{ij}]$ we have:
 \begin{itemize}
-	\item $[\bm{\Xi}_{11}] = \bmat{A}^{-1}$, the inverse of the Schur 
+	\item $\bm{\Xi}_{11} = \bmat{A}^{-1}$, the inverse of the Schur 
 	complement.
-	\item $[\bm{\Xi}_{12}] = [\bm{\Xi}_{11}]\bmat{\Gamma}$
-	\item $[\bm{\Xi}_{21}] = [\bm{\Xi}_{12}]^T$
-	\item $[\bm{\Xi}_{22}] = 
-	\bigg(H_{kin}^{-1}\bmat{V}+\lambda\bmat{B}\bigg)^{-1} + 
-	\bmat{\Gamma}[\bm{\Xi}_{11}]\bmat{\Gamma}$
+	\item $\bm{\Xi}_{12} = \bm{\Xi}_{11}\bmat{\Gamma}$
+	\item $\bm{\Xi}_{21} = \bm{\Xi}_{12}^T$
+	\item $\bm{\Xi}_{22} = 
+	\bigg(H_{kin}^{-1}\bmat{V}+\lambda\bmat{\Psi}\bigg)^{-1} + 
+	\bmat{\Gamma}\bm{\Xi}_{11}\bmat{\Gamma}$
 \end{itemize}
-\noindent where the fact that matrices $\bmat{B}$ and $\bmat{\Gamma}$ are 
+\noindent where the fact that matrices $\bmat{\Psi}$ and $\bmat{\Gamma}$ are 
 symmetric was used.
 The vector $\bvec{N}$ in (\ref{eq:CONSISTENT TANGENT MOD}) is given by:
 \begin{equation}
-	\bvec{N} = \frac{\bigg[[\bm{\Xi}_{11}] + 
-		[\bm{\Xi}_{12}]\bigg]\bvec{n}}{\Vert\bvec{n} \Vert_{\bm{T}}}
+	\bvec{N} = \frac{\bigg[\bm{\Xi}_{11} + 
+		\bm{\Xi}_{12}\bigg]\bvec{n}}{\Vert\bvec{n} \Vert_{\bm{M}}}
 	\label{eq:NORMAL_N}
 \end{equation}
-\noindent with $\bmat{T} = [\bm{\Xi}_{11}] + [\bm{\Xi}_{22}] + [\bm{\Xi}_{12}]
-+ [\bm{\Xi}_{21}]$. Finally, parameter $\delta$ is defined as:
+\noindent with $\bmat{M} = \bm{\Xi}_{11} + \bm{\Xi}_{22} + \bm{\Xi}_{12}
++ \bm{\Xi}_{21}$. Finally, parameter $\delta$ is defined as:
 \begin{equation}
 	\delta = \frac{\frac{\partial q}{\partial 
-			e^{pl}}}{\Vert\bvec{n} \Vert^2_{\bm{T}}}
+			e^{pl}}}{\Vert\bvec{n} \Vert^2_{\bm{M}}}
 \end{equation}
 
 The calculation can be simplified significantly if second and higher order 

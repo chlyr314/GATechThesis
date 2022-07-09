@@ -4,7 +4,7 @@
 
 \documentclass[12pt]{report}   %12 point font for Times New Roman
 \usepackage{graphicx}  %for images and plots
-\usepackage[letterpaper, left=1.5in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage[letterpaper, left=1.2in, right=1in, top=1in, bottom=1in]{geometry}
 \usepackage{setspace}  %use this package to set linespacing as desired
 \usepackage{times}  %set Times New Roman as the font
 \usepackage[explicit]{titlesec}  %title control and formatting
@@ -29,6 +29,7 @@
 \usepackage[export]{adjustbox}
 \usepackage{booktabs}
 \usepackage{tikz}
+\usepackage{multirow}
 \usepackage[acronym,nomain,toc,nonumberlist]{glossaries}
 \usepackage[backend=bibtex, sorting=none, 
 bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
@@ -58,6 +59,8 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
 		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
 
+\captionsetup[table]{labelsep=space, skip=0pt, 
+	singlelinecheck=off,justification=justified,labelfont=bf}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % RUN THE COMMAND BELOW WHENEVER NOMENCLATURE CHANGES
 % makeindex thesis.nlo -s nomencl.ist -o thesis.nls
@@ -253,6 +256,11 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 %%%%%%%%%%%%%%%%
 
 \input{chapter2.tex}
+\newpage
+\mbox{}
+\newpage
+\mbox{}
+\newpage
 
 %%%%%%%%%%%%%%%%
 % Chapter 3

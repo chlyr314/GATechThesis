@@ -462,6 +462,360 @@
     \field{year}{1966}
   \endentry
 
+  \entry{OpenSees}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MS}{%
+         family={Mazzoni},
+         familyi={M\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={McKenna},
+         familyi={M\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Scott},
+         familyi={S\bibinitperiod},
+         given={M.H.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FG}{%
+         family={Fenves},
+         familyi={F\bibinitperiod},
+         given={G.L.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MS+1}
+    \strng{fullhash}{MSMFSMFG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{OpenSees command language manual}
+    \field{volume}{264}
+    \field{journaltitle}{Pacific Earthquake Engineering Research (PEER) Center}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Neuenhofer2}{article}{}
+    \name{author}{2}{}{%
+      {{hash=NA}{%
+         family={Neuenhofer},
+         familyi={N\bibinitperiod},
+         given={Ansgar},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FFC}{%
+         family={Filippou},
+         familyi={F\bibinitperiod},
+         given={Filip\bibnamedelima C},
+         giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{NAFFC1}
+    \strng{fullhash}{NAFFC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1061/(ASCE)0733-9445(1997)123:7(958)
+    \endverb
+    \field{number}{7}
+    \field{pages}{958\bibrangedash 966}
+    \field{title}{Evaluation of nonlinear frame finite-element models}
+    \field{volume}{123}
+    \field{journaltitle}{Journal of Structural Engineering}
+    \field{year}{1997}
+  \endentry
+
+  \entry{Abaqus}{book}{}
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Dassault Syst{\`e}mes Simulia Corp}%
+    }
+    \field{labeltitlesource}{title}
+    \field{title}{ABAQUS/Standard User's Manual}
+    \list{location}{1}{%
+      {United States}%
+    }
+    \field{year}{2019}
+  \endentry
+
+  \entry{bisshopp}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BK}{%
+         family={Bisshopp},
+         familyi={B\bibinitperiod},
+         given={KE},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=DD}{%
+         family={Drucker},
+         familyi={D\bibinitperiod},
+         given={DC},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BKDD1}
+    \strng{fullhash}{BKDD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{272\bibrangedash 275}
+    \field{title}{Large deflection of cantilever beams}
+    \field{volume}{3}
+    \field{journaltitle}{Quarterly of Applied Mathematics}
+    \field{year}{1945}
+  \endentry
+
+  \entry{Mattiasson}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MK}{%
+         family={Mattiasson},
+         familyi={M\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{MK1}
+    \strng{fullhash}{MK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{145\bibrangedash 153}
+    \field{title}{Numerical results from large deflection beam and frame
+  problems analysed by means of elliptic integrals}
+    \field{volume}{17}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
+    \field{year}{1981}
+  \endentry
+
+  \entry{Batista2}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BM}{%
+         family={Batista},
+         familyi={B\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BM1}
+    \strng{fullhash}{BM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{153\bibrangedash 166}
+    \field{title}{A closed-form solution for {Reissner} planar finite-strain
+  beam using {Jacobi} elliptic functions}
+    \field{volume}{87}
+    \field{journaltitle}{International Journal of Solids and Structures}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Reddy}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RJ}{%
+         family={Reddy},
+         familyi={R\bibinitperiod},
+         given={JN},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{RJ1}
+    \strng{fullhash}{RJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/S0045-7825(97)00075-3
+    \endverb
+    \field{number}{1-4}
+    \field{pages}{113\bibrangedash 132}
+    \field{title}{On locking-free shear deformable beam finite elements}
+    \field{volume}{149}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+    \field{year}{1997}
+  \endentry
+
+  \entry{Prathap}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PG}{%
+         family={Prathap},
+         familyi={P\bibinitperiod},
+         given={Gangan},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BG}{%
+         family={Bhashyam},
+         familyi={B\bibinitperiod},
+         given={GR},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{PGBG1}
+    \strng{fullhash}{PGBG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1002/nme.1620180205
+    \endverb
+    \field{number}{2}
+    \field{pages}{195\bibrangedash 210}
+    \field{title}{Reduced integration and the shear-flexible beam element}
+    \field{volume}{18}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
+    \field{year}{1982}
+  \endentry
+
+  \entry{ZienShear}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZO}{%
+         family={Zienkiewicz},
+         familyi={Z\bibinitperiod},
+         given={OC},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Taylor},
+         familyi={T\bibinitperiod},
+         given={RL},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Too},
+         familyi={T\bibinitperiod},
+         given={JM},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{ZO+1}
+    \strng{fullhash}{ZOTRTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1002/nme.1620030211
+    \endverb
+    \field{number}{2}
+    \field{pages}{275\bibrangedash 290}
+    \field{title}{Reduced integration technique in general analysis of plates
+  and shells}
+    \field{volume}{3}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
+    \field{year}{1971}
+  \endentry
+
+  \entry{Lee}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LSL}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Seng-Lip},
+         giveni={S\bibinithyphendelim L\bibinitperiod},
+      }}%
+      {{hash=MFS}{%
+         family={Manuel},
+         familyi={M\bibinitperiod},
+         given={Francisco\bibnamedelima S},
+         giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=REC}{%
+         family={Rossow},
+         familyi={R\bibinitperiod},
+         given={Edwin\bibnamedelima C},
+         giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ASCE}%
+    }
+    \strng{namehash}{LSL+1}
+    \strng{fullhash}{LSLMFSREC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{521\bibrangedash 548}
+    \field{title}{Large deflections and stability of elastic frames}
+    \field{volume}{94}
+    \field{journaltitle}{Journal of Engineering Mechanics Division}
+    \field{year}{1968}
+  \endentry
+
+  \entry{horne}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HMR}{%
+         family={Horne},
+         familyi={H\bibinitperiod},
+         given={Michael\bibnamedelima Rex},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The Royal Society London}%
+    }
+    \strng{namehash}{HMR1}
+    \strng{fullhash}{HMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1358}
+    \field{pages}{343\bibrangedash 364}
+    \field{title}{Elastic-plastic failure loads of plane frames}
+    \field{volume}{274}
+    \field{journaltitle}{Proceedings of the Royal Society of London. Series A.
+  Mathematical and Physical Sciences}
+    \field{year}{1963}
+  \endentry
+
+  \entry{Santos1}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SH}{%
+         family={Santos},
+         familyi={S\bibinitperiod},
+         given={H.A.F.A},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{SH1}
+    \strng{fullhash}{SH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1007/s11831-011-9065-6
+    \endverb
+    \field{number}{4}
+    \field{pages}{405}
+    \field{title}{Complementary-energy methods for geometrically non-linear
+  structural models: An overview and recent developments in the analysis of
+  frames}
+    \field{volume}{18}
+    \field{journaltitle}{Archives of Computational Methods in Engineering}
+    \field{year}{2011}
+  \endentry
+
   \entry{Simo1986}{article}{}
     \name{author}{2}{}{%
       {{hash=SJ}{%
@@ -1000,6 +1354,191 @@
     \field{journaltitle}{International journal for numerical methods in
   engineering}
     \field{year}{1985}
+  \endentry
+
+  \entry{DeSouza2011}{book}{}
+    \name{author}{3}{}{%
+      {{hash=dSNEA}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Souza\bibnamedelima Neto},
+         familyi={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+         given={Eduardo\bibnamedelima A},
+         giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Peric},
+         familyi={P\bibinitperiod},
+         given={Djordje},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ODR}{%
+         family={Owen},
+         familyi={O\bibinitperiod},
+         given={David\bibnamedelima RJ},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons}%
+    }
+    \strng{namehash}{SNEAd+1}
+    \strng{fullhash}{SNEAdPDODR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Computational methods for plasticity: theory and
+  applications}
+    \field{year}{2011}
+  \endentry
+
+  \entry{Hjelmstad1983}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HKD}{%
+         family={Hjelmstad},
+         familyi={H\bibinitperiod},
+         given={Keith\bibnamedelima D},
+         giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PEP}{%
+         family={Popov},
+         familyi={P\bibinitperiod},
+         given={Egor\bibnamedelima P},
+         giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{HKDPEP1}
+    \strng{fullhash}{HKDPEP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1061/(ASCE)0733-9445(1983)109:10(2387)
+    \endverb
+    \field{number}{10}
+    \field{pages}{2387\bibrangedash 2403}
+    \field{title}{Cyclic behavior and design of link beams}
+    \field{volume}{109}
+    \field{journaltitle}{Journal of Structural Engineering}
+    \field{year}{1983}
+  \endentry
+
+  \entry{Argyris1982}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AJ}{%
+         family={Argyris},
+         familyi={A\bibinitperiod},
+         given={JH},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BB}{%
+         family={Boni},
+         familyi={B\bibinitperiod},
+         given={B},
+         giveni={B},
+      }}%
+      {{hash=HU}{%
+         family={Hindenlang},
+         familyi={H\bibinitperiod},
+         given={U},
+         giveni={U},
+      }}%
+      {{hash=KM}{%
+         family={Kleiber},
+         familyi={K\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{AJ+1}
+    \strng{fullhash}{AJBBHUKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/0045-7825(82)90135-9
+    \endverb
+    \field{number}{2}
+    \field{pages}{221\bibrangedash 248}
+    \field{title}{Finite element analysis of two-and three-dimensional
+  elasto-plastic frames—the natural approach}
+    \field{volume}{35}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+    \field{year}{1982}
+  \endentry
+
+  \entry{Ridha1971}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RRA}{%
+         family={Ridha},
+         familyi={R\bibinitperiod},
+         given={Raouf\bibnamedelima A},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=LLH}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Lawrence\bibnamedelima HN},
+         giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{RRALLH1}
+    \strng{fullhash}{RRALLH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1061/JMCEA3.0001418
+    \endverb
+    \field{number}{3}
+    \field{pages}{773\bibrangedash 789}
+    \field{title}{Inelastic finite deformation of planar frames}
+    \field{volume}{97}
+    \field{journaltitle}{Journal of the Engineering Mechanics Division}
+    \field{year}{1971}
+  \endentry
+
+  \entry{Amir2022}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AM}{%
+         family={Amir},
+         familyi={A\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+      {{hash=PK}{%
+         family={Papakonstantinou},
+         familyi={P\bibinitperiod},
+         given={KG},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WG}{%
+         family={Warn},
+         familyi={W\bibinitperiod},
+         given={GP},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{AM+1}
+    \strng{fullhash}{AMPKWG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{04021138}
+    \field{title}{Scaled Spherical Simplex Filter and state-space
+  damage-plasticity finite-element model for computationally efficient system
+  identification}
+    \field{volume}{148}
+    \field{journaltitle}{Journal of Engineering Mechanics}
+    \field{year}{2022}
   \endentry
 \enddatalist
 \endinput
