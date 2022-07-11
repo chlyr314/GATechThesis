@@ -44,11 +44,21 @@ underlie the proposed algorithm. This chapter is subdivided in three main
 sections: first, we briefly outline the general (rate) form of the 
 three-dimensional elastoplastic equations. In the second section we present the 
 rate constitutive model as it pertains to the fiber stress state and derive 
-expressions for the continuous elastoplastic moduli. Finally, in the third 
+expressions for the continuous elastoplastic moduli. In the third 
 section we outline the implementation details, which are based on application 
 of the fully implicit Euler scheme. In addition we derive the expression for 
 the consistent tangent modulus at a fiber, which is required to ensure 
-quadratic rates of convergence for the global Newton method.
+quadratic rates of convergence for the global Newton method. Finally, we 
+conclude this chapter with a section dedicated to the assessment of the 
+proposed algorithm. Accuracy is demonstrated through iso-error maps for both 
+perfect and hardening plasticity. Furthermore, we compare the performance in 
+terms of total plastic step iterations required for i) the present formulation, 
+ii) the general, three-dimensional and iii) the plane stress return mapping 
+algorithm developed in \cite{Simo1986}. Numerical examples pertaining to 
+ultimate collapse load, cyclic loading, elastoplastic buckling and a pushover 
+analysis of a steel frame are also included to highlight the capabilities of 
+the Hybrid \acrshort{nlp} element equipped with the multiaxial stress-update 
+algorithm proposed herein.
 
 
 %%%%%%%%%%%%%%%%%%%%  SECTION 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

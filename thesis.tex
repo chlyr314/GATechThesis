@@ -30,6 +30,9 @@
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{multirow}
+\usepackage{float}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{amsthm}
 \usepackage[acronym,nomain,toc,nonumberlist]{glossaries}
 \usepackage[backend=bibtex, sorting=none, 
 bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
@@ -61,6 +64,14 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 
 \captionsetup[table]{labelsep=space, skip=0pt, 
 	singlelinecheck=off,justification=justified,labelfont=bf}
+
+% For amsthm definition environments
+\theoremstyle{plain}
+\newtheorem{definition}{Definition}[section]
+\newtheorem*{remark}{Remark}
+\newtheorem{theorem}{Theorem}[section]
+
+\newtheorem{lemma}[theorem]{\textbf{Lemma}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % RUN THE COMMAND BELOW WHENEVER NOMENCLATURE CHANGES
 % makeindex thesis.nlo -s nomencl.ist -o thesis.nls
@@ -267,6 +278,11 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 %%%%%%%%%%%%%%%%
 
 \input{chapter3.tex}
+\newpage
+\mbox{}
+\newpage
+\mbox{}
+\newpage
 
 %%%%%%%%%%%%%%%%
 % Chapter 4
