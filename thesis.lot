@@ -13,6 +13,10 @@
 \contentsline {table}{\numberline {3.9}{\ignorespaces Convergence in energy norm during steps 5, 15, 25, 35.$\ \mathcal {\epsilon }_{tol}=10^{-10}$.\relax }}{61}{table.caption.47}%
 \contentsline {table}{\numberline {3.10}{\ignorespaces Vertical gravity loads at nodes.\relax }}{62}{table.caption.49}%
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Stationary solutions of Eq. (\ref {eq:HIMMELBLAU}).\relax }}{87}{table.caption.55}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Initial States for paths $\mathit {\Gamma }_1$, $\mathit {\Gamma }_2$ and Target States reached.\relax }}{90}{table.caption.58}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Elastic analysis.\relax }}{95}{table.caption.64}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Elastoplastic analysis.\relax }}{96}{table.caption.65}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,8 +1,8 @@
 \contentsline {chapter}{List of Figures}{ix}{chapter*.1}%
-\contentsline {chapter}{List of Tables}{xi}{chapter*.2}%
-\contentsline {chapter}{Nomenclature}{xii}{chapter*.3}%
-\contentsline {chapter}{Acronyms}{xvi}{section*.5}%
-\contentsline {chapter}{Acknowledgements}{xvii}{chapter*.6}%
+\contentsline {chapter}{List of Tables}{xii}{chapter*.2}%
+\contentsline {chapter}{Nomenclature}{xiii}{chapter*.3}%
+\contentsline {chapter}{Acronyms}{xvii}{section*.5}%
+\contentsline {chapter}{Acknowledgements}{xviii}{chapter*.6}%
 \contentsline {chapter}{\numberline {1}Introduction and Background}{1}{chapter.1}%
 \contentsline {subsection}{\numberline {1.0.1}Notation}{1}{subsection.1.0.1}%
 \contentsline {chapter}{\numberline {2}Hybrid Beam Element Formulation}{2}{chapter.2}%
@@ -46,22 +46,30 @@
 \contentsline {subsection}{\numberline {3.5.4}Cyclic loading of shear link}{57}{subsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.5.5}Elastoplastic post-buckling behavior of two-beam structure}{58}{subsection.3.5.5}%
 \contentsline {subsection}{\numberline {3.5.6}Three story frame with shear links}{61}{subsection.3.5.6}%
-\contentsline {chapter}{\numberline {4}Naturally Parameterized NLP framework}{65}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{65}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Homotopy Continuation}{67}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Main idea}{67}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Regularity and existence of homotopy paths}{70}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Parametric nonlinear programming}{72}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Global optimization}{76}{subsection.4.2.4}%
-\contentsline {chapter}{\numberline {5}Conclusion}{79}{chapter.5}%
+\contentsline {chapter}{\numberline {4}Naturally Parameterized NLP framework}{64}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{64}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Homotopy Continuation}{66}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Main idea}{66}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Regularity and existence of homotopy paths}{69}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Parametric nonlinear programming}{71}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Global optimization}{75}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Naturally parameterized NLP framework for mechanics}{77}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Existence and uniqueness of NPNLP path}{79}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Implementation}{82}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Numerical Examples}{85}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Example 1 - Global Optimization}{85}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Example 2 - Global Sensitivity}{88}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Example 3 - Frictionless contact}{91}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Example 4 - Nonlinear analysis of shallow arch}{94}{subsection.4.5.4}%
+\contentsline {chapter}{\numberline {5}Conclusion}{98}{chapter.5}%
 \renewcommand {\cftchappresnum }{Appendix }
 \renewcommand {\cftchapnumwidth }{6em}
-\contentsline {chapter}{\numberline {A}}{81}{appendix.1.A}%
-\contentsline {subsection}{\numberline {A.0.1}Gradient of strain energy}{81}{subsection.1.A.0.1}%
-\contentsline {subsection}{\numberline {A.0.2}Gradient of constraints}{82}{subsection.1.A.0.2}%
-\contentsline {subsection}{\numberline {A.0.3}Gradient of the potential energy}{85}{subsection.1.A.0.3}%
-\contentsline {subsection}{\numberline {A.0.4}Gradient of the Lagrangian}{85}{subsection.1.A.0.4}%
-\contentsline {chapter}{\numberline {B}}{87}{appendix.1.B}%
-\contentsline {chapter}{\numberline {C}}{90}{appendix.1.C}%
-\contentsline {chapter}{\numberline {D}}{92}{appendix.1.D}%
-\contentsline {chapter}{References}{93}{equation.1.D.0.3}%
+\contentsline {chapter}{\numberline {A}}{100}{appendix.1.A}%
+\contentsline {subsection}{\numberline {A.0.1}Gradient of strain energy}{100}{subsection.1.A.0.1}%
+\contentsline {subsection}{\numberline {A.0.2}Gradient of constraints}{101}{subsection.1.A.0.2}%
+\contentsline {subsection}{\numberline {A.0.3}Gradient of the potential energy}{104}{subsection.1.A.0.3}%
+\contentsline {subsection}{\numberline {A.0.4}Gradient of the Lagrangian}{104}{subsection.1.A.0.4}%
+\contentsline {chapter}{\numberline {B}}{106}{appendix.1.B}%
+\contentsline {chapter}{\numberline {C}}{109}{appendix.1.C}%
+\contentsline {chapter}{\numberline {D}}{111}{appendix.1.D}%
+\contentsline {chapter}{References}{112}{appendix.1.D}%

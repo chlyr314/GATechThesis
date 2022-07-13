@@ -2776,5 +2776,247 @@
     \field{journaltitle}{Fluid Phase Equilibria}
     \field{year}{1995}
   \endentry
+
+  \entry{Menzel:1985}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MR}{%
+         family={Menzel},
+         familyi={M\bibinitperiod},
+         given={Reinhard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schwetlick},
+         familyi={S\bibinitperiod},
+         given={Hubert},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{MRSH1}
+    \strng{fullhash}{MRSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{401\bibrangedash 412}
+    \field{title}{Parametrization via secant length and application to path
+  following}
+    \field{volume}{47}
+    \field{journaltitle}{Numerische Mathematik}
+    \field{year}{1985}
+  \endentry
+
+  \entry{Kuno:1988}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KM}{%
+         family={Kuno},
+         familyi={K\bibinitperiod},
+         given={Minoru},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Seader},
+         familyi={S\bibinitperiod},
+         given={JD},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACS Publications}%
+    }
+    \strng{namehash}{KMSJ1}
+    \strng{fullhash}{KMSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{7}
+    \field{pages}{1320\bibrangedash 1329}
+    \field{title}{Computing all real solutions to systems of nonlinear
+  equations with a global fixed-point homotopy}
+    \field{volume}{27}
+    \field{journaltitle}{Industrial \& engineering chemistry research}
+    \field{year}{1988}
+  \endentry
+
+  \entry{Powell:1981}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PG}{%
+         family={Powell},
+         familyi={P\bibinitperiod},
+         given={Graham},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Simons},
+         familyi={S\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{PGSJ1}
+    \strng{fullhash}{PGSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{10}
+    \field{pages}{1455\bibrangedash 1467}
+    \field{title}{Improved iteration strategy for nonlinear structures}
+    \field{volume}{17}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
+    \field{year}{1981}
+  \endentry
+
+  \entry{Bathe:1983}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BKJ}{%
+         family={Bathe},
+         familyi={B\bibinitperiod},
+         given={Klaus-J{\"u}rgen},
+         giveni={K\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=DEN}{%
+         family={Dvorkin},
+         familyi={D\bibinitperiod},
+         given={Eduardo\bibnamedelima N},
+         giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BKJDEN1}
+    \strng{fullhash}{BKJDEN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5-6}
+    \field{pages}{871\bibrangedash 879}
+    \field{title}{On the automatic solution of nonlinear finite element
+  equations}
+    \field{volume}{17}
+    \field{journaltitle}{Computers \& Structures}
+    \field{year}{1983}
+  \endentry
+
+  \entry{Klarbring:1988}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KA}{%
+         family={Klarbring},
+         familyi={K\bibinitperiod},
+         given={Anders},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KA1}
+    \strng{fullhash}{KA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{459\bibrangedash 479}
+    \field{title}{On discrete and discretized non-linear elastic structures in
+  unilateral contact (stability, uniqueness and variational principles)}
+    \field{volume}{24}
+    \field{journaltitle}{International journal of solids and structures}
+    \field{year}{1988}
+  \endentry
+
+  \entry{Bjorkman:1992}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BG}{%
+         family={Bj{\"o}rkman},
+         familyi={B\bibinitperiod},
+         given={Gunnar},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{BG1}
+    \strng{fullhash}{BG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{231\bibrangedash 246}
+    \field{title}{Path following and critical points for contact problems}
+    \field{volume}{10}
+    \field{journaltitle}{Computational Mechanics}
+    \field{year}{1992}
+  \endentry
+
+  \entry{Ragon:2002}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RS}{%
+         family={Ragon},
+         familyi={R\bibinitperiod},
+         given={SA},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GZ}{%
+         family={G{\"u}rdal},
+         familyi={G\bibinitperiod},
+         given={Zafer},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=WLT}{%
+         family={Watson},
+         familyi={W\bibinitperiod},
+         given={Layne\bibnamedelima T},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{RS+1}
+    \strng{fullhash}{RSGZWLT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{689\bibrangedash 698}
+    \field{title}{A comparison of three algorithms for tracing nonlinear
+  equilibrium paths of structural systems}
+    \field{volume}{39}
+    \field{journaltitle}{International journal of solids and structures}
+    \field{year}{2002}
+  \endentry
+
+  \entry{Clarke:1990}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CMJ}{%
+         family={Clarke},
+         familyi={C\bibinitperiod},
+         given={Murray\bibnamedelima J},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=HGJ}{%
+         family={Hancock},
+         familyi={H\bibinitperiod},
+         given={Gregory\bibnamedelima J},
+         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{CMJHGJ1}
+    \strng{fullhash}{CMJHGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{7}
+    \field{pages}{1365\bibrangedash 1391}
+    \field{title}{A study of incremental-iterative strategies for non-linear
+  analyses}
+    \field{volume}{29}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
+    \field{year}{1990}
+  \endentry
 \enddatalist
 \endinput

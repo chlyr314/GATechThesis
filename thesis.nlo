@@ -1,92 +1,92 @@
-\nomenclatureentry{01\(\bvec{E}_i\)@[{\(\bvec{E}_i\)}]\begingroup Spatial basis unit vectors, $i=1,2,3$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{02$\bvec{e}_i$@[{$\bvec{e}_i$}]\begingroup Material basis unit vectors, $i=1,2,3$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{03$X_i$@[{$X_i$}]\begingroup Initial configuration coordinates, $i=1,2,3$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{04$\bvec{X}$@[{$\bvec{X}$}]\begingroup Position vector of a material point in the initial configuration\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{05$x_i$@[{$x_i$}]\begingroup Current configuration coordinates, $i=1,2,3$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{06$\bvec{x}$@[{$\bvec{x}$}]\begingroup Position vector of a material point in the current configuration\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{07$\bvec{r}_o$@[{$\bvec{r}_o$}]\begingroup Position vector of a material point on the centerline in the initial configuration\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{08$\bvec{r}$@[{$\bvec{r}$}]\begingroup Position vector of a material point on the centerline in the current configuration\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{09$\bvec{u}$@[{$\bvec{u}$}]\begingroup Displacement vector of points on the centerline with respect to the initial configuration.\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{10$\bvec{t}$@[{$\bvec{t}$}]\begingroup Position vector of a material point on the local system of a cross-section.\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{11$\phi$@[{$\phi$}]\begingroup Angle between $\bvec{E}_i$ and $\bvec{e}_i$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{12$\bmat{R(\phi)}$@[{$\bmat{R(\phi)}$}]\begingroup Rotation matrix\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{13$\kappa$@[{$\kappa$}]\begingroup Curvature of the beam centerline.\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{14$\epsilon$@[{$\epsilon$}]\begingroup Axial strain of the beam centerline\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{15$\gamma$@[{$\gamma$}]\begingroup Shear strain of the beam centerline\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{16$\bvec{s}$@[{$\bvec{s}$}]\begingroup Vector containing $\epsilon$ and $\gamma$ but not $\kappa$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{17$u$@[{$u$}]\begingroup Displacement component along $X_1$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{18$v$@[{$v$}]\begingroup Displacement component along $X_2$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{19$\bvec{d}$@[{$\bvec{d}$}]\begingroup Displacement vector containing $u$, $v$ and $\phi$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{20$\bvec{q}$@[{$\bvec{q}$}]\begingroup Strain vector containing $\epsilon$, $\gamma$ and $\kappa$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{21f@[{f}]\begingroup Generic objective function\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{22$\bvec{h}$@[{$\bvec{h}$}]\begingroup Vector of discretized constraints\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{23$\mathcal{S}$@[{$\mathcal{S}$}]\begingroup Constrained space for $\bvec{x}$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{24$\mathcal{L}$@[{$\mathcal{L}$}]\begingroup Lagrangian function associated with the \acrshort{nlp}\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{25$\bvec{\lambda}$@[{$\bvec{\lambda}$}]\begingroup Vector of Lagrange multipliers associated with equality constraints\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{26$\Pi$@[{$\Pi$}]\begingroup Total potential energy function\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{27$U$@[{$U$}]\begingroup Strain energy function\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{28$W$@[{$W$}]\begingroup Potential energy of external loads\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{29$\mathcal{W}_s$@[{$\mathcal{W}_s$}]\begingroup Cross-section strain energy density\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{30$\bvec{P}$@[{$\bvec{P}$}]\begingroup Vector of external loads\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{31$\bvec{F}_{sec}$@[{$\bvec{F}_{sec}$}]\begingroup Cross-section stress resultants\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{32$N$@[{$N$}]\begingroup Section axial force\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{33$V$@[{$V$}]\begingroup Section shear force\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{34$M$@[{$M$}]\begingroup Section internal moment\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{35$E$@[{$E$}]\begingroup Young's modulus\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{36$G$@[{$G$}]\begingroup Shear modulus\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{37$I$@[{$I$}]\begingroup Cross-section moment of intertia\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{38$A$@[{$A$}]\begingroup Cross-section area\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{39$A_s$@[{$A_s$}]\begingroup Effective area of the cross-section\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{40$\ell$@[{$\ell$}]\begingroup Element length\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{41$n_{nod}$@[{$n_{nod}$}]\begingroup Number of non-restrained nodes\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{42$n$@[{$n$}]\begingroup Number of quadrature points in the element\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{43$w_i$@[{$w_i$}]\begingroup Quadrature weight for the $i$-th quadrature point\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{44$\xi$@[{$\xi$}]\begingroup Normalized coordinate associated with $X_1$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{45$L_i$@[{$L_i$}]\begingroup Lagrange cardinal function\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{46$\bmat{T}$@[{$\bmat{T}$}]\begingroup Curvature mapping matrix\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{47$\bmat{\Theta}$@[{$\bmat{\Theta}$}]\begingroup Vandermonde matrix\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{48$\bvec{y}$@[{$\bvec{y}$}]\begingroup Internal field variable vector, associated with uknowns at quadrature points\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{49$\bmat{\Lambda}$@[{$\bmat{\Lambda}$}]\begingroup Element orientation matrix\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{50$\theta$@[{$\theta$}]\begingroup Angle of element centerline in the initial configuration with $\bvec{E}_1$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{51$\mathcal{E}^e$@[{$\mathcal{E}^e$}]\begingroup Energy contribution of element $e$ in the Lagrangian function\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{52$\bmat{H}$@[{$\bmat{H}$}]\begingroup Hessian matrix\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{53$\bvec{z}$@[{$\bvec{z}$}]\begingroup Vector of all unknown state variables of the system\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{54$\bmat{k}_s$@[{$\bmat{k}_s$}]\begingroup Section stiffness matrix\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{55$\bmat{K}$@[{$\bmat{K}$}]\begingroup Stiffness matrix\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{56$\bvec{F}_{int}$@[{$\bvec{F}_{int}$}]\begingroup Internal nodal force vector\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{57$\Delta S$@[{$\Delta S$}]\begingroup Incremental arc-length parameter\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{58$\bvec{\sigma}_f$@[{$\bvec{\sigma}_f$}]\begingroup Vector of active stress components on a fiber\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{59$\bvec{\epsilon}_f$@[{$\bvec{\epsilon}_f$}]\begingroup Strain components corresponding to $\bvec{\sigma}_f$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{60$\bmat{N}_s$@[{$\bmat{N}_s$}]\begingroup Cross-section shape function matrix\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{61$\varphi$@[{$\varphi$}]\begingroup Shear strain distribution function along the cross-section height\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{62$\bmat{C}$@[{$\bmat{C}$}]\begingroup Material tangent modulus\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{63$\bvec{d}_{l,r}$@[{$\bvec{d}_{l,r}$}]\begingroup Element nodal displacement vector for left ($l$) or right ($r$) elememtn edge\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{64$\bvec{P}_{l,r}$@[{$\bvec{P}_{l,r}$}]\begingroup Element externally applied nodal force vector for left ($l$) or right ($r$) elememtn edge\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{65$\bm{\sigma}$@[{$\bm{\sigma}$}]\begingroup Cauchy stress tensor\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{66$\bm{\epsilon}$@[{$\bm{\epsilon}$}]\begingroup Strain tensor\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{67$\bm{a}$@[{$\bm{a}$}]\begingroup Back stress tensor\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{68$q$@[{$q$}]\begingroup Current uniaxial yield stress\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{69$e^{pl}$@[{$e^{pl}$}]\begingroup Equivalent plastic strain\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{70$\lambda$@[{$\lambda$}]\begingroup Plastic parameter\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{71$\Phi$@[{$\Phi$}]\begingroup Yield function\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{72$\sigma_{eq}$@[{$\sigma_{eq}$}]\begingroup Equivalent stress associated with the appropriate yield criterion\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{73$H_{kin}$@[{$H_{kin}$}]\begingroup Kinematic hardening modulus\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{74$H_{iso}$@[{$H_{iso}$}]\begingroup Isotropic hardening modulus\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{75$\mathbb{C},\bmat{C}$@[{$\mathbb{C},\bmat{C}$}]\begingroup Fourth order constitutive tensor and its matrix representation\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{76$J_2$@[{$J_2$}]\begingroup Second invariant of the deviatoric stress tensor\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{77$\sigma_y$@[{$\sigma_y$}]\begingroup Yield stress of the virgin material\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{78$\bm{\zeta}$@[{$\bm{\zeta}$}]\begingroup Effective stress tensor\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{79$\bm{w}^d$@[{$\bm{w}^d$}]\begingroup Deviatoric part of a tensor $\bm{w}$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{80$\mathbf{C}^{pl}_c$@[{$\mathbf{C}^{pl}_c$}]\begingroup Consistent elastoplastic tangent modulus\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{81$\bvec{H}$@[{$\bvec{H}$}]\begingroup Homotopy (vector) function\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{82$t$@[{$t$}]\begingroup Pseudo-time or homotopy parameter\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{83$C^k$@[{$C^k$}]\begingroup Space of functions with their first $k$ derivatives continuous\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{84$\Gamma$@[{$\Gamma$}]\begingroup A (connected) component, path or loop, in $\bvec{H}^{-1}(\bvec{0})$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{85$\Omega$@[{$\Omega$}]\begingroup Feasible space for an NLP or PNLP program\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{86$I_h$@[{$I_h$}]\begingroup Index set of equality constraints\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{87$I_g$@[{$I_g$}]\begingroup Index set of inequality constraints\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{88$\bvec{\mu}$@[{$\bvec{\mu}$}]\begingroup Vector of Lagrange multipliers associated with inequality constraints\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{89$\bar{I}_g$@[{$\bar{I}_g$}]\begingroup Index set of active inequality constraints\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{90$\tau(\bar{I}_g)$@[{$\tau(\bar{I}_g)$}]\begingroup Cell associated with subdivision of $\Omega$\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{90$\mathcal{D}$@[{$\mathcal{D}$}]\begingroup Subdivision of an interval\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{91$W^q$@[{$W^q$}]\begingroup Subinterval associated with subdivision $\mathcal{D}$\nomeqref {0}|nompageref}{xii}
+\nomenclatureentry{01\(\bvec{E}_i\)@[{\(\bvec{E}_i\)}]\begingroup Spatial basis unit vectors, $i=1,2,3$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{02$\bvec{e}_i$@[{$\bvec{e}_i$}]\begingroup Material basis unit vectors, $i=1,2,3$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{03$X_i$@[{$X_i$}]\begingroup Initial configuration coordinates, $i=1,2,3$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{04$\bvec{X}$@[{$\bvec{X}$}]\begingroup Position vector of a material point in the initial configuration\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{05$x_i$@[{$x_i$}]\begingroup Current configuration coordinates, $i=1,2,3$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{06$\bvec{x}$@[{$\bvec{x}$}]\begingroup Position vector of a material point in the current configuration\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{07$\bvec{r}_o$@[{$\bvec{r}_o$}]\begingroup Position vector of a material point on the centerline in the initial configuration\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{08$\bvec{r}$@[{$\bvec{r}$}]\begingroup Position vector of a material point on the centerline in the current configuration\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{09$\bvec{u}$@[{$\bvec{u}$}]\begingroup Displacement vector of points on the centerline with respect to the initial configuration.\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{10$\bvec{t}$@[{$\bvec{t}$}]\begingroup Position vector of a material point on the local system of a cross-section.\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{11$\phi$@[{$\phi$}]\begingroup Angle between $\bvec{E}_i$ and $\bvec{e}_i$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{12$\bmat{R(\phi)}$@[{$\bmat{R(\phi)}$}]\begingroup Rotation matrix\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{13$\kappa$@[{$\kappa$}]\begingroup Curvature of the beam centerline.\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{14$\epsilon$@[{$\epsilon$}]\begingroup Axial strain of the beam centerline\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{15$\gamma$@[{$\gamma$}]\begingroup Shear strain of the beam centerline\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{16$\bvec{s}$@[{$\bvec{s}$}]\begingroup Vector containing $\epsilon$ and $\gamma$ but not $\kappa$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{17$u$@[{$u$}]\begingroup Displacement component along $X_1$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{18$v$@[{$v$}]\begingroup Displacement component along $X_2$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{19$\bvec{d}$@[{$\bvec{d}$}]\begingroup Displacement vector containing $u$, $v$ and $\phi$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{20$\bvec{q}$@[{$\bvec{q}$}]\begingroup Strain vector containing $\epsilon$, $\gamma$ and $\kappa$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{21f@[{f}]\begingroup Generic objective function\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{22$\bvec{h}$@[{$\bvec{h}$}]\begingroup Vector of discretized constraints\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{23$\mathcal{S}$@[{$\mathcal{S}$}]\begingroup Constrained space for $\bvec{x}$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{24$\mathcal{L}$@[{$\mathcal{L}$}]\begingroup Lagrangian function associated with the \acrshort{nlp}\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{25$\bvec{\lambda}$@[{$\bvec{\lambda}$}]\begingroup Vector of Lagrange multipliers associated with equality constraints\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{26$\Pi$@[{$\Pi$}]\begingroup Total potential energy function\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{27$U$@[{$U$}]\begingroup Strain energy function\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{28$W$@[{$W$}]\begingroup Potential energy of external loads\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{29$\mathcal{W}_s$@[{$\mathcal{W}_s$}]\begingroup Cross-section strain energy density\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{30$\bvec{P}$@[{$\bvec{P}$}]\begingroup Vector of external loads\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{31$\bvec{F}_{sec}$@[{$\bvec{F}_{sec}$}]\begingroup Cross-section stress resultants\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{32$N$@[{$N$}]\begingroup Section axial force\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{33$V$@[{$V$}]\begingroup Section shear force\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{34$M$@[{$M$}]\begingroup Section internal moment\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{35$E$@[{$E$}]\begingroup Young's modulus\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{36$G$@[{$G$}]\begingroup Shear modulus\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{37$I$@[{$I$}]\begingroup Cross-section moment of intertia\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{38$A$@[{$A$}]\begingroup Cross-section area\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{39$A_s$@[{$A_s$}]\begingroup Effective area of the cross-section\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{40$\ell$@[{$\ell$}]\begingroup Element length\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{41$n_{nod}$@[{$n_{nod}$}]\begingroup Number of non-restrained nodes\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{42$n$@[{$n$}]\begingroup Number of quadrature points in the element\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{43$w_i$@[{$w_i$}]\begingroup Quadrature weight for the $i$-th quadrature point\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{44$\xi$@[{$\xi$}]\begingroup Normalized coordinate associated with $X_1$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{45$L_i$@[{$L_i$}]\begingroup Lagrange cardinal function\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{46$\bmat{T}$@[{$\bmat{T}$}]\begingroup Curvature mapping matrix\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{47$\bmat{\Theta}$@[{$\bmat{\Theta}$}]\begingroup Vandermonde matrix\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{48$\bvec{y}$@[{$\bvec{y}$}]\begingroup Internal field variable vector, associated with uknowns at quadrature points\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{49$\bmat{\Lambda}$@[{$\bmat{\Lambda}$}]\begingroup Element orientation matrix\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{50$\theta$@[{$\theta$}]\begingroup Angle of element centerline in the initial configuration with $\bvec{E}_1$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{51$\mathcal{E}^e$@[{$\mathcal{E}^e$}]\begingroup Energy contribution of element $e$ in the Lagrangian function\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{52$\bmat{H}$@[{$\bmat{H}$}]\begingroup Hessian matrix\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{53$\bvec{z}$@[{$\bvec{z}$}]\begingroup Vector of all unknown state variables of the system\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{54$\bmat{k}_s$@[{$\bmat{k}_s$}]\begingroup Section stiffness matrix\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{55$\bmat{K}$@[{$\bmat{K}$}]\begingroup Stiffness matrix\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{56$\bvec{F}_{int}$@[{$\bvec{F}_{int}$}]\begingroup Internal nodal force vector\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{57$\Delta S$@[{$\Delta S$}]\begingroup Incremental arc-length parameter\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{58$\bvec{\sigma}_f$@[{$\bvec{\sigma}_f$}]\begingroup Vector of active stress components on a fiber\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{59$\bvec{\epsilon}_f$@[{$\bvec{\epsilon}_f$}]\begingroup Strain components corresponding to $\bvec{\sigma}_f$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{60$\bmat{N}_s$@[{$\bmat{N}_s$}]\begingroup Cross-section shape function matrix\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{61$\varphi$@[{$\varphi$}]\begingroup Shear strain distribution function along the cross-section height\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{62$\bmat{C}$@[{$\bmat{C}$}]\begingroup Material tangent modulus\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{63$\bvec{d}_{l,r}$@[{$\bvec{d}_{l,r}$}]\begingroup Element nodal displacement vector for left ($l$) or right ($r$) elememtn edge\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{64$\bvec{P}_{l,r}$@[{$\bvec{P}_{l,r}$}]\begingroup Element externally applied nodal force vector for left ($l$) or right ($r$) elememtn edge\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{65$\bm{\sigma}$@[{$\bm{\sigma}$}]\begingroup Cauchy stress tensor\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{66$\bm{\epsilon}$@[{$\bm{\epsilon}$}]\begingroup Strain tensor\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{67$\bm{a}$@[{$\bm{a}$}]\begingroup Back stress tensor\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{68$q$@[{$q$}]\begingroup Current uniaxial yield stress\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{69$e^{pl}$@[{$e^{pl}$}]\begingroup Equivalent plastic strain\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{70$\lambda$@[{$\lambda$}]\begingroup Plastic parameter\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{71$\Phi$@[{$\Phi$}]\begingroup Yield function\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{72$\sigma_{eq}$@[{$\sigma_{eq}$}]\begingroup Equivalent stress associated with the appropriate yield criterion\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{73$H_{kin}$@[{$H_{kin}$}]\begingroup Kinematic hardening modulus\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{74$H_{iso}$@[{$H_{iso}$}]\begingroup Isotropic hardening modulus\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{75$\mathbb{C},\bmat{C}$@[{$\mathbb{C},\bmat{C}$}]\begingroup Fourth order constitutive tensor and its matrix representation\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{76$J_2$@[{$J_2$}]\begingroup Second invariant of the deviatoric stress tensor\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{77$\sigma_y$@[{$\sigma_y$}]\begingroup Yield stress of the virgin material\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{78$\bm{\zeta}$@[{$\bm{\zeta}$}]\begingroup Effective stress tensor\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{79$\bm{w}^d$@[{$\bm{w}^d$}]\begingroup Deviatoric part of a tensor $\bm{w}$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{80$\mathbf{C}^{pl}_c$@[{$\mathbf{C}^{pl}_c$}]\begingroup Consistent elastoplastic tangent modulus\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{81$\bvec{H}$@[{$\bvec{H}$}]\begingroup Homotopy (vector) function\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{82$t$@[{$t$}]\begingroup Pseudo-time or homotopy parameter\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{83$C^k$@[{$C^k$}]\begingroup Space of functions with their first $k$ derivatives continuous\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{84$\Gamma$@[{$\Gamma$}]\begingroup A (connected) component, path or loop, in $\bvec{H}^{-1}(\bvec{0})$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{85$\Omega$@[{$\Omega$}]\begingroup Feasible space for an NLP or PNLP program\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{86$I_h$@[{$I_h$}]\begingroup Index set of equality constraints\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{87$I_g$@[{$I_g$}]\begingroup Index set of inequality constraints\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{88$\bvec{\mu}$@[{$\bvec{\mu}$}]\begingroup Vector of Lagrange multipliers associated with inequality constraints\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{89$\bar{I}_g$@[{$\bar{I}_g$}]\begingroup Index set of active inequality constraints\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{90$\tau(\bar{I}_g)$@[{$\tau(\bar{I}_g)$}]\begingroup Cell associated with subdivision of $\Omega$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{90$\mathcal{D}$@[{$\mathcal{D}$}]\begingroup Subdivision of an interval\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{91$W^q$@[{$W^q$}]\begingroup Subinterval associated with subdivision $\mathcal{D}$\nomeqref {0}|nompageref}{xiii}

@@ -62,10 +62,18 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Frame structure.}}}{62}{subfigure.13.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equilibrium paths.}}}{62}{subfigure.13.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces A homotopy path connecting the trivial solution of $G=0$ to a root of $F=0$ for a single scalar equation dependent on $x$.\relax }}{68}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Homotopy paths for \textbf {(a)} $f(x)=x^3-6x^2+21x-26=0$, with starting point $x_0=0$ and convergence at root $x_1=2$ when $t=1$ and \textbf {(b)} truss, with initial state the undeformed configuration($x_0=0$) and target load level $P=0.03$.\relax }}{69}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Components of $H^{-1}(0)$ in $\mathbb {R}^{n+1}$.\relax }}{71}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Piecewise continuously differentiable paths and loops of $\bm {H}_{KKT}^{-1}(\bm {0})$ in $\mathbb {R}^{n+l+p+1}$.\relax }}{77}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A homotopy path connecting the trivial solution of $G=0$ to a root of $F=0$ for a single scalar equation dependent on $x$.\relax }}{67}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Homotopy paths for \textbf {(a)} $f(x)=x^3-6x^2+21x-26=0$, with starting point $x_0=0$ and convergence at root $x_1=2$ when $t=1$ and \textbf {(b)} truss, with initial state the undeformed configuration($x_0=0$) and target load level $P=0.03$.\relax }}{68}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Components of $H^{-1}(0)$ in $\mathbb {R}^{n+1}$.\relax }}{70}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Piecewise continuously differentiable paths and loops of $\bm {H}_{KKT}^{-1}(\bm {0})$ in $\mathbb {R}^{n+l+p+1}$.\relax }}{76}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Transition from cell $\tau ^1$ to $\tau ^2$ during numerical continuation. Projection of $\vec {\bm {H}}(\vec {\bm {z}},t)=\vec {\bm {0}}$ on $\vec {\bm {d}}-t$ space.\relax }}{84}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \textbf {(a)} Paths $\mathit {\Gamma }_1$, $\mathit {\Gamma }_2$ and $\mathit {\Gamma }_3$ in $\mathbb {R}^3$, \textbf {(b)} interpretations of paths as trajectories on the target TPE function (\ref {eq:HIMMELBLAU}).\relax }}{87}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces \textbf {(a)} Truss structure, \textbf {(b)} equlibrium paths for $A_2=\{4A_1,A_1^{}/3 ,A_1^{}/5\}$ projected on the $u_1\ -\ P$ plane.\relax }}{89}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces \textbf {(a)} projection of components $\mathit {\Gamma }_1$\& $\mathit {\Gamma }_2$ on the $u_1\ -\ E_2A_2(t)^{}/L$ plane, \textbf {(b)} paths $\mathit {\Gamma }_1$, $\mathit {\Gamma }_2$ and $\mathit {\Gamma _P}$ projected on the \acrshort {tpe} of the target NLP $\bm {\mathcal {P}}_{A_2}(1)$.\relax }}{91}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Initial geometry for Example 3.\relax }}{92}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Projection of path \textbf {(a)} on $u_2-t$ plane and \textbf {(b)} $\mu -t$ plane.\relax }}{93}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Configuration profiles during deformation.\relax }}{93}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces \textbf {(a)} Shallow arch structure and loading, \textbf {(b)} equilibrium path using Normal Flow continuation and step-length $\Delta s=150$.\relax }}{95}{figure.caption.63}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
