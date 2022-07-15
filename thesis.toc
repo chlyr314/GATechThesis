@@ -1,8 +1,8 @@
-\contentsline {chapter}{List of Figures}{ix}{chapter*.1}%
-\contentsline {chapter}{List of Tables}{xii}{chapter*.2}%
-\contentsline {chapter}{Nomenclature}{xiii}{chapter*.3}%
-\contentsline {chapter}{Acronyms}{xvii}{section*.5}%
-\contentsline {chapter}{Acknowledgements}{xviii}{chapter*.6}%
+\contentsline {chapter}{List of Figures}{x}{chapter*.1}%
+\contentsline {chapter}{List of Tables}{xiii}{chapter*.2}%
+\contentsline {chapter}{Nomenclature}{xv}{chapter*.3}%
+\contentsline {chapter}{Acronyms}{xix}{section*.5}%
+\contentsline {chapter}{Acknowledgements}{xxi}{chapter*.6}%
 \contentsline {chapter}{\numberline {1}Introduction and Background}{1}{chapter.1}%
 \contentsline {subsection}{\numberline {1.0.1}Notation}{1}{subsection.1.0.1}%
 \contentsline {chapter}{\numberline {2}Hybrid Beam Element Formulation}{2}{chapter.2}%
@@ -60,16 +60,31 @@
 \contentsline {subsection}{\numberline {4.5.1}Example 1 - Global Optimization}{85}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}Example 2 - Global Sensitivity}{88}{subsection.4.5.2}%
 \contentsline {subsection}{\numberline {4.5.3}Example 3 - Frictionless contact}{91}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Example 4 - Nonlinear analysis of shallow arch}{94}{subsection.4.5.4}%
-\contentsline {chapter}{\numberline {5}Conclusion}{98}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Weighted least squares predictor for numerical continuation}{95}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{95}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Numerical continuation}{96}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Weighted least squares predictor}{99}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Matrix formulation of WLS approximation}{102}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}WLS prediction variants}{104}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Arc-length stabilization}{105}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}The weight function}{106}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}Implementation}{107}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Algorithm}{107}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Arc-Length measurement}{108}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Discussion}{109}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Numerical Examples}{111}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Numerical Example 1}{112}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Numerical Example 2}{113}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Numerical Example 3}{115}{subsection.5.5.3}%
+\contentsline {section}{\numberline {5.6}Closing remakrs}{118}{section.5.6}%
 \renewcommand {\cftchappresnum }{Appendix }
 \renewcommand {\cftchapnumwidth }{6em}
-\contentsline {chapter}{\numberline {A}}{100}{appendix.1.A}%
-\contentsline {subsection}{\numberline {A.0.1}Gradient of strain energy}{100}{subsection.1.A.0.1}%
-\contentsline {subsection}{\numberline {A.0.2}Gradient of constraints}{101}{subsection.1.A.0.2}%
-\contentsline {subsection}{\numberline {A.0.3}Gradient of the potential energy}{104}{subsection.1.A.0.3}%
-\contentsline {subsection}{\numberline {A.0.4}Gradient of the Lagrangian}{104}{subsection.1.A.0.4}%
-\contentsline {chapter}{\numberline {B}}{106}{appendix.1.B}%
-\contentsline {chapter}{\numberline {C}}{109}{appendix.1.C}%
-\contentsline {chapter}{\numberline {D}}{111}{appendix.1.D}%
-\contentsline {chapter}{References}{112}{appendix.1.D}%
+\contentsline {chapter}{\numberline {A}}{120}{appendix.1.A}%
+\contentsline {subsection}{\numberline {A.0.1}Gradient of strain energy}{120}{subsection.1.A.0.1}%
+\contentsline {subsection}{\numberline {A.0.2}Gradient of constraints}{121}{subsection.1.A.0.2}%
+\contentsline {subsection}{\numberline {A.0.3}Gradient of the potential energy}{124}{subsection.1.A.0.3}%
+\contentsline {subsection}{\numberline {A.0.4}Gradient of the Lagrangian}{124}{subsection.1.A.0.4}%
+\contentsline {chapter}{\numberline {B}}{126}{appendix.1.B}%
+\contentsline {chapter}{\numberline {C}}{129}{appendix.1.C}%
+\contentsline {chapter}{\numberline {D}}{131}{appendix.1.D}%
+\contentsline {chapter}{References}{132}{equation.1.D.0.3}%

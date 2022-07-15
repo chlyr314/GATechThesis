@@ -73,8 +73,13 @@
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Initial geometry for Example 3.\relax }}{92}{figure.caption.60}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Projection of path \textbf {(a)} on $u_2-t$ plane and \textbf {(b)} $\mu -t$ plane.\relax }}{93}{figure.caption.61}%
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Configuration profiles during deformation.\relax }}{93}{figure.caption.62}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces \textbf {(a)} Shallow arch structure and loading, \textbf {(b)} equilibrium path using Normal Flow continuation and step-length $\Delta s=150$.\relax }}{95}{figure.caption.63}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Advancing from step $N$ to step $N+1$ using a PC approach.\relax }}{97}{figure.caption.63}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Two types of predictors: (a) interpolatory and (b) Euler predictor.\relax }}{99}{figure.caption.64}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Geometric interpretation of predictors (i)WLSE (blue), (ii) WLSIT (light blue, $z=1$), and (iii) WLST (red, $z=0$).\relax }}{105}{figure.caption.65}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Weight function $w(s)$ of the WLS predictor.\relax }}{107}{figure.caption.66}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Solution path of \ref {eq:HomotopyOneP3A}.\relax }}{116}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces \textbf {(a)} Shallow arch structure and loading, \textbf {(b)} equilibrium path.\relax }}{117}{figure.caption.73}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

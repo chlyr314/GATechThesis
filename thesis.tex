@@ -28,9 +28,12 @@
 \usepackage[skins]{tcolorbox}
 \usepackage[export]{adjustbox}
 \usepackage{booktabs}
+\usepackage{algorithmic}
+\usepackage{comment}
 \usepackage{tikz}
 \usepackage{multirow}
 \usepackage{float}
+\usepackage{braket}
 \usepackage[linesnumbered,ruled,vlined]{algorithm2e}
 \usepackage{amsthm}
 \usepackage[acronym,nomain,toc,nonumberlist]{glossaries}
@@ -46,7 +49,8 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 \setlength{\nomitemsep}{-\parsep}% reduce vertical gap btween nomenclature 
 
 % MISC COMMANDS 
-\newcommand{\bvec}[1]{\vec{\boldsymbol{#1}}}
+\newcommand{\bvec}[1]{\vec{\bm{#1}}}
+%\newcommand{\bvec}[1]{\vec{\!\bm{#1}}\,}
 \newcommand{\bhat}[1]{\hat{\boldsymbol{#1}}}
 \newcommand{\bmat}[1]{\mathbf{#1}}
 \newcommand{\sfrac}[2]{{}^#1{\mskip -5mu/\mskip -3mu}_#2}

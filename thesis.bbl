@@ -2950,20 +2950,522 @@
     \field{year}{1992}
   \endentry
 
-  \entry{Ragon:2002}{article}{}
-    \name{author}{3}{}{%
-      {{hash=RS}{%
-         family={Ragon},
+  \entry{Rheinboldt75}{book}{}
+    \name{author}{1}{}{%
+      {{hash=RWC}{%
+         family={Rheinboldt},
          familyi={R\bibinitperiod},
-         given={SA},
-         giveni={S\bibinitperiod},
+         given={Werner\bibnamedelima C},
+         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
       }}%
-      {{hash=GZ}{%
-         family={G{\"u}rdal},
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{RWC1}
+    \strng{fullhash}{RWC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{An adaptive continuation process for solving systems of
+  nonlinear equations}
+    \field{year}{1975}
+  \endentry
+
+  \entry{Watson86}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WLT}{%
+         family={Watson},
+         familyi={W\bibinitperiod},
+         given={Layne\bibnamedelima T},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{WLT1}
+    \strng{fullhash}{WLT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1137/1028157
+    \endverb
+    \field{number}{4}
+    \field{pages}{529\bibrangedash 545}
+    \field{title}{Numerical linear algebra aspects of globally convergent
+  homotopy methods}
+    \field{volume}{28}
+    \field{journaltitle}{SIAM review}
+    \field{year}{1986}
+  \endentry
+
+  \entry{Deuflhard87}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DP}{%
+         family={Deuflhard},
+         familyi={D\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=FB}{%
+         family={Fiedler},
+         familyi={F\bibinitperiod},
+         given={Bernold},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KP}{%
+         family={Kunkel},
+         familyi={K\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{DP+1}
+    \strng{fullhash}{DPFBKP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1137/0724059
+    \endverb
+    \field{number}{4}
+    \field{pages}{912\bibrangedash 927}
+    \field{title}{Efficient numerical pathfollowing beyond critical points}
+    \field{volume}{24}
+    \field{journaltitle}{SIAM journal on numerical analysis}
+    \field{year}{1987}
+  \endentry
+
+  \entry{Seydel87}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SR}{%
+         family={Seydel},
+         familyi={S\bibinitperiod},
+         given={R{\"u}diger},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HV}{%
+         family={Hlavacek},
+         familyi={H\bibinitperiod},
+         given={Vladimir},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SRHV1}
+    \strng{fullhash}{SRHV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/0009-2509(87)85001-7
+    \endverb
+    \field{number}{6}
+    \field{pages}{1281\bibrangedash 1295}
+    \field{title}{Role of continuation in engineering analysis}
+    \field{volume}{42}
+    \field{journaltitle}{Chemical engineering science}
+    \field{year}{1987}
+  \endentry
+
+  \entry{Salgovic81}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SA}{%
+         family={{\v{S}}algovi{\v{c}}},
+         familyi={{\v{S}}\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=HV}{%
+         family={Hlav{\'a}{\v{c}}ek},
+         familyi={H\bibinitperiod},
+         given={V},
+         giveni={V},
+      }}%
+      {{hash=IJ}{%
+         family={Ilavsk{\`y}},
+         familyi={I\bibinitperiod},
+         given={J},
+         giveni={J},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SA+1}
+    \strng{fullhash}{SAHVIJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/0009-2509(81)80003-6
+    \endverb
+    \field{number}{10}
+    \field{pages}{1599\bibrangedash 1604}
+    \field{title}{Global simulation of countercurrent separation processes via
+  one-parameter imbedding techniques}
+    \field{volume}{36}
+    \field{journaltitle}{Chemical Engineering Science}
+    \field{year}{1981}
+  \endentry
+
+  \entry{Schwetlick87}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SH}{%
+         family={Schwetlick},
+         familyi={S\bibinitperiod},
+         given={Hubert},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cleve},
+         familyi={C\bibinitperiod},
+         given={J{\"u}rgen},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{SHCJ1}
+    \strng{fullhash}{SHCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1137/0724089
+    \endverb
+    \field{number}{6}
+    \field{pages}{1382\bibrangedash 1393}
+    \field{title}{Higher order predictors and adaptive steplength control in
+  path following algorithms}
+    \field{volume}{24}
+    \field{journaltitle}{SIAM journal on numerical analysis}
+    \field{year}{1987}
+  \endentry
+
+  \entry{Gervais04}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GJJ}{%
+         family={Gervais},
          familyi={G\bibinitperiod},
-         given={Zafer},
-         giveni={Z\bibinitperiod},
+         given={J-J},
+         giveni={J\bibinithyphendelim J\bibinitperiod},
       }}%
+      {{hash=SH}{%
+         family={Sadiky},
+         familyi={S\bibinitperiod},
+         given={Hassan},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{GJJSH1}
+    \strng{fullhash}{GJJSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1002/zamm.200310125
+    \endverb
+    \field{number}{8}
+    \field{pages}{551\bibrangedash 563}
+    \field{title}{A continuation method based on a high order predictor and an
+  adaptive steplength control}
+    \field{volume}{84}
+    \field{journaltitle}{ZAMM-Journal of Applied Mathematics and
+  Mechanics/Zeitschrift f{\"u}r Angewandte Mathematik und Mechanik: Applied
+  Mathematics and Mechanics}
+    \field{year}{2004}
+  \endentry
+
+  \entry{Syam02}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SM}{%
+         family={Syam},
+         familyi={S\bibinitperiod},
+         given={MI},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SM1}
+    \strng{fullhash}{SM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/S0898-1221(02)00215-8
+    \endverb
+    \field{number}{8-9}
+    \field{pages}{1067\bibrangedash 1076}
+    \field{title}{Interpolation predictors over implicitly defined curves}
+    \field{volume}{44}
+    \field{journaltitle}{Computers \& Mathematics with Applications}
+    \field{year}{2002}
+  \endentry
+
+  \entry{Syam03}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SMI}{%
+         family={Syam},
+         familyi={S\bibinitperiod},
+         given={Muhammed\bibnamedelima I},
+         giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SMI1}
+    \strng{fullhash}{SMI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/S0377-0427(03)00411-4
+    \endverb
+    \field{number}{2}
+    \field{pages}{283\bibrangedash 295}
+    \field{title}{Cubic spline interpolation predictors over implicitly defined
+  curves}
+    \field{volume}{157}
+    \field{journaltitle}{Journal of computational and applied mathematics}
+    \field{year}{2003}
+  \endentry
+
+  \entry{Watson87}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WLT}{%
+         family={Watson},
+         familyi={W\bibinitperiod},
+         given={Layne\bibnamedelima T},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=BSC}{%
+         family={Billups},
+         familyi={B\bibinitperiod},
+         given={Stephen\bibnamedelima C},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MAP}{%
+         family={Morgan},
+         familyi={M\bibinitperiod},
+         given={Alexander\bibnamedelima P},
+         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM New York, NY, USA}%
+    }
+    \strng{namehash}{WLT+1}
+    \strng{fullhash}{WLTBSCMAP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1145/29380.214343
+    \endverb
+    \field{number}{3}
+    \field{pages}{281\bibrangedash 310}
+    \field{title}{Algorithm 652: HOMPACK: A suite of codes for globally
+  convergent homotopy algorithms}
+    \field{volume}{13}
+    \field{journaltitle}{ACM Transactions on Mathematical Software (TOMS)}
+    \field{year}{1987}
+  \endentry
+
+  \entry{Lundberg93}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LBN}{%
+         family={Lundberg},
+         familyi={L\bibinitperiod},
+         given={Bruce\bibnamedelima N},
+         giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=PAB}{%
+         family={Poore},
+         familyi={P\bibinitperiod},
+         given={Aubrey\bibnamedelima B},
+         giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{LBNPAB1}
+    \strng{fullhash}{LBNPAB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1137/0803007
+    \endverb
+    \field{number}{1}
+    \field{pages}{134\bibrangedash 154}
+    \field{title}{Numerical continuation and singularity detection methods for
+  parametric nonlinear programming}
+    \field{volume}{3}
+    \field{journaltitle}{SIAM Journal on Optimization}
+    \field{year}{1993}
+  \endentry
+
+  \entry{Allgower91}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AE}{%
+         family={Allgower},
+         familyi={A\bibinitperiod},
+         given={EL},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=CCS}{%
+         family={Chien},
+         familyi={C\bibinitperiod},
+         given={C-S},
+         giveni={C\bibinithyphendelim S\bibinitperiod},
+      }}%
+      {{hash=GK}{%
+         family={Georg},
+         familyi={G\bibinitperiod},
+         given={K},
+         giveni={K},
+      }}%
+      {{hash=WCF}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={C-F},
+         giveni={C\bibinithyphendelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{AE+1}
+    \strng{fullhash}{AECCSGKWCF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/0377-0427(94)00104-4
+    \endverb
+    \field{number}{1-3}
+    \field{pages}{1\bibrangedash 16}
+    \field{title}{Conjugate gradient methods for continuation problems}
+    \field{volume}{38}
+    \field{journaltitle}{Journal of Computational and Applied Mathematics}
+    \field{year}{1991}
+  \endentry
+
+  \entry{Keller87}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KHB}{%
+         family={Keller},
+         familyi={K\bibinitperiod},
+         given={Herbert\bibnamedelima B},
+         giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KHB1}
+    \strng{fullhash}{KHB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{50}
+    \field{title}{Lectures on numerical methods in bifurcation problems}
+    \field{volume}{217}
+    \field{journaltitle}{Applied Mathematics}
+    \field{year}{1987}
+  \endentry
+
+  \entry{Lundberg91}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LBN}{%
+         family={Lundberg},
+         familyi={L\bibinitperiod},
+         given={Bruce\bibnamedelima N},
+         giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=PAB}{%
+         family={Poore},
+         familyi={P\bibinitperiod},
+         given={Aubrey\bibnamedelima B},
+         giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{LBNPAB1}
+    \strng{fullhash}{LBNPAB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1137/0912037
+    \endverb
+    \field{number}{3}
+    \field{pages}{695\bibrangedash 723}
+    \field{title}{Variable order Adams-Bashforth predictors with an
+  error-stepsize control for continuation methods}
+    \field{volume}{12}
+    \field{journaltitle}{SIAM journal on scientific and statistical computing}
+    \field{year}{1991}
+  \endentry
+
+  \entry{Mackens89}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MW}{%
+         family={Mackens},
+         familyi={M\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{MW1}
+    \strng{fullhash}{MW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/BF02259095
+    \endverb
+    \field{number}{3}
+    \field{pages}{237\bibrangedash 260}
+    \field{title}{Numerical differentiation of implicitly defined space curves}
+    \field{volume}{41}
+    \field{journaltitle}{Computing}
+    \field{year}{1989}
+  \endentry
+
+  \entry{Kubicek76}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KM}{%
+         family={Kub{\'\i}{\v{c}}ek},
+         familyi={K\bibinitperiod},
+         given={Milan},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM New York, NY, USA}%
+    }
+    \strng{namehash}{KM1}
+    \strng{fullhash}{KM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1145/355666.355675
+    \endverb
+    \field{number}{1}
+    \field{pages}{98\bibrangedash 107}
+    \field{title}{Algorithm 502: Dependence of solution of nonlinear systems on
+  a parameter [C5]}
+    \field{volume}{2}
+    \field{journaltitle}{ACM Transactions on Mathematical Software (TOMS)}
+    \field{year}{1976}
+  \endentry
+
+  \entry{Watson79}{article}{}
+    \name{author}{1}{}{%
       {{hash=WLT}{%
          family={Watson},
          familyi={W\bibinitperiod},
@@ -2974,17 +3476,85 @@
     \list{publisher}{1}{%
       {Elsevier}%
     }
-    \strng{namehash}{RS+1}
-    \strng{fullhash}{RSGZWLT1}
+    \strng{namehash}{WLT1}
+    \strng{fullhash}{WLT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{number}{3}
-    \field{pages}{689\bibrangedash 698}
-    \field{title}{A comparison of three algorithms for tracing nonlinear
-  equilibrium paths of structural systems}
-    \field{volume}{39}
-    \field{journaltitle}{International journal of solids and structures}
-    \field{year}{2002}
+    \verb{doi}
+    \verb 10.1016/0096-3003(79)90020-1
+    \endverb
+    \field{number}{4}
+    \field{pages}{297\bibrangedash 311}
+    \field{title}{A globally convergent algorithm for computing fixed points of
+  C2 maps}
+    \field{volume}{5}
+    \field{journaltitle}{Applied Mathematics and Computation}
+    \field{year}{1979}
+  \endentry
+
+  \entry{Georg81}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GK}{%
+         family={Georg},
+         familyi={G\bibinitperiod},
+         given={Kurt},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{GK1}
+    \strng{fullhash}{GK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1137/0902004
+    \endverb
+    \field{number}{1}
+    \field{pages}{35\bibrangedash 50}
+    \field{title}{On tracing an implicitly defined curve by quasi-Newton steps
+  and calculating bifurcation by local perturbations}
+    \field{volume}{2}
+    \field{journaltitle}{SIAM Journal on Scientific and Statistical Computing}
+    \field{year}{1981}
+  \endentry
+
+  \entry{Chow78}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CSN}{%
+         family={Chow},
+         familyi={C\bibinitperiod},
+         given={Shui\bibnamedelima Nee},
+         giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=MPJ}{%
+         family={Mallet-Paret},
+         familyi={M\bibinithyphendelim P\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=YJA}{%
+         family={Yorke},
+         familyi={Y\bibinitperiod},
+         given={James\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CSN+1}
+    \strng{fullhash}{CSNMPJYJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1090/S0025-5718-1978-0492046-9
+    \endverb
+    \field{number}{143}
+    \field{pages}{887\bibrangedash 899}
+    \field{title}{Finding zeroes of maps: homotopy methods that are
+  constructive with probability one}
+    \field{volume}{32}
+    \field{journaltitle}{Mathematics of Computation}
+    \field{year}{1978}
   \endentry
 
   \entry{Clarke:1990}{article}{}
