@@ -226,7 +226,7 @@ used for systems that can be naturally parameterized, the intermediate solution
 points on the path do not correspond to actual equilibrium configurations. 
 
 %%%%%%%%%%%%%%%%%%%%%%  SECTION 1 - SUBSECTION 2  %%%%%%%%%%%%%%%%%%
-\subsection{Regularity and existence of homotopy paths}\label{CH4-S1SS2}
+\subsection{Regularity and Existence of Homotopy Paths}\label{CH4-S1SS2}
 
 From the discussion so far it is evident that the study of mappings
 $\bvec{H}:\mathbb{R}^{n+1}\rightarrow\mathbb{R}^n$ is of primary importance. 
@@ -285,7 +285,7 @@ $\dot{\bvec{v}}=d\bvec{v}^{}/ds$ and is always a non-zero vector(cf.
 	
 	\centering
 	\includegraphics[scale=0.7]{FIG31_MAP.pdf}
-	\caption{Components of $H^{-1}(0)$ in $\mathbb{R}^{n+1}$.}
+	\caption{Components of $\bvec{H}^{-1}(\bvec{0})$ in $\mathbb{R}^{n+1}$.}
 	\label{fig:FIG31}
 \end{figure}
 
@@ -336,7 +336,7 @@ conditions that guarantee convergence to many or all solutions in
 general\cite{Sun:1995}. 
 
 %%%%%%%%%%%%%%%%%%%%%%  SECTION 1 - SUBSECTION 3  %%%%%%%%%%%%%%%%%%
-\subsection{Parametric nonlinear programming}\label{CH4-S1SS3}
+\subsection{Parametric Nonlinear Programming}\label{CH4-S1SS3}
 
 Our derivations follow
 closely the works of Kojima \& Hirabayashi\cite{Kojima:1984}, Gfrerer et
@@ -549,7 +549,7 @@ the textbook by Guddat, Vasquez \& Jongen\cite{Guddat:1990}.
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%  SECTION 1 - SUBSECTION 4  %%%%%%%%%%%%%%%%%%
-\subsection{Global optimization}\label{CH4-S1SS4}
+\subsection{Global Optimization}\label{CH4-S1SS4}
 
 Consider the following NLP:
 \begin{subequations}
@@ -610,7 +610,7 @@ imbeddings that are frequently used in practice:
 
 
 %%%%%%%%%%%%%%%%%%%%%%  SECTION 2 - %%%%%%%%%%%%%%%%%%
-\section{Naturally parameterized NLP framework for mechanics}\label{CH4-S2}
+\section{Naturally Parameterized NLP Framework for Mechanics}\label{CH4-S2}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 We will now formulate a naturally parameterized nonlinear programming 
@@ -740,7 +740,7 @@ through an analysis of the structure loaded with $\bvec{P}_0=[P_1\ P_2\ \dots\
 P_{k-1}\ \ 0\ P_{k+1}\ \dots\ P_n]^T$.
 
 %%%%%%%%%%%%%%%%%%%%%%%% SECTION 2 - SUBSECTION 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Existence and uniqueness of NPNLP path}\label{CH4-S2SS1}
+\subsection{Existence and Uniqueness of NPNLP Path}\label{CH4-S2SS1}
 
 We examine now under what conditions a particular component
 $\mathit{\Gamma_0}\subseteq{\mathcal{E}}$ emanating from $\bvec{d}_0$ converges 
@@ -1350,7 +1350,7 @@ $P=100$.
 \end{figure*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Example 3 - Frictionless contact}
+\subsection{Example 3 - Frictionless Contact}
 
 In this example we consider a two-dimensional structure comprised of two bars,
 shown in Fig. \ref{fig:FIG37_STRUCT}, and investigate the response in the 
@@ -1590,3 +1590,46 @@ require more resources to compute their inverse.
 \end{table}
 
 \end{comment}
+
+
+\section{Summary}
+
+In this chapter, we have utilized homotopy continuation principles in the
+formulation of a naturally parameterized NLP framework for
+the numerical solution of structural and solid mechanics problems. The
+discretized \acrshort{tpe} is treated as the objective function and any 
+additional
+constraints can be incorporated in the program directly. The regularity and
+smoothness conditions are established for the resulting parameterized 
+\acrshort{kkt}
+system, which ensure that the
+solution space is comprised of smooth or piecewise smooth components. These
+components (paths or loops) connect an initial state with at least one solution 
+of the system we designate as target and can be traced using numerical
+continuation techniques. These implicitly defined curves
+represent how the system responds to large variations of the designated
+paramater. In addition, the intrinsic relation of these globally convergent 
+methods with the various ad
+hoc incremental schemes in mechanics is also emphasized and highlighted 
+through the lens of the
+underlying homotopy theory (see Appendix \ref{appendix:APPENDIX_E}). Continuation past 
+the first 
+solution point can 
+often lead 
+to more system solutions, although no firm mathematical basis has been
+established to guarantee this for arbitrary systems of equations. Moreover, 
+while the formulation reveals how such algorithms 
+can handle fold type turning points along the path, the case of 
+bifurcating branches is not considered in this work. However, for such cases the
+proposed framework can tackle secondary branches easily by using perturbation
+techniques. Lastly, a numerical continuation algorithm is proposed which
+bypasses the expensive numerical linear algebra associated with the computation 
+of the
+pseudoinverse or Augmented Jacobian approaches and that is agnostic with regards
+to the parameterization.
+The efficacy of the proposed \acrshort{npnlp} framework and continuation scheme 
+is
+demonstrated through a selection of 
+applications such as global unconstrained optimization, global 
+sensitivity of a simple structure and a simple contact problem in nonlinear
+elastostatics.

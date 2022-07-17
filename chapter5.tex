@@ -36,7 +36,7 @@ even in cases where conventional prediction schemes lead to premature
 termination. 
 
 
-\section{Numerical continuation}
+\section{Numerical Continuation}
 We focus our attention to undetermined nonlinear systems of the 
 form\footnote{In this chapter, we use $\bvec{y}\in\mathbb{R}^{n+1}$ to denote 
 any solution vector to an undetermined system $\bvec{F}=\bvec{0}$ and should 
@@ -206,7 +206,7 @@ arise from the propsed \acrshort{wls} scheme.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  SECTION 2  %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Weighted least squares predictor}\label{CH5-S2}
+\section{Weighted Least Squares Predictor}\label{CH5-S2}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 In this section we formulate the Weighted Least Squares (\acrshort{wls}) 
@@ -332,10 +332,11 @@ evaluated for each component. That is, only the coefficient vector is component
 dependent: $\bvec{b}\rightarrow \bvec{b}(y_{N-k+1},...,y_N)$. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 2 - SUBSECTION 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Matrix formulation of WLS approximation}\label{CH5-S2SS1}
+\subsection{Matrix Formulation of WLS Approximation}\label{CH5-S2SS1}
 
 We now
-derive the matrix relations of the WLS process, which incorporate all 
+derive the matrix relations of the \acrshort{wls} process, which incorporate 
+all 
 components. This can be represented succintly by collecting all the involved 
 quantities corresponding to differnet components of $\bvec{y}$ into matrices. 
 The local approximation to solution curve $\bvec{y}(s)$ is as follows:
@@ -429,7 +430,7 @@ with
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 2 - SUBSECTION 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{WLS prediction variants}\label{CH5-S2SS2}
+\subsection{WLS Prediction Variants}\label{CH5-S2SS2}
 
 Given an increment in the arc-length $\Delta s$, a straightforward prediction
 scheme is given by extrapolating from the fitted curve, $\bar{\bvec{y}}$ at 
@@ -486,7 +487,7 @@ and \acrshort{wlsit} with $z=1$ are depicted in
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 2 - SUBSECTION 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Arc-length stabilization}\label{CH5-S2SS3}
+\subsection{Arc-length Stabilization}\label{CH5-S2SS3}
 
 Given a step-length $\Delta s$, the \acrshort{wlse} predictor estimates the 
 next solution point using \ref{eq:WLSE}. To determine $\widetilde{\Delta s}$ 
@@ -537,7 +538,7 @@ the following requirement for the user-defined step-length $\Delta s$ if the
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 2 - SUBSECTION 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{The weight function}\label{CH5-S2SS4}
+\subsection{The Weight Function}\label{CH5-S2SS4}
 
 We now discuss the weighting function $w(s)$. The reasoning for introducing a
 weighting in the least squares fitting is as follows: since with
@@ -639,7 +640,7 @@ whereby
 $m$ can be adjusted based on local properties of the path tracked so far, we 
 expect high values for the coefficient only in highly nonlinear regions. 
 
-\subsection{Arc-Length measurement}
+\subsection{Arc-Length Measurement}
 Prediction schemes that rely on some form of extrapolation require measurement 
 of the current curve length, $s$, as the solution 
 process progresses. The most direct and easy way
@@ -1013,18 +1014,8 @@ first intersection with hyperplane $t=1$. The so-called Normal Flow
 corrector is used in this test case, where the Moore-Penrose inverse of the
 $n\times(n+1)$ Jacobian of \ref{eq:HomotopyOneP3A} is used during the Newton 
 iterations.
-The results are shown in \ref{table:TABLE_CH5EX3}, where now for both 
-step-lengths
-the optimal performance of the \acrshort{wls} predictors with respect to 
-variations in 
-the weighting parameter $\alpha$ are listed. This is because even for the 
-smaller $\Delta s$, convergence was difficult to achieve. For reference, in an
-investigation\cite{Georg81} of the same problem with the same arc-length
-parameterization but with step-length control, the smallest reported step-length
-was 0.000195 and on average, it was between 0.1 and 0.2. The solution
-path of \ref{eq:HomotopyOneP3A}, projected on the $t-x_1$
-plane, is shown in \ref{fig:FIG45}.
-\begin{table*}
+
+\begin{table}
 	\caption{Results for Example 3, $\epsilon_{tol}=10^{-6}$, $t_0=0$, 
 	$t_{max}=1$, Normal Flow.}
 	\noindent\makebox[\textwidth]{
@@ -1075,17 +1066,29 @@ plane, is shown in \ref{fig:FIG45}.
 		\end{tabular}
 		\label{table:TABLE_CH5EX3}
 	}
-\end{table*}
+\end{table}
 
-\begin{figure}[b]
+\begin{figure}[b!]
 	\centering
 	\includegraphics[scale=.7]{FIG45.pdf}
 	\caption{Solution path of \ref{eq:HomotopyOneP3A}.}
 	\label{fig:FIG45}
 \end{figure}
-\clearpage
 
-\subsection*{Example 4}
+The results are shown in \ref{table:TABLE_CH5EX3}, where now for both 
+step-lengths
+the optimal performance of the \acrshort{wls} predictors with respect to 
+variations in 
+the weighting parameter $\alpha$ are listed. This is because even for the 
+smaller $\Delta s$, convergence was difficult to achieve. For reference, in an
+investigation\cite{Georg81} of the same problem with the same arc-length
+parameterization but with step-length control, the smallest reported step-length
+was 0.000195 and on average, it was between 0.1 and 0.2. The solution
+path of \ref{eq:HomotopyOneP3A}, projected on the $t-x_1$
+plane, is shown in \ref{fig:FIG45}.
+
+
+\subsection{Numerical Example 4}
 Here, we investigate the performance of the proposed predictors in a
 practical application pertaining to elastostatics. More specifically, we are
 concerned with the geometrically nonlinear elastic response of the double pinned
@@ -1113,7 +1116,7 @@ application of external load $P=1300$, at which point, $t=1$. The results are
 listed in \ref{table:TABLE_CH5EX5}, where $a=0.2$ for all WLS prediction 
 variants. 
 
-\begin{figure*}[t]
+\begin{figure}[t]
 	\centering
 	\subfloat[][]{{\includegraphics[width=6.cm]{FIG46_A.pdf}}\label{fig:FIG46_A}}%
 	\qquad
@@ -1121,9 +1124,9 @@ variants.
 	\caption{\textbf{(a)} Shallow arch structure and loading, \textbf{(b)}
 		equilibrium path.}%
 	\label{fig:FIG64}%
-\end{figure*}
+\end{figure}
 
-\begin{table*}
+\begin{table}
 	\centering
 	\begin{minipage}{0.68\textwidth}
 		\captionof{table}{Results for Example 4, $\epsilon_{tol}=10^{-6}$, 
@@ -1168,11 +1171,32 @@ variants.
 		\end{tabular}
 		\label{table:TABLE_CH5EX5}
 	\end{minipage}
-\end{table*}
+\end{table}
 
-\section{Closing remakrs}
+\clearpage
+\section{Summary}
 
-As can be seen in the results of the previous examples, the \acrshort{wls} 
+a fast and reliable multistep prediction scheme was developed to
+facilitate the tracking of implicitly defined curves using numerical
+continuation coupled with predictor-corrector methods. It is based
+on a weighted least squares process, whereby the solution point at the current
+step, along with a prescribed number of precceding points are used to fit a
+local polynomial. Due its non-interpolating feature, it can represent the local
+geometry of the solution curve more faithfully. In addition, it exhibits linear
+time complexity with regards to the problem dimension, it does not
+require any derivative information and is versatile in
+that it allows for different prediction options within its framework. Moreover,
+it can provide derivative information as an approximation to that of the actual 
+curve at effectively no cost. It is particularly suitable as a prediction
+toolbox for numerical continuation since it provides reliable estimates for the 
+next
+solution point which are competitive with other approaches that use derivative 
+information of the Jacobian, even for moderately large step-lengths, as
+demonstrated by the examples presented. A
+stabilization procedure was also provided for problems parameterized by the 
+arc-length of the solution curve.  
+
+As can be seen from the numerical examples, the \acrshort{wls} 
 variants offer comparable and can even outperform the Euler and the 
 \acrshort{ab2} \& \acrshort{ab3} 
 higher order predictors, which employ the exact tangent. For larger steps in 
@@ -1184,3 +1208,7 @@ storing the a number of previously converged solution points. In practice,
 \acrshort{wls} prediction is unlikely to use a polynomial order higher than 
 $m=4$ and, thus, at each step, we can simply ensure that the last $k=5$ 
 solution points are available in memory. 
+
+
+
+

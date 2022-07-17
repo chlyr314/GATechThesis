@@ -11,6 +11,16 @@
   \item [{$\bvec{r}$}]\begingroup Position vector of a material point on the centerline in the current configuration\nomeqref {0}\nompageref{xii}
   \item [{$\bvec{u}$}]\begingroup Displacement vector of points on the centerline with respect to the initial configuration.\nomeqref {0}\nompageref{xii}
   \item [{$\bvec{t}$}]\begingroup Position vector of a material point on the local system of a cross-section.\nomeqref {0}\nompageref{xii}
+  \item [{$\bmat{f}_c$}]\begingroup Forcing term, counterpart of $\bvec{f}$, expressed in the shifted basis $\bvec{c}$\nomeqref {0}\nompageref{xii}
+  \item [{$w(s)$}]\begingroup Weight function associated with the weighted least squared predictor\nomeqref {0}\nompageref{xii}
+  \item [{$\bmat{W}$}]\begingroup Diagonal matrix of weights of solutions points with respect to the current one\nomeqref {0}\nompageref{xii}
+  \item [{$\mathcal{\bm{B}}$}]\begingroup Coefficient matrix associated with the weighted least squares predictor\nomeqref {0}\nompageref{xii}
+  \item [{$\bvec{t}_z$}]\begingroup Unit tangent vector on the weight least squares curve\nomeqref {0}\nompageref{xii}
+  \item [{$\widetilde{\Delta s}$}]\begingroup Stabilized step-length associated with weighted least squares extrapolation\nomeqref {0}\nompageref{xii}
+  \item [{$Ds$}]\begingroup Approximation of segment on the solution curve between two converged points\nomeqref {0}\nompageref{xii}
+  \item [{$h_m$}]\begingroup Average mesh spacing in a given spatial direction\nomeqref {0}\nompageref{xii}
+  \item [{$d$}]\begingroup Spatial dimension of the problem\nomeqref {0}\nompageref{xii}
+  \item [{$N_{nod}$}]\begingroup Total number of (structural )nodes in the system\nomeqref {0}\nompageref{xii}
   \item [{$\phi$}]\begingroup Angle between $\bvec{E}_i$ and $\bvec{e}_i$\nomeqref {0}\nompageref{xii}
   \item [{$\bmat{R(\phi)}$}]\begingroup Rotation matrix\nomeqref {0}\nompageref{xii}
   \item [{$\kappa$}]\begingroup Curvature of the beam centerline.\nomeqref {0}\nompageref{xii}
@@ -42,7 +52,7 @@
   \item [{$A_s$}]\begingroup Effective area of the cross-section\nomeqref {0}\nompageref{xii}
   \item [{$\ell$}]\begingroup Element length\nomeqref {0}\nompageref{xii}
   \item [{$n_{nod}$}]\begingroup Number of non-restrained nodes\nomeqref {0}\nompageref{xii}
-  \item [{$n$}]\begingroup Number of quadrature points in the element\nomeqref {0}\nompageref{xii}
+  \item [{$n_q$}]\begingroup Number of quadrature points in the element\nomeqref {0}\nompageref{xii}
   \item [{$w_i$}]\begingroup Quadrature weight for the $i$-th quadrature point\nomeqref {0}\nompageref{xii}
   \item [{$\xi$}]\begingroup Normalized coordinate associated with $X_1$\nomeqref {0}\nompageref{xii}
   \item [{$L_i$}]\begingroup Lagrange cardinal function\nomeqref {0}\nompageref{xii}
@@ -57,7 +67,7 @@
   \item [{$\bmat{k}_s$}]\begingroup Section stiffness matrix\nomeqref {0}\nompageref{xii}
   \item [{$\bmat{K}$}]\begingroup Stiffness matrix\nomeqref {0}\nompageref{xii}
   \item [{$\bvec{F}_{int}$}]\begingroup Internal nodal force vector\nomeqref {0}\nompageref{xii}
-  \item [{$\Delta S$}]\begingroup Incremental arc-length parameter\nomeqref {0}\nompageref{xii}
+  \item [{$\Delta s$}]\begingroup Incremental arc-length parameter\nomeqref {0}\nompageref{xii}
   \item [{$\bvec{\sigma}_f$}]\begingroup Vector of active stress components on a fiber\nomeqref {0}\nompageref{xii}
   \item [{$\bvec{\epsilon}_f$}]\begingroup Strain components corresponding to $\bvec{\sigma}_f$\nomeqref {0}\nompageref{xii}
   \item [{$\bmat{N}_s$}]\begingroup Cross-section shape function matrix\nomeqref {0}\nompageref{xii}
@@ -93,5 +103,13 @@
   \item [{$\mathcal{D}$}]\begingroup Subdivision of an interval\nomeqref {0}\nompageref{xii}
   \item [{$\tau(\bar{I}_g)$}]\begingroup Cell associated with subdivision of $\Omega$\nomeqref {0}\nompageref{xii}
   \item [{$W^q$}]\begingroup Subinterval associated with subdivision $\mathcal{D}$\nomeqref {0}\nompageref{xii}
+  \item [{$\bvec{J}$}]\begingroup Jacobian of a vector function\nomeqref {0}\nompageref{xii}
+  \item [{$\mathcal{P}_m$}]\begingroup Space of polynomials up to degree $m$\nomeqref {0}\nompageref{xii}
+  \item [{$f$}]\begingroup Forcing term assiciated with the least squares moment equations\nomeqref {0}\nompageref{xii}
+  \item [{$\bmat{A}$}]\begingroup Moment matrix associated with a least squares process\nomeqref {0}\nompageref{xii}
+  \item [{$\bvec{p}$}]\begingroup Polynomial basis vector associated with the weighted least squares predictor\nomeqref {0}\nompageref{xii}
+  \item [{$\bvec{c}$}]\begingroup Shifted polynomial basis vector associated with the weighted least squares predictor\nomeqref {0}\nompageref{xii}
+  \item [{$\bmat{\Phi}$}]\begingroup Transformation matrix between $\bvec{p}$ and $\bvec{c}$\nomeqref {0}\nompageref{xii}
+  \item [{$\bmat{A}_c$}]\begingroup Moment matrix, counterpart of $\bmat{A}$, expressed in the shifted basis $\bvec{c}$\nomeqref {0}\nompageref{xii}
 
 \end{thenomenclature}

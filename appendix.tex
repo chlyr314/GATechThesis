@@ -6,7 +6,7 @@
 
 %Begin individual appendices, separated as chapters
 
-\chapter{}\label{appendix:A}
+\chapter{Gradient of Hybrid NLP Lagrangian}\label{appendix:A}
 
 Explicit expressions of the formulation are provided in this
 Appendix. We note that operations involving the symbol $\nabla$ map scalars to
@@ -33,8 +33,8 @@ The Lagrangian function is used here, as presented in Eq.
 \end{bmatrix}^T$. The number $m$ designates the \emph{total} number of
 integration points in the structure.
 
-\subsection{Gradient of strain energy}
-The gradient of $U$ is expressed as:
+%\subsection{Gradient of Strain Energy}
+The gradient of the strain energy, $U$, is expressed as:
 \begin{gather}
 	\nabla U = \begin{bmatrix}
 		\nabla_{\mathbf{y}}U\\ \nabla_{\mathbf{d}_g}U\\ 
@@ -64,7 +64,8 @@ since then $\bvec{F}_{sec}^{(i)} = \begin{bmatrix}
 The gradients of $U$ with respect to both $\bvec{d}_g$ and $\bvec{\lambda}$
 provide zero vectors:
 \begin{gather}
-	\nabla_{\mathbf{d}_g}U = \bvec{0}\in\mathbb{R}^{3N}\quad\text{and}\quad
+	\nabla_{\mathbf{d}_g}U = 
+	\bvec{0}\in\mathbb{R}^{3N_{nod}}\quad\text{and}\quad
 	\nabla_{\mathbf{\lambda}}U = \bvec{0}\in\mathbb{R}^{s}\nonumber
 \end{gather}
 
@@ -75,7 +76,8 @@ Finally, we then get:
 		\nabla_{\mathbf{y}}U\\ \bvec{0}\\ \bvec{0}
 	\end{bmatrix}
 \end{gather}
-\subsection{Gradient of constraints}
+
+%\subsection{Gradient of Constraints}
 
 We restate the constraints equations from Eqs.
 (\ref{eq:impsd1})-(\ref{eq:impsd2}):
@@ -127,7 +129,8 @@ $\bvec{y}_i$, is:
 	\end{bmatrix}\nonumber
 \end{gather}
 
-\noindent where $\hat{\mathbf{E}}_i\in\mathbb{R}^n$ is a unit vector with the
+\noindent where $\hat{\mathbf{E}}_i\in\mathbb{R}^{n_q}$ is a unit vector with 
+the
 $i$-th component equal to one.
 \noindent Collectively, we have:
 \begin{gather}
@@ -160,7 +163,7 @@ straightforward manner by simple derivations:
 		1 & 0 & 0\\
 		0 & 1 & 0\\
 		0 & 0 & 1
-	\end{bmatrix}\quad\text{,}\quad \bvec{0},\bvec{1}\in\mathbb{R}^n,\quad 
+	\end{bmatrix}\quad\text{,}\quad \bvec{0},\bvec{1}\in\mathbb{R}^{n_q},\quad 
 	\bvec{0}=\begin{bmatrix}
 		0 & \cdots & 0
 	\end{bmatrix}^T,\quad \bvec{1}=\begin{bmatrix}
@@ -172,7 +175,7 @@ straightforward manner by simple derivations:
 gives a zero matrix:
 \begin{gather}
 	\nabla_{\mathbf{\lambda}}\bvec{h}_g = 
-	\bmat{0}\in\mathbb{R}^{(n+3)\times(n+3)}
+	\bmat{0}\in\mathbb{R}^{(n_q+3)\times(n_q+3)}
 \end{gather}
 
 \noindent The total constraints gradient is then expressed in block matrix
@@ -180,7 +183,7 @@ form as:
 \begin{gather}
 	\nabla\bvec{h}_g = \begin{bmatrix}
 		\nabla_{\mathbf{y}_1}\bvec{h}_g & \nabla_{\mathbf{y}_2}\bvec{h}_g &
-		\cdots & \nabla_{\mathbf{y}_n}\bvec{h}_g & 
+		\cdots & \nabla_{\mathbf{y}_{n_q}}\bvec{h}_g & 
 		\nabla_{\mathbf{d}_g}\bvec{h}_g &
 		\nabla_{\mathbf{\lambda}}\bvec{h}_g
 	\end{bmatrix}\nonumber
@@ -219,11 +222,12 @@ theory:
 order term $\epsilon_i\phi_i$ arising from the imposition of the small
 displacement assumption $\sin\phi_i \approx \phi_i$, $\cos\phi_i\approx1$ in Eq.
 (\ref{eq:impsd1}).
-\subsection{Gradient of the potential energy}
+%\subsection{Gradient of the Potential Energy}
 
 The potential energy due to external loads $\bvec{P}$ is:
 \begin{gather}
-	W = \sum_{j=1}^{N}\bvec{P}_j^T\bvec{d}_{g,j} = \bvec{d}_g^T\bvec{P}\nonumber
+	W = \sum_{j=1}^{N_{nod}}\bvec{P}_j^T\bvec{d}_{g,j} = 
+	\bvec{d}_g^T\bvec{P}\nonumber
 \end{gather}
 
 \noindent The gradient of the potential energy is, again, straightforward in its
@@ -237,16 +241,18 @@ derivation as it only depends on the displacement vector:
 
 \noindent with $\nabla_{\mathbf{y}}W = \bvec{0}\in\mathbb{R}^m$,
 $\nabla_{\mathbf{d}_g}W = \bvec{P}$ and $\nabla_{\mathbf{\lambda}}W =
-\bvec{0}\in\mathbb{R}^{n+3}$ for one element. Thus, we have:
+\bvec{0}\in\mathbb{R}^{n_q+3}$ for one element. Thus, we have:
 \begin{gather}
 	\nabla W = \begin{bmatrix}
 		\bvec{0}\\ \bvec{P}\\ \bvec{0}	\end{bmatrix}
 \end{gather}
 
-\subsection{Gradient of the Lagrangian}
+%\subsection{Gradient of the Lagrangian}
 
-We substitute in Eqs. (\ref{eq:eqtot}) the explicit expressions derived here
-in the Appendix:
+Finally, the gradients of the Lagrangian with respect to the three constituent 
+vector arguments, $\bvec{y}_i$, $\bvec{d}_g$ and $\bvec{\bm{\lambda}}$ are 
+shown below. These expressions are substituted in Eqs. (\ref{eq:eqtot}):
+
 \begin{gather}
 	\nabla_{\mathbf{y}_i}\mathcal{L} = w_i\begin{bmatrix}
 		\bvec{F}_{sec}^{(i)} \\ 0
@@ -265,10 +271,10 @@ in the Appendix:
 	\end{bmatrix}^T\bvec{\lambda}
 \end{gather}
 \begin{gather}
-	\nabla_{\mathbf{\lambda}}\mathcal{L} = \bvec{h}_g
+	\nabla_{\bm{\lambda}}\mathcal{L} = \bvec{h}_g
 \end{gather}
 
-\chapter{}\label{appendix:B}
+\chapter{Hessian of Hybrid NLP Lagrangian}\label{appendix:B}
 The Hessian form in Eq. (\ref{eq:hess}), is restated here:
 \begin{gather}
 	\bmat{H} = 	\begin{bmatrix}
@@ -368,7 +374,7 @@ only the part $\bvec{\lambda}^A$, as:
 \noindent and the second derivative matrix of the Lagrangian is now fully
 determined.
 
-\chapter{}\label{appendix:APPENDIX_C}
+\chapter{Iterative Corrections for Plastic Parameter}\label{appendix:APPENDIX_C}
 
 First, we express the effective stress vector $\bvec{\zeta}_{n+1}$ purely in
 terms $\lambda$, using 
@@ -447,7 +453,8 @@ to $q_{n+1}$. It can be found that the derivative is:
 %q_{n+1}^0=q_{n+1}^{TR},\ \bvec{\zeta}_{n+1}^0=\bvec{\zeta}^{TR}_{n+1}$.
 
 
-\chapter{}\label{appendix:APPENDIX_D}
+\chapter{Analytical Derivation of Consistent Tangent 
+Modulus}\label{appendix:APPENDIX_D}
 
 For the inversion of the block matrix (\ref{eq:DIFF_SYSTEM}) we perform block
 elimination considering $\bmat{A} =
@@ -502,5 +509,123 @@ The vector $\bvec{N}$ in (\ref{eq:CONSISTENT TANGENT MOD}) is given by:
 
 The calculation can be simplified significantly if second and higher order 
 terms in $\lambda$ are ignored.
+
+%%%%%%%%%%%%%%%%%% APPENDIX E %%%%%%%%%%%%%%%%%%%%%%
+\chapter{Numerical Pathfollowing}\label{appendix:APPENDIX_E}
+
+Assuming that the smoothness and regularity conditions hold for $\bvec{H}$, let
+$\mathit{\Gamma}_0$ be a path corresponding to a regular initial point
+$\bvec{x}_0$. This path can be parameterized as
+$\bvec{y}(s)=(\bvec{x}(s),t(s))$. Following Klopfenstein\cite{Klopfenstein:1961}
+who proposed $s$ to be regarded as the arc-length of path
+$\mathit{\Gamma}_0$,
+by differentiating the Homotopy equation Eq.
+(\ref{eq:GENHOM})  with respect to $s\in\mathbb{R}_+$, we arrive at the 
+following \acrshort{ivp}:
+\begin{subequations}
+	\begin{align}
+		&\bmat{DH}\cdot \dot{\bm{y}}(s) = 0\label{eq:IVP1_APP}\\
+		&\Vert \dot{\bm{y}}(s)\Vert_2 = 1\label{eq:IVP2_AA}\\
+		&\bm{y}(0) = (\bm{x}_0,0),\ s\geq 0\nonumber
+	\end{align}
+	\label{eq:IVP_APP}
+\end{subequations}
+\noindent where $\dot{(\cdot)}$ denotes differentiation with 
+respect to $s$,  $\Vert \cdot\Vert_2$ is the Euclidean norm and
+$\bmat{DH}=[\bmat{DH}_{\bm{x}}\ \bmat{DH}_t]$ is the $n\times (n+1)$ 
+Jacobian of $\bvec{H}$.
+The integration of IVP (\ref{eq:IVP}) is typically carried out a by 
+predictor-corrector approach, whereby a prediction around the current point 
+is followed by a correction phase using Newton iterations, until, under an
+appropriate norm and a prescribed tolerance $\epsilon_{tol}$, the condition
+$\Vert \bvec{H}\Vert\leq \epsilon_{tol}$ is satisfied. 
+
+Let $N$ denote the current
+converged step. The next point on the path is usually approximated using Euler
+prediction:
+\begin{equation}
+	\bvec{y}^{\ p}_{N+1} = \bvec{y}_N+\Delta s\dot{\bvec{y}}_N
+	\label{eq:Nprediction}
+\end{equation}
+where $\bvec{y}_N,\ \dot{\bvec{y}}_N$ are known and $\Delta s$ is a 
+user-defined 
+step-length. Because, in general, $\Vert 
+\bvec{H}(\bvec{y}_{N+1}^p)\Vert>>\epsilon$, 
+a correction phase is followed by applying iteratively:
+\begin{equation}
+	\bvec{y}_{N+1}^{\ j+1}=\bvec{y}_{N+1}^{\ j}+\bmat{B}^j\bvec{r}^{\ r}
+	\label{eq:corrections}
+\end{equation}
+with $j=0,1,\dots,j_{max}$ and $\bvec{y}_{N+1}^{\ 0}=\bvec{y}^{\ p}_{N+1}$. 
+Operator
+$\bmat{B}$ and vector $\bvec{r}$ 
+depend on the algorithm used. The two most common algorithms used are (i) the 
+Normal Flow
+method\cite{Watson87,Ragon:2002,Allgower:2003} and (ii) the Augmented Jacobian
+method\cite{Rheinboldt:1983B,Watson87,Keller:1978}. In the first method 
+the solution is found by
+solving the following constrained nonlinear program:
+\begin{align*}
+	&\text{Minimize}\ \ \ \Vert \bvec{y}-\bvec{y}^p\Vert_2\\
+	&\text{subject to}\ \ \ \bvec{H}(\bvec{y})=\bvec{0}
+	\label{eq:minimizationNF}
+\end{align*}
+This leads to $\bmat{B}= \bmat{DH}^\dagger=\bmat{DH}^T(\bmat{DH}\cdot
+\bmat{DH}^T)^{-1}$, which is the Moore-Penrose inverse of $\bmat{DH}$,
+and $\bvec{r}=-\bvec{H}$. 
+The corrections follow a trajectory that is normal to the perturbed curves
+$\bvec{H}(\bvec{y})=\bvec{c}_{cont}$. 
+
+In the Augmented Jacobian approach, a constraint equation, $V(\bvec{y})=0$ is 
+introduced so that, combined with Eq. (\ref{eq:IVP1_APP}), a system of $n+1$ 
+equations with $n+1$ unknowns is formed and the resulting augmented
+$(n+1)\times(n+1)$ matrix, $\bmat{A}$, is always non-singular. Some popular
+choices for $V$ are listed below:  
+\begin{itemize}
+	\item $V(\bvec{y}) = \dot{\bvec{y}}^T(\bvec{y}-\bvec{y}^p)$, resulting in 
+	the
+	so-called normal plane method.
+	\item $V(\bvec{y})= \Vert \bvec{y}-\bvec{y}_N\Vert^2_2-\Delta s^2$, 
+	resulting in 
+	the secant length method\cite{Menzel:1985}.
+	\item $V(\bvec{y}) = \bvec{e}_i^T(\bvec{y}-\bvec{y}_N)-1$, which results in 
+	the switching
+	parameter algorithm proposed in \cite{Rheinboldt:1980}, with $\bvec{e}_i$
+	being the $i$-th standard basis vector of $\mathbb{R}^{n+1}$.
+\end{itemize}
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=2.5]{FIG47.pdf}
+	\caption{Two correction algorithms: Normal Flow and Normal Plane.}
+	\label{fig:FIG47}
+\end{figure}
+
+Intermediate Normal Flow corrections correspond to
+contours of $\bvec{H}$, $\bvec{H}_j$, where $\bvec{H}_j=\bvec{c}_{cont,j}$, 
+$\Vert
+\bvec{c}_{cont,j}\Vert_2>\epsilon_{tol}$, with $j$ the iteration counter. 
+Normal Plane
+corrections lie on a plane orthogonal to the tangent at $\bvec{y}_N$ and at
+distance $\Delta s$, while Secant Length corrections are forced to lie on a
+sphere of radius $\Delta s$, centered at $\bvec{y}_N$.
+
+In any case, for the Augmented Jacobian approach,  $\bmat{B} = 
+\bmat{A}^{-1}=[\bmat{DH}^T\ \ \bvec{q}_c]^{-1}$ and
+$\bvec{r} = -[\bvec{H}^T\ \ V]^T$, where
+$\dot{V}(\bvec{y})=\bvec{q}_c^T\dot{\bvec{y}}$.
+The techniques derived from the Augmented Jacobian
+approach underpin most incremental algorithms that have been developed 
+for tackling stability problems in computational solid mechanics.
+\cite{Wempner:1971,Riks:1972,Riks:1979,Crisfield3,Ramm:1981}. The Normal
+Flow and two cases of Augmented Jacobian iterates are depicted in 
+figure (\ref{fig:FIG47}), in particular the normal plane and secant length
+methods. For details on the numerical linear algebra pertaining to these
+methods, the interested reader can refer to the works of 
+Keller\cite{Keller:1978,Keller:1983}, 
+Chan and Keller\cite{ChanKeller:1982}, Griewank\cite{Griewank:1985},
+Rheinboldt\cite{Rheinboldt:1983B}, Lin et.al.\cite{Lin:1987}, among others. 
+
+
 
 \end{appendices}

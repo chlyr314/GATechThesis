@@ -1,7 +1,161 @@
 \chapter{Introduction and Background}
 
+\section{Literature Review}
 
-\subsection{Notation}
+\subsection{Beam element technologies}
+Engineering applications involving structures undergoing large
+displacements, rotations and elastic or inelastic deformations are quite
+common in several fields and industries. As far as rod-like structures
+are concerned, computational extensions of the classical Euler-Bernoulli theory
+are required for the accurate prediction of the aforementioned effects, but
+also to account for shear flexibility considerations.
+In small displacement theory, the undeformed and deformed configurations are
+regarded as identical and, therefore, only one configuration acts as
+referential. Yet, when large displacements are considered, the
+description of beam kinematics and equilibrium have to take into account that
+the deformed geometry of the beam can be drastically different from the
+undeformed one.  Within the Lagrangian framework, one chooses a body configuration
+to refer to, giving rise to the notion of total and updated
+Lagrangian formulations\cite{Bathe:1979}. In the former, the initial (or undeformed)
+configuration is chosen as a reference, whereas in the latter, typically
+associated with path-dependent problems, one refers to the current (or deformed)
+one.
+
+Several methods have been employed over the years to tackle geometrically
+nonlinear problems of beams within the context of finite elements.  One approach
+is to introduce a local and rigid Cartesian coordinate frame associated with
+each element and rotating with it. Small displacement assumptions can then be
+applied locally and computed quantities are referred back to the global
+frame by the associated element transformation matrix. Such approaches, as
+typically encountered in the treatment of large displacements of beams
+and shells, are often termed co-rotational 
+\cite{Belytschko:1973,Belytschko:1977,Rankin,Crisfield2},
+are associated with small strain assumptions and ordinarily require fine
+discretization. Early application of such approaches
+are found in the works of Argyris et.al. \cite{Argyris} and Wempner 
+\cite{Wempner:1969}. For
+a survey on co-rotational methods the interested reader may refer to Felippa
+and Haugen \cite{Felippa:2005}.
+
+Another approach, which we follow in this work, considers orthogonal coordinate
+frames attached to material points along the beam centerline. By choosing
+a reference configuration the task then is to trace the current position vectors
+of such frames. Since beam cross-sections are assigned to material points of the
+centerline, these frames completely describe the current beam configuration 
+once the transformation of the frames from the current to the reference
+configuration is established. Formulations adhering to this geometric description
+have often been termed geometrically-exact and have been considered by
+Reissner \cite{Reissner1}, and further
+extended in the works of several authors, such as Simo \cite{Simo1}, Simo and
+Vu-Quoc \cite{Simo2,Simo3}, Cardona and Geradin \cite{Cardona1}, Ibrahimbregovic 
+\cite{Ibrahim1},  Romero and Armero \cite{RomArm}, among others.
+The geometrically-exact formulation is particularly attractive because the
+kinematic description is expressed directly in a global inertial frame for all
+elements, as opposed to local element-specific frames in the co-rotational method. For 
+three-dimensional problems, the description of finite rotations requires
+special treatment (e.g. see \cite{Argyris:1982,Romero:2004}) due to their
+non-commutative algebraic character. There are, however, methods that
+are able to tackle large rotation problems without considering nodal rotational
+variables (e.g. see Romero \cite{Romero:2008}, Shabana and Yakoub 
+\cite{Shabana}).
+For a comparison between co-rotational and geometrically-exact approaches,
+see Mathisen et al. \cite{Mathisen}.
+More recent developments of geometrically-exact models in the context of
+finite element analysis include viscous damping extensions\cite{Oliveto},
+incorporation of the Green-Lagrange tensor as strain measure \cite{Panteli},
+a mixed formulation based on complementary energy principles \cite{Santos},
+and modeling of fiber-based
+materials\cite{Meier}, to name but a few. Marino \cite{Marino} and
+Tasora et al. \cite{Tasora} also implemented geometrically-exact formulations
+in the framework of isogeometric analysis \cite{HughesBaz}, while
+Salehi and Sideris\cite{Salehi}, following Reissner's theory, developed a
+large-strain force-based formulation capable of tackling material softening.
+
+Relevant approaches where strain measures are included as nodal variables are often
+termed strain or deformation-based and, among others, have been
+investigated by Planinc
+et al. \cite{Planinc} for the plane case of a geometrically-exact beam, in
+order to properly account for the effect of local instabilities on the tangent
+stiffness matrix due to inelastic response. Extensions to two-dimensional
+dynamic cases \cite{Gems} and to three-dimensional models \cite{Zupan}
+handling issues related to strain-objectivity have also been
+achieved. A similar formulation has also been presented by Saje \cite{Saje1},
+where the exact kinematic relations are incorporated using the Hu-Washizu variational
+principle and nodal unknowns comprise only rotational variables. Bayo et al.
+\cite{Bayo} introduced a penalty formulation in order to take into account
+kinematic and motion constraints. This approach avoids the use of additional
+Lagrange multiplier unknowns, yet the penalized constraints are not
+satisfied exactly and criteria for the proper adjustment of the penalty
+coefficients are difficult to establish.
+
+\subsection{Inelastic behavior in beams}
+
+Modelling the inelastic response of structural beams is of considerable
+interest in many fields of engineering practice. While accuracy of
+numerical approximations is retained even in nonlinear elastic 
+simulations, this is not the case when inelastic response is expected. The 
+localized and complicated nature of processes at the material level 
+becomes more difficult to capture with numerical models developed at a 
+higher abstraction level, such as beams. Since candidate locations for 
+plastification in frame structures are usually known a priori, 
+analytical models have been developed based on macroscopic, geometric and 
+constitutive, assumptions that can account for the localized character of
+elastoplastic response. These phenomenological formulations are commonly known
+as concentrated or lumped plasticity models and have 
+enjoyed widespread use, especially for reinforced concrete applications, 
+while also offering low computational costs.  
+
+An alternative approach is based on discretization of the beam cross-section
+into an number of fibers or layers. This allows for the employment of 
+constitutive laws directly at the material level. The element 
+stiffness and internal nodal forces are then determined by integrating 
+the elastoplastic rate equations over selected cross-sections in the element
+interior, which are encapsulated by the quadrature points. In addition, 
+this enables the
+modelling of plastic zone spread over the element, thus allowing for a more 
+faithful representation of the response. Elements formulated this way
+are called fibre or distributed plasticity beam
+elements\cite{Kaba1984,Zeris1988,Taucer1991,Spacone1992,Scordelis1984} and
+have seen active development for almost 30 years. In the simplest case where
+only uniaxial constitutive law is considered at the level of fibers, these
+elements can adequately reproduce inelastic axial-flexural interactions in 
+slender members. 
+
+While incorporation of shear effects into the fiber constitutive law is
+straightforward, reproducing an accurate macroscopic behavior by integrating
+a multiaxial law over the section fibers has proven intricate in general. 
+One reason for
+this is the nonlocal effect of shear, which depends on structure-level 
+characteristics, such loading and boundary conditions\cite{Drucker1956}.
+Additional difficulties are induced when modelling complex cross section
+configurations comprised of composite materials, such as reinforced 
+concrete (RC) sections. Restricting ourselves to a
+review of methodologies developed in the context of fibre
+elements, early studies\cite{Vecchio1986,Vecchio1988} modelled
+shear-axial-flexure interaction in planar beams by iteratively enforcing 
+static equilibrium for each fiber between two controlling sections. More
+recently this was extended to 3D beams\cite{Bairan2007}. Other works 
+introduce a stress-resultant model for shear and retain an independent 
+representation axial-flexure coupling through fiber 
+discretization\cite{Ranzo1998,Martino2000,Marini2006}. Taylor et
+al.\cite{Taylor2003} and more recently Lyritsakis et al.\cite{Lyritsakis2021}
+considered uniaxial laws on each fiber for shear and axial stresses 
+separately, thereby ignoring coupling shear-axial coupling. A more physically
+rigorous approach is adopted by a number of
+authors\cite{Papachristidis2010,Saritas2009,Ceresa2009,Gregori2007,Kagermanov2017},
+whereby a multiaxial model is utilized at the fiber level. However, this
+requires additional corrective iterations per
+fiber\cite{Klinkel2002,Dodds1987,DeSouza2011} during a plastic 
+step in order to enforce the zero transverse normal stress condition,
+$\sigma_{yy}=\sigma_{zz}=0$, thereby inducing additional overhead.
+
+\section{Research Objectives}
+
+\section{Research Scope}
+
+\section{Organization of the Manuscript}
+
+\section{Notation}
 Unless state otherwise, boldface lowercase letters indicate second order 
 tensor. Wherever 
 the same letters appear with an overhead arrow, this indicates the vector 

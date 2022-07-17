@@ -12,10 +12,10 @@
 %\usepackage[backend=bibtex, sorting=none, bibstyle=ieee]{biblatex}  %reference 
 %%manager
 \usepackage[bookmarks=true, hidelinks]{hyperref}
-\usepackage[figurename=Fig.,labelfont=bf,labelsep=period]{caption}
+\usepackage[figurename=Figure,labelfont=bf,labelsep=period]{caption}
 \usepackage[page]{appendix}  %for appendices
 \usepackage{rotating}  %for rotated, landscape images
-\usepackage{ulem}  %for underlined section titles
+%\usepackage{ulem}  %for underlined section titles
 \usepackage{xcolor}
 \usepackage{bookmark}
 \usepackage{nomencl}
@@ -47,6 +47,7 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 \input{acronyms}
 %\renewcommand{\nomname}{\Large Nomenclature}
 \setlength{\nomitemsep}{-\parsep}% reduce vertical gap btween nomenclature 
+
 
 % MISC COMMANDS 
 \newcommand{\bvec}[1]{\vec{\bm{#1}}}
@@ -178,9 +179,11 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 
 \renewcommand\contentsname{Table of Contents}
 
-\begin{singlespace}
+\begin{spacing}{0.2}
+\setlength{\cftbeforechapskip}{15pt}
+
 \tableofcontents
-\end{singlespace}
+\end{spacing}
 
 \currentpdfbookmark{Table of Contents}{TOC}
 
@@ -189,20 +192,36 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % List of figures and tables
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Format List of Figures
+\renewcommand\cftfigpresnum{\bfseries Figure }
+\renewcommand\cftfigaftersnum{:}
+\newlength{\mylength}
+\settowidth{\mylength}{\bfseries\cftfigpresnum\cftfigaftersnum}
+\setlength{\cftfignumwidth}{\mylength}
+\addtolength{\cftfignumwidth}{2.2em}
 \addcontentsline{toc}{chapter}{List of Figures}
-\begin{singlespace}
-	\setlength\cftbeforefigskip{\baselineskip}  %manually set spacing between 
+%\begin{singlespace}
+	%\setlength\cftbeforefigskip{\baselineskip}  %manually set 
+	%%spacing between 
 	%entries
 	\listoffigures
-\end{singlespace}
+%\end{singlespace}
 
 \clearpage
 
+\renewcommand\cfttabpresnum{\bfseries Table }
+\renewcommand\cfttabaftersnum{:}
+\newlength{\mylengthc}
+\settowidth{\mylengthc}{\bfseries\cfttabpresnum\cfttabaftersnum}
+\setlength{\cfttabnumwidth}{\mylengthc}
+\addtolength{\cfttabnumwidth}{2.2em}
 \addcontentsline{toc}{chapter}{List of Tables}
-\begin{singlespace}
-	\setlength\cftbeforetabskip{\baselineskip}  %manually set spacing between entries
+%\begin{singlespace}
+%	\setlength\cftbeforetabskip{\baselineskip}  %manually set 
+%%spacing between entries
 	\listoftables
-\end{singlespace}
+%\end{singlespace}
 
 \clearpage
 
@@ -255,10 +274,10 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 \titleformat{\section}{\normalfont\bfseries}{\thesection}{1em}{#1}
 
 % Adjust subsection title formatting
-\titleformat{\subsection}{\normalfont}{\uline{\thesubsection}}{0em}{\uline{\hspace{1em}#1}}
+\titleformat{\subsection}{\normalfont\bfseries}{{\thesubsection}}{0em}{{\hspace{1em}#1}}
 
 % Adjust subsubsection title formatting
-\titleformat{\subsubsection}{\normalfont\itshape}{\thesubsection}{1em}{#1}
+\titleformat{\subsubsection}{\normalfont\itshape}{\thesubsubsection}{1em}{#1}
 
 %%%%%%%%%%%%%%%%
 % Chapter 1
@@ -300,6 +319,17 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 %%%%%%%%%%%%%%%%
 
 \input{chapter5.tex}
+\newpage
+\mbox{}
+\newpage
+
+%%%%%%%%%%%%%%%%
+% Chapter 6
+%%%%%%%%%%%%%%%%
+\input{chapter6.tex}
+\newpage
+\mbox{}
+\newpage
 
 %%%%%%%%%%%%%%%%
 % Appendices
@@ -320,7 +350,10 @@ bibstyle=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 
 \addcontentsline{toc}{chapter}{References}  %add References section to Table of 
 %Contents
-\printbibliography 
+\begin{spacing}{0.2}
+	\printbibliography 
+\end{spacing}
+
 %%%%%%%%%%%%%%%%
 % Vita 
 % Only for PhD students

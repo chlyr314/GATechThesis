@@ -217,7 +217,7 @@ formulation and the strain-displacement equations in (\ref{eq:mainsd}) are
 incorporated, representing the equality constraints of the problem.
 
 %%%%%%%%%%% CHAPTER 2 - SECTION 3 -S UBSECTION 1%%%%%%%%%%%%
-\subsection{NLP framework}\label{subsection:CH2-S3SS1}
+\subsection{NLP Framework}\label{subsection:CH2-S3SS1}
 
 The NLP problem adopted herein is of the following form:
 \begin{align}
@@ -246,7 +246,7 @@ program with equality constraints, as encountered in the literature (e.g.
 \cite{Luenberger}).
 
 %%%%%%%%%%% CHAPTER 2 - SECTION 3 -S UBSECTION 2 %%%%%%%%%%%%
-\subsection{Total potential energy}\label{subsection:CH2-S3SS2}
+\subsection{Total Potential Energy}\label{subsection:CH2-S3SS2}
 
 We consider the following decomposition of the total potential energy of a beam:
 \begin{gather}
@@ -300,12 +300,14 @@ EI\kappa^2]$  and the section resultants are:
 Numerical
 approximation of Eq. (\ref{eq:tpe2}) by an appropriate quadrature yields:
 \begin{gather}
- 	\Pi(\bvec{q}_1,\ldots,\bvec{q}_n,\bvec{u}_1,\ldots\bvec{u}_N) = \sum_{i=1}^n
+ 	\Pi(\bvec{q}_1,\ldots,\bvec{q}_n,\bvec{u}_1,\ldots\bvec{u}_N) = 
+ 	\sum_{i=1}^{n_q}
 	w_i\mathcal{W}_{S,i} - \sum_{i=1}^2\bvec{P}^T_i\bvec{u}_i
 	\label{eq:obj}
 \end{gather}
 
-\noindent with $w_i$ and $n$ being the weights and the number of integration
+\noindent with $w_i$ and $n_q$ being the weights and the number of 
+integration
 points respectively, and $\mathcal{W}_{S,i} = \mathcal{W}_S(\bvec{q}_i)$.
 Eq. (\ref{eq:obj}) serves as the objective function of the \acrshort{nlp} of
 Eq. (\ref{eq:nlp}).
@@ -324,7 +326,7 @@ the integral form of the strain-displacement equations (\ref{eq:mainsd}):
 \noindent Using Eq. (\ref{eq:roteq}), numerical approximation of the right-hand
 side integral leads to the element specific constraints:
 \begin{gather}
-	\bvec{h}^A = \bvec{d}(\ell)-\bvec{d}(0) - \sum_{i=1}^n
+	\bvec{h}^A = \bvec{d}(\ell)-\bvec{d}(0) - \sum_{i=1}^{n_q}
 	w_i\bmat{R}_i(\bvec{q}_i+\bvec{E}_1)+\ell\bvec{E}_1=\bvec{0}
 	\label{eq:dsd}
 \end{gather}
@@ -333,11 +335,13 @@ side integral leads to the element specific constraints:
 \noindent The component form of Eq. (\ref{eq:dsd}) can be given as:
 \begin{gather}
 	\bvec{h}^A = \begin{bmatrix}
-		u(\ell)-u(0) - \sum_{i=1}^n w_i\bigg[(\epsilon_i+1)\cos\phi_i -
+		u(\ell)-u(0) - \sum_{i=1}^{n_q} 
+		w_i\bigg[(\epsilon_i+1)\cos\phi_i -
 		\gamma_i\sin\phi_i\bigg] +\ell\\
-		v(\ell)-v(0) - \sum_{i=1}^n w_i\bigg[(\epsilon_i+1)\sin\phi_i +
+		v(\ell)-v(0) - \sum_{i=1}^{n_q} 
+		w_i\bigg[(\epsilon_i+1)\sin\phi_i +
 		\gamma_i\cos\phi_i\bigg]\\
-		\phi(\ell)-\phi(0) - \sum_{i=1}^n w_i\kappa_i
+		\phi(\ell)-\phi(0) - \sum_{i=1}^{n_q} w_i\kappa_i
 	\end{bmatrix}
 \end{gather}
 
@@ -347,14 +351,14 @@ $\phi$ is involved in both the integration points and the element edge nodes.
 As such, we introduce a Lagrange interpolation scheme for the curvature
 field in the same fashion as in \cite{Andriotis}:
 \begin{equation}
-	\kappa(\xi) = \sum_{i=1}^nL_i(\xi)\kappa_i
+	\kappa(\xi) = \sum_{i=1}^{n_q}L_i(\xi)\kappa_i
 	\label{eq:curvi}
 \end{equation}
 
 \noindent where $L_i$ are the Lagrange cardinal functions:
 \begin{equation}
-	L_i(\xi) = \frac{\displaystyle\prod_{j=1,j\neq i}^n
-		(\xi-\xi_j)}{\displaystyle\prod_{j=1,j\neq i}^n 
+	L_i(\xi) = \frac{\displaystyle\prod_{j=1,j\neq i}^{n_q}
+		(\xi-\xi_j)}{\displaystyle\prod_{j=1,j\neq i}^{n_q} 
 		(\xi_i-\xi_j)}\text{,}\quad
 	\xi=\frac{X_1}{\ell}\nonumber
 \end{equation}
@@ -362,8 +366,9 @@ field in the same fashion as in \cite{Andriotis}:
 \noindent Substitution of Eq. (\ref{eq:curvi}) to Eq. (\ref{eq:cond3}) yields
 the expression for rotations $\phi_i$:
 \begin{equation}
-	\phi_i-\phi(0) = \sum_{j=1}^n\bigg(\int_0^{\xi_i}L_j(x)\ dx\bigg)\kappa_j =
-	\sum_{i=1}^n T_{ij}\kappa_j
+	\phi_i-\phi(0) = \sum_{j=1}^{n_q}\bigg(\int_0^{\xi_i}L_j(x)\ 
+	dx\bigg)\kappa_j =
+	\sum_{i=1}^{n_q} T_{ij}\kappa_j
 \end{equation}
 \begin{figure*}[b]
 	\centering
@@ -385,19 +390,21 @@ equality constraint set as:
 \begin{gather}
 	\bvec{\phi}=
 	\begin{bmatrix}
-		\phi_1 & \phi_2 & \cdots & \phi_n
+		\phi_1 & \phi_2 & \cdots & \phi_{n_q}
 	\end{bmatrix}^T\quad \text{,}\ \bvec{1}= \begin{bmatrix}
 		1 & 1 & \cdots & 1
-	\end{bmatrix}^T\in\mathbb{R}^n \nonumber\\
+	\end{bmatrix}^T\in\mathbb{R}^{n_q} \nonumber\\
 	\bmat{T} = L\begin{bmatrix}
-		\xi_1 & \frac{\xi_1^2}{2} & \cdots & \frac{\xi_1^n}{n}\\
+		\xi_1 & \frac{\xi_1^2}{2} & \cdots & 
+		\frac{\xi_1^{n_q}}{n_q}\\
 		\vdots & \vdots & \ddots & \vdots\\
-		\xi_n & \frac{\xi_n^2}{2} & \cdots & \frac{\xi_n^n}{n}
+		\xi_{n_q} & \frac{\xi_{n_q}^2}{2} & \cdots & 
+		\frac{\xi_{n_q}^{n_q}}{n_q}
 	\end{bmatrix}\bmat{\Theta}^{-1}\quad \text{,}\ \bmat{\Theta} = 
 	\begin{bmatrix}
-		1 & \xi_1 & \xi_1^2 & \cdots & \xi_1^{n-1}\\
+		1 & \xi_1 & \xi_1^2 & \cdots & \xi_1^{n_q-1}\\
 		\vdots &\vdots & \ddots & \vdots\\
-		1 & \xi_n & \xi_n^2 & \cdots &\xi_n^{n-1}
+		1 & \xi_{n_q} & \xi_{n_q}^2 & \cdots &\xi_{n_q}^{n_q-1}
 	\end{bmatrix}\nonumber
 \end{gather}
 
@@ -421,7 +428,7 @@ in vector
 $\bvec{h}^B$ will depend on the chosen quadrature rule.
 
 %%%%%%%%%%% CHAPTER 2 - SECTION 3 - SUBSECTION 4 %%%%%%%%%%%%
-\subsection{Lagrangian function}\label{subsection:CH2-S3SS4}
+\subsection{Lagrangian Function}\label{subsection:CH2-S3SS4}
 
 In order to derive the Lagrangian function in the form of Eq. (\ref{eq:lagr}),
 we introduce a vector $\bvec{\lambda}$ of additional Lagrange multiplier
@@ -442,12 +449,15 @@ energy and the potential energy:
 
 \noindent where:
 \begin{gather}
-	U^e = \sum_{i=1}^n w_i\mathcal{W}_{S,i}^e \quad \text{,}\quad W = 
-	\sum_{i=1}^N
+	U^e = \sum_{i=1}^{n_q} w_i\mathcal{W}_{S,i}^e \quad 
+	\text{,}\quad W = 
+	\sum_{i=1}^{N_{nod}}
 	\bvec{P}_i^T\bvec{u}_i\nonumber
 \end{gather}
 
-\noindent Thereby, additional elements can be simply incorporated by adding
+\noindent where $N_{nod}$ is the total number of nodes in the 
+structure. Thereby, additional elements can be simply incorporated 
+by adding
 their stored energy in the corresponding sum, and considering element
 constraints by augmenting vectors $\bvec{\lambda}$, $\bvec{h}$, after 
 transforming
@@ -475,7 +485,8 @@ $\bhat{d}_l = \bvec{d}(0)$ and $\bhat{d}_r = \bvec{d}(\ell)$. The element
 displacement
 vector is thus $\bhat{d} = \begin{bmatrix} \bhat{d}_l^T & \bhat{d}_r^T 
 \end{bmatrix}^T$. The corresponding
-\emph{global} displacement vector $\bvec{d}_g$ is related to the local vector
+global displacement vector $\bvec{d}_g$ is related to the local 
+vector
 $\bhat{d}$ via the typical linear transformation $\bmat{\Lambda}$:  % HERE
 
 \begin{gather}
@@ -501,7 +512,8 @@ $\bhat{d}$ via the typical linear transformation $\bmat{\Lambda}$:  % HERE
 transformed in the global system become:  % HERE
 \begin{subequations}
 	\begin{gather}
-		\bvec{h}^A_g = \bmat{V}_1\bvec{d}_g - \bmat{\Lambda}^T\bigg[\sum_{i=1}^n
+		\bvec{h}^A_g = \bmat{V}_1\bvec{d}_g - 
+		\bmat{\Lambda}^T\bigg[\sum_{i=1}^{n_q}
 		w_i\bmat{R}_i(\bvec{q}_i+\bvec{E}_1) - \ell\bvec{E}_1\bigg]
 		\label{eq:impsd1}\\
 		\bvec{h}^B_g = \bvec{\phi}-\bmat{V}_2\bvec{d}_g - \bmat{T}\bvec{\kappa}
@@ -521,14 +533,16 @@ transformed in the global system become:  % HERE
 		1 & 0 & 0\\
 		0 & 1 & 0\\
 		0 & 0 & 1
-	\end{bmatrix}\quad\text{,}\quad \bvec{0}\in\mathbb{R}^n\nonumber
+	\end{bmatrix}\quad\text{,}\quad 
+	\bvec{0}\in\mathbb{R}^{n_q}\nonumber
 \end{gather}
 
 \noindent In the equation above the superscript denoting an element is ommited
 for clarity. The element contribution to the Lagrangian of the assemblage,
 denoted $\mathcal{E}^e$, is then:
 \begin{gather}
-	\mathcal{E}^e(\bvec{y}_1,\dots \bvec{y}_n, \bvec{d}_g,\bvec{\lambda}^e) =
+	\mathcal{E}^e(\bvec{y}_1,\dots \bvec{y}_{n_q}, 
+	\bvec{d}_g,\bvec{\lambda}^e) =
 	U^e  + (\bvec{\lambda}^e)^T\bvec{h}^e_g
 	\label{eq:implag}
 \end{gather}
@@ -586,7 +600,7 @@ numerically during the \emph{cross-section state determination} phase in Sec.
 (\ref{subsection:CH2-S4SS4}).
 
 %%%%%%%%%%% CHAPTER 2 - SECTION 4 - SUBSECTION 2 %%%%%%%%%%%%
-\subsection{Hessian matrix}\label{subsection:CH2-S4SS2}
+\subsection{Hessian Matrix}\label{subsection:CH2-S4SS2}
 
 The Hessian matrix of the Lagrangian function contains second order
 information of the system and is utilized during the solution phase.
@@ -619,7 +633,7 @@ block-diagonal (see Appendix \ref{appendix:B}) and its
 symmetry guarantees the full symmetry of $\bmat{H}$.
 
 %%%%%%%%%%% CHAPTER 2 - SECTION 4 - SUBSECTION 3 %%%%%%%%%%%%
-\subsection{Solution scheme}\label{subsection:CH2-S4SS3}
+\subsection{Solution Scheme}\label{subsection:CH2-S4SS3}
 
 As mentioned in Appendix \ref{appendix:B}, the nonlinear system of equations in 
 Eq.
@@ -745,10 +759,11 @@ in the global system:
 	\end{align}
 \end{subequations}
 
-\noindent where $\bvec{b}\in\mathbb{R}^p$, $\bvec{F}_{int}\in\mathbb{R}^{3N}$,
-$N$ is again the number of structural nodes,
+\noindent where $\bvec{b}\in\mathbb{R}^p$, 
+$\bvec{F}_{int}\in\mathbb{R}^{3N_{nod}}$,
+$N_{nod}$ is again the number of structural nodes,
 $\bmat{B}\in\mathbb{R}^{p\times p}$ with $p=m+3n_{nel}$, and
-$\bmat{K}\in\mathbb{R}^{3N\times 3N}$. 
+$\bmat{K}\in\mathbb{R}^{3N_{nod}\times 3N_{nod}}$. 
 
 Equivalently, an
 assembly process can also be implemented by casting 
@@ -756,17 +771,18 @@ Eqs. (\ref{eq:sub1}), (\ref{eq:sub3}) in local form, where they can be further
 simplified by being expanded in terms of element cross-section contributions:
 \begin{subequations}
 	\begin{align}
-		\bvec{b}^e&=\sum_{i=1}^n
+		\bvec{b}^e&=\sum_{i=1}^{n_q}
 		[\nabla_{\mathbf{y}_i}\bvec{h}_g][\nabla^2_{\mathbf{y}_i\mathbf{y}_i}\mathcal{L}]^{-1}\bvec{F}_{sec}^{(i)}\label{eq:subb}\\
-		\bmat{B}^e &= \sum_{i=1}^n
+		\bmat{B}^e &= \sum_{i=1}^{n_q}
 		[\nabla_{\mathbf{y}_i}\bvec{h}_g][\nabla^2_{\mathbf{y}_i\mathbf{y}_i}\mathcal{L}]^{-1}[\nabla_{\mathbf{y}_i}\bvec{h}_g]^T\label{eq:subB}
 	\end{align}
 \end{subequations}
 
 
 \noindent where $n$ is the number of element quadrature points,
-$\bvec{b}^e\in\mathbb{R}^{n+3}$ and $\bmat{B}^e\in\mathbb{R}^{(n+3)\times 
-(n+3)}$. 
+$\bvec{b}^e\in\mathbb{R}^{n_q+3}$ and 
+$\bmat{B}^e\in\mathbb{R}^{(n_q+3)\times 
+(n_q+3)}$. 
 The element stiffness matrix $\bmat{K}^e\in\mathbb{R}^{6\times 6}$ and 
 internal force vector $\bvec{F}_{int}^e\in\mathbb{R}^{6}$ are given by the same
 expressions as in Eqs. (\ref{eq:sub2}), (\ref{eq:sub4}), but with the gradients
@@ -794,9 +810,10 @@ with
 	\label{eq:localstiff}
 \end{gather}
 
-\noindent where $\bvec{h}_g^e\in\mathbb{R}^{n+3}$ denotes 
+\noindent where $\bvec{h}_g^e\in\mathbb{R}^{n_q+3}$ denotes 
 the \textit{element} constraint vector given by Eq. (\ref{eq:constr}) and
-$\nabla_{\mathbf{d}_g}\bvec{h}_g^e\in\mathbb{R}^{(n+3)\times 6}$ its
+$\nabla_{\mathbf{d}_g}\bvec{h}_g^e\in\mathbb{R}^{(n_q+3)\times 6}$ 
+its
 gradient with respect to the global displacement degrees of freedom 
 (\acrshort{dof}s)
 associated with it, is given in Appendix \ref{appendix:A}. It is clear that 
@@ -816,10 +833,11 @@ present
 work, we adopt the algorithm proposed by Crisfield \cite{Crisfield3} whereby
 the additional equation supplemented to the system is:
 \begin{gather}
-	\Delta\bvec{d}_g^T\Delta\bvec{d}_g = \Delta S^2
+	\Delta\bvec{d}_g^T\Delta\bvec{d}_g = \Delta s^2
 \end{gather}
 
-\noindent with $\Delta S$ being the user-specified arc-length parameter. The
+\noindent with $\Delta s$ being the user-specified arc-length 
+parameter. The
 incremental displacement vector $\Delta\bvec{d}_g$ is updated in each iteration
 as follows:
 \begin{gather}
@@ -883,7 +901,7 @@ follows:
 \end{enumerate}
 
 %%%%%%%%%%% CHAPTER 2 - SECTION 4 - SUBSECTION 5 %%%%%%%%%%%%
-\subsection{Cross-section state determination}\label{subsection:CH2-S4SS5}
+\subsection{Cross-Section State Determination}\label{subsection:CH2-S4SS5}
 
 During the updating scheme described in the previous section, the section stress
 resultants $\bvec{F}_{sec}$, along with the matrix
@@ -1099,7 +1117,7 @@ procedure was $10^{-7}$ for all cases. Shear deformation is
 allowed to occur in all analyses unless stated otherwise.
 
 
-\subsection{Cantilever with tip load}
+\subsection{Cantilever with Tip Load}
 
 In this first example we demonstrate the element performance with fully 
 nonlinear assumptions against available analytical solutions, 
@@ -1240,7 +1258,7 @@ proposed element exhibits locking-free behavior.
 \end{figure}
 
 
-\subsection{Lee's frame}
+\subsection{Lee's Frame}
 Lee's frame is a well-known benchmark for geometrically nonlinear capabilities
 of beam-column element formulations.  It was first analyzed by Seng-Lip Lee
 et.al. in
@@ -1368,7 +1386,7 @@ The response and deformation profiles for both analyses are shown in Figs.
 	\label{fig:FIG11_LeesFixed}%
 \end{figure*}
 
-\subsection{Two-Storey frame}
+\subsection{Two-Storey Frame}
 
 In this example a two-story frame with one bay is analyzed, first studied
 regarding its plastic limit load in \cite{horne}. It was also later used as a
@@ -1423,3 +1441,48 @@ provided in Fig. (\ref{fig:FIG15_SantosProfiles}).
 	\caption{Deformation profiles for two-storey frame.}%
 	\label{fig:FIG15_SantosProfiles}%
 \end{figure*}
+
+
+\section{Summary}
+A novel geometrically exact hybrid beam element formulation is presented in 
+this work,
+conceptually and numerically developed using nonlinear programming principles,
+instead of the traditionally used FEM techniques. Structural analysis
+is accordingly seen as a nonlinear program, where the total potential energy 
+functional is
+treated as the objective function of the problem, constrained in the space of
+feasible kinematic configurations of the structure. Field integrals in the
+objective function and kinematic constraints are functions approximated by an 
+appropriate quadrature rule, and
+kinematics of large displacements and rotations are modeled using the exact
+strain-displacement relations of Reissner's beam theory. These kinematic 
+equations serve as
+constraints of the nonlinear program and are appended to the objective
+function by means of Lagrange multipliers. With this formulation, the
+involved shear and axial strain-related fields do not need to be
+interpolated, but are rather collocated 
+at certain quadrature points
+inside the element, as defined by the numerical integration method. The only
+interpolated field is curvature, whereas displacement unknowns eventually emerge
+only at element edges. A Newton-based numerical approach to the Lagrangian of
+the problem is presented, based on the second-order approximation of the 
+necessary
+optimality conditions, and it is also appropriately connected to
+standard \acrshort{fem}
+assemblage techniques. Hence, using the block elimination technique, 
+\acrshort{fem} assembly 
+routines can be 
+directly reused, while the global stiffness is assembled from the inversion of 
+local
+flexibility operators. This is computationally
+efficient because these matrices are processed independently and their 
+dimension is upper bounded, with the number of quadrature points per element
+ranging from 5 to 10. The presented approach is also capable to capturing 
+flexural strain localization due to plastification even when geometric 
+nonlinearities are present. The efficiency of the suggested formulation is 
+demonstrated through several benchmark examples and is shown to be
+capable to accurately capture highly nonlinear structural behaviors with one
+element per member in all cases, accounting for shear flexibility and 
+locking-free capabilities, while also favorably comparing against 
+well-established 
+beam-column and quadrilateral finite element methodologies.
