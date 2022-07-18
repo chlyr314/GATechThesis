@@ -1887,6 +1887,2042 @@
     \field{year}{2011}
   \endentry
 
+  \entry{Ypma:1995}{article}{}
+    \name{author}{1}{}{%
+      {{hash=YTJ}{%
+         family={Ypma},
+         familyi={Y\bibinitperiod},
+         given={Tjalling\bibnamedelima J},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{YTJ1}
+    \strng{fullhash}{YTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{531\bibrangedash 551}
+    \field{title}{Historical development of the Newton--Raphson method}
+    \field{volume}{37}
+    \field{journaltitle}{SIAM review}
+    \field{year}{1995}
+  \endentry
+
+  \entry{Dennis:1996}{book}{}
+    \name{author}{2}{}{%
+      {{hash=DJJE}{%
+         family={Dennis\bibnamedelima Jr},
+         familyi={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={John\bibnamedelima E},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=SRB}{%
+         family={Schnabel},
+         familyi={S\bibinitperiod},
+         given={Robert\bibnamedelima B},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{DJJESRB1}
+    \strng{fullhash}{DJJESRB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Numerical methods for unconstrained optimization and
+  nonlinear equations}
+    \field{year}{1996}
+  \endentry
+
+  \entry{Broyden:1965}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BCG}{%
+         family={Broyden},
+         familyi={B\bibinitperiod},
+         given={Charles\bibnamedelima G},
+         giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JSTOR}%
+    }
+    \strng{namehash}{BCG1}
+    \strng{fullhash}{BCG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{92}
+    \field{pages}{577\bibrangedash 593}
+    \field{title}{A class of methods for solving nonlinear simultaneous
+  equations}
+    \field{volume}{19}
+    \field{journaltitle}{Mathematics of computation}
+    \field{year}{1965}
+  \endentry
+
+  \entry{Davidon:1991}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DWC}{%
+         family={Davidon},
+         familyi={D\bibinitperiod},
+         given={William\bibnamedelima C},
+         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{DWC1}
+    \strng{fullhash}{DWC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 17}
+    \field{title}{Variable metric method for minimization}
+    \field{volume}{1}
+    \field{journaltitle}{SIAM Journal on Optimization}
+    \field{year}{1991}
+  \endentry
+
+  \entry{Berndt:1974}{incollection}{}
+    \name{author}{4}{}{%
+      {{hash=BER}{%
+         family={Berndt},
+         familyi={B\bibinitperiod},
+         given={Ernst\bibnamedelima R},
+         giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=HBH}{%
+         family={Hall},
+         familyi={H\bibinitperiod},
+         given={Bronwyn\bibnamedelima H},
+         giveni={B\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=HRE}{%
+         family={Hall},
+         familyi={H\bibinitperiod},
+         given={Robert\bibnamedelima E},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=HJA}{%
+         family={Hausman},
+         familyi={H\bibinitperiod},
+         given={Jerry\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {NBER}%
+    }
+    \strng{namehash}{BER+1}
+    \strng{fullhash}{BERHBHHREHJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Annals of Economic and Social Measurement, Volume 3,
+  number 4}
+    \field{pages}{653\bibrangedash 665}
+    \field{title}{Estimation and inference in nonlinear structural models}
+    \field{year}{1974}
+  \endentry
+
+  \entry{Matthies:1979}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MH}{%
+         family={Matthies},
+         familyi={M\bibinitperiod},
+         given={Hermann},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Strang},
+         familyi={S\bibinitperiod},
+         given={Gilbert},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{MHSG1}
+    \strng{fullhash}{MHSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{11}
+    \field{pages}{1613\bibrangedash 1626}
+    \field{title}{The solution of nonlinear finite element equations}
+    \field{volume}{14}
+    \field{journaltitle}{International journal for numerical methods in
+  engineering}
+    \field{year}{1979}
+  \endentry
+
+  \entry{Hughes:1983}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HTJ}{%
+         family={Hughes},
+         familyi={H\bibinitperiod},
+         given={Thomas\bibnamedelima JR},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=LI}{%
+         family={Levit},
+         familyi={L\bibinitperiod},
+         given={Itzhak},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Winget},
+         familyi={W\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{HTJ+1}
+    \strng{fullhash}{HTJLIWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{241\bibrangedash 254}
+    \field{title}{An element-by-element solution algorithm for problems of
+  structural and solid mechanics}
+    \field{volume}{36}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+    \field{year}{1983}
+  \endentry
+
+  \entry{Liu:1989}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LDC}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Dong\bibnamedelima C},
+         giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Nocedal},
+         familyi={N\bibinitperiod},
+         given={Jorge},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{LDCNJ1}
+    \strng{fullhash}{LDCNJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{503\bibrangedash 528}
+    \field{title}{On the limited memory BFGS method for large scale
+  optimization}
+    \field{volume}{45}
+    \field{journaltitle}{Mathematical programming}
+    \field{year}{1989}
+  \endentry
+
+  \entry{Allgower:2003}{book}{}
+    \name{author}{2}{}{%
+      {{hash=AEL}{%
+         family={Allgower},
+         familyi={A\bibinitperiod},
+         given={Eugene\bibnamedelima L},
+         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=GK}{%
+         family={Georg},
+         familyi={G\bibinitperiod},
+         given={Kurt},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{AELGK1}
+    \strng{fullhash}{AELGK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Introduction to numerical continuation methods}
+    \field{year}{2003}
+  \endentry
+
+  \entry{Rheinboldt:2000}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RWC}{%
+         family={Rheinboldt},
+         familyi={R\bibinitperiod},
+         given={Werner\bibnamedelima C},
+         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{RWC1}
+    \strng{fullhash}{RWC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1-2}
+    \field{pages}{229\bibrangedash 244}
+    \field{title}{Numerical continuation methods: a perspective}
+    \field{volume}{124}
+    \field{journaltitle}{Journal of computational and applied mathematics}
+    \field{year}{2000}
+  \endentry
+
+  \entry{Keller:1978}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=KHB}{%
+         family={Keller},
+         familyi={K\bibinitperiod},
+         given={Herbert\bibnamedelima B},
+         giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KHB1}
+    \strng{fullhash}{KHB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Recent advances in numerical analysis}
+    \field{pages}{73\bibrangedash 94}
+    \field{title}{Global homotopies and Newton methods}
+    \field{year}{1978}
+  \endentry
+
+  \entry{Li:1980}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LTY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Tien-Yien},
+         giveni={T\bibinithyphendelim Y\bibinitperiod},
+      }}%
+      {{hash=YJA}{%
+         family={Yorke},
+         familyi={Y\bibinitperiod},
+         given={James\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{LTYYJA1}
+    \strng{fullhash}{LTYYJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{73\bibrangedash 91}
+    \field{title}{A simple reliable numerical algorithm for following homotopy
+  paths}
+    \field{journaltitle}{Analysis and computation of fixed points}
+    \field{year}{1980}
+  \endentry
+
+  \entry{Chow:1978}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CSN}{%
+         family={Chow},
+         familyi={C\bibinitperiod},
+         given={Shui\bibnamedelima Nee},
+         giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=MPJ}{%
+         family={Mallet-Paret},
+         familyi={M\bibinithyphendelim P\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=YJA}{%
+         family={Yorke},
+         familyi={Y\bibinitperiod},
+         given={James\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CSN+1}
+    \strng{fullhash}{CSNMPJYJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{143}
+    \field{pages}{887\bibrangedash 899}
+    \field{title}{Finding zeroes of maps: homotopy methods that are
+  constructive with probability one}
+    \field{volume}{32}
+    \field{journaltitle}{Mathematics of Computation}
+    \field{year}{1978}
+  \endentry
+
+  \entry{Chow:1979}{incollection}{}
+    \name{author}{3}{}{%
+      {{hash=CSN}{%
+         family={Chow},
+         familyi={C\bibinitperiod},
+         given={Shui-Nee},
+         giveni={S\bibinithyphendelim N\bibinitperiod},
+      }}%
+      {{hash=MPJ}{%
+         family={Mallet-Paret},
+         familyi={M\bibinithyphendelim P\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=YJA}{%
+         family={Yorke},
+         familyi={Y\bibinitperiod},
+         given={James\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{CSN+1}
+    \strng{fullhash}{CSNMPJYJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Functional differential equations and approximation of
+  fixed points}
+    \field{pages}{77\bibrangedash 88}
+    \field{title}{A homotopy method for locating all zeros of a system of
+  polynomials}
+    \field{year}{1979}
+  \endentry
+
+  \entry{Watson:1989}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WLT}{%
+         family={Watson},
+         familyi={W\bibinitperiod},
+         given={Layne\bibnamedelima T},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{WLT1}
+    \strng{fullhash}{WLT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{369\bibrangedash 396}
+    \field{title}{Globally convergent homotopy methods: a tutorial}
+    \field{volume}{31}
+    \field{journaltitle}{Applied Mathematics and Computation}
+    \field{year}{1989}
+  \endentry
+
+  \entry{Watson:1990}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WLT}{%
+         family={Watson},
+         familyi={W\bibinitperiod},
+         given={Layne\bibnamedelima T},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{WLT1}
+    \strng{fullhash}{WLT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{143\bibrangedash 191}
+    \field{title}{Globally convergent homotopy algorithms for nonlinear systems
+  of equations}
+    \field{volume}{1}
+    \field{journaltitle}{Nonlinear Dynamics}
+    \field{year}{1990}
+  \endentry
+
+  \entry{Allgower:1981}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=AEL}{%
+         family={Allgower},
+         familyi={A\bibinitperiod},
+         given={Eugene\bibnamedelima L},
+         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{AEL1}
+    \strng{fullhash}{AEL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Numerical solution of nonlinear equations}
+    \field{pages}{1\bibrangedash 29}
+    \field{title}{A survey of homotopy methods for smooth mappings}
+    \field{year}{1981}
+  \endentry
+
+  \entry{Rheinboldt:1980}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RWC}{%
+         family={Rheinboldt},
+         familyi={R\bibinitperiod},
+         given={Werner\bibnamedelima C},
+         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{RWC1}
+    \strng{fullhash}{RWC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{221\bibrangedash 237}
+    \field{title}{Solution fields of nonlinear equations and continuation
+  methods}
+    \field{volume}{17}
+    \field{journaltitle}{SIAM Journal on Numerical Analysis}
+    \field{year}{1980}
+  \endentry
+
+  \entry{Rheinboldt:1983}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RWC}{%
+         family={Rheinboldt},
+         familyi={R\bibinitperiod},
+         given={Werner\bibnamedelima C},
+         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=BJV}{%
+         family={Burkardt},
+         familyi={B\bibinitperiod},
+         given={John\bibnamedelima V},
+         giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM New York, NY, USA}%
+    }
+    \strng{namehash}{RWCBJV1}
+    \strng{fullhash}{RWCBJV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{215\bibrangedash 235}
+    \field{title}{A locally parameterized continuation process}
+    \field{volume}{9}
+    \field{journaltitle}{ACM Transactions on Mathematical Software (TOMS)}
+    \field{year}{1983}
+  \endentry
+
+  \entry{Wayburn:1987}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WT}{%
+         family={Wayburn},
+         familyi={W\bibinitperiod},
+         given={TL},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Seader},
+         familyi={S\bibinitperiod},
+         given={JD},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{WTSJ1}
+    \strng{fullhash}{WTSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{7\bibrangedash 25}
+    \field{title}{Homotopy continuation methods for computer-aided process
+  design}
+    \field{volume}{11}
+    \field{journaltitle}{Computers \& Chemical Engineering}
+    \field{year}{1987}
+  \endentry
+
+  \entry{Davidenko:1953a}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=DD}{%
+         family={Davidenko},
+         familyi={D\bibinitperiod},
+         given={DF},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DD1}
+    \strng{fullhash}{DD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Dokl. Akad. Nauk SSSR}
+    \field{pages}{601\bibrangedash 602}
+    \field{title}{On a new method of numerical solution of systems of nonlinear
+  equations}
+    \field{volume}{88}
+    \field{year}{1953}
+  \endentry
+
+  \entry{Davidenko:1953}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DD}{%
+         family={Davidenko},
+         familyi={D\bibinitperiod},
+         given={DF},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DD1}
+    \strng{fullhash}{DD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{196\bibrangedash 206}
+    \field{title}{On the approximate solution of systems of nonlinear
+  equations}
+    \field{volume}{5}
+    \field{journaltitle}{Ukr. Mat. Zh}
+    \field{year}{1953}
+  \endentry
+
+  \entry{Klopfenstein:1961}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KR}{%
+         family={Klopfenstein},
+         familyi={K\bibinitperiod},
+         given={RW},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM New York, NY, USA}%
+    }
+    \strng{namehash}{KR1}
+    \strng{fullhash}{KR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{366\bibrangedash 373}
+    \field{title}{Zeros of nonlinear functions}
+    \field{volume}{8}
+    \field{journaltitle}{Journal of the ACM (JACM)}
+    \field{year}{1961}
+  \endentry
+
+  \entry{Haselgrove:1961}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HC}{%
+         family={Haselgrove},
+         familyi={H\bibinitperiod},
+         given={CB},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{HC1}
+    \strng{fullhash}{HC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{255\bibrangedash 259}
+    \field{title}{The solution of non-linear equations and of differential
+  equations with two-point boundary conditions}
+    \field{volume}{4}
+    \field{journaltitle}{The Computer Journal}
+    \field{year}{1961}
+  \endentry
+
+  \entry{Yakovlev:1964}{article}{}
+    \name{author}{1}{}{%
+      {{hash=YM}{%
+         family={Yakovlev},
+         familyi={Y\bibinitperiod},
+         given={MN},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{YM1}
+    \strng{fullhash}{YM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{198\bibrangedash 203}
+    \field{title}{The solution of systems of non-linear equations by a method
+  of differentiation with respect to a parameter}
+    \field{volume}{4}
+    \field{journaltitle}{USSR Computational Mathematics and Mathematical
+  Physics}
+    \field{year}{1964}
+  \endentry
+
+  \entry{Wempner:1971}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WGA}{%
+         family={Wempner},
+         familyi={W\bibinitperiod},
+         given={Gerald\bibnamedelima A},
+         giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{WGA1}
+    \strng{fullhash}{WGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{11}
+    \field{pages}{1581\bibrangedash 1599}
+    \field{title}{Discrete approximations related to nonlinear theories of
+  solids}
+    \field{volume}{7}
+    \field{journaltitle}{International Journal of Solids and Structures}
+    \field{year}{1971}
+  \endentry
+
+  \entry{Bergan:1978}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BP}{%
+         family={Bergan},
+         familyi={B\bibinitperiod},
+         given={PG},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Horrigmoe},
+         familyi={H\bibinitperiod},
+         given={G},
+         giveni={G},
+      }}%
+      {{hash=BB}{%
+         family={Br{\aa}keland},
+         familyi={B\bibinitperiod},
+         given={B},
+         giveni={B},
+      }}%
+      {{hash=ST}{%
+         family={S{\o}reide},
+         familyi={S\bibinitperiod},
+         given={TH},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{BP+1}
+    \strng{fullhash}{BPHGBBST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{11}
+    \field{pages}{1677\bibrangedash 1696}
+    \field{title}{Solution techniques for non- linear finite element problems}
+    \field{volume}{12}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
+    \field{year}{1978}
+  \endentry
+
+  \entry{Bergan:1978b}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BP}{%
+         family={Bergan},
+         familyi={B\bibinitperiod},
+         given={PG},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Soreide},
+         familyi={S\bibinitperiod},
+         given={TH},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Tapir Trondheim}%
+    }
+    \strng{namehash}{BPST1}
+    \strng{fullhash}{BPST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{647\bibrangedash 669}
+    \field{title}{Solution of large displacement and instability problems using
+  the current stiffness parameter}
+    \field{volume}{2}
+    \field{journaltitle}{Finite elements in nonlinear mechanics}
+    \field{year}{1978}
+  \endentry
+
+  \entry{Batoz:1979}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BJL}{%
+         family={Batoz},
+         familyi={B\bibinitperiod},
+         given={Jean-Louis},
+         giveni={J\bibinithyphendelim L\bibinitperiod},
+      }}%
+      {{hash=DG}{%
+         family={Dhatt},
+         familyi={D\bibinitperiod},
+         given={Gouri},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{BJLDG1}
+    \strng{fullhash}{BJLDG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{8}
+    \field{pages}{1262\bibrangedash 1267}
+    \field{title}{Incremental displacement algorithms for nonlinear problems}
+    \field{volume}{14}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
+    \field{year}{1979}
+  \endentry
+
+  \entry{Riks:1979}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RE}{%
+         family={Riks},
+         familyi={R\bibinitperiod},
+         given={E},
+         giveni={E},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{RE3}
+    \strng{fullhash}{RE3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{7}
+    \field{pages}{529\bibrangedash 551}
+    \field{title}{An incremental approach to the solution of snapping and
+  buckling problems}
+    \field{volume}{15}
+    \field{journaltitle}{International journal of solids and structures}
+    \field{year}{1979}
+  \endentry
+
+  \entry{Ramm:1981}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=RE}{%
+         family={Ramm},
+         familyi={R\bibinitperiod},
+         given={Ekkehard},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{RE1}
+    \strng{fullhash}{RE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Nonlinear finite element analysis in structural
+  mechanics}
+    \field{pages}{63\bibrangedash 89}
+    \field{title}{Strategies for tracing the nonlinear response near limit
+  points}
+    \field{year}{1981}
+  \endentry
+
+  \entry{Crisfield3}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CM}{%
+         family={Crisfield},
+         familyi={C\bibinitperiod},
+         given={M.A.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CM1}
+    \strng{fullhash}{CM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/0045-7949(81)90108-5
+    \endverb
+    \field{number}{1--3}
+    \field{pages}{55\bibrangedash 62}
+    \field{title}{A fast incremental/iterative solution procedure that handles
+  "snap-through"}
+    \field{volume}{13}
+    \field{journaltitle}{Computers \& Structures}
+    \field{year}{1981}
+  \endentry
+
+  \entry{Cassell:1970}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CA}{%
+         family={Cassell},
+         familyi={C\bibinitperiod},
+         given={AC},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NW}{%
+         family={Novozhilov},
+         familyi={N\bibinitperiod},
+         given={W},
+         giveni={W},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Thomas Telford-ICE Virtual Library}%
+    }
+    \strng{namehash}{CANW1}
+    \strng{fullhash}{CANW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{65\bibrangedash 78}
+    \field{title}{SHELLS OF REVOLUTION UNDER ARBITRARY LOADING AND THE USE OF
+  FICTITIOUS DENSITIES IN DYNAMIC RELAXATION.}
+    \field{volume}{45}
+    \field{journaltitle}{Proceedings of the Institution of Civil Engineers}
+    \field{year}{1970}
+  \endentry
+
+  \entry{Brew:1971}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BJ}{%
+         family={Brew},
+         familyi={B\bibinitperiod},
+         given={JS},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Brotton},
+         familyi={B\bibinitperiod},
+         given={DM},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{BJBD1}
+    \strng{fullhash}{BJBD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{463\bibrangedash 483}
+    \field{title}{Non-linear structural analysis by dynamic relaxation}
+    \field{volume}{3}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
+    \field{year}{1971}
+  \endentry
+
+  \entry{Stricklin:1971}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SJA}{%
+         family={STKICKLIN},
+         familyi={S\bibinitperiod},
+         given={JAMES\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=HWE}{%
+         family={HAISLER},
+         familyi={H\bibinitperiod},
+         given={WALTER\bibnamedelima E},
+         giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=VRWA}{%
+         family={VON\bibnamedelima RIESEMANN},
+         familyi={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+         given={WALTER\bibnamedelima A},
+         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJA+1}
+    \strng{fullhash}{SJAHWEVRWA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{10}
+    \field{pages}{2066\bibrangedash 2067}
+    \field{title}{Self-correcting initial value formulations in nonlinear
+  structural mechanics}
+    \field{volume}{9}
+    \field{journaltitle}{AIAA Journal}
+    \field{year}{1971}
+  \endentry
+
+  \entry{Papadrakakis:1981}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PM}{%
+         family={Papadrakakis},
+         familyi={P\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{PM1}
+    \strng{fullhash}{PM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{35\bibrangedash 48}
+    \field{title}{A method for the automatic evaluation of the dynamic
+  relaxation parameters}
+    \field{volume}{25}
+    \field{journaltitle}{Computer methods in applied mechanics and engineering}
+    \field{year}{1981}
+  \endentry
+
+  \entry{Park:1982}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PK}{%
+         family={Park},
+         familyi={P\bibinitperiod},
+         given={KC},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{PK1}
+    \strng{fullhash}{PK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{9}
+    \field{pages}{1337\bibrangedash 1347}
+    \field{title}{A family of solution algorithms for nonlinear structural
+  analysis based on relaxation equations}
+    \field{volume}{18}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
+    \field{year}{1982}
+  \endentry
+
+  \entry{Oden:1973}{article}{}
+    \name{author}{2}{}{%
+      {{hash=OJ}{%
+         family={Oden},
+         familyi={O\bibinitperiod},
+         given={JT},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Key},
+         familyi={K\bibinitperiod},
+         given={JE},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{OJKJ1}
+    \strng{fullhash}{OJKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{225\bibrangedash 227}
+    \field{title}{Analysis of static non-linear response by explicit time
+  integration}
+    \field{volume}{7}
+    \field{journaltitle}{International journal for numerical methods in
+  Engineering}
+    \field{year}{1973}
+  \endentry
+
+  \entry{Watson:1981report}{report}{}
+    \name{author}{3}{}{%
+      {{hash=WLT}{%
+         family={Watson},
+         familyi={W\bibinitperiod},
+         given={Layne\bibnamedelima T},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=HSM}{%
+         family={Holzer},
+         familyi={H\bibinitperiod},
+         given={Siegfried\bibnamedelima M},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=HMC}{%
+         family={Hansen},
+         familyi={H\bibinitperiod},
+         given={Mark\bibnamedelima C},
+         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WLT+1}
+    \strng{fullhash}{WLTHSMHMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Tracking nonlinear equilibrium paths by a homotopy method}
+    \list{institution}{2}{%
+      {Virginia Polytechnic Institute}%
+      {State University}%
+    }
+    \field{type}{techreport}
+    \field{year}{1981}
+  \endentry
+
+  \entry{Watson:1985}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WLT}{%
+         family={Watson},
+         familyi={W\bibinitperiod},
+         given={Layne\bibnamedelima T},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=KMP}{%
+         family={Kamat},
+         familyi={K\bibinitperiod},
+         given={Manohar\bibnamedelima P},
+         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=RMH}{%
+         family={Reaser},
+         familyi={R\bibinitperiod},
+         given={Michael\bibnamedelima H},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MCB UP Ltd}%
+    }
+    \strng{namehash}{WLT+1}
+    \strng{fullhash}{WLTKMPRMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{A robust hybrid algorithm for computing multiple equilibrium
+  solutions}
+    \field{journaltitle}{Engineering Computations}
+    \field{year}{1985}
+  \endentry
+
+  \entry{Rheinboldt:1981}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=RWC}{%
+         family={Rheinboldt},
+         familyi={R\bibinitperiod},
+         given={Werner\bibnamedelima C},
+         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{RWC1}
+    \strng{fullhash}{RWC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Computational Methods in Nonlinear Structural and Solid
+  Mechanics}
+    \field{pages}{103\bibrangedash 113}
+    \field{title}{Numerical analysis of continuation methods for nonlinear
+  structural problems}
+    \field{year}{1981}
+  \endentry
+
+  \entry{Poore:1988}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PAB}{%
+         family={Poore},
+         familyi={P\bibinitperiod},
+         given={Aubrey\bibnamedelima B},
+         giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=AHQ}{%
+         family={Al-Hassan},
+         familyi={A\bibinithyphendelim H\bibinitperiod},
+         given={Q},
+         giveni={Q},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{PABAHQ1}
+    \strng{fullhash}{PABAHQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{417\bibrangedash 427}
+    \field{title}{The expanded Lagrangian system for constrained optimization
+  problems}
+    \field{volume}{26}
+    \field{journaltitle}{SIAM journal on control and optimization}
+    \field{year}{1988}
+  \endentry
+
+  \entry{Zhenghua:1996}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZL}{%
+         family={Zhenghua},
+         familyi={Z\bibinitperiod},
+         given={Lin},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=YL}{%
+         family={Yong},
+         familyi={Y\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bo},
+         familyi={B\bibinitperiod},
+         given={Yu},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{ZL+1}
+    \strng{fullhash}{ZLYLBY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2-3}
+    \field{pages}{209\bibrangedash 224}
+    \field{title}{A combined homotopy interior point method for general
+  nonlinear programming problems}
+    \field{volume}{80}
+    \field{journaltitle}{Applied mathematics and computation}
+    \field{year}{1996}
+  \endentry
+
+  \entry{Hillermeier:2001}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HC}{%
+         family={Hillermeier},
+         familyi={H\bibinitperiod},
+         given={Claus},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{HC2}
+    \strng{fullhash}{HC2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{557\bibrangedash 583}
+    \field{title}{Generalized homotopy approach to multiobjective optimization}
+    \field{volume}{110}
+    \field{journaltitle}{Journal of Optimization Theory and Applications}
+    \field{year}{2001}
+  \endentry
+
+  \entry{Song:2008}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SW}{%
+         family={Song},
+         familyi={S\bibinitperiod},
+         given={W},
+         giveni={W},
+      }}%
+      {{hash=YG}{%
+         family={Yao},
+         familyi={Y\bibinitperiod},
+         given={GM},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{SWYG1}
+    \strng{fullhash}{SWYG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{139}
+    \field{title}{Homotopy method for a general multiobjective programming
+  problem}
+    \field{volume}{138}
+    \field{journaltitle}{Journal of Optimization Theory and Applications}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Byrne:1985}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BGD}{%
+         family={Byrne},
+         familyi={B\bibinitperiod},
+         given={George\bibnamedelima D},
+         giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=BLA}{%
+         family={Baird},
+         familyi={B\bibinitperiod},
+         given={Lynn\bibnamedelima A},
+         giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BGDBLA1}
+    \strng{fullhash}{BGDBLA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{593\bibrangedash 599}
+    \field{title}{Distillation calculations using a locally paramaterized
+  continuation method}
+    \field{volume}{9}
+    \field{journaltitle}{Computers \& chemical engineering}
+    \field{year}{1985}
+  \endentry
+
+  \entry{Lin:1987}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LWJ}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Wen-Jing},
+         giveni={W\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Seader},
+         familyi={S\bibinitperiod},
+         given={JD},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Wayburn},
+         familyi={W\bibinitperiod},
+         given={TL},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{LWJ+1}
+    \strng{fullhash}{LWJSJWT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{886\bibrangedash 897}
+    \field{title}{Computing multiple solutions to systems of interlinked
+  separation columns}
+    \field{volume}{33}
+    \field{journaltitle}{AIChE Journal}
+    \field{year}{1987}
+  \endentry
+
+  \entry{Kovach:1987}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KIJW}{%
+         family={Kovach\bibnamedelima III},
+         familyi={K\bibinitperiod\bibinitdelim I\bibinitperiod},
+         given={Joseph\bibnamedelima W},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KIJW1}
+    \strng{fullhash}{KIJW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{593\bibrangedash 605}
+    \field{title}{Heterogenous azeotropic distillaion-homotopy-continuation
+  methods}
+    \field{volume}{11}
+    \field{journaltitle}{Computers \& chemical engineering}
+    \field{year}{1987}
+  \endentry
+
+  \entry{Ushida:1984}{article}{}
+    \name{author}{2}{}{%
+      {{hash=UA}{%
+         family={Ushida},
+         familyi={U\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=CL}{%
+         family={Chua},
+         familyi={C\bibinitperiod},
+         given={LO},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{UACL1}
+    \strng{fullhash}{UACL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 21}
+    \field{title}{Tracing solution curves of non-linear equations with sharp
+  turning points}
+    \field{volume}{12}
+    \field{journaltitle}{International journal of circuit theory and
+  applications}
+    \field{year}{1984}
+  \endentry
+
+  \entry{Hughes:2013}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HC}{%
+         family={Hughes},
+         familyi={H\bibinitperiod},
+         given={Ciaran},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Mehta},
+         familyi={M\bibinitperiod},
+         given={Dhagash},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SJI}{%
+         family={Skullerud},
+         familyi={S\bibinitperiod},
+         given={Jon-Ivar},
+         giveni={J\bibinithyphendelim I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{HC+1}
+    \strng{fullhash}{HCMDSJI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{188\bibrangedash 215}
+    \field{title}{Enumerating Gribov copies on the lattice}
+    \field{volume}{331}
+    \field{journaltitle}{Annals of Physics}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Mehta:2015}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MD}{%
+         family={Mehta},
+         familyi={M\bibinitperiod},
+         given={Dhagash},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Tianran},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MJW}{%
+         family={Morgan},
+         familyi={M\bibinitperiod},
+         given={John\bibnamedelima WR},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=WDJ}{%
+         family={Wales},
+         familyi={W\bibinitperiod},
+         given={David\bibnamedelima J},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AIP Publishing LLC}%
+    }
+    \strng{namehash}{MD+1}
+    \strng{fullhash}{MDCTMJWWDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{19}
+    \field{pages}{194113}
+    \field{title}{Exploring the potential energy landscape of the Thomson
+  problem via Newton homotopies}
+    \field{volume}{142}
+    \field{journaltitle}{The Journal of chemical physics}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Mobahi:2015}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=MH}{%
+         family={Mobahi},
+         familyi={M\bibinitperiod},
+         given={Hossein},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=FJW}{%
+         family={Fisher},
+         familyi={F\bibinitperiod},
+         given={John\bibnamedelima W},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{MHFJW1}
+    \strng{fullhash}{MHFJW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{International Workshop on Energy Minimization Methods in
+  Computer Vision and Pattern Recognition}
+    \field{pages}{43\bibrangedash 56}
+    \field{title}{On the link between gaussian homotopy continuation and convex
+  envelopes}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Bilasse:2009}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{3}{}{%
+      {{hash=BM}{%
+         family={Bilasse},
+         familyi={B\bibinitperiod},
+         given={Massamaesso},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CI}{%
+         family={Charpentier},
+         familyi={C\bibinitperiod},
+         given={Isabelle},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=KY}{%
+         family={Koutsawa},
+         familyi={K\bibinitperiod},
+         given={Yao},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BM+1}
+    \strng{fullhash}{BMCIKY+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{49-52}
+    \field{pages}{3999\bibrangedash 4004}
+    \field{title}{A generic approach for the solution of nonlinear residual
+  equations. Part II: Homotopy and complex nonlinear eigenvalue method}
+    \field{volume}{198}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+    \field{year}{2009}
+  \endentry
+
+  \entry{Banerjee:2013}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BB}{%
+         family={Banerjee},
+         familyi={B\bibinitperiod},
+         given={Biswanath},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=WTF}{%
+         family={Walsh},
+         familyi={W\bibinitperiod},
+         given={Timothy\bibnamedelima F},
+         giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=AW}{%
+         family={Aquino},
+         familyi={A\bibinitperiod},
+         given={Wilkins},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bonnet},
+         familyi={B\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BB+1}
+    \strng{fullhash}{BBWTFAWBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{60\bibrangedash 72}
+    \field{title}{Large scale parameter estimation problems in frequency-domain
+  elastodynamics using an error in constitutive equation functional}
+    \field{volume}{253}
+    \field{journaltitle}{Computer methods in applied mechanics and engineering}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Ligursky:2014}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LT}{%
+         family={Ligursk{\`y}},
+         familyi={L\bibinitperiod},
+         given={Tom{\'a}{\v{s}}},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=RY}{%
+         family={Renard},
+         familyi={R\bibinitperiod},
+         given={Yves},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{LTRY1}
+    \strng{fullhash}{LTRY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{222\bibrangedash 262}
+    \field{title}{A continuation problem for computing solutions of discretised
+  evolution problems with application to plane quasi-static contact problems
+  with friction}
+    \field{volume}{280}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Sideris:2017}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SP}{%
+         family={Sideris},
+         familyi={S\bibinitperiod},
+         given={Petros},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Nikoukalam},
+         familyi={N\bibinitperiod},
+         given={MT},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Salehi},
+         familyi={S\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SP+1}
+    \strng{fullhash}{SPNMSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{232\bibrangedash 244}
+    \field{title}{A generalized normal flow method with online step controls
+  for pushover analysis of nonlinear softening structures}
+    \field{volume}{143}
+    \field{journaltitle}{Engineering Structures}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Groh:2018}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GR}{%
+         family={Groh},
+         familyi={G\bibinitperiod},
+         given={RMJ},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Avitabile},
+         familyi={A\bibinitperiod},
+         given={D},
+         giveni={D},
+      }}%
+      {{hash=PA}{%
+         family={Pirrera},
+         familyi={P\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{GR+1}
+    \strng{fullhash}{GRADPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{394\bibrangedash 426}
+    \field{title}{Generalised path-following for well-behaved nonlinear
+  structures}
+    \field{volume}{331}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Chakraborty:2019}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CS}{%
+         family={Chakraborty},
+         familyi={C\bibinitperiod},
+         given={Souvik},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Goswami},
+         familyi={G\bibinitperiod},
+         given={Somdatta},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RT}{%
+         family={Rabczuk},
+         familyi={R\bibinitperiod},
+         given={Timon},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CS+1}
+    \strng{fullhash}{CSGSRT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{63\bibrangedash 84}
+    \field{title}{A surrogate assisted adaptive framework for robust topology
+  optimization}
+    \field{volume}{346}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Tari:2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TH}{%
+         family={Tari},
+         familyi={T\bibinitperiod},
+         given={Hafez},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=DMJ}{%
+         family={Dapino},
+         familyi={D\bibinitperiod},
+         given={Marcelo\bibnamedelima J},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{THDMJ1}
+    \strng{fullhash}{THDMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{864\bibrangedash 881}
+    \field{title}{Globally convergent nonlinear 3D inverse model for smart
+  materials with Hessian-based optimization}
+    \field{volume}{318}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Yu:2016}{article}{}
+    \name{author}{2}{}{%
+      {{hash=YM}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Meilin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={ZJ},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{YMWZ1}
+    \strng{fullhash}{YMWZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{16\bibrangedash 28}
+    \field{title}{Homotopy continuation of the high-order flux
+  reconstruction/correction procedure via reconstruction (FR/CPR) method for
+  steady flow simulation}
+    \field{volume}{131}
+    \field{journaltitle}{Computers \& Fluids}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Brown:2016}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BDA}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={David\bibnamedelima A},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=ZDW}{%
+         family={Zingg},
+         familyi={Z\bibinitperiod},
+         given={David\bibnamedelima W},
+         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BDAZDW1}
+    \strng{fullhash}{BDAZDW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{55\bibrangedash 75}
+    \field{title}{A monolithic homotopy continuation algorithm with application
+  to computational fluid dynamics}
+    \field{volume}{321}
+    \field{journaltitle}{Journal of Computational Physics}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Borkovsky:2010}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BRN}{%
+         family={Borkovsky},
+         familyi={B\bibinitperiod},
+         given={Ron\bibnamedelima N},
+         giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=DU}{%
+         family={Doraszelski},
+         familyi={D\bibinitperiod},
+         given={Ulrich},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=KY}{%
+         family={Kryukov},
+         familyi={K\bibinitperiod},
+         given={Yaroslav},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {INFORMS}%
+    }
+    \strng{namehash}{BRN+1}
+    \strng{fullhash}{BRNDUKY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4-part-2}
+    \field{pages}{1116\bibrangedash 1132}
+    \field{title}{A user's guide to solving dynamic stochastic games using the
+  homotopy method}
+    \field{volume}{58}
+    \field{journaltitle}{Operations Research}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Besanko:2010}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BD}{%
+         family={Besanko},
+         familyi={B\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DU}{%
+         family={Doraszelski},
+         familyi={D\bibinitperiod},
+         given={Ulrich},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=KY}{%
+         family={Kryukov},
+         familyi={K\bibinitperiod},
+         given={Yaroslav},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Satterthwaite},
+         familyi={S\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{BD+1}
+    \strng{fullhash}{BDDUKYSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{453\bibrangedash 508}
+    \field{title}{Learning-by-doing, organizational forgetting, and industry
+  dynamics}
+    \field{volume}{78}
+    \field{journaltitle}{Econometrica}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Herings:2010}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HPJJ}{%
+         family={Herings},
+         familyi={H\bibinitperiod},
+         given={P\bibnamedelima Jean-Jacques},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinithyphendelim
+  J\bibinitperiod},
+      }}%
+      {{hash=PR}{%
+         family={Peeters},
+         familyi={P\bibinitperiod},
+         given={Ronald},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{HPJJPR1}
+    \strng{fullhash}{HPJJPR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{119\bibrangedash 156}
+    \field{title}{Homotopy methods to compute equilibria in game theory}
+    \field{volume}{42}
+    \field{journaltitle}{Economic Theory}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Bartovn:2016}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BM}{%
+         family={Barto{\v{n}}},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CVM}{%
+         family={Calo},
+         familyi={C\bibinitperiod},
+         given={Victor\bibnamedelima Manuel},
+         giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BMCVM1}
+    \strng{fullhash}{BMCVM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{217\bibrangedash 240}
+    \field{title}{Optimal quadrature rules for odd-degree spline spaces and
+  their application to tensor-product-based isogeometric analysis}
+    \field{volume}{305}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Barendrecht:2018}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BPJ}{%
+         family={Barendrecht},
+         familyi={B\bibinitperiod},
+         given={Pieter\bibnamedelima J},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Barto{\v{n}}},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kosinka},
+         familyi={K\bibinitperiod},
+         given={Ji{\v{r}}{\'\i}},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BPJ+1}
+    \strng{fullhash}{BPJBMKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{1\bibrangedash 23}
+    \field{title}{Efficient quadrature rules for subdivision surfaces in
+  isogeometric analysis}
+    \field{volume}{340}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Seydel:1987}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SR}{%
+         family={Seydel},
+         familyi={S\bibinitperiod},
+         given={R{\"u}diger},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HV}{%
+         family={Hlavacek},
+         familyi={H\bibinitperiod},
+         given={Vladimir},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SRHV1}
+    \strng{fullhash}{SRHV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{1281\bibrangedash 1295}
+    \field{title}{Role of continuation in engineering analysis}
+    \field{volume}{42}
+    \field{journaltitle}{Chemical engineering science}
+    \field{year}{1987}
+  \endentry
+
   \entry{Neuenhofer}{article}{}
     \name{author}{2}{}{%
       {{hash=NA}{%
@@ -2150,34 +4186,6 @@
     \field{volume}{144}
     \field{journaltitle}{Journal of Engineering Mechanics}
     \field{year}{2018}
-  \endentry
-
-  \entry{Crisfield3}{article}{}
-    \name{author}{1}{}{%
-      {{hash=CM}{%
-         family={Crisfield},
-         familyi={C\bibinitperiod},
-         given={M.A.},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{CM1}
-    \strng{fullhash}{CM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb https://doi.org/10.1016/0045-7949(81)90108-5
-    \endverb
-    \field{number}{1--3}
-    \field{pages}{55\bibrangedash 62}
-    \field{title}{A fast incremental/iterative solution procedure that handles
-  "snap-through"}
-    \field{volume}{13}
-    \field{journaltitle}{Computers \& Structures}
-    \field{year}{1981}
   \endentry
 
   \entry{Cowper}{article}{}
@@ -3041,333 +5049,6 @@
     \field{year}{2022}
   \endentry
 
-  \entry{Allgower:2003}{book}{}
-    \name{author}{2}{}{%
-      {{hash=AEL}{%
-         family={Allgower},
-         familyi={A\bibinitperiod},
-         given={Eugene\bibnamedelima L},
-         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=GK}{%
-         family={Georg},
-         familyi={G\bibinitperiod},
-         given={Kurt},
-         giveni={K\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {SIAM}%
-    }
-    \strng{namehash}{AELGK1}
-    \strng{fullhash}{AELGK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Introduction to numerical continuation methods}
-    \field{year}{2003}
-  \endentry
-
-  \entry{Rheinboldt:2000}{article}{}
-    \name{author}{1}{}{%
-      {{hash=RWC}{%
-         family={Rheinboldt},
-         familyi={R\bibinitperiod},
-         given={Werner\bibnamedelima C},
-         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{RWC1}
-    \strng{fullhash}{RWC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{1-2}
-    \field{pages}{229\bibrangedash 244}
-    \field{title}{Numerical continuation methods: a perspective}
-    \field{volume}{124}
-    \field{journaltitle}{Journal of computational and applied mathematics}
-    \field{year}{2000}
-  \endentry
-
-  \entry{Keller:1978}{incollection}{}
-    \name{author}{1}{}{%
-      {{hash=KHB}{%
-         family={Keller},
-         familyi={K\bibinitperiod},
-         given={Herbert\bibnamedelima B},
-         giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{KHB1}
-    \strng{fullhash}{KHB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Recent advances in numerical analysis}
-    \field{pages}{73\bibrangedash 94}
-    \field{title}{Global homotopies and Newton methods}
-    \field{year}{1978}
-  \endentry
-
-  \entry{Li:1980}{article}{}
-    \name{author}{2}{}{%
-      {{hash=LTY}{%
-         family={Li},
-         familyi={L\bibinitperiod},
-         given={Tien-Yien},
-         giveni={T\bibinithyphendelim Y\bibinitperiod},
-      }}%
-      {{hash=YJA}{%
-         family={Yorke},
-         familyi={Y\bibinitperiod},
-         given={James\bibnamedelima A},
-         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{LTYYJA1}
-    \strng{fullhash}{LTYYJA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{73\bibrangedash 91}
-    \field{title}{A simple reliable numerical algorithm for following homotopy
-  paths}
-    \field{journaltitle}{Analysis and computation of fixed points}
-    \field{year}{1980}
-  \endentry
-
-  \entry{Chow:1978}{article}{}
-    \name{author}{3}{}{%
-      {{hash=CSN}{%
-         family={Chow},
-         familyi={C\bibinitperiod},
-         given={Shui\bibnamedelima Nee},
-         giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
-      }}%
-      {{hash=MPJ}{%
-         family={Mallet-Paret},
-         familyi={M\bibinithyphendelim P\bibinitperiod},
-         given={John},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=YJA}{%
-         family={Yorke},
-         familyi={Y\bibinitperiod},
-         given={James\bibnamedelima A},
-         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CSN+1}
-    \strng{fullhash}{CSNMPJYJA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{143}
-    \field{pages}{887\bibrangedash 899}
-    \field{title}{Finding zeroes of maps: homotopy methods that are
-  constructive with probability one}
-    \field{volume}{32}
-    \field{journaltitle}{Mathematics of Computation}
-    \field{year}{1978}
-  \endentry
-
-  \entry{Chow:1979}{incollection}{}
-    \name{author}{3}{}{%
-      {{hash=CSN}{%
-         family={Chow},
-         familyi={C\bibinitperiod},
-         given={Shui-Nee},
-         giveni={S\bibinithyphendelim N\bibinitperiod},
-      }}%
-      {{hash=MPJ}{%
-         family={Mallet-Paret},
-         familyi={M\bibinithyphendelim P\bibinitperiod},
-         given={John},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=YJA}{%
-         family={Yorke},
-         familyi={Y\bibinitperiod},
-         given={James\bibnamedelima A},
-         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{CSN+1}
-    \strng{fullhash}{CSNMPJYJA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Functional differential equations and approximation of
-  fixed points}
-    \field{pages}{77\bibrangedash 88}
-    \field{title}{A homotopy method for locating all zeros of a system of
-  polynomials}
-    \field{year}{1979}
-  \endentry
-
-  \entry{Watson:1989}{article}{}
-    \name{author}{1}{}{%
-      {{hash=WLT}{%
-         family={Watson},
-         familyi={W\bibinitperiod},
-         given={Layne\bibnamedelima T},
-         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{WLT1}
-    \strng{fullhash}{WLT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{369\bibrangedash 396}
-    \field{title}{Globally convergent homotopy methods: a tutorial}
-    \field{volume}{31}
-    \field{journaltitle}{Applied Mathematics and Computation}
-    \field{year}{1989}
-  \endentry
-
-  \entry{Watson:1990}{article}{}
-    \name{author}{1}{}{%
-      {{hash=WLT}{%
-         family={Watson},
-         familyi={W\bibinitperiod},
-         given={Layne\bibnamedelima T},
-         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{WLT1}
-    \strng{fullhash}{WLT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{2}
-    \field{pages}{143\bibrangedash 191}
-    \field{title}{Globally convergent homotopy algorithms for nonlinear systems
-  of equations}
-    \field{volume}{1}
-    \field{journaltitle}{Nonlinear Dynamics}
-    \field{year}{1990}
-  \endentry
-
-  \entry{Allgower:1981}{incollection}{}
-    \name{author}{1}{}{%
-      {{hash=AEL}{%
-         family={Allgower},
-         familyi={A\bibinitperiod},
-         given={Eugene\bibnamedelima L},
-         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{AEL1}
-    \strng{fullhash}{AEL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Numerical solution of nonlinear equations}
-    \field{pages}{1\bibrangedash 29}
-    \field{title}{A survey of homotopy methods for smooth mappings}
-    \field{year}{1981}
-  \endentry
-
-  \entry{Rheinboldt:1980}{article}{}
-    \name{author}{1}{}{%
-      {{hash=RWC}{%
-         family={Rheinboldt},
-         familyi={R\bibinitperiod},
-         given={Werner\bibnamedelima C},
-         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {SIAM}%
-    }
-    \strng{namehash}{RWC1}
-    \strng{fullhash}{RWC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{2}
-    \field{pages}{221\bibrangedash 237}
-    \field{title}{Solution fields of nonlinear equations and continuation
-  methods}
-    \field{volume}{17}
-    \field{journaltitle}{SIAM Journal on Numerical Analysis}
-    \field{year}{1980}
-  \endentry
-
-  \entry{Rheinboldt:1983}{article}{}
-    \name{author}{2}{}{%
-      {{hash=RWC}{%
-         family={Rheinboldt},
-         familyi={R\bibinitperiod},
-         given={Werner\bibnamedelima C},
-         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
-      }}%
-      {{hash=BJV}{%
-         family={Burkardt},
-         familyi={B\bibinitperiod},
-         given={John\bibnamedelima V},
-         giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {ACM New York, NY, USA}%
-    }
-    \strng{namehash}{RWCBJV1}
-    \strng{fullhash}{RWCBJV1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{2}
-    \field{pages}{215\bibrangedash 235}
-    \field{title}{A locally parameterized continuation process}
-    \field{volume}{9}
-    \field{journaltitle}{ACM Transactions on Mathematical Software (TOMS)}
-    \field{year}{1983}
-  \endentry
-
-  \entry{Wayburn:1987}{article}{}
-    \name{author}{2}{}{%
-      {{hash=WT}{%
-         family={Wayburn},
-         familyi={W\bibinitperiod},
-         given={TL},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=SJ}{%
-         family={Seader},
-         familyi={S\bibinitperiod},
-         given={JD},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{WTSJ1}
-    \strng{fullhash}{WTSJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{1}
-    \field{pages}{7\bibrangedash 25}
-    \field{title}{Homotopy continuation methods for computer-aided process
-  design}
-    \field{volume}{11}
-    \field{journaltitle}{Computers \& Chemical Engineering}
-    \field{year}{1987}
-  \endentry
-
   \entry{Kojima:1984}{incollection}{}
     \name{author}{2}{}{%
       {{hash=KM}{%
@@ -3617,494 +5298,6 @@
     \field{year}{1989}
   \endentry
 
-  \entry{Wempner:1971}{article}{}
-    \name{author}{1}{}{%
-      {{hash=WGA}{%
-         family={Wempner},
-         familyi={W\bibinitperiod},
-         given={Gerald\bibnamedelima A},
-         giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{WGA1}
-    \strng{fullhash}{WGA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{11}
-    \field{pages}{1581\bibrangedash 1599}
-    \field{title}{Discrete approximations related to nonlinear theories of
-  solids}
-    \field{volume}{7}
-    \field{journaltitle}{International Journal of Solids and Structures}
-    \field{year}{1971}
-  \endentry
-
-  \entry{Bergan:1978}{article}{}
-    \name{author}{4}{}{%
-      {{hash=BP}{%
-         family={Bergan},
-         familyi={B\bibinitperiod},
-         given={PG},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=HG}{%
-         family={Horrigmoe},
-         familyi={H\bibinitperiod},
-         given={G},
-         giveni={G},
-      }}%
-      {{hash=BB}{%
-         family={Br{\aa}keland},
-         familyi={B\bibinitperiod},
-         given={B},
-         giveni={B},
-      }}%
-      {{hash=ST}{%
-         family={S{\o}reide},
-         familyi={S\bibinitperiod},
-         given={TH},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Wiley Online Library}%
-    }
-    \strng{namehash}{BP+1}
-    \strng{fullhash}{BPHGBBST1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{11}
-    \field{pages}{1677\bibrangedash 1696}
-    \field{title}{Solution techniques for non- linear finite element problems}
-    \field{volume}{12}
-    \field{journaltitle}{International Journal for Numerical Methods in
-  Engineering}
-    \field{year}{1978}
-  \endentry
-
-  \entry{Bergan:1978b}{article}{}
-    \name{author}{2}{}{%
-      {{hash=BP}{%
-         family={Bergan},
-         familyi={B\bibinitperiod},
-         given={PG},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=ST}{%
-         family={Soreide},
-         familyi={S\bibinitperiod},
-         given={TH},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Tapir Trondheim}%
-    }
-    \strng{namehash}{BPST1}
-    \strng{fullhash}{BPST1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{647\bibrangedash 669}
-    \field{title}{Solution of large displacement and instability problems using
-  the current stiffness parameter}
-    \field{volume}{2}
-    \field{journaltitle}{Finite elements in nonlinear mechanics}
-    \field{year}{1978}
-  \endentry
-
-  \entry{Batoz:1979}{article}{}
-    \name{author}{2}{}{%
-      {{hash=BJL}{%
-         family={Batoz},
-         familyi={B\bibinitperiod},
-         given={Jean-Louis},
-         giveni={J\bibinithyphendelim L\bibinitperiod},
-      }}%
-      {{hash=DG}{%
-         family={Dhatt},
-         familyi={D\bibinitperiod},
-         given={Gouri},
-         giveni={G\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Wiley Online Library}%
-    }
-    \strng{namehash}{BJLDG1}
-    \strng{fullhash}{BJLDG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{8}
-    \field{pages}{1262\bibrangedash 1267}
-    \field{title}{Incremental displacement algorithms for nonlinear problems}
-    \field{volume}{14}
-    \field{journaltitle}{International Journal for Numerical Methods in
-  Engineering}
-    \field{year}{1979}
-  \endentry
-
-  \entry{Riks:1979}{article}{}
-    \name{author}{1}{}{%
-      {{hash=RE}{%
-         family={Riks},
-         familyi={R\bibinitperiod},
-         given={E},
-         giveni={E},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{RE3}
-    \strng{fullhash}{RE3}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{7}
-    \field{pages}{529\bibrangedash 551}
-    \field{title}{An incremental approach to the solution of snapping and
-  buckling problems}
-    \field{volume}{15}
-    \field{journaltitle}{International journal of solids and structures}
-    \field{year}{1979}
-  \endentry
-
-  \entry{Ramm:1981}{incollection}{}
-    \name{author}{1}{}{%
-      {{hash=RE}{%
-         family={Ramm},
-         familyi={R\bibinitperiod},
-         given={Ekkehard},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{RE1}
-    \strng{fullhash}{RE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Nonlinear finite element analysis in structural
-  mechanics}
-    \field{pages}{63\bibrangedash 89}
-    \field{title}{Strategies for tracing the nonlinear response near limit
-  points}
-    \field{year}{1981}
-  \endentry
-
-  \entry{Watson:1985}{article}{}
-    \name{author}{3}{}{%
-      {{hash=WLT}{%
-         family={Watson},
-         familyi={W\bibinitperiod},
-         given={Layne\bibnamedelima T},
-         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
-      }}%
-      {{hash=KMP}{%
-         family={Kamat},
-         familyi={K\bibinitperiod},
-         given={Manohar\bibnamedelima P},
-         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=RMH}{%
-         family={Reaser},
-         familyi={R\bibinitperiod},
-         given={Michael\bibnamedelima H},
-         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {MCB UP Ltd}%
-    }
-    \strng{namehash}{WLT+1}
-    \strng{fullhash}{WLTKMPRMH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{A robust hybrid algorithm for computing multiple equilibrium
-  solutions}
-    \field{journaltitle}{Engineering Computations}
-    \field{year}{1985}
-  \endentry
-
-  \entry{Sideris:2017}{article}{}
-    \name{author}{3}{}{%
-      {{hash=SP}{%
-         family={Sideris},
-         familyi={S\bibinitperiod},
-         given={Petros},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=NM}{%
-         family={Nikoukalam},
-         familyi={N\bibinitperiod},
-         given={MT},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Salehi},
-         familyi={S\bibinitperiod},
-         given={M},
-         giveni={M},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{SP+1}
-    \strng{fullhash}{SPNMSM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{232\bibrangedash 244}
-    \field{title}{A generalized normal flow method with online step controls
-  for pushover analysis of nonlinear softening structures}
-    \field{volume}{143}
-    \field{journaltitle}{Engineering Structures}
-    \field{year}{2017}
-  \endentry
-
-  \entry{Byrne:1985}{article}{}
-    \name{author}{2}{}{%
-      {{hash=BGD}{%
-         family={Byrne},
-         familyi={B\bibinitperiod},
-         given={George\bibnamedelima D},
-         giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=BLA}{%
-         family={Baird},
-         familyi={B\bibinitperiod},
-         given={Lynn\bibnamedelima A},
-         giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{BGDBLA1}
-    \strng{fullhash}{BGDBLA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{6}
-    \field{pages}{593\bibrangedash 599}
-    \field{title}{Distillation calculations using a locally paramaterized
-  continuation method}
-    \field{volume}{9}
-    \field{journaltitle}{Computers \& chemical engineering}
-    \field{year}{1985}
-  \endentry
-
-  \entry{Ushida:1984}{article}{}
-    \name{author}{2}{}{%
-      {{hash=UA}{%
-         family={Ushida},
-         familyi={U\bibinitperiod},
-         given={A},
-         giveni={A},
-      }}%
-      {{hash=CL}{%
-         family={Chua},
-         familyi={C\bibinitperiod},
-         given={LO},
-         giveni={L\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Wiley Online Library}%
-    }
-    \strng{namehash}{UACL1}
-    \strng{fullhash}{UACL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{1}
-    \field{pages}{1\bibrangedash 21}
-    \field{title}{Tracing solution curves of non-linear equations with sharp
-  turning points}
-    \field{volume}{12}
-    \field{journaltitle}{International journal of circuit theory and
-  applications}
-    \field{year}{1984}
-  \endentry
-
-  \entry{Borkovsky:2010}{article}{}
-    \name{author}{3}{}{%
-      {{hash=BRN}{%
-         family={Borkovsky},
-         familyi={B\bibinitperiod},
-         given={Ron\bibnamedelima N},
-         giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod},
-      }}%
-      {{hash=DU}{%
-         family={Doraszelski},
-         familyi={D\bibinitperiod},
-         given={Ulrich},
-         giveni={U\bibinitperiod},
-      }}%
-      {{hash=KY}{%
-         family={Kryukov},
-         familyi={K\bibinitperiod},
-         given={Yaroslav},
-         giveni={Y\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {INFORMS}%
-    }
-    \strng{namehash}{BRN+1}
-    \strng{fullhash}{BRNDUKY1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{4-part-2}
-    \field{pages}{1116\bibrangedash 1132}
-    \field{title}{A user's guide to solving dynamic stochastic games using the
-  homotopy method}
-    \field{volume}{58}
-    \field{journaltitle}{Operations Research}
-    \field{year}{2010}
-  \endentry
-
-  \entry{Besanko:2010}{article}{}
-    \name{author}{4}{}{%
-      {{hash=BD}{%
-         family={Besanko},
-         familyi={B\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=DU}{%
-         family={Doraszelski},
-         familyi={D\bibinitperiod},
-         given={Ulrich},
-         giveni={U\bibinitperiod},
-      }}%
-      {{hash=KY}{%
-         family={Kryukov},
-         familyi={K\bibinitperiod},
-         given={Yaroslav},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Satterthwaite},
-         familyi={S\bibinitperiod},
-         given={Mark},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Wiley Online Library}%
-    }
-    \strng{namehash}{BD+1}
-    \strng{fullhash}{BDDUKYSM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{2}
-    \field{pages}{453\bibrangedash 508}
-    \field{title}{Learning-by-doing, organizational forgetting, and industry
-  dynamics}
-    \field{volume}{78}
-    \field{journaltitle}{Econometrica}
-    \field{year}{2010}
-  \endentry
-
-  \entry{Herings:2010}{article}{}
-    \name{author}{2}{}{%
-      {{hash=HPJJ}{%
-         family={Herings},
-         familyi={H\bibinitperiod},
-         given={P\bibnamedelima Jean-Jacques},
-         giveni={P\bibinitperiod\bibinitdelim J\bibinithyphendelim
-  J\bibinitperiod},
-      }}%
-      {{hash=PR}{%
-         family={Peeters},
-         familyi={P\bibinitperiod},
-         given={Ronald},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{HPJJPR1}
-    \strng{fullhash}{HPJJPR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{1}
-    \field{pages}{119\bibrangedash 156}
-    \field{title}{Homotopy methods to compute equilibria in game theory}
-    \field{volume}{42}
-    \field{journaltitle}{Economic Theory}
-    \field{year}{2010}
-  \endentry
-
-  \entry{Bartovn:2016}{article}{}
-    \name{author}{2}{}{%
-      {{hash=BM}{%
-         family={Barto{\v{n}}},
-         familyi={B\bibinitperiod},
-         given={Michael},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=CVM}{%
-         family={Calo},
-         familyi={C\bibinitperiod},
-         given={Victor\bibnamedelima Manuel},
-         giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{BMCVM1}
-    \strng{fullhash}{BMCVM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{217\bibrangedash 240}
-    \field{title}{Optimal quadrature rules for odd-degree spline spaces and
-  their application to tensor-product-based isogeometric analysis}
-    \field{volume}{305}
-    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
-    \field{year}{2016}
-  \endentry
-
-  \entry{Barendrecht:2018}{article}{}
-    \name{author}{3}{}{%
-      {{hash=BPJ}{%
-         family={Barendrecht},
-         familyi={B\bibinitperiod},
-         given={Pieter\bibnamedelima J},
-         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=BM}{%
-         family={Barto{\v{n}}},
-         familyi={B\bibinitperiod},
-         given={Michael},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=KJ}{%
-         family={Kosinka},
-         familyi={K\bibinitperiod},
-         given={Ji{\v{r}}{\'\i}},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{BPJ+1}
-    \strng{fullhash}{BPJBMKJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{1\bibrangedash 23}
-    \field{title}{Efficient quadrature rules for subdivision surfaces in
-  isogeometric analysis}
-    \field{volume}{340}
-    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
-    \field{year}{2018}
-  \endentry
-
   \entry{Watson:2002}{article}{}
     \name{author}{1}{}{%
       {{hash=WLT}{%
@@ -4183,67 +5376,6 @@
     \field{volume}{22}
     \field{journaltitle}{Siam Review}
     \field{year}{1980}
-  \endentry
-
-  \entry{Rheinboldt:1981}{incollection}{}
-    \name{author}{1}{}{%
-      {{hash=RWC}{%
-         family={Rheinboldt},
-         familyi={R\bibinitperiod},
-         given={Werner\bibnamedelima C},
-         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{RWC1}
-    \strng{fullhash}{RWC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Computational Methods in Nonlinear Structural and Solid
-  Mechanics}
-    \field{pages}{103\bibrangedash 113}
-    \field{title}{Numerical analysis of continuation methods for nonlinear
-  structural problems}
-    \field{year}{1981}
-  \endentry
-
-  \entry{Lin:1987}{article}{}
-    \name{author}{3}{}{%
-      {{hash=LWJ}{%
-         family={Lin},
-         familyi={L\bibinitperiod},
-         given={Wen-Jing},
-         giveni={W\bibinithyphendelim J\bibinitperiod},
-      }}%
-      {{hash=SJ}{%
-         family={Seader},
-         familyi={S\bibinitperiod},
-         given={JD},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=WT}{%
-         family={Wayburn},
-         familyi={W\bibinitperiod},
-         given={TL},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Wiley Online Library}%
-    }
-    \strng{namehash}{LWJ+1}
-    \strng{fullhash}{LWJSJWT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{6}
-    \field{pages}{886\bibrangedash 897}
-    \field{title}{Computing multiple solutions to systems of interlinked
-  separation columns}
-    \field{volume}{33}
-    \field{journaltitle}{AIChE Journal}
-    \field{year}{1987}
   \endentry
 
   \entry{Sun:1995}{article}{}
@@ -5087,30 +6219,6 @@
     \field{journaltitle}{International Journal for Numerical Methods in
   Engineering}
     \field{year}{1990}
-  \endentry
-
-  \entry{Klopfenstein:1961}{article}{}
-    \name{author}{1}{}{%
-      {{hash=KR}{%
-         family={Klopfenstein},
-         familyi={K\bibinitperiod},
-         given={RW},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {ACM New York, NY, USA}%
-    }
-    \strng{namehash}{KR1}
-    \strng{fullhash}{KR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{3}
-    \field{pages}{366\bibrangedash 373}
-    \field{title}{Zeros of nonlinear functions}
-    \field{volume}{8}
-    \field{journaltitle}{Journal of the ACM (JACM)}
-    \field{year}{1961}
   \endentry
 
   \entry{Ragon:2002}{article}{}

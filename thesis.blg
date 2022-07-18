@@ -20,7 +20,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 28240 items.
+Reallocating 'field_info' (item size: 4) to 33280 items.
 Database file #1: thesis-blx.bib
 Database file #2: references.bib
 Repeated entry---line 1631 of file references.bib
@@ -30,45 +30,45 @@ I'm skipping whatever remains of this entry
 Biblatex version: 3.18
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 166 entries,
+You've used 202 entries,
             6399 wiz_defined-function locations,
-            2310 strings with 37991 characters,
-and the built_in function-call counts, 1222731 in all, are:
-= -- 99339
-> -- 18167
-< -- 5500
-+ -- 32447
-- -- 6001
-* -- 84400
-:= -- 130386
+            2531 strings with 43922 characters,
+and the built_in function-call counts, 1486033 in all, are:
+= -- 120668
+> -- 22003
+< -- 6550
++ -- 39478
+- -- 7300
+* -- 102880
+:= -- 158906
 add.period$ -- 0
-call.type$ -- 166
-change.case$ -- 3670
+call.type$ -- 202
+change.case$ -- 4334
 chr.to.int$ -- 42
-cite$ -- 330
-duplicate$ -- 124742
-empty$ -- 108918
-format.name$ -- 10285
-if$ -- 252695
+cite$ -- 402
+duplicate$ -- 151704
+empty$ -- 132428
+format.name$ -- 12544
+if$ -- 306854
 int.to.chr$ -- 0
-int.to.str$ -- 539
+int.to.str$ -- 652
 missing$ -- 0
-newline$ -- 5137
-num.names$ -- 9219
-pop$ -- 57688
+newline$ -- 6209
+num.names$ -- 11089
+pop$ -- 70321
 preamble$ -- 1
-purify$ -- 4576
+purify$ -- 5440
 quote$ -- 0
-skip$ -- 33629
+skip$ -- 40534
 stack$ -- 0
-substring$ -- 180893
-swap$ -- 24697
-text.length$ -- 3524
-text.prefix$ -- 23
+substring$ -- 220029
+swap$ -- 29871
+text.length$ -- 4276
+text.prefix$ -- 29
 top$ -- 1
-type$ -- 5631
+type$ -- 6854
 warning$ -- 0
-while$ -- 15113
+while$ -- 18424
 width$ -- 0
-write$ -- 4972
+write$ -- 6008
 (There was 1 error message)

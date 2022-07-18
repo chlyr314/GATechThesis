@@ -5,94 +5,98 @@
 \contentsline {chapter}{Acknowledgements}{xx}{chapter*.6}%
 \contentsline {chapter}{\numberline {1}Introduction and Background}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Literature Review}{1}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Beam element technologies}{1}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Inelastic behavior in beams}{3}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Research Objectives}{5}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Research Scope}{5}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Organization of the Manuscript}{5}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Notation}{5}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Hybrid Beam Element Formulation}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduction}{6}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Geometrically-Exact Model}{7}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Beam Kinematics}{7}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Strain Measures, Strain-Displacement Relations}{9}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Nonlinear Programming Formulation}{11}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}NLP Framework}{11}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Total Potential Energy}{12}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Strain-Displacement Constraints}{13}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Lagrangian Function}{15}{subsection.2.3.4}%
-\contentsline {section}{\numberline {2.4}Implementation}{16}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Equilibrium}{18}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Hessian Matrix}{19}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Solution Scheme}{19}{subsection.2.4.3}%
-\contentsline {subsubsection}{Solution updating}{23}{subsubsection*.10}%
-\contentsline {subsection}{\numberline {2.4.4}Cross-Section State Determination}{24}{subsection.2.4.4}%
-\contentsline {section}{\numberline {2.5}Numerical Examples}{28}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Cantilever with Tip Load}{29}{subsection.2.5.1}%
-\contentsline {subsubsection}{Nonlinear analyses}{29}{subsubsection*.12}%
-\contentsline {subsubsection}{Shear-locking}{32}{subsubsection*.16}%
-\contentsline {subsection}{\numberline {2.5.2}Lee's Frame}{33}{subsection.2.5.2}%
-\contentsline {subsubsection}{Frame with pinned supports}{33}{subsubsection*.18}%
-\contentsline {subsubsection}{Frame with fixed supports}{36}{subsubsection*.22}%
-\contentsline {subsection}{\numberline {2.5.3}Two-Storey Frame}{37}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Summary}{39}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Material Constitutive Model}{43}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduction}{43}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Three-dimensional Constitutive Model}{44}{section.3.2}%
-\contentsline {section}{\numberline {3.3}The $J_2$ Formulation for Fiber Stress State}{46}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Mapping on the Constrained Stress Space}{46}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Continuous Tangent Modulus}{49}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Implicit Integration of Rate Equations}{50}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Elastic Predictor - Plastic Corrector algorithm}{51}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Consistent Tangent Modulus}{52}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Consistent Section Stiffness}{53}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Numerical Examples}{55}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Accuracy of the Proposed Algorithm}{55}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Performance Against Non-Monotonic Strain Histories}{57}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Plastic Collapse of a Doubly Clamped Beam}{58}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Cyclic Loading of Shear Link}{63}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Elastoplastic Post-Buckling Behavior of Two-Beam Structure}{64}{subsection.3.5.5}%
-\contentsline {subsection}{\numberline {3.5.6}Three Story Frame With Shear Links}{67}{subsection.3.5.6}%
-\contentsline {section}{\numberline {3.6}Summary}{68}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Naturally Parameterized NLP framework}{71}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{71}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Homotopy Continuation}{73}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Main idea}{73}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Regularity and Existence of Homotopy Paths}{76}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Parametric Nonlinear Programming}{78}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Global Optimization}{82}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Naturally Parameterized NLP Framework for Mechanics}{84}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Existence and Uniqueness of NPNLP Path}{86}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Implementation}{89}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Numerical Examples}{92}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Example 1 - Global Optimization}{92}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Example 2 - Global Sensitivity}{95}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Example 3 - Frictionless Contact}{98}{subsection.4.5.3}%
-\contentsline {section}{\numberline {4.6}Summary}{101}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Weighted least squares predictor for numerical continuation}{103}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{103}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Numerical Continuation}{104}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Weighted Least Squares Predictor}{107}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Matrix Formulation of WLS Approximation}{110}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}WLS Prediction Variants}{112}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Arc-length Stabilization}{113}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}The Weight Function}{114}{subsection.5.3.4}%
-\contentsline {section}{\numberline {5.4}Implementation}{115}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Algorithm}{115}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Arc-Length Measurement}{116}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Discussion}{117}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Numerical Examples}{119}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Numerical Example 1}{120}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Numerical Example 2}{121}{subsection.5.5.2}%
-\contentsline {subsection}{\numberline {5.5.3}Numerical Example 3}{123}{subsection.5.5.3}%
-\contentsline {subsection}{\numberline {5.5.4}Numerical Example 4}{124}{subsection.5.5.4}%
-\contentsline {section}{\numberline {5.6}Summary}{127}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Conclusions and Future Study}{129}{chapter.6}%
+\contentsline {subsection}{\numberline {1.1.1}Beam Element Technologies}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Modelling Inelastic Behavior in Beams}{3}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Local and Global Solution Methods}{4}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Research Objectives}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Research Scope}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Organization of the Manuscript}{9}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Notation}{11}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Hybrid Beam Element Formulation}{14}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{14}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Geometrically-Exact Model}{15}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Beam Kinematics}{15}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Strain Measures, Strain-Displacement Relations}{17}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Nonlinear Programming Formulation}{19}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}NLP Framework}{19}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Total Potential Energy}{20}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Strain-Displacement Constraints}{21}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Lagrangian Function}{23}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Implementation}{24}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Equilibrium}{26}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Hessian Matrix}{27}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Solution Scheme}{27}{subsection.2.4.3}%
+\contentsline {subsubsection}{Solution updating}{31}{subsubsection*.10}%
+\contentsline {subsection}{\numberline {2.4.4}Cross-Section State Determination}{32}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Numerical Examples}{36}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Cantilever with Tip Load}{37}{subsection.2.5.1}%
+\contentsline {subsubsection}{Nonlinear analyses}{37}{subsubsection*.12}%
+\contentsline {subsubsection}{Shear-locking}{40}{subsubsection*.16}%
+\contentsline {subsection}{\numberline {2.5.2}Lee's Frame}{41}{subsection.2.5.2}%
+\contentsline {subsubsection}{Frame with pinned supports}{41}{subsubsection*.18}%
+\contentsline {subsubsection}{Frame with fixed supports}{44}{subsubsection*.22}%
+\contentsline {subsection}{\numberline {2.5.3}Two-Storey Frame}{45}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Summary}{47}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Material Constitutive Model}{51}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{51}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Three-dimensional Constitutive Model}{52}{section.3.2}%
+\contentsline {section}{\numberline {3.3}The $J_2$ Formulation for Fiber Stress State}{54}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Mapping on the Constrained Stress Space}{54}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Continuous Tangent Modulus}{57}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Implicit Integration of Rate Equations}{58}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Elastic Predictor - Plastic Corrector algorithm}{59}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Consistent Tangent Modulus}{60}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Consistent Section Stiffness}{61}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Numerical Examples}{63}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Accuracy of the Proposed Algorithm}{63}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Performance Against Non-Monotonic Strain Histories}{65}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Plastic Collapse of a Doubly Clamped Beam}{66}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Cyclic Loading of Shear Link}{71}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Elastoplastic Post-Buckling Behavior of Two-Beam Structure}{72}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}Three Story Frame With Shear Links}{75}{subsection.3.5.6}%
+\contentsline {section}{\numberline {3.6}Summary}{76}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Naturally Parameterized NLP framework}{79}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{79}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Homotopy Continuation}{81}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Main idea}{81}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Regularity and Existence of Homotopy Paths}{84}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Parametric Nonlinear Programming}{86}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Global Optimization}{90}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Naturally Parameterized NLP Framework for Mechanics}{92}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Existence and Uniqueness of NPNLP Path}{94}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Implementation}{97}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Numerical Examples}{100}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Example 1 - Global Optimization}{100}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Example 2 - Global Sensitivity}{103}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Example 3 - Frictionless Contact}{106}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.6}Summary}{109}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Weighted least squares predictor for numerical continuation}{111}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{111}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Numerical Continuation}{112}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Weighted Least Squares Predictor}{115}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Matrix Formulation of WLS Approximation}{118}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}WLS Prediction Variants}{120}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Arc-length Stabilization}{121}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}The Weight Function}{122}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}Implementation}{123}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Algorithm}{123}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Arc-Length Measurement}{124}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Discussion}{125}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Numerical Examples}{127}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Numerical Example 1}{128}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Numerical Example 2}{129}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Numerical Example 3}{131}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Numerical Example 4}{132}{subsection.5.5.4}%
+\contentsline {section}{\numberline {5.6}Summary}{135}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Conclusions and Suggestions for Future Research}{137}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Research Summary and Conclusions}{137}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Limitations}{137}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Future Directions}{138}{section.6.3}%
 \renewcommand {\cftchappresnum }{Appendix }
 \renewcommand {\cftchapnumwidth }{6em}
-\contentsline {chapter}{\numberline {A}Gradient of Hybrid NLP Lagrangian}{132}{appendix.1.A}%
-\contentsline {chapter}{\numberline {B}Hessian of Hybrid NLP Lagrangian}{137}{appendix.1.B}%
-\contentsline {chapter}{\numberline {C}Iterative Corrections for Plastic Parameter}{140}{appendix.1.C}%
-\contentsline {chapter}{\numberline {D}Analytical Derivation of Consistent Tangent Modulus}{142}{appendix.1.D}%
-\contentsline {chapter}{\numberline {E}Numerical Pathfollowing}{144}{appendix.1.E}%
-\contentsline {chapter}{References}{146}{figure.caption.75}%
+\contentsline {chapter}{\numberline {A}Gradient of Hybrid NLP Lagrangian}{143}{appendix.1.A}%
+\contentsline {chapter}{\numberline {B}Hessian of Hybrid NLP Lagrangian}{148}{appendix.1.B}%
+\contentsline {chapter}{\numberline {C}Iterative Corrections for Plastic Parameter}{151}{appendix.1.C}%
+\contentsline {chapter}{\numberline {D}Analytical Derivation of Consistent Tangent Modulus}{153}{appendix.1.D}%
+\contentsline {chapter}{\numberline {E}Numerical Pathfollowing}{155}{appendix.1.E}%
+\contentsline {chapter}{References}{157}{figure.caption.75}%

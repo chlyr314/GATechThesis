@@ -2,7 +2,7 @@
 
 \section{Literature Review}
 
-\subsection{Beam element technologies}
+\subsection{Beam Element Technologies}
 Engineering applications involving structures undergoing large
 displacements, rotations and elastic or inelastic deformations are quite
 common in several fields and industries. As far as rod-like structures
@@ -88,7 +88,7 @@ Lagrange multiplier unknowns, yet the penalized constraints are not
 satisfied exactly and criteria for the proper adjustment of the penalty
 coefficients are difficult to establish.
 
-\subsection{Inelastic behavior in beams}
+\subsection{Modelling Inelastic Behavior in Beams}
 
 Modelling the inelastic response of structural beams is of considerable
 interest in many fields of engineering practice. While accuracy of
@@ -140,7 +140,7 @@ representation axial-flexure coupling through fiber
 discretization\cite{Ranzo1998,Martino2000,Marini2006}. Taylor et
 al.\cite{Taylor2003} and more recently Lyritsakis et al.\cite{Lyritsakis2021}
 considered uniaxial laws on each fiber for shear and axial stresses 
-separately, thereby ignoring coupling shear-axial coupling. A more physically
+separately, thereby ignoring shear-axial coupling. A more physically
 rigorous approach is adopted by a number of
 authors\cite{Papachristidis2010,Saritas2009,Ceresa2009,Gregori2007,Kagermanov2017},
 whereby a multiaxial model is utilized at the fiber level. However, this
@@ -149,12 +149,249 @@ fiber\cite{Klinkel2002,Dodds1987,DeSouza2011} during a plastic
 step in order to enforce the zero transverse normal stress condition,
 $\sigma_{yy}=\sigma_{zz}=0$, thereby inducing additional overhead.
 
+\subsection{Local and Global Solution Methods}
+
+When dealing with problems in optimization, some important questions that arise 
+are concerned with the objective function properties and whether a particular 
+algorithm can converge to a stationary point, given an initial guess. In a 
+similar fashion, the problem of solving systems of nonlinear algebraic 
+equations, which is encountered in virtually all branches of engineering 
+practice, poses similar challenges. For problems where an underlying 
+variational structure exists, the two cases above can be viewed as equivalent. 
+For mechanics applications in particular, the solution of the equilibrium 
+equations implies the stationarity of the total potential energy of the system. 
+For such applications, it is often the case that more solutions exist for a 
+particular external input, whether it is an applied load or a design parameter. 
+In such cases, it is important for the underlying mathematical formulation to 
+provide these tools that would allow the analysis to reveal all such solutions.
+
+One of the
+most common solution methods used for such problems is the Newton-Raphson 
+method\cite{Ypma:1995}, which
+converges with quadratic rates if the initial guess is in the proximity of the
+solution. In this sense, the method is said to be local. It is also well known 
+that it fails at singular points because the Jacobian becomes 
+non-invertible\cite{Dennis:1996}. A family of 
+algorithms known as quasi-Newton
+methods\cite{Broyden:1965,Davidon:1991,Berndt:1974}, which are variants of the 
+Newton-Raphson method, attempt to bypass the singularity issue by approximating 
+the Jacobian according to certain criteria while also offering substantial
+advantages as far as computational cost is concerned. Such methods have been 
+utilized extensively in
+computational mechanics literature\cite{Matthies:1979,Hughes:1983}, with the 
+BFGS\cite{Liu:1989} variant being the most widely used in implementations.
+
+To overcome the shortcomings of Newton-type iterative schemes, 
+globally convergent methods have been an active field of research for many
+decades\cite{Allgower:2003}. These are often termed continuation, imbedding or 
+homotopy methods\cite{Rheinboldt:2000} and aim to converge to one or more 
+solutions, irrespectively of how good the initial guess is, by tracing a smooth
+set of points(or path), with both the solution and the initial guess being
+members of it. Modern homotopy continuation literature within the applied
+mathematics community is quite
+rich\cite{Keller:1978,Li:1980,Chow:1978,Chow:1979,Watson:1989,Watson:1990,Allgower:1981,Rheinboldt:1980,Rheinboldt:1983,Wayburn:1987}
+and its origins can be traced back to the works of
+Davidenko\cite{Davidenko:1953a,Davidenko:1953},
+Klopfenstein\cite{Klopfenstein:1961},
+Haselgrove\cite{Haselgrove:1961} and Yakovlev\cite{Yakovlev:1964}, among others.
+The main idea is to imbed the problem in a higher dimensional space using a
+homotopy function and, if 
+certain regularity conditions hold, the implicit function theorem guarantees that a
+smooth parameterizable path exists that connects an arbitrary initial point 
+to at least 
+one solution. By construction, the Jacobian in the augmented space is always of
+full rank and turning points now pose no difficulty during the numerical
+treatment of the problem.
+
+In engineering applications, and more specifically in nonlinear elasticity, the 
+various so-called incremental methods which were developed independently to tackle 
+problems 
+of elastic stability and to trace the load-displacement curve past critical
+points\cite{Wempner:1971,Bergan:1978,Bergan:1978b,Batoz:1979,Riks:1979,Ramm:1981,Crisfield3}
+are closely related to the homotopy continuation framework\cite{Rheinboldt:1983}. 
+Dynamic Relaxation,
+which is another family of
+methods that has been applied to the solution of nonlinear quasi-static
+problems\cite{Cassell:1970,Brew:1971,Stricklin:1971,Papadrakakis:1981,Park:1982},
+can also be regarded as a numerical application of an underlying homotopy
+imbedding\cite{Oden:1973}. Explicit use of the homotopy framework in structural
+mechanics investigations can be found in Watson et 
+al\cite{Watson:1981report,Watson:1985},
+Rheinboldt\cite{Rheinboldt:1981}. Other disciplines that have employed numerical
+continuation in applications include
+optimization\cite{Poore:1988,Watson:1989,Zhenghua:1996,Hillermeier:2001,Song:2008},
+chemical engineering\cite{Byrne:1985,Lin:1987,Kovach:1987}, transfer problems
+in electrical circuits\cite{Ushida:1984} and, more recently, for problems with 
+variational structure and energy
+minimization\cite{Hughes:2013,Mehta:2015,Mobahi:2015}, structural
+mechanics\cite{Bilasse:2009,Banerjee:2013,Ligursky:2014,Sideris:2017,Groh:2018} and 
+topology
+optimization\cite{Chakraborty:2019}, constitutive modelling\cite{Tari:2017}, fluid 
+mechanics\cite{Yu:2016,Brown:2016}
+, economics \& operations
+research\cite{Borkovsky:2010,Besanko:2010,Herings:2010} and numerical quadrature
+investigations for isogeometric analysis\cite{Bartovn:2016,Barendrecht:2018}, among 
+others. A survey on the 
+application of homotopy continuation to engineering problems is provided by 
+Seydel and Hlavacek\cite{Seydel:1987}.
+
+
 \section{Research Objectives}
+The objective of this research is to develop a high-performance, geometrically-exact, 
+hybrid beam element that is formulated in terms of nonlinear programming principles, 
+whereby the total potential energy of the structure is treaded as the objective 
+function. The formulation will offer the capability to model a structural member with 
+just one element in both linear and nonlinear response spectrum. Since the element 
+formulation is recast using optimization concepts, we aim to also develop a parametric 
+nonlinear programming framework for the hybrid beam element, which would provide the 
+necessary tools for general purpose parametric analyses with global convergence 
+characteristics. In addition, we aim to develop a fast and robust prediction scheme to 
+be used during the numerical solution of the parametric nonlinear program. 
+
+More specifically, this study proposes:
+\begin{itemize}
+	\item The development of a beam element that utilizes exact kinematics and is 
+	based on nonlinear programming principles. The element would be able to capture 
+	arbitrarily large displacements and rotations, as well as curvature localization 
+	during inelastic response, with just one element per member. In addition, it would 
+	incorporate shear deformation effects without locking behavior. The hybridization 
+	of the element is carried out by incorporating the exact kinematic equations in 
+	the minimization statement of the potential energy by introducing a set of 
+	Lagrange multipliers.
+	
+	\item The formulation of a fast and robust return-mapping algorithm for the 
+	numerical integration of fiber-discretized beam cross-sections. The proposed 
+	algorithm is an essential part of the section state determination procedure as it 
+	provides axial-shear-flexure interaction capabilities and is tailored for the 
+	planar hybrid beam element. Because it does not incorporate non-active components 
+	of the stress tensor, there is no need to enforce the zero transverse stress 
+	constraint at the fiber level, thereby, avoids a nested local Newton iteration. In 
+	addition, it requires less memory storage for the state variables. 
+	
+	\item Develop a parametric nonlinear programming framework for the hybrid beam 
+	element that will provide the capability to perform analyses on a structural 
+	system that are of general consideration. Such analyses include but are not 
+	limited to: static response to load history, design and parameter optimization, 
+	contact, global sensitivity analysis. It essentially provides an application 
+	interface for the study of parametric dependence of the structural system 
+	configuration and how these states change under large variations of the designated 
+	parameter. In addition, it establishes the conditions that ensure global 
+	convergence properties and the numerical tools to implement such capabilities. By 
+	utilizing principles from homotopy theory, we highlight what specific
+	regularity conditions need to hold so that a unique and smooth path exists which
+	connects the initial configuration state, which is considered known, with at least 
+	one equilibrium state of a specified potential. 
+	
+	\item Incorporate a fast and reliable prediction scheme in the global solution 
+	algorithm used for solving the nonlinear system of equations. Numerical 
+	continuation is utilized in approximating stationary points (or, equivalently, 
+	solutions) of a system if the initial guess is not in their proximity. The class 
+	of algorithms most commonly used for this task are the so-called 
+	predictor-corrector algorithms and are used to numerically track paths generated 
+	by homotopy or parametric programming imbeddings. Prediction is a crucial and, 
+	usually, computationally costly phase, as it affects the quality of the first 
+	estimate of the solution we seek. A predictor based on a weighted least squares 
+	process is proposed, whereby the next solution estimate is determined from a 
+	locally fitted curve. It bypasses the need to rely on second derivative 
+	information, as is usually the case and avoids the penalizing constraints imposed 
+	by interpolatory prediction schemes. In addition, it provides reliable initial 
+	estimates of sought solutions at a fraction of computational cost compared to most 
+	other options.
+	
+\end{itemize}
 
 \section{Research Scope}
+The scope of this research, based on the aforementioned objectives, is listed below:
 
+\begin{itemize}
+	\item Develop a nonlinear programming framework for a beam element, using the 
+	total potential energy as the objective function. The element kinematics are 
+	determined from the strain-displacement equations, which are regarded as 
+	constraints acting on the optimization program. The Simo-Reissner or 
+	geometrically-exact kinematic relations are used in this study, which do not 
+	introduce any approximation in the magnitude of nodal displacements or rotations. 
+	Shear deformation is fully acounted for but cross-section warping effects are 
+	ignored. The formulation pertains to quasi-static problems.
+	
+	\item Develop a multiaxial constitutive model for the stress-update procedure at 
+	the cross-section fiber level. The formulation assumes infinitesimal strains, 
+	rate-independent, associative elastoplasticity. The von Mises yield criterion is 
+	adopted in the present study, where linear kinematic and general isotropic 
+	hardening are incorporated in the derivations. The numerical integration of rate 
+	constitutive equations of elastoplasticity is carried out using the fully 
+	implicity backward Euler method. The consistent tangent modulus for the proposed 
+	model is also derived.
+	
+	\item The parametric nonlinear programming framework assumes the total potential 
+	energy of the structure and the kinematic (or other) constraints are sufficiently 
+	smooth functions of the state variables. In addition, certain regularity 
+	conditions, which are explained in detail in the relevant sections, are assumed 
+	that guarantee no bifurcating paths occur during the solution process. 
+	Furthermore, in the presence of inequality constraints, we assume that the linear 
+	independence constraint qualification and the strict complementarity condition 
+	hold for the whole domain, with the exception of maybe a finite number of points. 
+	This allows usto establish the existence of piecewise smooth paths that lead to 
+	stationary points and a numerical solution algorithm to track such paths is 
+	developed.
+	
+	\item The development of the weighted least squares predictor assumes an 
+	underlying polynomial basis and that a number of previously converged solution 
+	points is stored in memory. The proposed algorithm is general and can be applied 
+	as is for arbitrary problems where the task is to solve systems of nonlinear 
+	equations by numerical continuation using a predictor-corrector approach. 
+\end{itemize}
 \section{Organization of the Manuscript}
+The remainder of the manuscript is organized as follows: 
 
+Chapter 2 introduces the formulation of the hybrid beam element. The exact kinematics 
+utilized are briefly outlined, followed by the constrained, nonlinear programming 
+statement for the element. Next, we present detailed implementation details, along 
+with a block elimination technique for the Hessian that allows for solving only for 
+nodal displacement state variables. The chapter concludes with a set of numerical 
+examples where we demonstrate the capabilities of the proposed element.
+
+Chapter 3 presents the multiaxial elastoplastic constitutive model adjusted for the 
+stress state of a beam fiber. The chapter begins with the general form of the rate 
+constitutive equations for elastoplasticity, as expressed for the three-dimensional 
+problem. It then proceeds with developing a mapping procedure from that space to the 
+constrained fiber stress space. The equivalent set of rate equations is presented here 
+with the assumption of a von Mises yield criterion. Then, implementation details 
+pertaining to the application of the fully implicit Euler scheme are detailed and the 
+elastic predictor-plastic correct return mapping algorithm is outlined for the 
+constrained stress-update problem. The Chapter closes with a set of numerical examples 
+that test the accuracy of both the algorithm, as well as its performance when used on 
+a number of elastoplastic simulation examples.
+
+Chapter 4 is concerned with the development of the parametric nonlinear programming 
+framework for the hybrid beam element. The Chapter starts with a brief but detailed 
+outline of homotopy continuation theory as applied to solving systems of equations, as 
+well as its extension treat parametric and global optimization problems. The next 
+section introduces a naturally parameterized nonlinear programming frameowork suited 
+for structural mechanics applications that use the proposed beam element. The 
+conditions that guarantee global convergence are stated and an appropriate 
+predictor-corrector continuation algorithm is proposed that can track piecewise smooth 
+paths. The Chapter concludes with a set of examples involving optimization of a 
+function, a study of global sensitivity of a structural system to changes in axial 
+stiffness of a member, as well as a frictionless contact problem using a nonlinear 
+elastic constitutive law.
+
+Chapter 5 develops the weighted least squares predictor for use in the 
+predictor-corrector algorithm proposed in the previous chapter. The Chapter first 
+provides a summary on the use of numerical continuation and, specifically, the role of 
+the prediction phase in it. After that the main idea of a local weighted least squares 
+fitting using a user-defined number of previously converged solution points is 
+presented, along with various additional features provided by this prediction scheme, 
+such as the weighting function, stabilization and the different predictor variants 
+that arise from the proposed algorithm. The following section is concerned with 
+implementation details and, finally, the Chapter concludes with a set of numerical 
+examples that test the performance of the proposed predictor with i) the Euler 
+predictor and ii) two-step and three-step Adams-Bashforth predictors. 
+
+Lastly, Chapter 6 contains a summary of the present research work, a discussion of its 
+findings, advantages and its limitations and suggestions regarding potential future 
+research directions.
+
+ 
 \section{Notation}
 Unless state otherwise, boldface lowercase letters indicate second order 
 tensor. Wherever 
@@ -172,9 +409,50 @@ herein for storing second order tensors in a vector object is the following:
 	\end{bmatrix}^T
 \end{equation*}
 
-For strain tensors, components for which $i\neq j$ are multiplied by 2.
+\noindent For strain tensors, components for which $i\neq j$ are multiplied by 2.
 
 In addition, any boldface letter, lowercase or uppercase, with an overhead 
 arrow indicates a vector object. In constrast, matrices are represented 
-exclusively by uppercase, non-italic, boldface letters. Finally, normal font 
-letters indicate scalar quantities.
+exclusively by uppercase, non-italic or calligraphic, boldface letters.
+whereas normal font letters indicate scalar quantities. 
+
+We adopt the notation $\bvec{F}:\mathbb{R}^n\rightarrow\mathbb{R}^m$ to indicate a 
+mapping $\bvec{F}$ that takes as argument a vector of dimension $n$, 
+$\bvec{x}\in\mathbb{R}^n$, and maps it onto a vector of dimension $m$, 
+$\bvec{y}\in\mathbb{R}^m$:
+\begin{equation*}
+	\bvec{y} = \bvec{F}(\bvec{x})
+\end{equation*}
+
+We note that operations involving the symbol $\nabla$ map scalars to
+vectors and vectors to matrices. For example, if $f:\mathbb{R}^p\rightarrow 
+\mathbb{R}$ and
+$\bvec{v}:\mathbb{R}^p\rightarrow\mathbb{R}^q$, then $\nabla
+f:\mathbb{R}^p\rightarrow\mathbb{R}^p$ and
+$\nabla\bvec{v}:\mathbb{R}^p\rightarrow\mathbb{R}^{p\times q}$. For a scalar function 
+$f(\bvec{x})$, $\bvec{x}\in\mathbb{R}^n$ we have:
+\begin{equation*}
+	\nabla f = \begin{bmatrix}
+		\displaystyle\frac{\partial f}{\partial x_1} & \dots & 
+		\displaystyle\frac{\partial f}{\partial x_n}
+	\end{bmatrix}^T
+\end{equation*}
+
+The Jacobian of $\bvec{F}$, denoted $\bmat{J}$, is an $m\times n$ matrix expressed as 
+follows:
+\begin{equation*}
+	\bmat{J} = \begin{bmatrix}
+		\nabla_{\bm{x}}F_1^T\\
+		\vdots\\
+		\nabla_{\bm{x}}F_m^T\\
+	\end{bmatrix} = \begin{bmatrix}
+\displaystyle	\frac{\partial \bvec{F}}{\partial x_1} & \dots & 
+\displaystyle\frac{\partial \bvec{F}}{\partial 
+	x_n}\end{bmatrix} = \begin{bmatrix}
+		\displaystyle\frac{\partial F_1}{\partial x_1} & \dots & 
+		\displaystyle\frac{\partial F_1}{\partial x_n}\\
+		\vdots & \ddots & \vdots\\
+		\displaystyle\frac{\partial F_m}{\partial x_1} & \dots & 
+		\displaystyle\frac{\partial F_m}{\partial x_n} 
+	\end{bmatrix}
+\end{equation*}
