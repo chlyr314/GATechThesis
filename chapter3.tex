@@ -1276,6 +1276,29 @@ identical accuracy during the unloading steps and a noticable discrepancy with
 the experimental analysis. As explained in \cite{Saritas2009}, this is due to 
 improper restraint of the specimen during the experiment.
 
+Performance analysis of the three different return-mapping schemes is also 
+conducted for this example, where now we will examine the total number of 
+constitutive iterations during the whole history of the imposed displacement. 
+This helps highlight the significant acceleration the proposed algorithm offers 
+when a complex analysis that involves nonlinear response of an element 
+comprised of different sections, each of which is discretized in several 
+layers. The results when we use the three-dimensional/axisymmetric, Simo's 
+plane stress and the proposed algorithm are shown in Fig. \ref{fig:FIG_BARS}. 
+As mentioned earlier, the constitutive model even tends to favor the 
+three-dimensional algorithm since the plastic correction reduces to the 
+so-called radial return for this particular constitutive model. However, in a 
+more general setting where nonlinear hardening or a different material model is 
+used, the perfromance differentials between the proposed scheme and the its 
+three-dimensional counterpart would be even more pronounced.
+
+ \begin{figure}[t]
+ 	\centering
+ 	\includegraphics[scale=0.9]{FIG_BARS}
+ 	\caption{Performance of the three different return-mapping algorithms 
+ 	applied for the section state determination of the shear link under the 
+ 	imposed displacement history.}
+ 	\label{fig:FIG_BARS}
+ \end{figure}
 %%%%%%%%%%%%%%%%%%%%  EXAMPLE 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Elastoplastic Post-Buckling Behavior of Two-Beam Structure}
 
@@ -1293,7 +1316,13 @@ multiaxial law by
 investigating a variation of this problem. For all cases, inelastic response 
 with kinematic hardening is assumed. The convergence rates in residual norm and 
 energy norms for the case of thick members is also shown in Tables 
-\ref{table:TABLE8}, \ref{table:TABLE9}. As can be seen from 
+\ref{table:TABLE8}, \ref{table:TABLE9}. In Fig. \ref{fig:RATES} we also show 
+plots of convergence rates for the global Newton method when using the 
+consistent and continuous tangent respectively for two representative steps. It 
+is evident that use of the continuous tangent modulus slows down convergence 
+significantly.
+
+As can be seen from 
 Fig.\ref{fig:FIG27_PLASTIC} for the inelastc analysis of 
 the thick member variation, the equilibrium paths corresponding to a coupled 
 and uncoupled constitutive law tend to diverge shortly after the start of 
@@ -1351,7 +1380,6 @@ plastic deformation.
 	\label{fig:FIG27}
 \end{figure} 
 
-\clearpage
  The full post-buckling elastoplastic equilibrium curve for 
 the slender model is also provided for comparison. In 
 Fig.\ref{fig:FIG27_ELASTIC} the post-buckling response of both slender and 
@@ -1363,7 +1391,20 @@ As we reduce the slenderness, slight differences arise compared to a purely
 uniaxial behavior at the fiber. This is mainly due to the assumed strain 
 distribution, which is user defined and not accounted in the purely flexural 
 model.
-
+\begin{figure}[b]
+	\centering
+	\subfloat[Step 15.]{%
+		\hspace{-0.2cm}\includegraphics[width=0.45\textwidth]{STEP_15_RATES}%
+		\label{fig:STEP15_RATES}%
+	}
+	\subfloat[Step 25.]{%
+		\includegraphics[width=0.45\textwidth]{STEP_25_RATES}%
+		\label{fig:STEP25_RATES}%
+	}
+	\caption{Convergence rates for two representative steps when using the 
+	consistent and continuous tangents at fibers.}
+	\label{fig:RATES}
+\end{figure} 
 
 %% RESIDUAL NORM
 \begin{table}
@@ -1461,21 +1502,40 @@ joint gravity load are shown in Table \ref{table:TABLE10}.
 	\end{minipage}
 \end{table}
 
-A static pushover analysis is then conducted by with respect to the 
+A static pushover analysis is then conducted with respect to the 
 superimposed horizontal loads on nodes 2,3, 
-and 4. For the discretization we used one hybrid element per member, 27 
-elements in 
-total, and five Gauss-Lobatto quadrature points per element. All members have 
+and 4. All members have 
 the same yield stress and Young's modulus: $\sigma_y = 290$ MPa, $E = 210$ GPa, 
 and the Poisson's ratio is set to $\nu= 0.3$. Perfect plasticity is assumed and 
 both material and geometric nonlinearity options are activated for the 
-analysis. In Fig. \ref{fig:FIG28_EQPATHS} we show the results we get for 3 
-different modelling 
-options regarding the constitutive law at the fiber level. Both the purely 
-flexural model and the uncoupled elastoplastic model, whereby shear and axial 
-states on fibers are uniaxial and do not interract, yield the same response 
-curve and collapse load. In contrast, the coupled multiaxial model predicts, 
-again, a lower plastic capacity load. 
+analysis. In Fig. \ref{fig:FIG28_EQPATHS} we show how the results using the 
+hybrid element compares with the nonlinear flexibility element in 
+OpenSees\cite{OpenSees} assuming both shear participation and purely flexural 
+response to inelastic deformation. Since OpenSees does not provide 
+shear-flexure interraction capabilities at the level of fiber, we employed the 
+section aggregator modelling option, whereby a uniaxial law between shear force 
+and shear strain of the centerline was defined and then incoroporated in a 
+fiber section but flexure and shear responses remain uncoupled. As can be seen 
+from \ref{fig:FIG28_EQPATHS}, the results we get with aggregator sections match 
+the response we get with the fully coupled hybrid element. Both predict a lower 
+collapse load than the purely flexural models, where, again, both OpenSees 
+simulation and the present hybrid formulation give almost identical response. 
+To 
+achieve convergent results, the analyses with OpenSees required 90 elements 
+with eight Gauss-Lobatto points per element. Each member besides the shear 
+links was discretized into 4 nonlinear beam-column elements from OpenSees 
+element library. In contrast, in our hybrid code we used one hybrid element per 
+member, 27 elements in total, and five Gauss-Lobatto quadrature points per 
+element. Both models account for second order effects under the presence of 
+gravity loads.
+
+%the results we get for 3 
+%different modelling 
+%options regarding the constitutive law at the fiber level. Both the purely 
+%flexural model and the uncoupled elastoplastic model, whereby shear and axial 
+%states on fibers are uniaxial and do not interract, yield the same response 
+%curve and collapse load. In contrast, the coupled multiaxial model predicts, 
+%again, a lower plastic capacity load. 
 
 
 \section{Summary}
