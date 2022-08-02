@@ -1,93 +1,100 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Undeformed and deformed configurations of the beam.\relax }}{16}{figure.caption.7}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Integration of curvature shape functions.\relax }}{23}{figure.caption.8}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Typical element representing one member.\relax }}{25}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Solution process stages. Quantities $\mathbf {K}^e$ and $\vec {\bm {F}}_{int}$ stand for stiffness matrix and internal nodal force vector for element $e$ respectively.\relax }}{35}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Geometrically nonlinear analyses of cantilever.\relax }}{39}{figure.caption.13}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic analysis}}}{39}{subfigure.5.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic analysis}}}{39}{subfigure.5.2}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Moment and curvature distributions for the nonlinear analyses of the cantilever - one element with $n=6$ quadrature points.\relax }}{39}{figure.caption.15}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic.}}}{39}{subfigure.6.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic.}}}{39}{subfigure.6.2}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Influence of $L/h$ on the tip deflection and comparison with analytical solution.\relax }}{40}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Geometrically nonlinear analyses of Lee's frame with pinned supports.\relax }}{42}{figure.caption.19}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic analysis}}}{42}{subfigure.8.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic analysis}}}{42}{subfigure.8.2}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Deformation profiles for Lee's frame with pinned supports.\relax }}{42}{figure.caption.20}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic profiles}}}{42}{subfigure.9.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic profiles}}}{42}{subfigure.9.2}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Effect of shear flexibility on Lee's frame response. \relax }}{43}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Deformation profiles for Lee's frame with fixed supports.\relax }}{44}{figure.caption.23}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic profiles}}}{44}{subfigure.11.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic profiles}}}{44}{subfigure.11.2}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Geometrically nonlinear analyses of Lee's frame with fixed supports.\relax }}{45}{figure.caption.24}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic analysis}}}{45}{subfigure.12.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic analysis}}}{45}{subfigure.12.2}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Two-storey portal frame discretization.\relax }}{46}{figure.caption.25}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Geometrically nonlinear analyses of the two-storey frame.\relax }}{46}{figure.caption.26}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic analysis}}}{46}{subfigure.14.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic anaysis}}}{46}{subfigure.14.2}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Deformation profiles for two-storey frame.\relax }}{47}{figure.caption.27}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic profiles}}}{47}{subfigure.15.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic profiles}}}{47}{subfigure.15.2}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Undeformed and deformed configurations of the beam.\relax }}{15}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Integration of curvature shape functions.\relax }}{22}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Typical element representing one member.\relax }}{24}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Solution process stages. Quantities $\mathbf {K}^e$ and $\vec {\bm {F}}_{int}$ stand for stiffness matrix and internal nodal force vector for element $e$ respectively.\relax }}{34}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Geometrically nonlinear analyses of cantilever.\relax }}{38}{figure.caption.13}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic analysis}}}{38}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic analysis}}}{38}{subfigure.5.2}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Moment and curvature distributions for the nonlinear analyses of the cantilever - one element with $n=6$ quadrature points.\relax }}{38}{figure.caption.15}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic.}}}{38}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic.}}}{38}{subfigure.6.2}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Influence of $L/h$ on the tip deflection and comparison with analytical solution.\relax }}{39}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Geometrically nonlinear analyses of Lee's frame with pinned supports.\relax }}{41}{figure.caption.19}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic analysis}}}{41}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic analysis}}}{41}{subfigure.8.2}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Deformation profiles for Lee's frame with pinned supports.\relax }}{41}{figure.caption.20}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic profiles}}}{41}{subfigure.9.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic profiles}}}{41}{subfigure.9.2}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Effect of shear flexibility on Lee's frame response. \relax }}{42}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Deformation profiles for Lee's frame with fixed supports.\relax }}{43}{figure.caption.23}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic profiles}}}{43}{subfigure.11.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic profiles}}}{43}{subfigure.11.2}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Geometrically nonlinear analyses of Lee's frame with fixed supports.\relax }}{44}{figure.caption.24}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic analysis}}}{44}{subfigure.12.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic analysis}}}{44}{subfigure.12.2}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Two-storey portal frame discretization.\relax }}{45}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Geometrically nonlinear analyses of the two-storey frame.\relax }}{45}{figure.caption.26}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic analysis}}}{45}{subfigure.14.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic anaysis}}}{45}{subfigure.14.2}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Deformation profiles for two-storey frame.\relax }}{46}{figure.caption.27}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic profiles}}}{46}{subfigure.15.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic profiles}}}{46}{subfigure.15.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Feasible space and yield locus for the $J_2$ model. At the boundary of the ellipse, $\sqrt {3J_2}=q$.\relax }}{55}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Points of interest on yield surface and direction of load increments.\relax }}{64}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Iso-error maps for a perfectly plastic material.\relax }}{64}{figure.caption.30}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Point A}}}{64}{subfigure.3.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Point B}}}{64}{subfigure.3.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Point C}}}{64}{subfigure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Iso-error maps for combined linear isotropic and kinematic hardening.\relax }}{65}{figure.caption.31}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Point A}}}{65}{subfigure.4.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Point B}}}{65}{subfigure.4.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Point C}}}{65}{subfigure.4.3}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces The four different strain histories imposed, with the unstresses configuration as initial point.\relax }}{66}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Geometry, initial and final configuration of clamped beam, along with cross-section dimensions.\relax }}{69}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Load-deflection plots for different slenderness ratios. Influence of quadrature type and number of points.\relax }}{70}{figure.caption.38}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$L^{}/h=20$}}}{70}{subfigure.7.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$L^{}/h=4$}}}{70}{subfigure.7.2}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Case $L^{}/h=4$. Spread of Plastic Zone (P.Z.) and stress distribution for von Mises, axial and shear stress at three different load levels.\relax }}{70}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Geometry of the specimen and displacement-controlled loading history.\relax }}{72}{figure.caption.40}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Structure.}}}{72}{subfigure.9.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Displacement-controlled loading history.}}}{72}{subfigure.9.2}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Experimental and numerical results for the specimen.\relax }}{73}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Performance of the three different return-mapping algorithms applied for the section state determination of the shear link under the imposed displacement history.\relax }}{74}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Geometry and loading of two-beam structure. Comparison of load vs deflection curves for different cases.\relax }}{75}{figure.caption.45}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Structure.}}}{75}{subfigure.12.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Load vs deflection at point B.}}}{75}{subfigure.12.2}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Influence of slenderness and constitutive model on the response for elastic and elastoplastic behavior.\relax }}{79}{figure.caption.46}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic.}}}{79}{subfigure.13.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Plastic.}}}{79}{subfigure.13.2}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Convergence rates for two representative steps when using the consistent and continuous tangents at fibers.\relax }}{79}{figure.caption.47}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Step 15.}}}{79}{subfigure.14.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Step 25.}}}{79}{subfigure.14.2}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Geometry of the steel frame and \ref {fig:FIG28_EQPATHS} response curves for three different models.\relax }}{80}{figure.caption.50}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Frame structure.}}}{80}{subfigure.15.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equilibrium paths.}}}{80}{subfigure.15.2}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Feasible space and yield locus for the $J_2$ model. At the boundary of the ellipse, $\sqrt {3J_2}=q$.\relax }}{54}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Points of interest on yield surface and direction of load increments.\relax }}{63}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Iso-error maps for a perfectly plastic material.\relax }}{63}{figure.caption.30}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Point A}}}{63}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Point B}}}{63}{subfigure.3.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Point C}}}{63}{subfigure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Iso-error maps for combined linear isotropic and kinematic hardening.\relax }}{64}{figure.caption.31}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Point A}}}{64}{subfigure.4.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Point B}}}{64}{subfigure.4.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Point C}}}{64}{subfigure.4.3}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The four different strain histories imposed, with the unstresses configuration as initial point.\relax }}{65}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Geometry, initial and final configuration of clamped beam, along with cross-section dimensions.\relax }}{68}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Load-deflection plots for different slenderness ratios. Influence of quadrature type and number of points.\relax }}{69}{figure.caption.38}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$L^{}/h=20$}}}{69}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$L^{}/h=4$}}}{69}{subfigure.7.2}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Case $L^{}/h=4$. Spread of Plastic Zone (P.Z.) and stress distribution for von Mises, axial and shear stress at three different load levels.\relax }}{69}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Geometry of the specimen and displacement-controlled loading history.\relax }}{71}{figure.caption.40}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Structure.}}}{71}{subfigure.9.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Displacement-controlled loading history.}}}{71}{subfigure.9.2}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Experimental and numerical results for the specimen.\relax }}{72}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Performance of the three different return-mapping algorithms applied for the section state determination of the shear link under the imposed displacement history.\relax }}{73}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Geometry and loading of two-beam structure. Comparison of load vs deflection curves for different cases.\relax }}{74}{figure.caption.45}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Structure.}}}{74}{subfigure.12.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Load vs deflection at point B.}}}{74}{subfigure.12.2}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Influence of slenderness and constitutive model on the response for elastic and elastoplastic behavior.\relax }}{78}{figure.caption.46}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic.}}}{78}{subfigure.13.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Plastic.}}}{78}{subfigure.13.2}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Convergence rates for two representative steps when using the consistent and continuous tangents at fibers.\relax }}{78}{figure.caption.47}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Step 15.}}}{78}{subfigure.14.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Step 25.}}}{78}{subfigure.14.2}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Geometry of the steel frame and \ref {fig:FIG28_EQPATHS} response curves for three different models.\relax }}{79}{figure.caption.50}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Frame structure.}}}{79}{subfigure.15.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equilibrium paths.}}}{79}{subfigure.15.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces A homotopy path connecting the trivial solution of $G=0$ to a root of $F=0$ for a single scalar equation dependent on $x$.\relax }}{84}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Homotopy paths for \textbf {(a)} $f(x)=x^3-6x^2+21x-26=0$, with starting point $x_0=0$ and convergence at root $x_1=2$ when $t=1$ and \textbf {(b)} truss, with initial state the undeformed configuration($x_0=0$) and target load level $P=0.03$.\relax }}{85}{figure.caption.53}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Components of $\vec {\bm {H}}^{-1}(\vec {\bm {0}})$ in $\mathbb {R}^{n+1}$.\relax }}{87}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Piecewise continuously differentiable paths and loops of $\bm {H}_{KKT}^{-1}(\bm {0})$ in $\mathbb {R}^{n+l+p+1}$.\relax }}{93}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Transition from cell $\tau ^1$ to $\tau ^2$ during numerical continuation. Projection of $\vec {\bm {H}}(\vec {\bm {z}},t)=\vec {\bm {0}}$ on $\vec {\bm {d}}-t$ space.\relax }}{101}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces \textbf {(a)} Paths $\mathit {\Gamma }_1$, $\mathit {\Gamma }_2$ and $\mathit {\Gamma }_3$ in $\mathbb {R}^3$, \textbf {(b)} interpretations of paths as trajectories on the target TPE function (\ref {eq:HIMMELBLAU}).\relax }}{104}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces \textbf {(a)} Truss structure, \textbf {(b)} equlibrium paths for $A_2=\{4A_1,A_1^{}/3 ,A_1^{}/5\}$ projected on the $u_1\ -\ P$ plane.\relax }}{106}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces \textbf {(a)} projection of components $\mathit {\Gamma }_1$\& $\mathit {\Gamma }_2$ on the $u_1\ -\ E_2A_2(t)^{}/L$ plane, \textbf {(b)} paths $\mathit {\Gamma }_1$, $\mathit {\Gamma }_2$ and $\mathit {\Gamma _P}$ projected on the \acrshort {tpe} of the target NLP $\bm {\mathcal {P}}_{A_2}(1)$.\relax }}{108}{figure.caption.61}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Initial geometry for Example 3.\relax }}{109}{figure.caption.62}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Projection of path \textbf {(a)} on $u_2-t$ plane and \textbf {(b)} $\mu -t$ plane.\relax }}{110}{figure.caption.63}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Configuration profiles during deformation.\relax }}{110}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A homotopy path connecting the trivial solution of $G=0$ to a root of $F=0$ for a single scalar equation dependent on $x$.\relax }}{83}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Homotopy paths for \textbf {(a)} $f(x)=x^3-6x^2+21x-26=0$, with starting point $x_0=0$ and convergence at root $x_1=2$ when $t=1$ and \textbf {(b)} truss, with initial state the undeformed configuration($x_0=0$) and target load level $P=0.03$.\relax }}{84}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Components of $\vec {\bm {H}}^{-1}(\vec {\bm {0}})$ in $\mathbb {R}^{n+1}$.\relax }}{86}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Piecewise continuously differentiable paths and loops of $\bm {H}_{KKT}^{-1}(\bm {0})$ in $\mathbb {R}^{n+l+p+1}$.\relax }}{92}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Transition from cell $\tau ^1$ to $\tau ^2$ during numerical continuation. Projection of $\vec {\bm {H}}(\vec {\bm {z}},t)=\vec {\bm {0}}$ on $\vec {\bm {d}}-t$ space.\relax }}{100}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \textbf {(a)} Paths $\mathit {\Gamma }_1$, $\mathit {\Gamma }_2$ and $\mathit {\Gamma }_3$ in $\mathbb {R}^3$, \textbf {(b)} interpretations of paths as trajectories on the target TPE function (\ref {eq:HIMMELBLAU}).\relax }}{103}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces \textbf {(a)} Truss structure, \textbf {(b)} equlibrium paths for $A_2=\{4A_1,A_1^{}/3 ,A_1^{}/5\}$ projected on the $u_1\ -\ P$ plane.\relax }}{105}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces \textbf {(a)} projection of components $\mathit {\Gamma }_1$\& $\mathit {\Gamma }_2$ on the $u_1\ -\ E_2A_2(t)^{}/L$ plane, \textbf {(b)} paths $\mathit {\Gamma }_1$, $\mathit {\Gamma }_2$ and $\mathit {\Gamma _P}$ projected on the \acrshort {tpe} of the target NLP $\bm {\mathcal {P}}_{A_2}(1)$.\relax }}{107}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Initial geometry for Example 3.\relax }}{108}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Projection of path \textbf {(a)} on $u_2-t$ plane and \textbf {(b)} $\mu -t$ plane.\relax }}{109}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Configuration profiles during deformation.\relax }}{109}{figure.caption.64}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Advancing from step $N$ to step $N+1$ using a PC approach.\relax }}{115}{figure.caption.65}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Two types of predictors: (a) interpolatory and (b) Euler predictor.\relax }}{117}{figure.caption.66}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Geometric interpretation of predictors (i)WLSE (blue), (ii) WLSIT (light blue, $z=1$), and (iii) WLST (red, $z=0$).\relax }}{123}{figure.caption.67}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Weight function $w(s)$ of the WLS predictor.\relax }}{125}{figure.caption.68}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Solution path of \ref {eq:HomotopyOneP3A}.\relax }}{133}{figure.caption.74}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces \textbf {(a)} Shallow arch structure and loading, \textbf {(b)} equilibrium path.\relax }}{135}{figure.caption.75}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Advancing from step $N$ to step $N+1$ using a PC approach.\relax }}{114}{figure.caption.65}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Two types of predictors: (a) interpolatory and (b) Euler predictor.\relax }}{116}{figure.caption.66}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Geometric interpretation of predictors (i)WLSE (blue), (ii) WLSIT (light blue, $z=1$), and (iii) WLST (red, $z=0$).\relax }}{122}{figure.caption.67}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Weight function $w(s)$ of the WLS predictor.\relax }}{124}{figure.caption.68}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Solution path of \ref {eq:HomotopyOneP3A}.\relax }}{132}{figure.caption.74}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces \textbf {(a)} Shallow arch structure and loading, \textbf {(b)} equilibrium path.\relax }}{134}{figure.caption.75}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces The Mesh tab with relevant facilities A-M marked in red circles and enumerated with capital english letters.\relax }}{140}{figure.caption.77}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Error when attempting to add a node with coordinates already defined for an existing node.\relax }}{141}{figure.caption.78}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces A .txt file with the required format for nodal input. First column is X coordinate, second is Y coordinate. The $k$-th row represents Node $k$.\relax }}{141}{figure.caption.79}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces A .txt file with the required format for element input. First column is start node $i$, second is end node $j$. The $k$-th row represents Element $k$.\relax }}{141}{figure.caption.80}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces The Mesh tab with a completed mesh.\relax }}{142}{figure.caption.81}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Two correction algorithms: Normal Flow and Normal Plane.\relax }}{159}{figure.caption.77}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Two correction algorithms: Normal Flow and Normal Plane.\relax }}{167}{figure.caption.82}%

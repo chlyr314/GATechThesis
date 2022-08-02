@@ -6,6 +6,207 @@
 
 %Begin individual appendices, separated as chapters
 
+\chapter{Notation}\label{appendix:0}
+
+\section*{Array Notation for Tensors}
+
+We outline the array notation used on relevant tensor quantities for the 
+computer implementation of the work presented in the chapters of this 
+manuscript. The relevant cases are i) the three dimensional state and ii) the 
+plane stress state. For each one, we show how second order stress and strain 
+tensors, on one hand, and fourth order material constitutive tensor on the 
+other, are stored in computer memory as one dimensional and two dimensional 
+arrays (``vectors").
+
+\subsection*{Three Dimensions}
+
+For the symmetric second order stress tensor $\bm{\sigma}$ we have:
+\begin{equation*}
+	\boldsymbol{\sigma} = \begin{bmatrix}
+		\sigma_{11} & \sigma_{12} & \sigma_{13} \\
+		\sigma_{12} & \sigma_{22} & \sigma_{23} \\
+		\sigma_{13} & \sigma_{23} & \sigma_{33} \\
+	\end{bmatrix}\rightarrow \bvec{\sigma} = \begin{bmatrix}
+		\sigma_{11} & \sigma_{22} & \sigma_{33} & \sigma_{12} & \sigma_{23} & 
+		\sigma_{13}
+	\end{bmatrix}^T
+\end{equation*}
+
+\noindent Similarly, for the symmetric second order strain tensor we have:
+\begin{equation*}
+	\boldsymbol{\epsilon} = \begin{bmatrix}
+		\epsilon_{11} & \epsilon_{12} & \epsilon_{13} \\
+		\epsilon_{12} & \epsilon_{22} & \epsilon_{23} \\
+		\epsilon_{13} & \epsilon_{23} & \epsilon_{33} \\
+	\end{bmatrix}\rightarrow \bvec{\epsilon} = \begin{bmatrix}
+		\epsilon_{11} & \epsilon_{22} & \epsilon_{33} & 2\epsilon_{12} & 
+		2\epsilon_{23} & 
+		2\epsilon_{13}
+	\end{bmatrix}^T
+\end{equation*}
+and it is assumed that for the engineering strains we have 
+$\gamma_{ij}=2\epsilon_{ij}$, $i\neq j$.
+
+The stress and strain convention is extended to all other second order 
+symmetric tensors involved in the formulation of the stress update algorithm, 
+such as back-stress or effective stress tensors or the plastic strain tensor.
+
+The fourth order elastic constitutive tensor, $\mathbb{C}$, is represented as a 
+two dimensional matrix $\bmat{C}$ as follows:
+\begin{equation*}
+	\bmat{C} = \begin{bmatrix}
+		C_{1111} & C_{1122} & C_{1133} & C_{1112} & C_{1123} & C_{1113}\\
+		C_{2211} & C_{2222} & C_{2233} & C_{2212} & C_{2223} & C_{2213}\\
+		C_{3311} & C_{3322} & C_{3333} & C_{3312} & C_{3323} & C_{3313}\\
+		C_{1211} & C_{1222} & C_{1233} & C_{1212} & C_{1223} & C_{1213}\\
+		C_{2311} & C_{2322} & C_{2333} & C_{2312} & C_{2323} & C_{2313}\\
+		C_{1311} & C_{1322} & C_{1333} & C_{1312} & C_{1323} & C_{1313}
+	\end{bmatrix}
+\end{equation*}
+
+so that:
+\begin{equation*}
+	\text{ARRAY}(d\bm{\sigma})=\text{ARRAY}(\mathbb{C}:d\bm{\epsilon})=
+	\bmat{C}d\bvec{\epsilon} =d\bvec{\sigma}
+\end{equation*}
+
+For problems in elasticity and associative plasticity, the material 
+constitutive tensor possesses minor and major symmetries:
+$$\mathbb{C}_{ijkl}=\mathbb{C}_{jikl}=\mathbb{C}_{jilk}=\mathbb{C}_{klij}$$
+
+For isotropic linear elasticity, $\bmat{C}$ is given as follows:
+\begin{equation*}
+	\bmat{C} = \frac{E}{(1+\nu)(1-2\nu)}\begin{bmatrix}
+		1-\nu & \nu & \nu & 0 & 0 & 0\\
+		\nu & 1-\nu & \nu & 0 & 0 & 0\\
+		\nu & \nu & 1-\nu & 0 & 0 & 0\\
+		0 & 0 & 0 & \frac{1-2\nu}{2} & 0 & 0\\
+		0 & 0 & 0 & 0 & \frac{1-2\nu}{2}  & 0\\
+		0 & 0 & 0 & 0 & 0 & \frac{1-2\nu}{2} \\
+	\end{bmatrix}
+\end{equation*}
+
+Enforcement of the zero-stress condition $\sigma_{22}=\sigma_{33}$ at a fiber, 
+after the plastic parameter is determined, requires a local iterative procedure 
+whereby $\bmat{C}$ is decomposed in accordance to the active and zero stress 
+components. The local iteration formula for the three dimensional algorithm 
+takes the following form:
+
+\begin{equation*}
+	\begin{bmatrix}
+		\Delta \epsilon_{22}\\
+		\Delta \epsilon_{33}
+	\end{bmatrix} = -\begin{bmatrix}
+	C_{2222} & C_{2233}\\
+	C_{3322} & C_{3333}
+\end{bmatrix}^{-1}\begin{bmatrix}
+\sigma_{22}\\
+\sigma_{33}
+\end{bmatrix}
+\end{equation*}
+\noindent where for each corrected increment in $\Delta\epsilon_{22}$, 
+$\Delta\epsilon_{33}$, the stress update has to be repeaded until 
+max($\vert\sigma_{22}\vert$,$\vert\sigma_{33}\vert$)$\leq \epsilon_{tol}$, with 
+$\epsilon_{tol}$ being a user-specified tolerance. When convergence has been 
+achieved, only then state variables for a fiber are updated.
+
+Note that the same convention is used for the continuous or the consistent 
+tangent moduli.
+
+\subsection*{Plane Stress}
+
+Here, the vectorization of stress and strain tensors is implemented as follows:
+\begin{equation*}
+	\bm{\sigma}=\begin{bmatrix}
+		\sigma_{11} & \sigma_{12}\\
+		\sigma_{12} & \sigma_{22}
+	\end{bmatrix}\rightarrow \bvec{\sigma}=\begin{bmatrix}
+	\sigma_{11}\\ \sigma_{22} \\ \sigma_{12}
+\end{bmatrix},\quad 
+	\bm{\epsilon}=\begin{bmatrix}
+	\epsilon_{11} & \epsilon_{12}\\
+	\epsilon_{12} & \epsilon_{22}
+\end{bmatrix}\rightarrow \bvec{\epsilon}=\begin{bmatrix}
+	\epsilon_{11}\\ \epsilon_{22} \\ 2\epsilon_{12}
+\end{bmatrix}
+\end{equation*}
+
+The matrix representation of $\mathbb{C}$ associated with the plane-stress 
+condition is:
+\begin{equation*}
+	\bmat{C}=\begin{bmatrix}
+		C_{1111} & C_{1122} & C_{1112}\\
+		C_{2211} & C_{2222} & C_{2212}\\
+		C_{1211} & C_{1222} & C_{1212}
+	\end{bmatrix}
+\end{equation*}
+
+For isotropic linear elasticity in plane stress conditions, we have for 
+$\bmat{C}$:
+
+\begin{equation}
+	\bmat{C} = \frac{E}{1-\nu^2}\begin{bmatrix}
+		1 & \nu & 0\\
+		\nu & 1 & 0\\
+		0 & 0 & \frac{1-\nu}{2}
+	\end{bmatrix}
+\end{equation}
+
+The local Newton iteration to enforce condition $\sigma_{22}=0$ during the 
+fiber stress update, typically required when the plane-stress return mapping 
+algorithm by Simo\cite{Simo1} is used, takes the following form:
+\begin{equation*}
+	\Delta\epsilon_{22} = -\frac{1}{C_{2222}}\sigma_{22}
+\end{equation*}
+
+
+\section*{Analysis Operators}
+
+We adopt the notation $\bvec{F}:\mathbb{R}^n\rightarrow\mathbb{R}^m$ to 
+indicate a 
+mapping $\bvec{F}$ that takes as argument a vector of dimension $n$, 
+$\bvec{x}\in\mathbb{R}^n$, and maps it onto a vector of dimension $m$, 
+$\bvec{y}\in\mathbb{R}^m$:
+\begin{equation*}
+	\bvec{y} = \bvec{F}(\bvec{x})
+\end{equation*}
+
+We note that operations involving the symbol $\nabla$ map scalars to
+vectors and vectors to matrices. For example, if $f:\mathbb{R}^p\rightarrow 
+\mathbb{R}$ and
+$\bvec{v}:\mathbb{R}^p\rightarrow\mathbb{R}^q$, then $\nabla
+f:\mathbb{R}^p\rightarrow\mathbb{R}^p$ and
+$\nabla\bvec{v}:\mathbb{R}^p\rightarrow\mathbb{R}^{p\times q}$. For a scalar 
+function 
+$f(\bvec{x})$, $\bvec{x}\in\mathbb{R}^n$ we have:
+\begin{equation*}
+	\nabla f = \begin{bmatrix}
+		\displaystyle\frac{\partial f}{\partial x_1} & \dots & 
+		\displaystyle\frac{\partial f}{\partial x_n}
+	\end{bmatrix}^T
+\end{equation*}
+
+\subsection*{Jacobian of Smooth Maps}
+The Jacobian of $\bvec{F}$, denoted $\bmat{J}$, is an $m\times n$ matrix 
+expressed as 
+follows:
+\begin{equation*}
+	\bmat{J} = \begin{bmatrix}
+		\nabla_{\bm{x}}F_1^T\\
+		\vdots\\
+		\nabla_{\bm{x}}F_m^T\\
+	\end{bmatrix} = \begin{bmatrix}
+		\displaystyle	\frac{\partial \bvec{F}}{\partial x_1} & \dots & 
+		\displaystyle\frac{\partial \bvec{F}}{\partial 
+			x_n}\end{bmatrix} = \begin{bmatrix}
+		\displaystyle\frac{\partial F_1}{\partial x_1} & \dots & 
+		\displaystyle\frac{\partial F_1}{\partial x_n}\\
+		\vdots & \ddots & \vdots\\
+		\displaystyle\frac{\partial F_m}{\partial x_1} & \dots & 
+		\displaystyle\frac{\partial F_m}{\partial x_n} 
+	\end{bmatrix}
+\end{equation*}
+
 \chapter{Gradient of Hybrid NLP Lagrangian}\label{appendix:A}
 
 Explicit expressions of the beam formulation are provided in this

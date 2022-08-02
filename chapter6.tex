@@ -1,106 +1,121 @@
-\chapter{Conclusions and Suggestions for Future Research}
+\chapter{A Simple GUI for the Hybrid NLP Element}
 
-\section{Research Summary and Conclusions}
-This research work sought to develop a high-performance, \acrshort{nlp} beam element 
-and embed it in a general parametric optimization framework that takes advantage of 
-the element formulation. The proposed element features exact kinematic capabilities 
-coupled with a robust and fast multiaxial stress update algorithm, thereby allowing 
-for shear-flexure interaction without introducing kinematic approximations to 
-displacement and rotational fields. The naturally parameterized \acrshort{nlp} 
-framework provides the capability for general and truly global parametric 
-investigations of structural frames. In addition, the numerical continuation algorithm 
-used in the implementation of the path-tracking procedure is equipped with a robust, 
-fast and reliable predictor, also as part of this research. This prediction scheme is 
-based on a local weighted least squares fitting and provides superior computational 
-performance when compared to other conventional prediction schemes. In addition, it is 
-a generally applicable algorith that offers even more considerable advantages when 
-problems possess dense, non-symmetric Jacobians.
+This chapter introduces a Graphical User Interface (GUI) developed as part of 
+this work in order to 
+facilitate analyses using the hybrid \acrshort{nlp} element. We detail the 
+various features that are implemented using the AppDesigner utility of MATLAB, 
+version 2022b. The chapter is divided in seven sections, each representing a 
+particular tab of the interface. These seven tabs are : 1) Mesh, 2) Materials, 
+3) Sections, 4) Boundary Conditions, 5) Analysis Controls, 6) Solve Job and, 
+finally, 7) Post-processing. The first five tabs, some of which can be edited 
+independently, belong to the pre-processing phase. Tab 6 calls the hybrid NLP 
+solver for the given input in tabs 1-5 and tab seven provides post-processing 
+infrormation with respect to the structure response in the form of 
+force-displacement plots and  configuration history for all steps. A number of 
+tooltips can be revealed by hovering over relevant fields.
 
-\section{Limitations}
+\section{The Mesh Tab}
 
-Limitations of the research material presented herein are primarily a direct result of 
-assumptions set initially during the formulation of the relevant parts. As far as the 
-hybrid element is concerned, the present work is focused on quasi-static planar 
-problems that are conservative. In addition, cross-sections are assumed to remain 
-plane after deformation, even if not perpendicular to the beam centerline. This means 
-that warping effects are not taken into account. Another issue related to 
-cross-section 
-kinematics is that simple, even though not simplistic, shear strain distribution 
-patterns 
-were assumed, such as uniform and quadratic, and energetic consistency with the exact 
-shear strain energy is established through the use of the shear coefficient.
-
-For the multiaxial constitutive model, one limitation pertains to the linear kinematic 
-hardening rule assumed. This simplification was adopted to ease already cumbersome 
-derivations 
-pertaining to the integration of the rate equations. In addition, the model is valid 
-for cross-section with a uniform material that follows the von Mises yield criterion. 
-Extension to include other material constitutive laws is, however, fairly 
-straightforward.
-
-For the naturally parameterized \acrshort{nlp} framework, one limitation is the 
-assumption that no points of nullity higher than one occur during the solution process 
-within a cell. This effectively means that no bifurcating solution curves exist when a 
-global parametric study is carried out. Technically, the numerical algorithm proposed 
-in the end of the relevant Chapter is handling such bifurcating behavior when the 
-solution transitions between cells, but this is specifically adjusted for parametric 
-programs involving inequality constraints where loss of \acrshort{licq}, singularity 
-of the Hessian in the tangent space, or both occur during the transition. Furthermore, 
-the smoothness assumptions imposed on the \acrshort{tpe} and the constraints, while 
-realistic for most mechanics applications, restrict the application of the 
-parametric optimization framework to problems that do not involve severe 
-discontinuities and, therefore, can be modelled using smoothness assumptions.
-
-Lastly, regarding the weighted least squares predictor, a basic limitation is the fact 
-that a least squares process does not result in a consistent prediction scheme. This 
-means that as $\Delta s\rightarrow 0$, the prediction yielded by any \acrshort{wls} 
-variant does not converge asymptotically to the tangent vector at the current point. 
-In practice however, this is not an issue since the proposed prediction scheme is 
-meant to provide stability and improve convergence performance for problems where a 
-relatively large step-length is used. 
-
-
- \section{Future Directions}
-%%%%%%%%% HYBRID BEAM
-This investigation has been a first attempt to establish a parametric nonlinear 
-programming framework for the general parametric study of planar frames using a high 
-performance, hybrid, \acrshort{nlp}-based element. There are, therefore, many parts 
-that should be examined further and features to be added in future research efforts. 
-Below we list some recommendations:
+The first tab of the GUI, depicted in Fig. \ref{fig:TAB1_marked}, is concerned 
+with nodal and element input. We analyze it in terms of parts A to M:
 
 \begin{itemize}
-	\item For the hybrid beam element,  the use of different nonlinear programming 
-	solution schemes can further be investigated since the optimization literature, 
-	which we adhere to emphasize throughout this study, possesses a quite rich 
-	collection of solution techniques.  Some other directions include the formulation  
-	to support initially curved elements, dynamic effects, and three 
-	dimensional settings that necessitate special treatment of the non-commutative 
-	rotational field. 
-	
-	\item With regards to the section state determination phase, the element 
-	capability can be extended to address composite section behavior, such that of a 
-	reinforced concrete section. In addition, the constrained stress space return 
-	mapping algorithm shown for the von Mises criterion can be extended for other 
-	materials. Lastly modifying the relevant rate expressions to account for the 
-	effect of nonlinear kinematic hardening is also an additional feature that can be 
-	incorporated.
-	
-	\item While parameterization with respect to a natural parameter is crucial for 
-	the \acrshort{pnlp} framework proposed in this work, examining artificial 
-	embeddings, especially in conjunction with appropriate \acrshort{nlp} solution 
-	methods, might also yield valuable results, especially if intermediate operating 
-	states of the structural system are of no particulary interest. Another important 
-	extension to the present \acrshort{npnlp} framework is bifurcation tracking and 
-	branch switching capabilities, which have not been investigated in this work.
-	
-	\item Lastly, more research is required in order to better understand the impact 
-	of the polynomial order, number of previously converged points, the weighting 
-	approach and how these aspects of the \acrshort{wls} predictor interract with each 
-	other and with the underlying problem. Furthermore, it might prove valuable to 
-	explore the additional options that the \acrshort{wls} framework provides with 
-	respect to other aspects of predictor-corrector algorithms and, in particular, the 
-	step-length adjustment phase. Another direction could be the investigation on the 
-	influence of arc-length measurements on the quality of the local approximation.
-	
+	\item \textbf{A}: The Mesh tab.
+	\item \textbf{B}: Facility used to manually add nodes. Numeric values 
+	pertaining to the X (horizontal) and Y (vertical) coordinate axes are used 
+	in the corresponding fields to define the coordinates of a node. By 
+	clicking on the \textit{Add Node} button, the enumerated node is added to 
+	the table with its coordinated also listed. The enumeration is automatic. 
+	Attempting to add a node with coordinates (X,Y) that are already defined 
+	for another node results in an error, as shown in Fig. 
+	\ref{fig:TAB1_node_error}.
+	\item \textbf{C}: Facility used to delete a particular node. The 
+	\textit{Label} field takes as input the node label already generated and 
+	removes it from the table. The enumeration of remaining nodes is updated 
+	accordingly. If node deletion is performed after the mesh is generated, the 
+	latter is no longer valid and all elements are removed.
+	\item \textbf{D}: Success/Error indicator of an action pertaining to node 
+	generation, coupled with a text field for relevant message output (e.g. see 
+	\ref{fig:TAB1_node_error}).
+	\item \textbf{E}: Facility to generate a node set from a \textbf{.txt} or 
+	\textbf{.xlsx} file. The format for this input file is shown in Fig. 
+	\ref{fig:TAB1_nodesfile}. If a number of nodes have already been added 
+	manually, this action replaces all existing nodes. In contrast, generating 
+	a nodal set from an input file and then manually adding additional nodes 
+	results in appending the previously generated nodal list.
+	\item \textbf{F}: Table that lists all generated nodes along with their 
+	coordinates.
+	\item \textbf{G}: Facility used to manually add a (hybrid \acrshort{nlp}) 
+	beam element. Since only one element per member is adquate with the 
+	proposed formulation, the only relevant inputs are the start and end node 
+	labels, indicated in the relevant fields as \textit{Node} $i$ and 
+	\textit{Node} $j$ respectively. Again, adding an element with start and end 
+	nodes already defined for an existing element results in an error. In 
+	addition, element enumeration is, again, automatic.
+	\item \textbf{H}: Element deletion facility. The element label used as 
+	input in the relevant field and by clicking the \textit{Delete Element} 
+	button results in removal of the particular element from the table. The 
+	remainig elements are, again, automatically re-enumerated.
+	\item \textbf{I}: Success/Error indicator of an action pertaining to 
+	element generation, coupled with a text field for relevant message output.
+	\item \textbf{J}: Facility to generate an element partition from a 
+	\textbf{.txt} or \textbf{.xlsx} file. The format for this input file is 
+	shown in Fig. \ref{fig:TAB1_elementsfile}. If a number of elements have 
+	already been added manually, this action replaces all existing elements. In 
+	contrast, generating an element partition from an input file and then 
+	manually adding additional elements results in appending the previously 
+	generated element list.
+	\item \textbf{K}:  Table that lists all generated elements along with their 
+	start and end nodes.
+	\item \textbf{L}: Once clicked, the \textit{Clear Mesh} button resets all 
+	existing input in the Mesh tab and the user can start over.
+	\item \textbf{M}: GUI axes that dynamically update the existing state of 
+	nodal and mesh configuration. Figure \ref{fig:TAB1_mesh_example} shows the 
+	Mesh tab when the mesh generation is complete for a simple case of a one 
+	bay, one story frame. The nodal labels are places right next to their 
+	respective nodes and are typeset in normal font while element labels are 
+	approximately placed in the midspan of their corresponding elements and are 
+	typeset in italic bold fonts.
 \end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB1/TAB1_marked.png}
+	\caption{The Mesh tab with relevant facilities A-M marked in red circles 
+	and enumerated with capital english letters.}
+	\label{fig:TAB1_marked}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB1/TAB1_node_error.png}
+	\caption{Error when attempting to add a node with coordinates already 
+	defined for an existing node.}
+	\label{fig:TAB1_node_error}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB1/TAB1_nodesfile.png}
+	\caption{A .txt file with the required format for nodal input. First column 
+	is X coordinate, second is Y coordinate. The $k$-th row represents Node 
+	$k$.}
+	\label{fig:TAB1_nodesfile}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB1/TAB1_elementsfile.png}
+	\caption{A .txt file with the required format for element input. First 
+	column is start node $i$, second is end node $j$. The $k$-th row represents 
+	Element $k$.}
+	\label{fig:TAB1_elementsfile}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB1/TAB1_mesh_example.png}
+	\caption{The Mesh tab with a completed mesh.}
+	\label{fig:TAB1_mesh_example}
+\end{figure}
+
 

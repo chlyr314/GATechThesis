@@ -392,67 +392,17 @@ findings, advantages and its limitations and suggestions regarding potential fut
 research directions.
 
  
-\section{Notation}
 Unless state otherwise, boldface lowercase letters indicate second order 
 tensor. Wherever 
 the same letters appear with an overhead arrow, this indicates the vector 
-notation for the tensor represented with that letter. The convention adopted 
-herein for storing second order tensors in a vector object is the following:
-\begin{equation*}
-	\boldsymbol{\sigma} = \begin{bmatrix}
-		\sigma_{11} & \sigma_{12} & \sigma_{13} \\
-		\sigma_{12} & \sigma_{22} & \sigma_{23} \\
-		\sigma_{13} & \sigma_{23} & \sigma_{33} \\
-	\end{bmatrix}\rightarrow \bvec{\sigma} = \begin{bmatrix}
-		\sigma_{11} & \sigma_{22} & \sigma_{33} & \sigma_{12} & \sigma_{23} & 
-		\sigma_{13}
-	\end{bmatrix}^T
-\end{equation*}
-
-\noindent For strain tensors, components for which $i\neq j$ are multiplied by 2.
-
+notation for the tensor represented with that letter.
 In addition, any boldface letter, lowercase or uppercase, with an overhead 
 arrow indicates a vector object. In constrast, matrices are represented 
 exclusively by uppercase, non-italic or calligraphic, boldface letters.
-whereas normal font letters indicate scalar quantities. 
+whereas normal font letters indicate scalar quantities.  For more details 
+regarding the convention used, see Appendix \ref{appendix:0}.
 
-We adopt the notation $\bvec{F}:\mathbb{R}^n\rightarrow\mathbb{R}^m$ to indicate a 
-mapping $\bvec{F}$ that takes as argument a vector of dimension $n$, 
-$\bvec{x}\in\mathbb{R}^n$, and maps it onto a vector of dimension $m$, 
-$\bvec{y}\in\mathbb{R}^m$:
-\begin{equation*}
-	\bvec{y} = \bvec{F}(\bvec{x})
-\end{equation*}
 
-We note that operations involving the symbol $\nabla$ map scalars to
-vectors and vectors to matrices. For example, if $f:\mathbb{R}^p\rightarrow 
-\mathbb{R}$ and
-$\bvec{v}:\mathbb{R}^p\rightarrow\mathbb{R}^q$, then $\nabla
-f:\mathbb{R}^p\rightarrow\mathbb{R}^p$ and
-$\nabla\bvec{v}:\mathbb{R}^p\rightarrow\mathbb{R}^{p\times q}$. For a scalar function 
-$f(\bvec{x})$, $\bvec{x}\in\mathbb{R}^n$ we have:
-\begin{equation*}
-	\nabla f = \begin{bmatrix}
-		\displaystyle\frac{\partial f}{\partial x_1} & \dots & 
-		\displaystyle\frac{\partial f}{\partial x_n}
-	\end{bmatrix}^T
-\end{equation*}
 
-The Jacobian of $\bvec{F}$, denoted $\bmat{J}$, is an $m\times n$ matrix expressed as 
-follows:
-\begin{equation*}
-	\bmat{J} = \begin{bmatrix}
-		\nabla_{\bm{x}}F_1^T\\
-		\vdots\\
-		\nabla_{\bm{x}}F_m^T\\
-	\end{bmatrix} = \begin{bmatrix}
-\displaystyle	\frac{\partial \bvec{F}}{\partial x_1} & \dots & 
-\displaystyle\frac{\partial \bvec{F}}{\partial 
-	x_n}\end{bmatrix} = \begin{bmatrix}
-		\displaystyle\frac{\partial F_1}{\partial x_1} & \dots & 
-		\displaystyle\frac{\partial F_1}{\partial x_n}\\
-		\vdots & \ddots & \vdots\\
-		\displaystyle\frac{\partial F_m}{\partial x_1} & \dots & 
-		\displaystyle\frac{\partial F_m}{\partial x_n} 
-	\end{bmatrix}
-\end{equation*}
+
+
