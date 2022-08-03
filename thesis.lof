@@ -85,11 +85,20 @@
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Solution path of \ref {eq:HomotopyOneP3A}.\relax }}{132}{figure.caption.74}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces \textbf {(a)} Shallow arch structure and loading, \textbf {(b)} equilibrium path.\relax }}{134}{figure.caption.75}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces The Mesh tab with relevant facilities A-M marked in red circles and enumerated with capital english letters.\relax }}{140}{figure.caption.77}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces The \textit {Mesh} tab with relevant facilities A-M marked in red circles and enumerated with capital english letters.\relax }}{140}{figure.caption.77}%
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Error when attempting to add a node with coordinates already defined for an existing node.\relax }}{141}{figure.caption.78}%
 \contentsline {figure}{\numberline {6.3}{\ignorespaces A .txt file with the required format for nodal input. First column is X coordinate, second is Y coordinate. The $k$-th row represents Node $k$.\relax }}{141}{figure.caption.79}%
 \contentsline {figure}{\numberline {6.4}{\ignorespaces A .txt file with the required format for element input. First column is start node $i$, second is end node $j$. The $k$-th row represents Element $k$.\relax }}{141}{figure.caption.80}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces The Mesh tab with a completed mesh.\relax }}{142}{figure.caption.81}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces The \textit {Mesh} tab with a completed mesh.\relax }}{142}{figure.caption.81}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces The \textit {Materials} tab with relevant facilities A-M marked in red circles and enumerated with capital english letters.\relax }}{144}{figure.caption.82}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Multiple materials defined without a specified material name.\relax }}{144}{figure.caption.83}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Potting of uniaxial stress-strain law of material \textbf {MAT}\_1.\relax }}{145}{figure.caption.84}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Available predefined materials from the \textit {Standard materials} drop-down list.\relax }}{145}{figure.caption.85}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Error when trying to add a standard material that was already added previously.\relax }}{145}{figure.caption.86}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces The \textit {Sections} tab with all essential parts marked in red cycles and enumerated.\relax }}{147}{figure.caption.87}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Typical section definition process. A previously defined material \textbf {MAT\_1} is assigned to section \textbf {Rectangular\_Section}.\relax }}{148}{figure.caption.88}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Successful section assignment for \textbf {Element 1}.\relax }}{148}{figure.caption.89}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Indication that \textbf {Element 2} still needs to be assigned a cross-section.\relax }}{149}{figure.caption.90}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -97,4 +106,4 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {F.1}{\ignorespaces Two correction algorithms: Normal Flow and Normal Plane.\relax }}{167}{figure.caption.82}%
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Two correction algorithms: Normal Flow and Normal Plane.\relax }}{174}{figure.caption.91}%
