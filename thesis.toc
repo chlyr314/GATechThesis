@@ -1,8 +1,8 @@
 \contentsline {chapter}{List of Figures}{ix}{chapter*.1}%
-\contentsline {chapter}{List of Tables}{xiii}{chapter*.2}%
-\contentsline {chapter}{Nomenclature}{xiv}{chapter*.3}%
-\contentsline {chapter}{Acronyms}{xix}{section*.5}%
-\contentsline {chapter}{Acknowledgements}{xxi}{chapter*.6}%
+\contentsline {chapter}{List of Tables}{xiv}{chapter*.2}%
+\contentsline {chapter}{Nomenclature}{xv}{chapter*.3}%
+\contentsline {chapter}{Acronyms}{xx}{section*.5}%
+\contentsline {chapter}{Acknowledgements}{xxii}{chapter*.6}%
 \contentsline {chapter}{\numberline {1}Introduction and Background}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Literature Review}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Beam Element Technologies}{1}{subsection.1.1.1}%
@@ -89,18 +89,21 @@
 \contentsline {section}{\numberline {5.6}Summary}{136}{section.5.6}%
 \contentsline {chapter}{\numberline {6}A Simple GUI for the Hybrid NLP Element}{138}{chapter.6}%
 \contentsline {section}{\numberline {6.1}The Mesh Tab}{138}{section.6.1}%
-\contentsline {section}{\numberline {6.2}The Materials Tab}{142}{section.6.2}%
-\contentsline {section}{\numberline {6.3}The Sections tab}{146}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Conclusions and Suggestions for Future Research}{150}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Research Summary and Conclusions}{150}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Limitations}{150}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Future Directions}{151}{section.7.3}%
+\contentsline {section}{\numberline {6.2}The Materials Tab}{140}{section.6.2}%
+\contentsline {section}{\numberline {6.3}The Sections tab}{144}{section.6.3}%
+\contentsline {section}{\numberline {6.4}The Boundary Conditions tab}{150}{section.6.4}%
+\contentsline {section}{\numberline {6.5}The Analysis Controls tab}{152}{section.6.5}%
+\contentsline {section}{\numberline {6.6}The Input File}{157}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Conclusions and Suggestions for Future Research}{159}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Research Summary and Conclusions}{159}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Limitations}{159}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Future Directions}{160}{section.7.3}%
 \renewcommand {\cftchappresnum }{Appendix }
 \renewcommand {\cftchapnumwidth }{6em}
-\contentsline {chapter}{\numberline {A}Notation}{156}{appendix.1.A}%
-\contentsline {chapter}{\numberline {B}Gradient of Hybrid NLP Lagrangian}{160}{appendix.1.B}%
-\contentsline {chapter}{\numberline {C}Hessian of Hybrid NLP Lagrangian}{165}{appendix.1.C}%
-\contentsline {chapter}{\numberline {D}Iterative Corrections for Plastic Parameter}{168}{appendix.1.D}%
-\contentsline {chapter}{\numberline {E}Analytical Derivation of Consistent Tangent Modulus}{170}{appendix.1.E}%
-\contentsline {chapter}{\numberline {F}Numerical Pathfollowing}{172}{appendix.1.F}%
-\contentsline {chapter}{References}{174}{figure.caption.91}%
+\contentsline {chapter}{\numberline {A}Notation}{165}{appendix.1.A}%
+\contentsline {chapter}{\numberline {B}Gradient of Hybrid NLP Lagrangian}{169}{appendix.1.B}%
+\contentsline {chapter}{\numberline {C}Hessian of Hybrid NLP Lagrangian}{174}{appendix.1.C}%
+\contentsline {chapter}{\numberline {D}Iterative Corrections for Plastic Parameter}{177}{appendix.1.D}%
+\contentsline {chapter}{\numberline {E}Analytical Derivation of Consistent Tangent Modulus}{179}{appendix.1.E}%
+\contentsline {chapter}{\numberline {F}Numerical Pathfollowing}{181}{appendix.1.F}%
+\contentsline {chapter}{References}{183}{figure.caption.97}%

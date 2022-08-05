@@ -17,7 +17,7 @@ tooltips can be revealed by hovering over relevant fields.
 \section{The Mesh Tab}
 
 The first tab of the GUI, depicted in Fig. \ref{fig:TAB1_marked}, is concerned 
-with nodal and element input. We analyze it in terms of parts A to M:
+with nodal and element input. We analyze it in terms of parts A to N:
 
 \begin{itemize}
 	\item \textbf{A}: The Mesh tab.
@@ -76,6 +76,13 @@ with nodal and element input. We analyze it in terms of parts A to M:
 	respective nodes and are typeset in normal font while element labels are 
 	approximately placed in the midspan of their corresponding elements and are 
 	typeset in italic bold fonts.
+	\item \textbf{N}: With the \textit{Load problem} facility, the user can 
+	load a problem in its entirety. The appropriate file type is ASCII 
+	(extension ".txt") and formatting details for the input file are discussed 
+	in Section \ref{INPUTFILE} of this Appendix. Once the input file is 
+	imported, the user 
+	can go directly to tab \textit{Solve Job} and proceed with solving the 
+	problem.
 \end{itemize}
 
 \begin{figure}
@@ -303,5 +310,206 @@ We now proceed with the description of the essential parts of the
 	cross-section.}
 	\label{fig:TAB3_NOsection_assigned}
 \end{figure}
+
+\section{The Boundary Conditions tab}
+
+In the \textit{Boundary Conditions} tab the user specifies the externally 
+applied nodal loads \textit{and} and the nodal support conditions so that rigid 
+body modes are excluded. The layout of the tab is shown in Fig. FIG and parts 
+from A to F are discussed below:
+
+\begin{itemize}
+	\item \textbf{A}: The \textit{Boundary Conditions} tab.
+	\item \textbf{B}: Here the user selects a node from the drop-down list at 
+	the top to apply an external load at a certain nodal \acrshort{dof}. Once 
+	the node is selected, the user can specify the magnitude and sign of the 
+	applied force in three available force fields: 1) P1, which is aligned with 
+	the global X axis (horizontal direction), 2) P2, which is aligned with the 
+	global Y axis (vertical direction) and 3) M, which represents the moment 
+	and the direction of the axis which it aligns with is determined by the 
+	right-hand rule. In Fig. \ref{fig:TAB4_LOADS} an example is shown where 
+	horizontal and vertical loads are applied at nodes 2 and 3.
+	\item \textbf{C}: This is the \textit{Nodal Loads} table, where all nodes 
+	that are assigned a non-zero external load along at least one nodal 
+	\acrshort{dof} are listed (see \ref{fig:TAB4_LOADS}).
+	
+	\item \textbf{D}: Here, the user specifies supports conditions for certain 
+	nodal \acrshort{dof}s. Again, after selecting a node from the drop-down 
+	list, the user specifies which of the three available \acrshort{dof}s, U1, 
+	U2 and U3, are fixed. There is a one-to-one correspondence between P1-P2-M 
+	and U1-U2-U3 as far as direction of application. However, here, one only 
+	needs to activate the available boxes in order to constrain the 
+	corresponding displacement \acrshort{dof}. Figure \ref{fig:TAB4_SUPPORTS} 
+	shows a case where node 1 is assigned a roller support condition (U1 and U2 
+	fixed), whereas node 4 is assigned a clamp support condition (U1, U2, U3 
+	fixed).
+	\item \textbf{E}: Again, the table lists the nodes that have at least one 
+	displacement \acrshort{dof} fixed (see Fig. \ref{fig:TAB4_SUPPORTS}).
+	
+	\item \textbf{F}: With the \textit{Clear} button, the user can erase all 
+	input in this tab and start over.
+\end{itemize}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB4/TAB4_marked.png}
+	\caption{The \textit{Boundary Conditions} tab with all essential parts 
+	marked in red cycles and enumerated.}
+	\label{fig:TAB4_marked}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB4/TAB4_LOADS.png}
+	\caption{Input example for external nodal loading specification.}
+	\label{fig:TAB4_LOADS}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB4/TAB4_SUPPORTS.png}
+	\caption{Input example for nodal support specification.}
+		\label{fig:TAB4_SUPPORTS}
+\end{figure}
+
+\section{The Analysis Controls tab}
+
+In the \textit{Analysis Controls} tab, the user can specify settings pertaining 
+to geometric and constitutive assumptions as well as modify the default 
+incremental analysis settings. An option to access advanced features is also 
+given, whereby one can select between different continuation solvers and, if 
+the Homotopy solver is chosen, the user can further specify details such as 
+prediction and correction schemes. The latter gives the option to use the 
+\acrshort{wls} predictor. 
+
+The basic layout of the tab is shown in Fig. \ref{fig:TAB5_marked}. The marked 
+components are:
+
+\begin{itemize}
+	\item \textbf{A}: The \textit{Analysis Controls} tab.
+	\item \textbf{B}: The option to enable geometrically-exact kinematic 
+	assumptions. When it is, the equilibrium solver used by default is 
+	Crisfield's cylindrical arc-length method. For this reason, the user can 
+	also specify a step-length, $DS$. 
+	\item \textbf{C}: This option pertains to the incorporation of material 
+	nonlinearities during the analysis. It is disabled by default. If enabled, 
+	the user can also specify the number of cross-section layers. This number 
+	is the same for all sections in the structure.
+	\item \textbf{D}: Option that pertains to the incorporation shear effects 
+	during the analysis. If enabled, which is the default setting, and the 
+	plastic analysis option is also enabled, then a quadratic distribution for 
+	the shear strains is assumed along the cross-section height.
+	\item \textbf{E}: Numerical quadrature options. The user can choose between 
+	Gauss-Legendre and Gauss-Lobatto schemes. The latter tends to be more 
+	accurate for frame structures since the end-points of the domain are 
+	included in the quadrature set.
+	\item \textbf{F}: The user sets the order of numerical quadrature. The 
+	minimum allowed is 1 and the maximum is 12.
+	\item \textbf{G}: Number of incremental steps to be used if the Load 
+	Control equilibrium solver is chosen. When the Cylindrical arc-length is 
+	used, this number simply divides the external load vector in order to get a 
+	base load.
+	\item \textbf{H}: Maximum number of steps. It pertains only to continuation 
+	solvers, such as Crisfield's Cylindrical arc-length and the Homotopy 
+	solver. The solver will stop 1) when the external load is surpassed or 2) 
+	when the maximum number of steps is reached.
+	\item \textbf{I}: The maximum number of correction iterations to be 
+	performed during an incremental step.
+	\item \textbf{J}: The tolerance used to test convergence in term of the 
+	Euclidian norm of the out-of-balance (residual) force vector.
+	\item \textbf{K}: Option to show the advanced analysis settings (see below).
+	\item \textbf{L}: Once the user has specified all analysis controls in tab, 
+	they have to register the input by clicking on the \textit{Register 
+	changes} button.
+	\item \textbf{M}: The user can reset all settings in this tab to their 
+	defaults by using the \textit{Reset to defaults} button.
+	\item \textbf{N}: Success/Error indicator for this tab.
+\end{itemize}
+
+We now discuss the advanced settings panels, shown in Fig. 
+\ref{fig:TAB5_marked_advanced}, which become visible only when the 
+\textit{Advanced settings}(\textbf{K}) option is enabled:
+
+\begin{itemize}
+	\item \textbf{O}: Drop-down list (see Fig. \ref{fig:TAB5_solvers}) where 
+	the user can select between three different solution schemes: 1) Load 
+	Control, 2) Crisfield's arc-length and 3) Homotopy solver. By default, 
+	Crisfield's solver is enabled. 
+	\item \textbf{P}: Numeric fields pertainig to a) minimum step-length, b) 
+	maximum step-length and c) step-length adjustment parameter. The first two 
+	limits ensure that the step-length will not become exceedingly small or 
+	large. The latter adjust the step-length based on how easily the solution 
+	process converged in the last step. It is advised that, in case of plastic 
+	analyses, parameter $a$ be set to values between 4 and 8. These three 
+	options are not relevant to the Load Control scheme. The values shown in 
+	Fig. \ref{fig:TAB5_marked_advanced} are the default ones.
+	\item \textbf{Q}: Option to force Crisfield's arc-length and the Homotopy 
+	solver to repeat the last incremental step until the reach load is within a 
+	specified tolerance of the externally applied load. If this option is not 
+	enabled the solver will stop when the base load mulitplied by the load 
+	factor simply exceed the external load vector.
+	\item \textbf{R}: Option that, when enabled, forces the Homotopy and 
+	Crisfield's arc-length solvers to repeat steps that failed to converge 
+	within the specified iteration counter, but with halved step-length. The 
+	same step will be repeated until convergence or the min$DS$ is reached.
+	\item \textbf{S}: The options in the \textit{Homotopy solver settings} 
+	become visible only when the Homotopy solver is selected in \textbf{O}. The 
+	Predictor option allows the user to choose between i) tangent differential 
+	predictor and ii) the \acrshort{wls} predictor. If the latter is chosen, an 
+	additional panel of options, specific to this precition scheme, appears.
+	\item \textit{T}: Here the user can specify the correction scheme to be 
+	used. The three options are: i) Normal Flow\cite{Watson:1989}, ii) 
+	Secant-Length\cite{Schwetlick87} and iii) Normal Plane\cite{Riks:1979}.
+	
+	\item \textbf{U}: If the \textit{WLS predictor} is selected in \textbf{S}, 
+	the user can specify which variant of the \acrshort{wls} predictor to use. 
+	The available options are: i) \acrshort{wlse}, which is the default, ii) 
+	\acrshort{wlst} and iii) \acrshort{wlsit}.
+	\item \textbf{V}: This parameter determines the number of load-controlled 
+	steps to be performed before the homotopy solver using \acrshort{wls} 
+	predictor takes over. A number of simple Newton steps need to be performed 
+	in order to generate enough solutions available for the \acrshort{wls} 
+	scheme.
+	\item \textbf{m}: The degree of polynomial basis used in the \acrshort{wls} 
+	fitting. In this version, this remains constant throughout the analysis. 
+	Future versions will provide an option to automatically adjust it during 
+	the solution process.
+	\item \textbf{N0}: The number of previously converged points to consider 
+	for the \acrshort{wls} fitting. In this version, this remains constant 
+	throughout the analysis. Future versions will provide an option to 
+	automatically adjust  it during the solution process.
+	\item \textbf{beta}: The weight function parameter, with default value 0.2. 
+	If set to 1, then there is no weighting during the least squares fitting. 
+	Keep this parameter larger than zero.
+\end{itemize}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB5/TAB5_marked.png}
+	\caption{The \textit{Analysis Controls} tab with all essential parts 
+		marked in red cycles and enumerated.}
+	\label{fig:TAB5_marked}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB5/TAB5_marked_advanced.png}
+	\caption{The \textit{Analysis Controls} tab with the advanced settings 
+	enabled.}
+	\label{fig:TAB5_marked_advanced}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB5/TAB5_solvers.png}
+	\caption{The \textit{Analysis Controls} tab with the advanced settings 
+	enabled.}
+	\label{fig:TAB5_solvers}
+\end{figure}
+
+
+
+\section{The Input File}\label{INPUTFILE}
+
 
 
