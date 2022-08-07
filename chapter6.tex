@@ -507,9 +507,354 @@ We now discuss the advanced settings panels, shown in Fig.
 	\label{fig:TAB5_solvers}
 \end{figure}
 
+\section{The Solve Job tab}
 
+This is the tab where input, if successfully registered, is submitted and the 
+structural problem is solved using the hybrid \acrshort{nlp} element. The 
+layout, shown in Fig. FIG, is fairly simple and relevant parts are:
+
+\begin{itemize}
+	\item \textbf{A}: The \textit{Solve Job} tab.
+	\item \textbf{B}: If all imput is successfully registered, then clicking on 
+	the \textit{Solve Job} button will call the hybrid \acrshort{nlp} solver. 
+	Otherwise, an error message will be shown and the user will be directed to 
+	the relevant tab to make corrections.
+	\item \textbf{C}: The text box where all analysis settings specified by the 
+	user are displayed once the job is submitted. When the analysis is over, 
+	the number of steps and total iterations is also displayed.
+\end{itemize}
+
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.5]{GUIpics/TAB6/TAB6_marked.png}
+	\caption{The \textit{Solve Job} tab.}
+	\label{fig:TAB6_marked}
+\end{figure}
+
+\clearpage
+
+\section{The Post-processing tab}
+
+In the \textit{Post-processing} tab the user can choose to plot i) load - 
+displacement equilibrium paths for selected \acrshort{dof}s and ii) the 
+deformation history of the structure. The tab layout is shown in Figs. 
+\ref{fig:TAB7_markedA}, \ref{fig:TAB7_markedB}, and tab layout, along with the 
+panels pertaining to \textit{Equilibrium path} and \textit{Deformation 
+history}, are discussing below:
+
+\begin{itemize}
+	\item \textbf{A}: The \textit{Post-processing} tab.
+	\item \textbf{B}: The \textit{Equilibrium path} panel.
+	\item \textbf{C}: The \textit{Deformation history} panel.
+	\item \textbf{D}: Here, the user selects a node from the drop-down list and 
+	a displacement \acrshort{dof} for the (horizontal) X-axis from the 
+	\textit{Nodal DOF} button group.
+	\item \textbf{E}: Here, in a similar fastion with \textbf{D}, the user 
+	selects a node from the drop-down list and a \acrshort{dof} from the button 
+	group to the right where an external load is specified with non-zero value. 
+	The force will be assigned to the (vertical) Y-axis.
+	
+	\item \textbf{F}: In these three text fields, the user specifies the labels 
+	for X and Y axis and the title for the plot.
+	
+	\item \textbf{G}: Here, the user specifies the color of the equilibrium 
+	curve. The color format follows native MATLAB rules.
+	\item \textbf{H}: In this (text) field, the user specifies the linestyle of 
+	the equilibrium curve. This, again, follows standard MATLAB formatting 
+	rules. For example, a dashed line is specified as "--", a line with cycle 
+	markers as "-o" etc.
+	
+	\item \textbf{I}: Once activated, the \textit{Plot equilibrium path} button 
+	plots the equilibrium path for the selected \acrshort{dof}s.
+	\item \textbf{J}: Once the \textit{Clear figure} button is activated, it 
+	clears the figure in the present tab.
+	\item \textbf{K}: Option to export the current plot. The user can specify a 
+	name in the text field \textit{Filename} and a filetype from the 
+	\textit{Extension} drop-down list. The available extensions are: ".pdf" and 
+	".fig", which exports the plot as a MATLAB figure.
+	\item \textbf{L}: The embedded axes for this tab where graphic objects are 
+	displayed.
+	
+\end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB7/TAB7_markedA.png}
+	\caption{The \textit{Post-processing} tab and the \textit{Deformation 
+			history} panel.}
+	\label{fig:TAB7_markedA}
+\end{figure}
+
+\begin{itemize}
+	\item \textbf{M}: The \textit{Animate} button in the \textit{Deformation 
+	history} panel (see Fig. \ref{fig:TAB7_markedB}) generates all the 
+	necessary data in order to produce a deformation history animation for the 
+	structure. This may take a while in case a plastic analysis or a small 
+	step-length general nonlinear analysis is performed. Once the deformation 
+	data have been generated, the \textit{Animate} button can be used again to 
+	produce the same animation but without repeating the costly post-processing 
+	calculations.
+	
+	\item \textbf{N}: Slider that can be used to contrast intermediate 
+	configuration states for the structure, compared to the last one, which is 
+	the last frame produced by the animation. The slider is not enabled when 
+	the deformation data have not been produced. 
+\end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB7/TAB7_markedB.png}
+	\caption{The \textit{Solve Job} tab and the \textit{Deformation history}.}
+	\label{fig:TAB7_markedB}
+\end{figure}
+
+Plotting using these two utilities are shown in Figs. \ref{fig:TAB7_EQPLOT}, 
+\ref{fig:TAB7_slider}. Figure \ref{fig:TAB7_EQPLOT} shows the equilibrium path 
+for U2 at node 3 against P2 again at node 3. Figure \ref{fig:TAB7_slider} on 
+the other hand shows the final configuration of Lee's Frame along with the 
+configuration at step 12, which is retrieved using the slider utility.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB7/TAB7_EQPLOT.png}
+	\caption{Equilibrium path plot.}
+	\label{fig:TAB7_EQPLOT}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/TAB7/TAB7_slider.png}
+	\caption{Deformation history plot of the structure.}
+	\label{fig:TAB7_slider}
+\end{figure}
 
 \section{The Input File}\label{INPUTFILE}
 
+We now discuss the structure of the input file and how the application parses 
+its contents. We highlight again that the input file contains all data required 
+to run an analysis for a particular structure: mesh, materials, cross-sections 
+and element-section assignments, boundary conditions and analysis controls.
 
+The input file is imported using the \textit{Load problem} found in the 
+\textit{Mesh} tab, which is highlighted in the figure below:
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{GUIpics/INPUT_FILE/IMAGE_1.png}
+	\caption{Load problem using the input file.}
+	\label{fig:IMAGE_1}
+\end{figure}
+
+The input file consists of seven sections or parts and are separated by ".,", 
+parsing the file from top to bottom. Each part pertains to a certain category 
+of inputs. The categories of inputs are listed below and they have to follow 
+this hierarchy:
+
+\begin{enumerate}
+	\item NODES
+	\item ELEMENTS
+	\item MATERIALS (6 inputs per material, repeat input for additional 
+	materials)
+	\item SECTIONS (7 inputs per section, repeat input for additional sections)
+	\item ELELEMT-SECTION ASSIGNMENTS
+	\item BOUNDARY CONDITIONS
+	\item ANALYSIS CONTROLS (25 inputs in total)
+\end{enumerate}
+
+The input file is loaded and converted into a MATLAB Cell data structure. 
+Inputs that require more than one numeric value, such as nodal coordinates for 
+a node, should be separated by a comma. The use of commas results in a cell 
+structure with columns, where a new column starts after a comma. Lines that 
+start with "$\#$" are treated as comments and are 
+ignored by the parser. In addition, different sections are assigned different 
+``widths", where width is to be understood as the number of columns the data 
+for a particular section span. For example, the NODE and ELEMENTS input 
+sections require two columns, therefore the parser will ignore anything written 
+after the second column for these two sections. For the MATERIALS or SECTIONS 
+parts, only one column suffices and therefore, comments in these parts can 
+start at the second column. For the BOUNDARY CONDITIONS part we need four 
+columns, that is, the node label and values at the three \acrshort{dof}s at 
+that node. Therefore, the parser will start ignoring input after the fourth 
+column in that section. 
+
+\subsection{The NODE input}
+
+An example of nodal coordinate input on the ASCII input file and how it is 
+stored into a MATLAB cell is shown in Fig. \ref{fig:NODE}. As can be seen from 
+that figure, the NODE part requires two numeric values per line, where a line 
+represents a node: a X and a Y coordinate, which correspond to the first and 
+second column respectively and are seperated by commas. When the nodal input is 
+finalized, the dot character followed by a comma, ".," should be added in the 
+next line. This tells the parses that nodal input is over and the ELEMENTS 
+input is next.
+
+
+\begin{figure}
+	\centering
+	\subfloat[ASCII file 
+	formatting.]{\includegraphics[width=0.5\textwidth]{GUIpics/INPUT_FILE/NODE_TXT.png}
+		\label{fig:NODEA}}
+	 
+	\subfloat[MATLAB Cell 
+	storage.]{\includegraphics[width=0.5\textwidth]{GUIpics/INPUT_FILE/NODE_MAT.png}}
+		
+	\caption{How NODE part is typeset in the ASCII file and how it is stored in 
+	a cell data structure by MATLAB.}
+	\label{fig:NODE}
+\end{figure}
+
+Note the way the first line is typeset in \ref{fig:NODEA}. It is crucial  that 
+the first line in the input file starts with the comment character $\#$ and 
+also includes at least 4 commas. This is done in order to ensure that MATLAB 
+will store all data in a cell with \textbf{at least for columns}.
+
+\subsection{The ELEMENTS input}
+Like the NODE part, the ELEMENT input takes two numeric values per line 
+(element), which correspond to nodes $I$ and $J$ that the element connects. The 
+relevant portion of the ASCII file is shown in Fig. \ref{fig:ELEMENTS}.
+
+\begin{figure}
+	\centering
+	\includegraphics{GUIpics/INPUT_FILE/ELEMENT_TXT.png}
+	\caption{How ELEMENTS part is typeset in the ASCII file.}
+	\label{fig:ELEMENTS}
+\end{figure}
+
+\subsection{The MATERIALS input}
+In this part the user defines a list of materials. Only one column is required 
+and 6 parameters define a material completely. Multiple materials can be 
+defined by repeating the sequence of MATERIALS input, as shown in Fig. 
+\ref{fig:MATS} for three materials. The order in which the material parameters 
+are defined needs to be the same as shown in pictures: 
+\begin{enumerate}
+	\item Material Name (String type)
+	\item Young's modulus (Numeric type)
+	\item Poisson's ratio (Numeric type)
+	\item Yield stress (Numeric type)
+	\item Isotropic Hardening modulus (Numeric type)
+	\item Kinematic Hardening modulus (Numeric type)
+\end{enumerate}
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.75]{GUIpics/INPUT_FILE/MATS_TXT.png}
+	\caption{How MATERIALS part is typeset in the ASCII file, with multiple 
+	materials defined.}
+	\label{fig:MATS}
+\end{figure}
+
+\subsection{The SECTIONS input}
+
+Sections are defined in a similar fashion to materials. One section is 
+completely determined by seven parameters which are detailed below and have to 
+be defined in the same order when they are typeset in the ASCII file:
+
+\begin{enumerate}
+	\item Section Name (String type)
+	\item Cross-section identifier (Numeric type, 1:Symmetric wide flange or 
+	2:Rectangular)
+	\item Cross-section height (Numeric type)
+	\item Cross-section width (Numeric type)
+	\item Web thickness (Numeric type)
+	\item Flange Thickness (Numeric type)
+	\item Assigned Material (String type)
+\end{enumerate}
+
+In the case where a Rectangular section is defined, the web and flange 
+thicknesses can be assigned dummy values. Again, multiple sections can be 
+defined by repeating the above sequence of parameters. An example where three 
+cross-section are define in the SECTIONS part is shown in Fig. \ref{fig:SECS} 
+below.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.75]{GUIpics/INPUT_FILE/SECS_TXT.png}
+	\caption{How SECTIONS part is typeset in the ASCII file, with multiple 
+		cross-sections defined.}
+	\label{fig:SECS}
+\end{figure}
+
+
+\subsection{The ELEMENT-SECTION ASSIGNMENT input}
+
+Here the user specifies couples that encapsulate information regarding 
+cross-section assignment to elements. The first input in the couple, and by 
+extension elements in the first column, is the element label, which is 
+represented by an integer. The second input in the couple is the cross-section 
+name, which is stored in a variable of type "string". Evidently, the number of 
+rows dedicated to this input section should match the number of elements 
+defined previously. The input template for assigning sections to elements is 
+shown in Fig. \ref{fig:ELESECS} below.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.75]{GUIpics/INPUT_FILE/ELESEC_TXT.png}
+	\caption{The ELEMENT-SECTION ASSIGNMENT input block.}
+	\label{fig:ELESECS}
+\end{figure}
+
+\subsection{The BOUNDARY CONDITION input}
+
+In this part, the user first specifies the loading boundary conditions and then 
+the displacement ones. The two blocks are separated by the dot/comma character 
+".," as is done for normal input sections. Four entries are required to fully 
+define a boundary condition: a node label, which is a positive integer, and 
+three values corresponding to the three \acrshort{dof}s at that node. Figure 
+\ref{fig:BCS} shows an example where Node 3 is assigned a vertical downward 
+load and rollers are assigned to Nodes 1 and 4.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.75]{GUIpics/INPUT_FILE/BCS_TXT.png}
+	\caption{Defining load and displacement boundary conditions in the BOUNDARY 
+	CONDITIONS block for the ASCII input file.}
+	\label{fig:BCS}
+\end{figure}
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.75]{GUIpics/INPUT_FILE/ANALYSISCONTROLS_TXT.png}
+	\caption{The ANALYSIS CONTROLS template block for the ASCII input file.}
+	\label{fig:ANALYSIS}
+\end{figure}
+
+\subsection{The ANALYSIS CONTROLS input}
+The final input block pertains to the \textit{Analysis Controls} tab in the 
+GUI. 25 input parameters (rows) and only one column are required to fully 
+specify and register the analysis settings. However, some of these options are 
+read if the Homotopy solver is enabled. That leaves us with 18 ``core" 
+parameters for this input block. The last three, which pertain to step-length 
+adjustment parameter $a$ and minimum and maximum step-lengths, min$DS$ and 
+max$DS$ respectively, are optional. If they are not specified, they are 
+assigned the following default values:
+\begin{itemize}
+	\item $a=3.9$
+	\item min$DS = DS/4$
+	\item max$DS = 4DS$
+\end{itemize}
+
+\noindent where $DS$ is the standard step-length used by the arc-length and 
+homotopy solvers. The template for this input block is shown in Fig. 
+\ref{fig:ANALYSIS} below:
+
+\subsection{A Simple Problem Input File}
+
+Here we show the input file and the U2-P2 equilibrium path on the application 
+GUI for the elastoplastic cantilever problem analyzed in Chapter 
+\ref{chapter:CH2}, Section \ref{CANTIPROB}.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.75]{GUIpics/INPUT_FILE/CANTIRES.png}
+	\caption{The equilibrium plot for the elastoplastic cantilever, using the 
+		GUI post-processor utility.}
+	\label{fig:RES}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.75]{GUIpics/INPUT_FILE/CANTI_TXT.png}
+	\caption{The input file for a simple cantilever problem.}
+	\label{fig:CANTINPUT}
+\end{figure}
 

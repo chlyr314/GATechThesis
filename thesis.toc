@@ -1,8 +1,8 @@
-\contentsline {chapter}{List of Figures}{ix}{chapter*.1}%
-\contentsline {chapter}{List of Tables}{xiv}{chapter*.2}%
-\contentsline {chapter}{Nomenclature}{xv}{chapter*.3}%
-\contentsline {chapter}{Acronyms}{xx}{section*.5}%
-\contentsline {chapter}{Acknowledgements}{xxii}{chapter*.6}%
+\contentsline {chapter}{List of Figures}{x}{chapter*.1}%
+\contentsline {chapter}{List of Tables}{xv}{chapter*.2}%
+\contentsline {chapter}{Nomenclature}{xvi}{chapter*.3}%
+\contentsline {chapter}{Acronyms}{xxi}{section*.5}%
+\contentsline {chapter}{Acknowledgements}{xxiii}{chapter*.6}%
 \contentsline {chapter}{\numberline {1}Introduction and Background}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Literature Review}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Beam Element Technologies}{1}{subsection.1.1.1}%
@@ -93,17 +93,27 @@
 \contentsline {section}{\numberline {6.3}The Sections tab}{144}{section.6.3}%
 \contentsline {section}{\numberline {6.4}The Boundary Conditions tab}{150}{section.6.4}%
 \contentsline {section}{\numberline {6.5}The Analysis Controls tab}{152}{section.6.5}%
-\contentsline {section}{\numberline {6.6}The Input File}{157}{section.6.6}%
-\contentsline {chapter}{\numberline {7}Conclusions and Suggestions for Future Research}{159}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Research Summary and Conclusions}{159}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Limitations}{159}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Future Directions}{160}{section.7.3}%
+\contentsline {section}{\numberline {6.6}The Solve Job tab}{157}{section.6.6}%
+\contentsline {section}{\numberline {6.7}The Post-processing tab}{158}{section.6.7}%
+\contentsline {section}{\numberline {6.8}The Input File}{160}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}The NODE input}{163}{subsection.6.8.1}%
+\contentsline {subsection}{\numberline {6.8.2}The ELEMENTS input}{163}{subsection.6.8.2}%
+\contentsline {subsection}{\numberline {6.8.3}The MATERIALS input}{164}{subsection.6.8.3}%
+\contentsline {subsection}{\numberline {6.8.4}The SECTIONS input}{165}{subsection.6.8.4}%
+\contentsline {subsection}{\numberline {6.8.5}The ELEMENT-SECTION ASSIGNMENT input}{166}{subsection.6.8.5}%
+\contentsline {subsection}{\numberline {6.8.6}The BOUNDARY CONDITION input}{167}{subsection.6.8.6}%
+\contentsline {subsection}{\numberline {6.8.7}The ANALYSIS CONTROLS input}{168}{subsection.6.8.7}%
+\contentsline {subsection}{\numberline {6.8.8}A Simple Problem Input File}{169}{subsection.6.8.8}%
+\contentsline {chapter}{\numberline {7}Conclusions and Suggestions for Future Research}{172}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Research Summary and Conclusions}{172}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Limitations}{172}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Future Directions}{173}{section.7.3}%
 \renewcommand {\cftchappresnum }{Appendix }
 \renewcommand {\cftchapnumwidth }{6em}
-\contentsline {chapter}{\numberline {A}Notation}{165}{appendix.1.A}%
-\contentsline {chapter}{\numberline {B}Gradient of Hybrid NLP Lagrangian}{169}{appendix.1.B}%
-\contentsline {chapter}{\numberline {C}Hessian of Hybrid NLP Lagrangian}{174}{appendix.1.C}%
-\contentsline {chapter}{\numberline {D}Iterative Corrections for Plastic Parameter}{177}{appendix.1.D}%
-\contentsline {chapter}{\numberline {E}Analytical Derivation of Consistent Tangent Modulus}{179}{appendix.1.E}%
-\contentsline {chapter}{\numberline {F}Numerical Pathfollowing}{181}{appendix.1.F}%
-\contentsline {chapter}{References}{183}{figure.caption.97}%
+\contentsline {chapter}{\numberline {A}Notation}{178}{appendix.1.A}%
+\contentsline {chapter}{\numberline {B}Gradient of Hybrid NLP Lagrangian}{182}{appendix.1.B}%
+\contentsline {chapter}{\numberline {C}Hessian of Hybrid NLP Lagrangian}{187}{appendix.1.C}%
+\contentsline {chapter}{\numberline {D}Iterative Corrections for Plastic Parameter}{190}{appendix.1.D}%
+\contentsline {chapter}{\numberline {E}Analytical Derivation of Consistent Tangent Modulus}{192}{appendix.1.E}%
+\contentsline {chapter}{\numberline {F}Numerical Pathfollowing}{194}{appendix.1.F}%
+\contentsline {chapter}{References}{196}{figure.caption.112}%

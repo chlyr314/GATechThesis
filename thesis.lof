@@ -105,6 +105,23 @@
 \contentsline {figure}{\numberline {6.18}{\ignorespaces The \textit {Analysis Controls} tab with all essential parts marked in red cycles and enumerated.\relax }}{155}{figure.caption.94}%
 \contentsline {figure}{\numberline {6.19}{\ignorespaces The \textit {Analysis Controls} tab with the advanced settings enabled.\relax }}{156}{figure.caption.95}%
 \contentsline {figure}{\numberline {6.20}{\ignorespaces The \textit {Analysis Controls} tab with the advanced settings enabled.\relax }}{156}{figure.caption.96}%
+\contentsline {figure}{\numberline {6.21}{\ignorespaces The \textit {Solve Job} tab.\relax }}{157}{figure.caption.97}%
+\contentsline {figure}{\numberline {6.22}{\ignorespaces The \textit {Post-processing} tab and the \textit {Deformation history} panel.\relax }}{159}{figure.caption.98}%
+\contentsline {figure}{\numberline {6.23}{\ignorespaces The \textit {Solve Job} tab and the \textit {Deformation history}.\relax }}{160}{figure.caption.99}%
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Equilibrium path plot.\relax }}{161}{figure.caption.100}%
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Deformation history plot of the structure.\relax }}{161}{figure.caption.101}%
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Load problem using the input file.\relax }}{162}{figure.caption.102}%
+\contentsline {figure}{\numberline {6.27}{\ignorespaces How NODE part is typeset in the ASCII file and how it is stored in a cell data structure by MATLAB.\relax }}{164}{figure.caption.103}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ASCII file formatting.}}}{164}{subfigure.27.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MATLAB Cell storage.}}}{164}{subfigure.27.2}%
+\contentsline {figure}{\numberline {6.28}{\ignorespaces How ELEMENTS part is typeset in the ASCII file.\relax }}{164}{figure.caption.104}%
+\contentsline {figure}{\numberline {6.29}{\ignorespaces How MATERIALS part is typeset in the ASCII file, with multiple materials defined.\relax }}{165}{figure.caption.105}%
+\contentsline {figure}{\numberline {6.30}{\ignorespaces How SECTIONS part is typeset in the ASCII file, with multiple cross-sections defined.\relax }}{166}{figure.caption.106}%
+\contentsline {figure}{\numberline {6.31}{\ignorespaces The ELEMENT-SECTION ASSIGNMENT input block.\relax }}{167}{figure.caption.107}%
+\contentsline {figure}{\numberline {6.32}{\ignorespaces Defining load and displacement boundary conditions in the BOUNDARY CONDITIONS block for the ASCII input file.\relax }}{167}{figure.caption.108}%
+\contentsline {figure}{\numberline {6.33}{\ignorespaces The ANALYSIS CONTROLS template block for the ASCII input file.\relax }}{168}{figure.caption.109}%
+\contentsline {figure}{\numberline {6.34}{\ignorespaces The equilibrium plot for the elastoplastic cantilever, using the GUI post-processor utility.\relax }}{169}{figure.caption.110}%
+\contentsline {figure}{\numberline {6.35}{\ignorespaces The input file for a simple cantilever problem.\relax }}{170}{figure.caption.111}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -112,4 +129,4 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {F.1}{\ignorespaces Two correction algorithms: Normal Flow and Normal Plane.\relax }}{183}{figure.caption.97}%
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Two correction algorithms: Normal Flow and Normal Plane.\relax }}{196}{figure.caption.112}%
