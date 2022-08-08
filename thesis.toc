@@ -52,68 +52,68 @@
 \contentsline {subsection}{\numberline {3.5.3}Plastic Collapse of a Doubly Clamped Beam}{65}{subsection.3.5.3}%
 \contentsline {subsection}{\numberline {3.5.4}Cyclic Loading of Shear Link}{70}{subsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.5.5}Elastoplastic Post-Buckling Behavior of Two-Beam Structure}{72}{subsection.3.5.5}%
-\contentsline {subsection}{\numberline {3.5.6}Three Story Frame With Shear Links}{75}{subsection.3.5.6}%
-\contentsline {section}{\numberline {3.6}Summary}{76}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Naturally Parameterized NLP framework}{80}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{80}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Homotopy Continuation}{82}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Main idea}{82}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Regularity and Existence of Homotopy Paths}{85}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Parametric Nonlinear Programming}{87}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Global Optimization}{91}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Naturally Parameterized NLP Framework for Mechanics}{93}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Existence and Uniqueness of NPNLP Path}{95}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Implementation}{98}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Numerical Examples}{101}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Example 1 - Global Optimization}{101}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Example 2 - Global Sensitivity}{104}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Example 3 - Frictionless Contact}{107}{subsection.4.5.3}%
-\contentsline {section}{\numberline {4.6}Summary}{110}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Weighted least squares predictor for numerical continuation}{112}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{112}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Numerical Continuation}{113}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Weighted Least Squares Predictor}{116}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Matrix Formulation of WLS Approximation}{119}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}WLS Prediction Variants}{121}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Arc-length Stabilization}{122}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}The Weight Function}{123}{subsection.5.3.4}%
-\contentsline {section}{\numberline {5.4}Implementation}{124}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Algorithm}{124}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Arc-Length Measurement}{125}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Discussion}{126}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Numerical Examples}{128}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Numerical Example 1}{129}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Numerical Example 2}{130}{subsection.5.5.2}%
-\contentsline {subsection}{\numberline {5.5.3}Numerical Example 3}{132}{subsection.5.5.3}%
-\contentsline {subsection}{\numberline {5.5.4}Numerical Example 4}{133}{subsection.5.5.4}%
-\contentsline {section}{\numberline {5.6}Summary}{136}{section.5.6}%
-\contentsline {chapter}{\numberline {6}A Simple GUI for the Hybrid NLP Element}{138}{chapter.6}%
-\contentsline {section}{\numberline {6.1}The Mesh Tab}{138}{section.6.1}%
-\contentsline {section}{\numberline {6.2}The Materials Tab}{140}{section.6.2}%
-\contentsline {section}{\numberline {6.3}The Sections tab}{144}{section.6.3}%
-\contentsline {section}{\numberline {6.4}The Boundary Conditions tab}{150}{section.6.4}%
-\contentsline {section}{\numberline {6.5}The Analysis Controls tab}{152}{section.6.5}%
-\contentsline {section}{\numberline {6.6}The Solve Job tab}{157}{section.6.6}%
-\contentsline {section}{\numberline {6.7}The Post-processing tab}{158}{section.6.7}%
-\contentsline {section}{\numberline {6.8}The Input File}{160}{section.6.8}%
-\contentsline {subsection}{\numberline {6.8.1}The NODE input}{163}{subsection.6.8.1}%
-\contentsline {subsection}{\numberline {6.8.2}The ELEMENTS input}{163}{subsection.6.8.2}%
-\contentsline {subsection}{\numberline {6.8.3}The MATERIALS input}{164}{subsection.6.8.3}%
-\contentsline {subsection}{\numberline {6.8.4}The SECTIONS input}{165}{subsection.6.8.4}%
-\contentsline {subsection}{\numberline {6.8.5}The ELEMENT-SECTION ASSIGNMENT input}{166}{subsection.6.8.5}%
-\contentsline {subsection}{\numberline {6.8.6}The BOUNDARY CONDITION input}{167}{subsection.6.8.6}%
-\contentsline {subsection}{\numberline {6.8.7}The ANALYSIS CONTROLS input}{168}{subsection.6.8.7}%
-\contentsline {subsection}{\numberline {6.8.8}A Simple Problem Input File}{169}{subsection.6.8.8}%
-\contentsline {chapter}{\numberline {7}Conclusions and Suggestions for Future Research}{172}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Research Summary and Conclusions}{172}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Limitations}{172}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Future Directions}{173}{section.7.3}%
+\contentsline {subsection}{\numberline {3.5.6}Three Story Frame With Shear Links}{76}{subsection.3.5.6}%
+\contentsline {section}{\numberline {3.6}Summary}{77}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Naturally Parameterized NLP framework}{79}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{79}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Homotopy Continuation}{81}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Main idea}{81}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Regularity and Existence of Homotopy Paths}{84}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Parametric Nonlinear Programming}{86}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Global Optimization}{90}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Naturally Parameterized NLP Framework for Mechanics}{92}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Existence and Uniqueness of NPNLP Path}{94}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Implementation}{97}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Numerical Examples}{100}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Example 1 - Global Optimization}{100}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Example 2 - Global Sensitivity}{103}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Example 3 - Frictionless Contact}{106}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.6}Summary}{109}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Weighted least squares predictor for numerical continuation}{111}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{111}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Numerical Continuation}{112}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Weighted Least Squares Predictor}{115}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Matrix Formulation of WLS Approximation}{118}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}WLS Prediction Variants}{120}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Arc-length Stabilization}{121}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}The Weight Function}{122}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}Implementation}{123}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Algorithm}{123}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Arc-Length Measurement}{124}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Discussion}{125}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Numerical Examples}{127}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Numerical Example 1}{128}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Numerical Example 2}{129}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Numerical Example 3}{131}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Numerical Example 4}{132}{subsection.5.5.4}%
+\contentsline {section}{\numberline {5.6}Summary}{135}{section.5.6}%
+\contentsline {chapter}{\numberline {6}A Simple GUI for the Hybrid NLP Element}{137}{chapter.6}%
+\contentsline {section}{\numberline {6.1}The Mesh Tab}{137}{section.6.1}%
+\contentsline {section}{\numberline {6.2}The Materials Tab}{139}{section.6.2}%
+\contentsline {section}{\numberline {6.3}The Sections tab}{143}{section.6.3}%
+\contentsline {section}{\numberline {6.4}The Boundary Conditions tab}{149}{section.6.4}%
+\contentsline {section}{\numberline {6.5}The Analysis Controls tab}{151}{section.6.5}%
+\contentsline {section}{\numberline {6.6}The Solve Job tab}{156}{section.6.6}%
+\contentsline {section}{\numberline {6.7}The Post-processing tab}{157}{section.6.7}%
+\contentsline {section}{\numberline {6.8}The Input File}{159}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}The NODE input}{162}{subsection.6.8.1}%
+\contentsline {subsection}{\numberline {6.8.2}The ELEMENTS input}{162}{subsection.6.8.2}%
+\contentsline {subsection}{\numberline {6.8.3}The MATERIALS input}{163}{subsection.6.8.3}%
+\contentsline {subsection}{\numberline {6.8.4}The SECTIONS input}{164}{subsection.6.8.4}%
+\contentsline {subsection}{\numberline {6.8.5}The ELEMENT-SECTION ASSIGNMENT input}{165}{subsection.6.8.5}%
+\contentsline {subsection}{\numberline {6.8.6}The BOUNDARY CONDITION input}{166}{subsection.6.8.6}%
+\contentsline {subsection}{\numberline {6.8.7}The ANALYSIS CONTROLS input}{167}{subsection.6.8.7}%
+\contentsline {subsection}{\numberline {6.8.8}A Simple Problem Input File}{168}{subsection.6.8.8}%
+\contentsline {chapter}{\numberline {7}Conclusions and Suggestions for Future Research}{171}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Research Summary and Conclusions}{171}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Limitations}{171}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Future Directions}{172}{section.7.3}%
 \renewcommand {\cftchappresnum }{Appendix }
 \renewcommand {\cftchapnumwidth }{6em}
-\contentsline {chapter}{\numberline {A}Notation}{178}{appendix.1.A}%
-\contentsline {chapter}{\numberline {B}Gradient of Hybrid NLP Lagrangian}{182}{appendix.1.B}%
-\contentsline {chapter}{\numberline {C}Hessian of Hybrid NLP Lagrangian}{187}{appendix.1.C}%
-\contentsline {chapter}{\numberline {D}Iterative Corrections for Plastic Parameter}{190}{appendix.1.D}%
-\contentsline {chapter}{\numberline {E}Analytical Derivation of Consistent Tangent Modulus}{192}{appendix.1.E}%
-\contentsline {chapter}{\numberline {F}Numerical Pathfollowing}{194}{appendix.1.F}%
-\contentsline {chapter}{References}{196}{figure.caption.112}%
+\contentsline {chapter}{\numberline {A}Notation}{177}{appendix.1.A}%
+\contentsline {chapter}{\numberline {B}Gradient of Hybrid NLP Lagrangian}{181}{appendix.1.B}%
+\contentsline {chapter}{\numberline {C}Hessian of Hybrid NLP Lagrangian}{186}{appendix.1.C}%
+\contentsline {chapter}{\numberline {D}Iterative Corrections for Plastic Parameter}{189}{appendix.1.D}%
+\contentsline {chapter}{\numberline {E}Analytical Derivation of Consistent Tangent Modulus}{191}{appendix.1.E}%
+\contentsline {chapter}{\numberline {F}Numerical Pathfollowing}{193}{appendix.1.F}%
+\contentsline {chapter}{References}{195}{figure.caption.112}%

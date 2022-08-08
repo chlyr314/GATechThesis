@@ -1459,6 +1459,7 @@ model.
 	\end{minipage}
 \end{table}
 
+\clearpage
 
 %%%%%%%%%%%%%%%%%%%%  EXAMPLE 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Three Story Frame With Shear Links}
@@ -1469,21 +1470,6 @@ Gravity loads are
 derived from the material and geometric properties of the elements and, for 
 simplicity, are assumed to be acting on frame joints only. The values for each 
 joint gravity load are shown in Table \ref{table:TABLE10}. 
-
-\begin{figure}[t]
-	\centering
-	\subfloat[Frame structure.]{%
-		\hspace{-0.2cm}\includegraphics[width=0.45\textwidth]{FIG28_STRUCTURE}%
-		\label{fig:FIG28_STRUCTURE}%
-	}
-	\subfloat[Equilibrium paths.]{%
-		\includegraphics[width=0.45\textwidth]{FIG28_EQPATHS}%
-		\label{fig:FIG28_EQPATHS}%
-	}
-	\caption{Geometry of the steel frame and \ref{fig:FIG28_EQPATHS} response 
-		curves for three different models.}
-	\label{fig:FIG28}
-\end{figure}
 
 \begin{table}[h]
 	\centering
@@ -1506,13 +1492,13 @@ A static pushover analysis is then conducted with respect to the
 superimposed horizontal loads on nodes 2,3, 
 and 4. All members have 
 the same yield stress and Young's modulus: $\sigma_y = 290$ MPa, $E = 210$ GPa, 
-and the Poisson's ratio is set to $\nu= 0.3$. Perfect plasticity is assumed and 
-both material and geometric nonlinearity options are activated for the 
-analysis. In Fig. \ref{fig:FIG28_EQPATHS} we show how the results using the 
+and the Poisson's ratio is set to $\nu= 0.3$. Both material and geometric 
+nonlinearity options are activated for the 
+analysis and perfect plasticity is assumed. In Fig. \ref{fig:FIG28_EQPATHS} we 
+show how the results using the 
 hybrid element compares with the nonlinear flexibility element in 
-OpenSees\cite{OpenSees} assuming both shear participation and purely flexural 
-response to inelastic deformation. Since OpenSees does not provide 
-shear-flexure interraction capabilities at the level of fiber, we employed the 
+OpenSees\cite{OpenSees} assuming both shear coupling and purely flexural 
+response during inelastic deformation. In the OpenSees analysis we employed the 
 section aggregator modelling option, whereby a uniaxial law between shear force 
 and shear strain of the centerline was defined and then incoroporated in a 
 fiber section but flexure and shear responses remain uncoupled. As can be seen 
@@ -1528,6 +1514,21 @@ element library. In contrast, in our hybrid code we used one hybrid element per
 member, 27 elements in total, and five Gauss-Lobatto quadrature points per 
 element. Both models account for second order effects under the presence of 
 gravity loads.
+
+\begin{figure}
+	\centering
+	\subfloat[Frame structure.]{%
+		\hspace{-0.2cm}\includegraphics[width=0.45\textwidth]{FIG28_STRUCTURE}%
+		\label{fig:FIG28_STRUCTURE}%
+	}
+	\subfloat[Equilibrium paths.]{%
+		\includegraphics[width=0.45\textwidth]{FIG28_EQPATHS}%
+		\label{fig:FIG28_EQPATHS}%
+	}
+	\caption{Geometry of the steel frame and \ref{fig:FIG28_EQPATHS} response 
+		curves for three different models.}
+	\label{fig:FIG28}
+\end{figure}
 
 %the results we get for 3 
 %different modelling 
