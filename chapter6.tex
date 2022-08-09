@@ -1,860 +1,167 @@
-\chapter{A Simple GUI for the Hybrid NLP Element}
+\chapter{Conclusions and Suggestions for Future Research}
 
-This chapter introduces a Graphical User Interface (GUI) developed as part of 
-this work in order to 
-facilitate analyses using the hybrid \acrshort{nlp} element. We detail the 
-various features that are implemented using the AppDesigner utility of MATLAB, 
-version 2022b. The chapter is divided in seven sections, each representing a 
-particular tab of the interface. These seven tabs are : 1) Mesh, 2) Materials, 
-3) Sections, 4) Boundary Conditions, 5) Analysis Controls, 6) Solve Job and, 
-finally, 7) Post-processing. The first five tabs, some of which can be edited 
-independently, belong to the pre-processing phase. Tab 6 calls the hybrid NLP 
-solver for the given input in tabs 1-5 and tab seven provides post-processing 
-infrormation with respect to the structure response in the form of 
-force-displacement plots and  configuration history for all steps. A number of 
-tooltips can be revealed by hovering over relevant fields.
+\section{Research Summary and Conclusions}
+This research work sought to develop a high-performance, \acrshort{nlp} beam 
+element 
+and embed it in a general parametric optimization framework that takes 
+advantage of 
+the element formulation. The proposed element features exact kinematic 
+capabilities 
+coupled with a robust and fast multiaxial stress update algorithm, thereby 
+allowing 
+for shear-flexure interaction without introducing kinematic approximations to 
+displacement and rotational fields. The naturally parameterized \acrshort{nlp} 
+framework provides the capability for general and truly global parametric 
+investigations of structural frames. In addition, the numerical continuation 
+algorithm 
+used in the implementation of the path-tracking procedure is equipped with a 
+robust, 
+fast and reliable predictor, also as part of this research. This prediction 
+scheme is 
+based on a local weighted least squares fitting and provides superior 
+computational 
+performance when compared to other conventional prediction schemes. In 
+addition, it is 
+a generally applicable algorith that offers even more considerable advantages 
+when 
+problems possess dense, non-symmetric Jacobians.
 
-\section{The Mesh Tab}
+\section{Limitations}
 
-The first tab of the GUI, depicted in Fig. \ref{fig:TAB1_marked}, is concerned 
-with nodal and element input. We analyze it in terms of parts A to N:
+Limitations of the research material presented herein are primarily a direct 
+result of 
+assumptions set initially during the formulation of the relevant parts. As far 
+as the 
+hybrid element is concerned, the present work is focused on quasi-static planar 
+problems that are conservative. In addition, cross-sections are assumed to 
+remain 
+plane after deformation, even if not perpendicular to the beam centerline. This 
+means 
+that warping effects are not taken into account. Another issue related to 
+cross-section 
+kinematics is that simple, even though not simplistic, shear strain 
+distribution 
+patterns 
+were assumed, such as uniform and quadratic, and energetic consistency with the 
+exact 
+shear strain energy is established through the use of the shear coefficient.
 
-\begin{itemize}
-	\item \textbf{A}: The Mesh tab.
-	\item \textbf{B}: Facility used to manually add nodes. Numeric values 
-	pertaining to the X (horizontal) and Y (vertical) coordinate axes are used 
-	in the corresponding fields to define the coordinates of a node. By 
-	clicking on the \textit{Add Node} button, the enumerated node is added to 
-	the table with its coordinated also listed. The enumeration is automatic. 
-	Attempting to add a node with coordinates (X,Y) that are already defined 
-	for another node results in an error, as shown in Fig. 
-	\ref{fig:TAB1_node_error}.
-	\item \textbf{C}: Facility used to delete a particular node. The 
-	\textit{Label} field takes as input the node label already generated and 
-	removes it from the table. The enumeration of remaining nodes is updated 
-	accordingly. If node deletion is performed after the mesh is generated, the 
-	latter is no longer valid and all elements are removed.
-	\item \textbf{D}: Success/Error indicator of an action pertaining to node 
-	generation, coupled with a text field for relevant message output (e.g. see 
-	\ref{fig:TAB1_node_error}).
-	\item \textbf{E}: Facility to generate a node set from a \textbf{.txt} or 
-	\textbf{.xlsx} file. The format for this input file is shown in Fig. 
-	\ref{fig:TAB1_nodesfile}. If a number of nodes have already been added 
-	manually, this action replaces all existing nodes. In contrast, generating 
-	a nodal set from an input file and then manually adding additional nodes 
-	results in appending the previously generated nodal list.
-	\item \textbf{F}: Table that lists all generated nodes along with their 
-	coordinates.
-	\item \textbf{G}: Facility used to manually add a (hybrid \acrshort{nlp}) 
-	beam element. Since only one element per member is adquate with the 
-	proposed formulation, the only relevant inputs are the start and end node 
-	labels, indicated in the relevant fields as \textit{Node} $i$ and 
-	\textit{Node} $j$ respectively. Again, adding an element with start and end 
-	nodes already defined for an existing element results in an error. In 
-	addition, element enumeration is, again, automatic.
-	\item \textbf{H}: Element deletion facility. The element label used as 
-	input in the relevant field and by clicking the \textit{Delete Element} 
-	button results in removal of the particular element from the table. The 
-	remainig elements are, again, automatically re-enumerated.
-	\item \textbf{I}: Success/Error indicator of an action pertaining to 
-	element generation, coupled with a text field for relevant message output.
-	\item \textbf{J}: Facility to generate an element partition from a 
-	\textbf{.txt} or \textbf{.xlsx} file. The format for this input file is 
-	shown in Fig. \ref{fig:TAB1_elementsfile}. If a number of elements have 
-	already been added manually, this action replaces all existing elements. In 
-	contrast, generating an element partition from an input file and then 
-	manually adding additional elements results in appending the previously 
-	generated element list.
-	\item \textbf{K}:  Table that lists all generated elements along with their 
-	start and end nodes.
-	\item \textbf{L}: Once clicked, the \textit{Clear Mesh} button resets all 
-	existing input in the Mesh tab and the user can start over.
-	\item \textbf{M}: GUI axes that dynamically update the existing state of 
-	nodal and mesh configuration. Figure \ref{fig:TAB1_mesh_example} shows the 
-	Mesh tab when the mesh generation is complete for a simple case of a one 
-	bay, one story frame. The nodal labels are places right next to their 
-	respective nodes and are typeset in normal font while element labels are 
-	approximately placed in the midspan of their corresponding elements and are 
-	typeset in italic bold fonts.
-	\item \textbf{N}: With the \textit{Load problem} facility, the user can 
-	load a problem in its entirety. The appropriate file type is ASCII 
-	(extension ".txt") and formatting details for the input file are discussed 
-	in Section \ref{INPUTFILE} of this Appendix. Once the input file is 
-	imported, the user 
-	can go directly to tab \textit{Solve Job} and proceed with solving the 
-	problem.
-\end{itemize}
+For the multiaxial constitutive model, one limitation pertains to the linear 
+kinematic 
+hardening rule assumed. This simplification was adopted to ease already 
+cumbersome 
+derivations 
+pertaining to the integration of the rate equations. In addition, the model is 
+valid 
+for cross-section with a uniform material that follows the von Mises yield 
+criterion. 
+Extension to include other material constitutive laws is, however, fairly 
+straightforward.
 
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB1/TAB1_marked.png}
-	\caption{The \textit{Mesh} tab with relevant facilities A-M marked in red 
-	circles 
-	and enumerated with capital english letters.}
-	\label{fig:TAB1_marked}
-\end{figure}
+For the naturally parameterized \acrshort{nlp} framework, one limitation is the 
+assumption that no points of nullity higher than one occur during the solution 
+process 
+within a cell. This effectively means that no bifurcating solution curves exist 
+when a 
+global parametric study is carried out. Technically, the numerical algorithm 
+proposed 
+in the end of the relevant Chapter is handling such bifurcating behavior when 
+the 
+solution transitions between cells, but this is specifically adjusted for 
+parametric 
+programs involving inequality constraints where loss of \acrshort{licq}, 
+singularity 
+of the Hessian in the tangent space, or both occur during the transition. 
+Furthermore, 
+the smoothness assumptions imposed on the \acrshort{tpe} and the constraints, 
+while 
+realistic for most mechanics applications, restrict the application of the 
+parametric optimization framework to problems that do not involve severe 
+discontinuities and, therefore, can be modelled using smoothness assumptions.
 
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB1/TAB1_node_error.png}
-	\caption{Error when attempting to add a node with coordinates already 
-	defined for an existing node.}
-	\label{fig:TAB1_node_error}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB1/TAB1_nodesfile.png}
-	\caption{A .txt file with the required format for nodal input. First column 
-	is X coordinate, second is Y coordinate. The $k$-th row represents Node 
-	$k$.}
-	\label{fig:TAB1_nodesfile}
-\end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB1/TAB1_elementsfile.png}
-	\caption{A .txt file with the required format for element input. First 
-	column is start node $i$, second is end node $j$. The $k$-th row represents 
-	Element $k$.}
-	\label{fig:TAB1_elementsfile}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB1/TAB1_mesh_example.png}
-	\caption{The \textit{Mesh} tab with a completed mesh.}
-	\label{fig:TAB1_mesh_example}
-\end{figure}
+Lastly, regarding the weighted least squares predictor, a basic limitation is 
+the fact 
+that a least squares process does not result in a consistent prediction scheme. 
+This 
+means that as $\Delta s\rightarrow 0$, the prediction yielded by any 
+\acrshort{wls} 
+variant does not converge asymptotically to the tangent vector at the current 
+point. 
+In practice however, this is not an issue since the proposed prediction scheme 
+is 
+meant to provide stability and improve convergence performance for problems 
+where a 
+relatively large step-length is used. 
 
 
-\section{The Materials Tab}
-
-The \textit{Materials} tab follows the \textit{Mesh} tab and does not have any 
-dependencies regarding previous input. Figure FIG outlines all relevant fields 
-in this tab, again, separated by red cycles based on their functionality. We 
-list and describe items A-I below:
+\section{Future Directions}
+%%%%%%%%% HYBRID BEAM
+This investigation has been a first attempt to establish a parametric nonlinear 
+programming framework for the general parametric study of planar frames using a 
+high 
+performance, hybrid, \acrshort{nlp}-based element. There are, therefore, many 
+parts 
+that should be examined further and features to be added in future research 
+efforts. 
+Below we list some recommendations:
 
 \begin{itemize}
-	\item \textbf{A}: The \textit{Materials} tab.
-	\item \textbf{B}: Material name field. Takes alphanumeric values. If a 
-	material name is not specified, a default name \textbf{Material}\_$\#$ is 
-	used, where $\#$ takes values 1,2,3... etc. As an example, see Fig. 
-	\ref{fig:TAB2_adding_mat_noname}.
-	\item \textbf{C}: Numeric fields pertaining to elastic and plastic 
-	properties of the material. In the case of purely elastic analysis, dummy 
-	or zero values can be used in the plastic fields, as they are not 
-	considered.
-	\item \textbf{D}: The \textit{Add} and \textit{Delete} material facilities, 
-	along with the Success/Error indicator (green lamp icon). To delete a 
-	material defined previously, the user needs to click on it in the 
-	\textit{Materials Panel} seen on the left side of the tab (\textbf{Item H}, 
-	see below), and then click the \textit{Delete} button.
-	\item \textbf{E}: Axes that depict the uniaxial stress-strain law for a 
-	defined material. In order to activate it, the user will need to click on 
-	the specific material in the \textit{Materials Panel} seen on the left side 
-	of the tab (\textbf{Item H}, see below). An max strain 
-	$\epsilon_{max}=10\epsilon_y$ is specified purely for plotting purposes. 
-	This feature can be seen in Fig. \ref{fig:TAB2_materials_added}.
-	\item \textbf{F}: The \textit{Update Material} facility updates the elastic 
-	and plastic properties of an existing material. The material to be updated 
-	needs to be selected in the \textit{Materials panel} seen on the left side 
-	of the tab (\textbf{Item H}, see below). 
-	\item \textbf{G}: A \textit{Standard materials} facility, which is 
-	introduced to quickly add predefined, standardized materials from the 
-	drop-down list. These materials are assumed to be elastic-perfectly plastic 
-	but can be modified using the \textit{Update Material} facility. Two 
-	materials are available: 1) Structural Steel(S235) and 2) Aluminum 
-	Alloy(6062) (see Fig \ref{fig:TAB2_predefined_mats}). In contrast with 
-	manually adding materials, duplicate 
-	materials from the drop-down are not permitted, as can be seen from Fig. 
-	\ref{fig:TAB2_adding_already_predefmat}. 
-	\item \textbf{H}: This is the \textit{Materials} panel. All materials 
-	defined and added are listed here. The user needs to click on a specific 
-	material on the list in order to i) delete it, ii) update its parameters or 
-	iii) view its uniaxial stress-strain plot.
-	\item \textbf{I}: The elastic and plastic properties of a material selected 
-	on the \textit{Materials} panel are shown in this table. The tabulated 
-	quantities correspond to the material fields in \textbf{B} as follows:
-		i) $E$ represents Young's modulus, ii) $\nu$ represents Poisson's 
-		ratio, iii) f\_y represents the yield stress of the material, iv) 
-		$H_{iso}$ represents the isotropic hardening modulus and v) $H_{kin}$ 
-		represents the kinematic hardening modulus.
-\end{itemize}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB2/TAB2_marked.png}
-	\caption{The \textit{Materials} tab with relevant facilities A-M marked in 
-	red circles 
-		and enumerated with capital english letters.}
-	\label{fig:TAB2_marked}
-\end{figure}
-
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB2/TAB2_adding_mat_noname.png}
-	\caption{Multiple materials defined without a specified material name.}
-	\label{fig:TAB2_adding_mat_noname}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB2/TAB2_materials_added.png}
-	\caption{Potting of uniaxial stress-strain law of material \textbf{MAT}\_1.}
-	\label{fig:TAB2_materials_added}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB2/TAB2_predefined_mats.png}
-	\caption{Available predefined materials from the \textit{Standard 
-	materials} drop-down list.}
-	\label{fig:TAB2_predefined_mats}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB2/TAB2_adding_already_predefmat.png}
-	\caption{Error when trying to add a standard material that was already 
-	added previously.}
-	\label{fig:TAB2_adding_already_predefmat}
-\end{figure}
-
-\section{The Sections tab}
-
-The third tab pertains to cross-section defintion. Cross-sections as objects 
-are assigned a name, a shape, numeric values pertaining to the basic dimension 
-of the selected shape (e.g. two basic dimensions for rectangular sections). 
-Moreover, each section is assigned a material. As a consequence the 
-\textit{Sections} tab has a dependency on the \textit{Materials} tab. If a  
-material gets deleted, then all sections that were assigned that material get 
-deleted as well. 
-
-We now proceed with the description of the essential parts of the 
-\textit{Sections} tab, shown in Fig. \ref{fig:TAB3_marked}.
-
-\begin{itemize}
-	\item \textbf{A}: The \textit{Sections} tab.
-	\item \textbf{B}: Here, the user assign a name and a shape to the section. 
-	The name field takes alphanumeric values. If not specified, then the name 
-	\textbf{Section\_}$\#$ is assigned to the section, where $\# = 1,2,3, ...$. 
-	The available shapes from the drop-down list are i) rectangular and ii) 
-	(symmetric) wide flange geometries. 
-	\item \textbf{C}: In this section, the user assigns numeric values to the 
-	relevant fields that pertain to the basic dimensions of the assigned shape. 
-	A rectangular shape has to basic dimensions: height $h$ and width $b$. The 
-	wide flange shape has 2 additional shapes: web thickness $t_w$ and flange 
-	thickness $t_f$. In addition, the user also specifies which material will 
-	be assigned to the section. As can be seen from Fig. 
-	\ref{fig:TAB3_section_added}, the section \textbf{Rectangular\_Section} is 
-	assigned the material \textbf{MAT\_1} defined previously. The drop-down 
-	list is also shown, where all other materials defined in the 
-	\textit{Materials} tab are available in the list.
-	\item \textbf{D}: Axes that depict the cross-section shape selected from 
-	the drop-down list. The basic dimensions are also indicated in each case.
-	\item \textbf{E}: In this part, the user assigns sections to elements. 
-	Tapered element capabilities are not included in the present code, therefor 
-	only one section per element is permitted. A section is selected from the 
-	\textit{Cross-Sections} panel, which is located at the top left of the tab 
-	(see also \textbf{Item G} below) and then an element has to be selected 
-	that will be assigned the section. Another feature for this part is the 
-	capability to assign a specific to all elements, which is done by selecting 
-	a section and then clicking on the \textit{Assign to all elements} button. 
-	Lastly, a Success/Error indicator is included here as well in order to 
-	facilitate the assignment process. For elements that are successfully 
-	assigned a section, a message will be shown that states the name of the 
-	assigned section, as shown in Fig. \ref{fig:TAB3_section_assigned} for 
-	\textbf{Element 1} which was assigned the section 
-	\textbf{Aluminum\_Section}. In contrast, for elements that have not been 
-	assigned a section, when selected in the drop-down list, the indicator will 
-	turn red and an appropriate message will be displayed. This can be seen in 
-	Fig. \ref{fig:TAB3_NOsection_assigned}.
-\end{itemize}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB3/TAB3_marked.png}
-	\caption{The \textit{Sections} tab with all essential parts marked in red 
-		cycles and enumerated.}
-	\label{fig:TAB3_marked}
-\end{figure}
-
-\begin{itemize}
-	\item \textbf{F}: Table that lists the basic dimensions for the section 
-	currently under selection in the \textit{Cross-Sections} panel (see below).
-	\item \textbf{G}: The \textit{Cross-Sections} panel is where all sections 
-	created are listed. In order to delete or assign a section to an element, 
-	it has to be selected from the panel. 
-\end{itemize}
-\clearpage
-\begin{figure}[t]
-	\centering
-	\includegraphics[scale=0.5]{GUIpics/TAB3/TAB3_section_added.png}
-	\caption{Typical section definition process. A previously defined material 
-	\textbf{MAT\_1} is assigned to section \textbf{Rectangular\_Section}.}
-	\label{fig:TAB3_section_added}
-\end{figure}
-
-\begin{figure}[b]
-	\centering
-	\includegraphics[scale=0.5]{GUIpics/TAB3/TAB3_section_assigned.png}
-	\caption{Successful section assignment for \textbf{Element 1}.}
-	\label{fig:TAB3_section_assigned}
-\end{figure}
-\clearpage
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB3/TAB3_NOsection_assigned.png}
-	\caption{Indication that \textbf{Element 2} still needs to be assigned a 
-	cross-section.}
-	\label{fig:TAB3_NOsection_assigned}
-\end{figure}
-
-\section{The Boundary Conditions tab}
-
-In the \textit{Boundary Conditions} tab the user specifies the externally 
-applied nodal loads \textit{and} and the nodal support conditions so that rigid 
-body modes are excluded. The layout of the tab is shown in Fig. FIG and parts 
-from A to F are discussed below:
-
-\begin{itemize}
-	\item \textbf{A}: The \textit{Boundary Conditions} tab.
-	\item \textbf{B}: Here the user selects a node from the drop-down list at 
-	the top to apply an external load at a certain nodal \acrshort{dof}. Once 
-	the node is selected, the user can specify the magnitude and sign of the 
-	applied force in three available force fields: 1) P1, which is aligned with 
-	the global X axis (horizontal direction), 2) P2, which is aligned with the 
-	global Y axis (vertical direction) and 3) M, which represents the moment 
-	and the direction of the axis which it aligns with is determined by the 
-	right-hand rule. In Fig. \ref{fig:TAB4_LOADS} an example is shown where 
-	horizontal and vertical loads are applied at nodes 2 and 3.
-	\item \textbf{C}: This is the \textit{Nodal Loads} table, where all nodes 
-	that are assigned a non-zero external load along at least one nodal 
-	\acrshort{dof} are listed (see \ref{fig:TAB4_LOADS}).
+	\item For the hybrid beam element,  the use of different nonlinear 
+	programming 
+	solution schemes can further be investigated since the optimization 
+	literature, 
+	which we adhere to emphasize throughout this study, possesses a quite rich 
+	collection of solution techniques.  Some other directions include the 
+	formulation  
+	to support initially curved elements, dynamic effects, and three 
+	dimensional settings that necessitate special treatment of the 
+	non-commutative 
+	rotational field. 
 	
-	\item \textbf{D}: Here, the user specifies supports conditions for certain 
-	nodal \acrshort{dof}s. Again, after selecting a node from the drop-down 
-	list, the user specifies which of the three available \acrshort{dof}s, U1, 
-	U2 and U3, are fixed. There is a one-to-one correspondence between P1-P2-M 
-	and U1-U2-U3 as far as direction of application. However, here, one only 
-	needs to activate the available boxes in order to constrain the 
-	corresponding displacement \acrshort{dof}. Figure \ref{fig:TAB4_SUPPORTS} 
-	shows a case where node 1 is assigned a roller support condition (U1 and U2 
-	fixed), whereas node 4 is assigned a clamp support condition (U1, U2, U3 
-	fixed).
-	\item \textbf{E}: Again, the table lists the nodes that have at least one 
-	displacement \acrshort{dof} fixed (see Fig. \ref{fig:TAB4_SUPPORTS}).
+	\item With regards to the section state determination phase, the element 
+	capability can be extended to address composite section behavior, such that 
+	of a 
+	reinforced concrete section. In addition, the constrained stress space 
+	return 
+	mapping algorithm shown for the von Mises criterion can be extended for 
+	other 
+	materials. Lastly modifying the relevant rate expressions to account for 
+	the 
+	effect of nonlinear kinematic hardening is also an additional feature that 
+	can be 
+	incorporated.
 	
-	\item \textbf{F}: With the \textit{Clear} button, the user can erase all 
-	input in this tab and start over.
-\end{itemize}
-
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB4/TAB4_marked.png}
-	\caption{The \textit{Boundary Conditions} tab with all essential parts 
-	marked in red cycles and enumerated.}
-	\label{fig:TAB4_marked}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB4/TAB4_LOADS.png}
-	\caption{Input example for external nodal loading specification.}
-	\label{fig:TAB4_LOADS}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB4/TAB4_SUPPORTS.png}
-	\caption{Input example for nodal support specification.}
-		\label{fig:TAB4_SUPPORTS}
-\end{figure}
-
-\section{The Analysis Controls tab}
-
-In the \textit{Analysis Controls} tab, the user can specify settings pertaining 
-to geometric and constitutive assumptions as well as modify the default 
-incremental analysis settings. An option to access advanced features is also 
-given, whereby one can select between different continuation solvers and, if 
-the Homotopy solver is chosen, the user can further specify details such as 
-prediction and correction schemes. The latter gives the option to use the 
-\acrshort{wls} predictor. 
-
-The basic layout of the tab is shown in Fig. \ref{fig:TAB5_marked}. The marked 
-components are:
-
-\begin{itemize}
-	\item \textbf{A}: The \textit{Analysis Controls} tab.
-	\item \textbf{B}: The option to enable geometrically-exact kinematic 
-	assumptions. When it is, the equilibrium solver used by default is 
-	Crisfield's cylindrical arc-length method. For this reason, the user can 
-	also specify a step-length, $DS$. 
-	\item \textbf{C}: This option pertains to the incorporation of material 
-	nonlinearities during the analysis. It is disabled by default. If enabled, 
-	the user can also specify the number of cross-section layers. This number 
-	is the same for all sections in the structure.
-	\item \textbf{D}: Option that pertains to the incorporation shear effects 
-	during the analysis. If enabled, which is the default setting, and the 
-	plastic analysis option is also enabled, then a quadratic distribution for 
-	the shear strains is assumed along the cross-section height.
-	\item \textbf{E}: Numerical quadrature options. The user can choose between 
-	Gauss-Legendre and Gauss-Lobatto schemes. The latter tends to be more 
-	accurate for frame structures since the end-points of the domain are 
-	included in the quadrature set.
-	\item \textbf{F}: The user sets the order of numerical quadrature. The 
-	minimum allowed is 1 and the maximum is 12.
-	\item \textbf{G}: Number of incremental steps to be used if the Load 
-	Control equilibrium solver is chosen. When the Cylindrical arc-length is 
-	used, this number simply divides the external load vector in order to get a 
-	base load.
-	\item \textbf{H}: Maximum number of steps. It pertains only to continuation 
-	solvers, such as Crisfield's Cylindrical arc-length and the Homotopy 
-	solver. The solver will stop 1) when the external load is surpassed or 2) 
-	when the maximum number of steps is reached.
-	\item \textbf{I}: The maximum number of correction iterations to be 
-	performed during an incremental step.
-	\item \textbf{J}: The tolerance used to test convergence in term of the 
-	Euclidian norm of the out-of-balance (residual) force vector.
-	\item \textbf{K}: Option to show the advanced analysis settings (see below).
-	\item \textbf{L}: Once the user has specified all analysis controls in tab, 
-	they have to register the input by clicking on the \textit{Register 
-	changes} button.
-	\item \textbf{M}: The user can reset all settings in this tab to their 
-	defaults by using the \textit{Reset to defaults} button.
-	\item \textbf{N}: Success/Error indicator for this tab.
-\end{itemize}
-
-We now discuss the advanced settings panels, shown in Fig. 
-\ref{fig:TAB5_marked_advanced}, which become visible only when the 
-\textit{Advanced settings}(\textbf{K}) option is enabled:
-
-\begin{itemize}
-	\item \textbf{O}: Drop-down list (see Fig. \ref{fig:TAB5_solvers}) where 
-	the user can select between three different solution schemes: 1) Load 
-	Control, 2) Crisfield's arc-length and 3) Homotopy solver. By default, 
-	Crisfield's solver is enabled. 
-	\item \textbf{P}: Numeric fields pertainig to a) minimum step-length, b) 
-	maximum step-length and c) step-length adjustment parameter. The first two 
-	limits ensure that the step-length will not become exceedingly small or 
-	large. The latter adjust the step-length based on how easily the solution 
-	process converged in the last step. It is advised that, in case of plastic 
-	analyses, parameter $a$ be set to values between 4 and 8. These three 
-	options are not relevant to the Load Control scheme. The values shown in 
-	Fig. \ref{fig:TAB5_marked_advanced} are the default ones.
-	\item \textbf{Q}: Option to force Crisfield's arc-length and the Homotopy 
-	solver to repeat the last incremental step until the reach load is within a 
-	specified tolerance of the externally applied load. If this option is not 
-	enabled the solver will stop when the base load mulitplied by the load 
-	factor simply exceed the external load vector.
-	\item \textbf{R}: Option that, when enabled, forces the Homotopy and 
-	Crisfield's arc-length solvers to repeat steps that failed to converge 
-	within the specified iteration counter, but with halved step-length. The 
-	same step will be repeated until convergence or the min$DS$ is reached.
-	\item \textbf{S}: The options in the \textit{Homotopy solver settings} 
-	become visible only when the Homotopy solver is selected in \textbf{O}. The 
-	Predictor option allows the user to choose between i) tangent differential 
-	predictor and ii) the \acrshort{wls} predictor. If the latter is chosen, an 
-	additional panel of options, specific to this precition scheme, appears.
-	\item \textit{T}: Here the user can specify the correction scheme to be 
-	used. The three options are: i) Normal Flow\cite{Watson:1989}, ii) 
-	Secant-Length\cite{Schwetlick87} and iii) Normal Plane\cite{Riks:1979}.
+	\item While parameterization with respect to a natural parameter is crucial 
+	for 
+	the \acrshort{pnlp} framework proposed in this work, examining artificial 
+	embeddings, especially in conjunction with appropriate \acrshort{nlp} 
+	solution 
+	methods, might also yield valuable results, especially if intermediate 
+	operating 
+	states of the structural system are of no particulary interest. Another 
+	important 
+	extension to the present \acrshort{npnlp} framework is bifurcation tracking 
+	and 
+	branch switching capabilities, which have not been investigated in this 
+	work.
 	
-	\item \textbf{U}: If the \textit{WLS predictor} is selected in \textbf{S}, 
-	the user can specify which variant of the \acrshort{wls} predictor to use. 
-	The available options are: i) \acrshort{wlse}, which is the default, ii) 
-	\acrshort{wlst} and iii) \acrshort{wlsit}.
-	\item \textbf{V}: This parameter determines the number of load-controlled 
-	steps to be performed before the homotopy solver using \acrshort{wls} 
-	predictor takes over. A number of simple Newton steps need to be performed 
-	in order to generate enough solutions available for the \acrshort{wls} 
-	scheme.
-	\item \textbf{m}: The degree of polynomial basis used in the \acrshort{wls} 
-	fitting. In this version, this remains constant throughout the analysis. 
-	Future versions will provide an option to automatically adjust it during 
-	the solution process.
-	\item \textbf{N0}: The number of previously converged points to consider 
-	for the \acrshort{wls} fitting. In this version, this remains constant 
-	throughout the analysis. Future versions will provide an option to 
-	automatically adjust  it during the solution process.
-	\item \textbf{beta}: The weight function parameter, with default value 0.2. 
-	If set to 1, then there is no weighting during the least squares fitting. 
-	Keep this parameter larger than zero.
-\end{itemize}
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB5/TAB5_marked.png}
-	\caption{The \textit{Analysis Controls} tab with all essential parts 
-		marked in red cycles and enumerated.}
-	\label{fig:TAB5_marked}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB5/TAB5_marked_advanced.png}
-	\caption{The \textit{Analysis Controls} tab with the advanced settings 
-	enabled.}
-	\label{fig:TAB5_marked_advanced}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB5/TAB5_solvers.png}
-	\caption{The \textit{Analysis Controls} tab with the advanced settings 
-	enabled.}
-	\label{fig:TAB5_solvers}
-\end{figure}
-
-\section{The Solve Job tab}
-
-This is the tab where input, if successfully registered, is submitted and the 
-structural problem is solved using the hybrid \acrshort{nlp} element. The 
-layout, shown in Fig. FIG, is fairly simple and relevant parts are:
-
-\begin{itemize}
-	\item \textbf{A}: The \textit{Solve Job} tab.
-	\item \textbf{B}: If all imput is successfully registered, then clicking on 
-	the \textit{Solve Job} button will call the hybrid \acrshort{nlp} solver. 
-	Otherwise, an error message will be shown and the user will be directed to 
-	the relevant tab to make corrections.
-	\item \textbf{C}: The text box where all analysis settings specified by the 
-	user are displayed once the job is submitted. When the analysis is over, 
-	the number of steps and total iterations is also displayed.
-\end{itemize}
-
-
-\begin{figure}[t]
-	\centering
-	\includegraphics[scale=0.5]{GUIpics/TAB6/TAB6_marked.png}
-	\caption{The \textit{Solve Job} tab.}
-	\label{fig:TAB6_marked}
-\end{figure}
-
-\clearpage
-
-\section{The Post-processing tab}
-
-In the \textit{Post-processing} tab the user can choose to plot i) load - 
-displacement equilibrium paths for selected \acrshort{dof}s and ii) the 
-deformation history of the structure. The tab layout is shown in Figs. 
-\ref{fig:TAB7_markedA}, \ref{fig:TAB7_markedB}, and tab layout, along with the 
-panels pertaining to \textit{Equilibrium path} and \textit{Deformation 
-history}, are discussing below:
-
-\begin{itemize}
-	\item \textbf{A}: The \textit{Post-processing} tab.
-	\item \textbf{B}: The \textit{Equilibrium path} panel.
-	\item \textbf{C}: The \textit{Deformation history} panel.
-	\item \textbf{D}: Here, the user selects a node from the drop-down list and 
-	a displacement \acrshort{dof} for the (horizontal) X-axis from the 
-	\textit{Nodal DOF} button group.
-	\item \textbf{E}: Here, in a similar fastion with \textbf{D}, the user 
-	selects a node from the drop-down list and a \acrshort{dof} from the button 
-	group to the right where an external load is specified with non-zero value. 
-	The force will be assigned to the (vertical) Y-axis.
-	
-	\item \textbf{F}: In these three text fields, the user specifies the labels 
-	for X and Y axis and the title for the plot.
-	
-	\item \textbf{G}: Here, the user specifies the color of the equilibrium 
-	curve. The color format follows native MATLAB rules.
-	\item \textbf{H}: In this (text) field, the user specifies the linestyle of 
-	the equilibrium curve. This, again, follows standard MATLAB formatting 
-	rules. For example, a dashed line is specified as "--", a line with cycle 
-	markers as "-o" etc.
-	
-	\item \textbf{I}: Once activated, the \textit{Plot equilibrium path} button 
-	plots the equilibrium path for the selected \acrshort{dof}s.
-	\item \textbf{J}: Once the \textit{Clear figure} button is activated, it 
-	clears the figure in the present tab.
-	\item \textbf{K}: Option to export the current plot. The user can specify a 
-	name in the text field \textit{Filename} and a filetype from the 
-	\textit{Extension} drop-down list. The available extensions are: ".pdf" and 
-	".fig", which exports the plot as a MATLAB figure.
-	\item \textbf{L}: The embedded axes for this tab where graphic objects are 
-	displayed.
+	\item Lastly, more research is required in order to better understand the 
+	impact 
+	of the polynomial order, number of previously converged points, the 
+	weighting 
+	approach and how these aspects of the \acrshort{wls} predictor interract 
+	with each 
+	other and with the underlying problem. Furthermore, it might prove valuable 
+	to 
+	explore the additional options that the \acrshort{wls} framework provides 
+	with 
+	respect to other aspects of predictor-corrector algorithms and, in 
+	particular, the 
+	step-length adjustment phase. Another direction could be the investigation 
+	on the 
+	influence of arc-length measurements on the quality of the local 
+	approximation.
 	
 \end{itemize}
 
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB7/TAB7_markedA.png}
-	\caption{The \textit{Post-processing} tab and the \textit{Deformation 
-			history} panel.}
-	\label{fig:TAB7_markedA}
-\end{figure}
-
-\begin{itemize}
-	\item \textbf{M}: The \textit{Animate} button in the \textit{Deformation 
-	history} panel (see Fig. \ref{fig:TAB7_markedB}) generates all the 
-	necessary data in order to produce a deformation history animation for the 
-	structure. This may take a while in case a plastic analysis or a small 
-	step-length general nonlinear analysis is performed. Once the deformation 
-	data have been generated, the \textit{Animate} button can be used again to 
-	produce the same animation but without repeating the costly post-processing 
-	calculations.
-	
-	\item \textbf{N}: Slider that can be used to contrast intermediate 
-	configuration states for the structure, compared to the last one, which is 
-	the last frame produced by the animation. The slider is not enabled when 
-	the deformation data have not been produced. 
-\end{itemize}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB7/TAB7_markedB.png}
-	\caption{The \textit{Solve Job} tab and the \textit{Deformation history}.}
-	\label{fig:TAB7_markedB}
-\end{figure}
-
-Plotting using these two utilities are shown in Figs. \ref{fig:TAB7_EQPLOT}, 
-\ref{fig:TAB7_slider}. Figure \ref{fig:TAB7_EQPLOT} shows the equilibrium path 
-for U2 at node 3 against P2 again at node 3. Figure \ref{fig:TAB7_slider} on 
-the other hand shows the final configuration of Lee's Frame along with the 
-configuration at step 12, which is retrieved using the slider utility.
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB7/TAB7_EQPLOT.png}
-	\caption{Equilibrium path plot.}
-	\label{fig:TAB7_EQPLOT}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/TAB7/TAB7_slider.png}
-	\caption{Deformation history plot of the structure.}
-	\label{fig:TAB7_slider}
-\end{figure}
-
-\section{The Input File}\label{INPUTFILE}
-
-We now discuss the structure of the input file and how the application parses 
-its contents. We highlight again that the input file contains all data required 
-to run an analysis for a particular structure: mesh, materials, cross-sections 
-and element-section assignments, boundary conditions and analysis controls.
-
-The input file is imported using the \textit{Load problem} found in the 
-\textit{Mesh} tab, which is highlighted in the figure below:
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{GUIpics/INPUT_FILE/IMAGE_1.png}
-	\caption{Load problem using the input file.}
-	\label{fig:IMAGE_1}
-\end{figure}
-
-The input file consists of seven sections or parts and are separated by ".,", 
-parsing the file from top to bottom. Each part pertains to a certain category 
-of inputs. The categories of inputs are listed below and they have to follow 
-this hierarchy:
-
-\begin{enumerate}
-	\item NODES
-	\item ELEMENTS
-	\item MATERIALS (6 inputs per material, repeat input for additional 
-	materials)
-	\item SECTIONS (7 inputs per section, repeat input for additional sections)
-	\item ELELEMT-SECTION ASSIGNMENTS
-	\item BOUNDARY CONDITIONS
-	\item ANALYSIS CONTROLS (25 inputs in total)
-\end{enumerate}
-
-The input file is loaded and converted into a MATLAB Cell data structure. 
-Inputs that require more than one numeric value, such as nodal coordinates for 
-a node, should be separated by a comma. The use of commas results in a cell 
-structure with columns, where a new column starts after a comma. Lines that 
-start with "$\#$" are treated as comments and are 
-ignored by the parser. In addition, different sections are assigned different 
-``widths", where width is to be understood as the number of columns the data 
-for a particular section span. For example, the NODE and ELEMENTS input 
-sections require two columns, therefore the parser will ignore anything written 
-after the second column for these two sections. For the MATERIALS or SECTIONS 
-parts, only one column suffices and therefore, comments in these parts can 
-start at the second column. For the BOUNDARY CONDITIONS part we need four 
-columns, that is, the node label and values at the three \acrshort{dof}s at 
-that node. Therefore, the parser will start ignoring input after the fourth 
-column in that section. 
-
-\subsection{The NODE input}
-
-An example of nodal coordinate input on the ASCII input file and how it is 
-stored into a MATLAB cell is shown in Fig. \ref{fig:NODE}. As can be seen from 
-that figure, the NODE part requires two numeric values per line, where a line 
-represents a node: a X and a Y coordinate, which correspond to the first and 
-second column respectively and are seperated by commas. When the nodal input is 
-finalized, the dot character followed by a comma, ".," should be added in the 
-next line. This tells the parses that nodal input is over and the ELEMENTS 
-input is next.
-
-
-\begin{figure}
-	\centering
-	\subfloat[ASCII file 
-	formatting.]{\includegraphics[width=0.5\textwidth]{GUIpics/INPUT_FILE/NODE_TXT.png}
-		\label{fig:NODEA}}
-	 
-	\subfloat[MATLAB Cell 
-	storage.]{\includegraphics[width=0.5\textwidth]{GUIpics/INPUT_FILE/NODE_MAT.png}}
-		
-	\caption{How NODE part is typeset in the ASCII file and how it is stored in 
-	a cell data structure by MATLAB.}
-	\label{fig:NODE}
-\end{figure}
-
-Note the way the first line is typeset in \ref{fig:NODEA}. It is crucial  that 
-the first line in the input file starts with the comment character $\#$ and 
-also includes at least 4 commas. This is done in order to ensure that MATLAB 
-will store all data in a cell with \textbf{at least for columns}.
-
-\subsection{The ELEMENTS input}
-Like the NODE part, the ELEMENT input takes two numeric values per line 
-(element), which correspond to nodes $I$ and $J$ that the element connects. The 
-relevant portion of the ASCII file is shown in Fig. \ref{fig:ELEMENTS}.
-
-\begin{figure}
-	\centering
-	\includegraphics{GUIpics/INPUT_FILE/ELEMENT_TXT.png}
-	\caption{How ELEMENTS part is typeset in the ASCII file.}
-	\label{fig:ELEMENTS}
-\end{figure}
-
-\subsection{The MATERIALS input}
-In this part the user defines a list of materials. Only one column is required 
-and 6 parameters define a material completely. Multiple materials can be 
-defined by repeating the sequence of MATERIALS input, as shown in Fig. 
-\ref{fig:MATS} for three materials. The order in which the material parameters 
-are defined needs to be the same as shown in pictures: 
-\begin{enumerate}
-	\item Material Name (String type)
-	\item Young's modulus (Numeric type)
-	\item Poisson's ratio (Numeric type)
-	\item Yield stress (Numeric type)
-	\item Isotropic Hardening modulus (Numeric type)
-	\item Kinematic Hardening modulus (Numeric type)
-\end{enumerate}
-
-\begin{figure}[t]
-	\centering
-	\includegraphics[scale=0.75]{GUIpics/INPUT_FILE/MATS_TXT.png}
-	\caption{How MATERIALS part is typeset in the ASCII file, with multiple 
-	materials defined.}
-	\label{fig:MATS}
-\end{figure}
-
-\subsection{The SECTIONS input}
-
-Sections are defined in a similar fashion to materials. One section is 
-completely determined by seven parameters which are detailed below and have to 
-be defined in the same order when they are typeset in the ASCII file:
-
-\begin{enumerate}
-	\item Section Name (String type)
-	\item Cross-section identifier (Numeric type, 1:Symmetric wide flange or 
-	2:Rectangular)
-	\item Cross-section height (Numeric type)
-	\item Cross-section width (Numeric type)
-	\item Web thickness (Numeric type)
-	\item Flange Thickness (Numeric type)
-	\item Assigned Material (String type)
-\end{enumerate}
-
-In the case where a Rectangular section is defined, the web and flange 
-thicknesses can be assigned dummy values. Again, multiple sections can be 
-defined by repeating the above sequence of parameters. An example where three 
-cross-section are define in the SECTIONS part is shown in Fig. \ref{fig:SECS} 
-below.
-
-\begin{figure}[t]
-	\centering
-	\includegraphics[scale=0.75]{GUIpics/INPUT_FILE/SECS_TXT.png}
-	\caption{How SECTIONS part is typeset in the ASCII file, with multiple 
-		cross-sections defined.}
-	\label{fig:SECS}
-\end{figure}
-
-
-\subsection{The ELEMENT-SECTION ASSIGNMENT input}
-
-Here the user specifies couples that encapsulate information regarding 
-cross-section assignment to elements. The first input in the couple, and by 
-extension elements in the first column, is the element label, which is 
-represented by an integer. The second input in the couple is the cross-section 
-name, which is stored in a variable of type "string". Evidently, the number of 
-rows dedicated to this input section should match the number of elements 
-defined previously. The input template for assigning sections to elements is 
-shown in Fig. \ref{fig:ELESECS} below.
-
-\begin{figure}[t]
-	\centering
-	\includegraphics[scale=0.75]{GUIpics/INPUT_FILE/ELESEC_TXT.png}
-	\caption{The ELEMENT-SECTION ASSIGNMENT input block.}
-	\label{fig:ELESECS}
-\end{figure}
-
-\subsection{The BOUNDARY CONDITION input}
-
-In this part, the user first specifies the loading boundary conditions and then 
-the displacement ones. The two blocks are separated by the dot/comma character 
-".," as is done for normal input sections. Four entries are required to fully 
-define a boundary condition: a node label, which is a positive integer, and 
-three values corresponding to the three \acrshort{dof}s at that node. Figure 
-\ref{fig:BCS} shows an example where Node 3 is assigned a vertical downward 
-load and rollers are assigned to Nodes 1 and 4.
-
-\begin{figure}[t]
-	\centering
-	\includegraphics[scale=0.75]{GUIpics/INPUT_FILE/BCS_TXT.png}
-	\caption{Defining load and displacement boundary conditions in the BOUNDARY 
-	CONDITIONS block for the ASCII input file.}
-	\label{fig:BCS}
-\end{figure}
-
-\begin{figure}[t]
-	\centering
-	\includegraphics[scale=0.75]{GUIpics/INPUT_FILE/ANALYSISCONTROLS_TXT.png}
-	\caption{The ANALYSIS CONTROLS template block for the ASCII input file.}
-	\label{fig:ANALYSIS}
-\end{figure}
-
-\subsection{The ANALYSIS CONTROLS input}
-The final input block pertains to the \textit{Analysis Controls} tab in the 
-GUI. 25 input parameters (rows) and only one column are required to fully 
-specify and register the analysis settings. However, some of these options are 
-read if the Homotopy solver is enabled. That leaves us with 18 ``core" 
-parameters for this input block. The last three, which pertain to step-length 
-adjustment parameter $a$ and minimum and maximum step-lengths, min$DS$ and 
-max$DS$ respectively, are optional. If they are not specified, they are 
-assigned the following default values:
-\begin{itemize}
-	\item $a=3.9$
-	\item min$DS = DS/4$
-	\item max$DS = 4DS$
-\end{itemize}
-
-\noindent where $DS$ is the standard step-length used by the arc-length and 
-homotopy solvers. The template for this input block is shown in Fig. 
-\ref{fig:ANALYSIS} below:
-
-\subsection{A Simple Problem Input File}
-
-Here we show the input file and the U2-P2 equilibrium path on the application 
-GUI for the elastoplastic cantilever problem analyzed in Chapter 
-\ref{chapter:CH2}, Section \ref{CANTIPROB}.
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.75]{GUIpics/INPUT_FILE/CANTIRES.png}
-	\caption{The equilibrium plot for the elastoplastic cantilever, using the 
-		GUI post-processor utility.}
-	\label{fig:RES}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.75]{GUIpics/INPUT_FILE/CANTI_TXT.png}
-	\caption{The input file for a simple cantilever problem.}
-	\label{fig:CANTINPUT}
-\end{figure}
 

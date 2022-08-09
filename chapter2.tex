@@ -104,7 +104,7 @@ cross-sections that completely describes their orientation. For the unit vectors
 of the local base $\bvec{e}_1,\ \bvec{e}_2,\ \bvec{e}_3$, we let $\bvec{e}_1$ be
 normal to the cross-section, but not necessarily tangent to the deformed
 centerline, and $\bvec{e}_2$ (and $\bvec{e}_3$) coincide with the cross-section
-principal axes of inertia, as shown in Fig. (\ref{fig:FIG1}).
+principal axes of inertia, as shown in Fig. \ref{fig:FIG1}.
 
 If $\bmat{R}$ is the rotation operator that rotates $\{\mathbf{E}\}$ to
 $\{\mathbf{e}\}$, then:
@@ -378,7 +378,7 @@ the expression for rotations $\phi_i$:
 	\caption{Integration of curvature shape functions.}%
 	\label{fig:fig2}%
 \end{figure*}
-\noindent with derivation of $T_{ij}$ illustrated in Fig.  (\ref{fig:fig2}).
+\noindent with derivation of $T_{ij}$ illustrated in Fig.  \ref{fig:fig2}.
 In matrix form, the above equation can be directly restated as a linear
 equality constraint set as:
 \begin{equation}
@@ -479,7 +479,7 @@ $\{\bvec{y}_i\}_{i=1}^n$, is defined as $\bvec{y}_i =\begin{bmatrix}
 	\bvec{q}_i & \phi_i
 \end{bmatrix}^T= \begin{bmatrix}
 	\epsilon_i & \gamma_i & \kappa_i & \phi_i
-\end{bmatrix}^T$. Moreover, and according to Fig. (\ref{fig:fig3}), we designate
+\end{bmatrix}^T$. Moreover, and according to Fig. \ref{fig:fig3}, we designate
 the local element edge degrees of freedom in vector form as
 $\bhat{d}_l = \bvec{d}(0)$ and $\bhat{d}_r = \bvec{d}(\ell)$. The element 
 displacement
@@ -1129,7 +1129,7 @@ Both elastic and inelastic geometrically nonlinear cases are
 considered. One
 element and six integration points are used, with the beam assumed to be
 inextensible, and the results are presented in Fig. 
-(\ref{fig:FIG5_cantielastic}). 
+\ref{fig:FIG5_cantielastic}. 
 The elastic
 case assumed $EI=10$, $L=1$ and shear-rigid response for comparison purposes 
 with available exact equilibrium paths\cite{bisshopp}, while the inelastic
@@ -1142,7 +1142,7 @@ For the material nonlinearity example, the yield stress is
 $\sigma_y=180\times10^7$ with a tangent-to-elastic modulus
 ratio $r=3\%$ and results are compared against Abaqus and OpenSees. 
 As can be seen in
-Fig. (\ref{fig:FIG5_cantielastic}), in both cases remarkable accuracy is 
+Fig. \ref{fig:FIG5_cantielastic}, in both cases remarkable accuracy is 
 achieved
 with just one element. Slight differences between the Abaqus quadrilateral 
 model and
@@ -1209,9 +1209,9 @@ respectively.
 	\label{table:table1}
 \end{table*}
 
-In Fig. (\ref{fig:FIG6_MQN}) we see how the moment and curvature
+In Fig. \ref{fig:FIG6_MQN} we see how the moment and curvature
 distributions change based on the beam deformations for both cases of Fig.
-(\ref{fig:FIG5_cantielastic}), captured at distinct
+\ref{fig:FIG5_cantielastic}, captured at distinct
 load levels. The moment values at the left fixed end are also reported on
 the graphs. The observed nonlinear distributions for the elastic case are due 
 to the
@@ -1245,7 +1245,7 @@ are then plotted against the length to thickness ratio $L/h$, where $\delta_B$
 and $\delta_T$ denote the Bernoulli and Timoshenko displacements respectively.
 Only one element is used with two integration points. The section dimensions
 are kept fixed, while the length $L$ of the beam varies. Results, along
-with used data are shown in Fig. (\ref{fig:FIG7_lock}), where it can be seen 
+with used data are shown in Fig. \ref{fig:FIG7_lock}, where it can be seen 
 that the
 proposed element exhibits locking-free behavior.
 
@@ -1289,9 +1289,9 @@ tangent-to-elastic modulus \ratio is $r=3.00\%$. In the elastic
 analysis, the
 frame members are also considered shear-rigid, in order to remain consistent
 to the initial assumptions in the original investigation\cite{Lee}.
-Results are shown in Fig. (\ref{fig:FIG8_LeesPinned}), with the colored
+Results are shown in Fig. \ref{fig:FIG8_LeesPinned}, with the colored
 markers corresponding to the deformed profiles of the same color shown in
-Fig. (\ref{fig:FIG9_LeesPinnedProfiles}).
+Fig. \ref{fig:FIG9_LeesPinnedProfiles}.
 
 \begin{figure*}[t]
 	\centering
@@ -1316,7 +1316,7 @@ Fig. (\ref{fig:FIG9_LeesPinnedProfiles}).
 	\label{fig:FIG9_LeesPinnedProfiles}%
 \end{figure*}
 \clearpage
-In Fig. (\ref{fig:FIG10_shearEffectLees}), results related to shear flexibility
+In Fig. \ref{fig:FIG10_shearEffectLees}, results related to shear flexibility
 effects on the frame's response are shown.  As previously mentioned, in 
 \cite{Lee}
 the members are assumed to be shear rigid, effectively adhering to the Bernoulli
@@ -1347,7 +1347,7 @@ the Abaqus plane stress model, which terminated prematurely.
 In contrast, twenty
 elements are necessary in OpenSees for comparable results. The geometric
 and material properties are the same as in Sec. (\ref{leespinned}) (see Fig.
-(\ref{fig:FIG8_LeesPinned})). For the inelastic analysis, five integration
+\ref{fig:FIG8_LeesPinned}). For the inelastic analysis, five integration
 points are sufficient, since the response is now fairly smooth overall,
 in comparison to the elastic case. All members
 are shear flexible in these examples, however the contribution of shear
@@ -1398,7 +1398,7 @@ chosen so their the slenderness remains in accordance with
 \cite{Santos1}. The yield stress is $\sigma_y=0.9\times 10^6$, and the
 tangent-to-elastic modulus ratio is $r=3\%$. The full frame
 characteristics and discretization are shown in Fig. 
-(\ref{fig:FIG13_santosStruct}).
+\ref{fig:FIG13_santosStruct}.
 
 \begin{figure}[t]
 	\centering
@@ -1412,10 +1412,10 @@ of integration points per element for the elastic and plastic analyses are
 seven and ten, respectively. For the OpenSees analyses, 36 and 48 elements
 were used in total for the elastic and inelastic analyses. In both cases,
 however, the OpenSees analyses stopped prematurely. Results are
-demonstrated in Fig. (\ref{fig:FIG14_SantosAn}), showing excellent agreement 
+demonstrated in Fig. \ref{fig:FIG14_SantosAn}, showing excellent agreement 
 with
 Abaqus results, while the relevant deformation profiles are
-provided in Fig. (\ref{fig:FIG15_SantosProfiles}).
+provided in Fig. \ref{fig:FIG15_SantosProfiles}.
 
 \begin{figure*}[b]
 	\centering

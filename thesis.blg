@@ -23,10 +23,6 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'field_info' (item size: 4) to 33280 items.
 Database file #1: thesis-blx.bib
 Database file #2: references.bib
-Repeated entry---line 1631 of file references.bib
- : @article{Schulz
- :                ,
-I'm skipping whatever remains of this entry
 Biblatex version: 3.18
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
@@ -71,4 +67,3 @@ warning$ -- 0
 while$ -- 18424
 width$ -- 0
 write$ -- 6008
-(There was 1 error message)

@@ -1015,7 +1015,7 @@ to values of parameter $\alpha$: $[0.10,\ 0.25,\ 0.40,\ 0.50]$.
 \subsection{Plastic Collapse of a Doubly Clamped Beam}
 
 In this example we investigate the collapse load of a doubly clamped beam, 
-shown in fig. \ref{fig:FIG21_CLAMPED_BEAM}, for two slenderness rations, 
+shown in Fig. \ref{fig:FIG21_CLAMPED_BEAM}, for two slenderness rations, 
 $L^{}/h$: $20$ and $4$, where $h$ is 
 the cross-section height. We conduct 
 analysis using both uncoupled and coupled, multiaxial, constitutive models at 
@@ -1303,10 +1303,10 @@ three-dimensional counterpart would be even more pronounced.
 \subsection{Elastoplastic Post-Buckling Behavior of Two-Beam Structure}
 
 This problem has been previously analyzed in \cite{Argyris1982,Ridha1971}. The 
-structure, shown in Fig.\ref{fig:FIG26_STRUCTURE}, enters its inelastic regime 
+structure, shown in Fig. \ref{fig:FIG26_STRUCTURE}, enters its inelastic regime 
 imediatelly after the buckling 
 load is reached, whereby point B starts moving inwards. In 
-Fig.\ref{fig:FIG26_COMPARISON} we compare the 
+Fig. \ref{fig:FIG26_COMPARISON} we compare the 
 results we get using just 3 hybrid elements and 5 Gauss-Lobatto points in each 
 element with Argyris et al.\cite{Argyris1982}. In addition, we include the 
 inelastic analysis, which demonstrates that plastification starts immediately 
@@ -1323,7 +1323,7 @@ is evident that use of the continuous tangent modulus slows down convergence
 significantly.
 
 As can be seen from 
-Fig.\ref{fig:FIG27_PLASTIC} for the inelastc analysis of 
+Fig. \ref{fig:FIG27_PLASTIC} for the inelastc analysis of 
 the thick member variation, the equilibrium paths corresponding to a coupled 
 and uncoupled constitutive law tend to diverge shortly after the start of 
 plastic deformation.
@@ -1382,7 +1382,7 @@ plastic deformation.
 
  The full post-buckling elastoplastic equilibrium curve for 
 the slender model is also provided for comparison. In 
-Fig.\ref{fig:FIG27_ELASTIC} the post-buckling response of both slender and 
+Fig. \ref{fig:FIG27_ELASTIC} the post-buckling response of both slender and 
 thick 
 models are illustrated. In the former, both uniaxial and multiaxial 
 constitutive models yield identical results, assuming an infinite yield stress.
@@ -1495,23 +1495,41 @@ the same yield stress and Young's modulus: $\sigma_y = 290$ MPa, $E = 210$ GPa,
 and the Poisson's ratio is set to $\nu= 0.3$. Both material and geometric 
 nonlinearity options are activated for the 
 analysis and perfect plasticity is assumed. In Fig. \ref{fig:FIG28_EQPATHS} we 
-show how the results using the 
-hybrid element compares with the nonlinear flexibility element in 
-OpenSees\cite{OpenSees} assuming both shear coupling and purely flexural 
-response during inelastic deformation. In the OpenSees analysis we employed the 
-section aggregator modelling option, whereby a uniaxial law between shear force 
-and shear strain of the centerline was defined and then incoroporated in a 
-fiber section but flexure and shear responses remain uncoupled. As can be seen 
-from \ref{fig:FIG28_EQPATHS}, the results we get with aggregator sections match 
-the response we get with the fully coupled hybrid element. Both predict a lower 
-collapse load than the purely flexural models, where, again, both OpenSees 
-simulation and the present hybrid formulation give almost identical response. 
+compare the results we get using the hybrid \acrshort{nlp} element with the 
+nonlinear flexibility element in 
+OpenSees\cite{OpenSees}. In OpenSees we used two different modelling approaches 
+with regards to cross-section constitutive behavior: 1) a purely flexural fiber 
+section and 2) a section aggregator object, whereby a uniaxial shear 
+force-strain law is overloaded on an existing fiber section. In the latter 
+approach, the flexural and shear effects remain uncoupled. For the analyses 
+using the proposed element, we again adopted 2 different approaches. In the 
+first approach we assumed an uncoupled section constitutive law, whereby 
+axial-flexural effects are determined by integrating the relevant equations 
+over the section fibers while the shear effects are assumed concentrated in the 
+centerline. The underlying assumption in this approach is that the shear 
+strains are uniform. For the second approach we assumed full coupling at the 
+section fibers utilizing the J2 constitutive law and computationally solving 
+the stress update problem using the return mapping algorithm proposed in this 
+chapter. As can be seen 
+from \ref{fig:FIG28_EQPATHS}, the results we get with aggregator sections in 
+OpenSees are, expectably, identical with the uncoupled constitutive model when 
+using the \acrshort{nlp} element. Both predict a higher  
+collapse load than the fully coupled \acrshort{nlp}, which is also an expected 
+result. The purely flexural model in OpenSees gives an even slightly higher 
+collapse load than the uncoupled models. It is clear that, in the presence of 
+shearing components, such as the effective shear wall in this example, a purely 
+flexural model will result in non-conservative estimates even in simple 
+push-over analyses.  
+
 To 
 achieve convergent results, the analyses with OpenSees required 90 elements 
-with eight Gauss-Lobatto points per element. Each member besides the shear 
-links was discretized into 4 nonlinear beam-column elements from OpenSees 
-element library. In contrast, in our hybrid code we used one hybrid element per 
-member, 27 elements in total, and five Gauss-Lobatto quadrature points per 
+with six Gauss-Lobatto points per element for the section aggregator model and 
+ten points for the purely flexural model. Each member besides the shear 
+links was discretized into 4 nonlinear beam-column elements. In contrast, for 
+the analyses using the element proposed in Chapter 2 only one hybrid element 
+per 
+member was required, resulting in 27 elements in total, and five Gauss-Lobatto 
+quadrature points per 
 element. Both models account for second order effects under the presence of 
 gravity loads.
 

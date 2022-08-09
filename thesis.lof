@@ -32,39 +32,39 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic profiles}}}{46}{subfigure.15.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inelastic profiles}}}{46}{subfigure.15.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Feasible space and yield locus for the $J_2$ model. At the boundary of the ellipse, $\sqrt {3J_2}=q$.\relax }}{54}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Points of interest on yield surface and direction of load increments.\relax }}{63}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Iso-error maps for a perfectly plastic material.\relax }}{63}{figure.caption.30}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Point A}}}{63}{subfigure.3.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Point B}}}{63}{subfigure.3.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Point C}}}{63}{subfigure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Iso-error maps for combined linear isotropic and kinematic hardening.\relax }}{64}{figure.caption.31}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Point A}}}{64}{subfigure.4.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Point B}}}{64}{subfigure.4.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Point C}}}{64}{subfigure.4.3}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces The four different strain histories imposed, with the unstresses configuration as initial point.\relax }}{65}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Geometry, initial and final configuration of clamped beam, along with cross-section dimensions.\relax }}{68}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Load-deflection plots for different slenderness ratios. Influence of quadrature type and number of points.\relax }}{69}{figure.caption.38}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$L^{}/h=20$}}}{69}{subfigure.7.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$L^{}/h=4$}}}{69}{subfigure.7.2}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Case $L^{}/h=4$. Spread of Plastic Zone (P.Z.) and stress distribution for von Mises, axial and shear stress at three different load levels.\relax }}{69}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Geometry of the specimen and displacement-controlled loading history.\relax }}{71}{figure.caption.40}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Structure.}}}{71}{subfigure.9.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Displacement-controlled loading history.}}}{71}{subfigure.9.2}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Experimental and numerical results for the specimen.\relax }}{72}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Performance of the three different return-mapping algorithms applied for the section state determination of the shear link under the imposed displacement history.\relax }}{73}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Geometry and loading of two-beam structure. Comparison of load vs deflection curves for different cases.\relax }}{74}{figure.caption.45}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Structure.}}}{74}{subfigure.12.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Load vs deflection at point B.}}}{74}{subfigure.12.2}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Influence of slenderness and constitutive model on the response for elastic and elastoplastic behavior.\relax }}{75}{figure.caption.46}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic.}}}{75}{subfigure.13.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Plastic.}}}{75}{subfigure.13.2}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Convergence rates for two representative steps when using the consistent and continuous tangents at fibers.\relax }}{75}{figure.caption.47}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Step 15.}}}{75}{subfigure.14.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Step 25.}}}{75}{subfigure.14.2}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Geometry of the steel frame and \ref {fig:FIG28_EQPATHS} response curves for three different models.\relax }}{77}{figure.caption.51}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Frame structure.}}}{77}{subfigure.15.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equilibrium paths.}}}{77}{subfigure.15.2}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Feasible space and yield locus for the $J_2$ model. At the boundary of the ellipse, $\sqrt {3J_2}=q$.\relax }}{53}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Points of interest on yield surface and direction of load increments.\relax }}{62}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Iso-error maps for a perfectly plastic material.\relax }}{62}{figure.caption.30}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Point A}}}{62}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Point B}}}{62}{subfigure.3.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Point C}}}{62}{subfigure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Iso-error maps for combined linear isotropic and kinematic hardening.\relax }}{63}{figure.caption.31}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Point A}}}{63}{subfigure.4.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Point B}}}{63}{subfigure.4.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Point C}}}{63}{subfigure.4.3}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The four different strain histories imposed, with the unstresses configuration as initial point.\relax }}{64}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Geometry, initial and final configuration of clamped beam, along with cross-section dimensions.\relax }}{67}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Load-deflection plots for different slenderness ratios. Influence of quadrature type and number of points.\relax }}{68}{figure.caption.38}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$L^{}/h=20$}}}{68}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$L^{}/h=4$}}}{68}{subfigure.7.2}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Case $L^{}/h=4$. Spread of Plastic Zone (P.Z.) and stress distribution for von Mises, axial and shear stress at three different load levels.\relax }}{68}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Geometry of the specimen and displacement-controlled loading history.\relax }}{70}{figure.caption.40}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Structure.}}}{70}{subfigure.9.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Displacement-controlled loading history.}}}{70}{subfigure.9.2}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Experimental and numerical results for the specimen.\relax }}{71}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Performance of the three different return-mapping algorithms applied for the section state determination of the shear link under the imposed displacement history.\relax }}{72}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Geometry and loading of two-beam structure. Comparison of load vs deflection curves for different cases.\relax }}{73}{figure.caption.45}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Structure.}}}{73}{subfigure.12.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Load vs deflection at point B.}}}{73}{subfigure.12.2}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Influence of slenderness and constitutive model on the response for elastic and elastoplastic behavior.\relax }}{74}{figure.caption.46}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Elastic.}}}{74}{subfigure.13.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Plastic.}}}{74}{subfigure.13.2}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Convergence rates for two representative steps when using the consistent and continuous tangents at fibers.\relax }}{74}{figure.caption.47}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Step 15.}}}{74}{subfigure.14.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Step 25.}}}{74}{subfigure.14.2}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Geometry of the steel frame and \ref {fig:FIG28_EQPATHS} response curves for three different models.\relax }}{76}{figure.caption.51}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Frame structure.}}}{76}{subfigure.15.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equilibrium paths.}}}{76}{subfigure.15.2}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces A homotopy path connecting the trivial solution of $G=0$ to a root of $F=0$ for a single scalar equation dependent on $x$.\relax }}{82}{figure.caption.52}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Homotopy paths for \textbf {(a)} $f(x)=x^3-6x^2+21x-26=0$, with starting point $x_0=0$ and convergence at root $x_1=2$ when $t=1$ and \textbf {(b)} truss, with initial state the undeformed configuration($x_0=0$) and target load level $P=0.03$.\relax }}{83}{figure.caption.53}%
@@ -85,48 +85,48 @@
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Solution path of \ref {eq:HomotopyOneP3A}.\relax }}{131}{figure.caption.74}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces \textbf {(a)} Shallow arch structure and loading, \textbf {(b)} equilibrium path.\relax }}{133}{figure.caption.75}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces The \textit {Mesh} tab with relevant facilities A-M marked in red circles and enumerated with capital english letters.\relax }}{140}{figure.caption.77}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Error when attempting to add a node with coordinates already defined for an existing node.\relax }}{140}{figure.caption.78}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces A .txt file with the required format for nodal input. First column is X coordinate, second is Y coordinate. The $k$-th row represents Node $k$.\relax }}{141}{figure.caption.79}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces A .txt file with the required format for element input. First column is start node $i$, second is end node $j$. The $k$-th row represents Element $k$.\relax }}{141}{figure.caption.80}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces The \textit {Mesh} tab with a completed mesh.\relax }}{142}{figure.caption.81}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces The \textit {Materials} tab with relevant facilities A-M marked in red circles and enumerated with capital english letters.\relax }}{144}{figure.caption.82}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Multiple materials defined without a specified material name.\relax }}{144}{figure.caption.83}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Potting of uniaxial stress-strain law of material \textbf {MAT}\_1.\relax }}{145}{figure.caption.84}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Available predefined materials from the \textit {Standard materials} drop-down list.\relax }}{145}{figure.caption.85}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Error when trying to add a standard material that was already added previously.\relax }}{145}{figure.caption.86}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces The \textit {Sections} tab with all essential parts marked in red cycles and enumerated.\relax }}{147}{figure.caption.87}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Typical section definition process. A previously defined material \textbf {MAT\_1} is assigned to section \textbf {Rectangular\_Section}.\relax }}{148}{figure.caption.88}%
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Successful section assignment for \textbf {Element 1}.\relax }}{148}{figure.caption.89}%
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Indication that \textbf {Element 2} still needs to be assigned a cross-section.\relax }}{149}{figure.caption.90}%
-\contentsline {figure}{\numberline {6.15}{\ignorespaces The \textit {Boundary Conditions} tab with all essential parts marked in red cycles and enumerated.\relax }}{150}{figure.caption.91}%
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Input example for external nodal loading specification.\relax }}{150}{figure.caption.92}%
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Input example for nodal support specification.\relax }}{151}{figure.caption.93}%
-\contentsline {figure}{\numberline {6.18}{\ignorespaces The \textit {Analysis Controls} tab with all essential parts marked in red cycles and enumerated.\relax }}{154}{figure.caption.94}%
-\contentsline {figure}{\numberline {6.19}{\ignorespaces The \textit {Analysis Controls} tab with the advanced settings enabled.\relax }}{155}{figure.caption.95}%
-\contentsline {figure}{\numberline {6.20}{\ignorespaces The \textit {Analysis Controls} tab with the advanced settings enabled.\relax }}{155}{figure.caption.96}%
-\contentsline {figure}{\numberline {6.21}{\ignorespaces The \textit {Solve Job} tab.\relax }}{156}{figure.caption.97}%
-\contentsline {figure}{\numberline {6.22}{\ignorespaces The \textit {Post-processing} tab and the \textit {Deformation history} panel.\relax }}{158}{figure.caption.98}%
-\contentsline {figure}{\numberline {6.23}{\ignorespaces The \textit {Solve Job} tab and the \textit {Deformation history}.\relax }}{159}{figure.caption.99}%
-\contentsline {figure}{\numberline {6.24}{\ignorespaces Equilibrium path plot.\relax }}{160}{figure.caption.100}%
-\contentsline {figure}{\numberline {6.25}{\ignorespaces Deformation history plot of the structure.\relax }}{160}{figure.caption.101}%
-\contentsline {figure}{\numberline {6.26}{\ignorespaces Load problem using the input file.\relax }}{161}{figure.caption.102}%
-\contentsline {figure}{\numberline {6.27}{\ignorespaces How NODE part is typeset in the ASCII file and how it is stored in a cell data structure by MATLAB.\relax }}{163}{figure.caption.103}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ASCII file formatting.}}}{163}{subfigure.27.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MATLAB Cell storage.}}}{163}{subfigure.27.2}%
-\contentsline {figure}{\numberline {6.28}{\ignorespaces How ELEMENTS part is typeset in the ASCII file.\relax }}{163}{figure.caption.104}%
-\contentsline {figure}{\numberline {6.29}{\ignorespaces How MATERIALS part is typeset in the ASCII file, with multiple materials defined.\relax }}{164}{figure.caption.105}%
-\contentsline {figure}{\numberline {6.30}{\ignorespaces How SECTIONS part is typeset in the ASCII file, with multiple cross-sections defined.\relax }}{165}{figure.caption.106}%
-\contentsline {figure}{\numberline {6.31}{\ignorespaces The ELEMENT-SECTION ASSIGNMENT input block.\relax }}{166}{figure.caption.107}%
-\contentsline {figure}{\numberline {6.32}{\ignorespaces Defining load and displacement boundary conditions in the BOUNDARY CONDITIONS block for the ASCII input file.\relax }}{166}{figure.caption.108}%
-\contentsline {figure}{\numberline {6.33}{\ignorespaces The ANALYSIS CONTROLS template block for the ASCII input file.\relax }}{167}{figure.caption.109}%
-\contentsline {figure}{\numberline {6.34}{\ignorespaces The equilibrium plot for the elastoplastic cantilever, using the GUI post-processor utility.\relax }}{168}{figure.caption.110}%
-\contentsline {figure}{\numberline {6.35}{\ignorespaces The input file for a simple cantilever problem.\relax }}{169}{figure.caption.111}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Two correction algorithms: Normal Flow and Normal Plane.\relax }}{161}{figure.caption.77}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {F.1}{\ignorespaces Two correction algorithms: Normal Flow and Normal Plane.\relax }}{195}{figure.caption.112}%
+\contentsline {figure}{\numberline {G.1}{\ignorespaces The \textit {Mesh} tab with relevant facilities A-M marked in red circles and enumerated with capital english letters.\relax }}{165}{figure.caption.78}%
+\contentsline {figure}{\numberline {G.2}{\ignorespaces Error when attempting to add a node with coordinates already defined for an existing node.\relax }}{165}{figure.caption.79}%
+\contentsline {figure}{\numberline {G.3}{\ignorespaces A .txt file with the required format for nodal input. First column is X coordinate, second is Y coordinate. The $k$-th row represents Node $k$.\relax }}{166}{figure.caption.80}%
+\contentsline {figure}{\numberline {G.4}{\ignorespaces A .txt file with the required format for element input. First column is start node $i$, second is end node $j$. The $k$-th row represents Element $k$.\relax }}{166}{figure.caption.81}%
+\contentsline {figure}{\numberline {G.5}{\ignorespaces The \textit {Mesh} tab with a completed mesh.\relax }}{167}{figure.caption.82}%
+\contentsline {figure}{\numberline {G.6}{\ignorespaces The \textit {Materials} tab with relevant facilities A-M marked in red circles and enumerated with capital english letters.\relax }}{169}{figure.caption.83}%
+\contentsline {figure}{\numberline {G.7}{\ignorespaces Multiple materials defined without a specified material name.\relax }}{169}{figure.caption.84}%
+\contentsline {figure}{\numberline {G.8}{\ignorespaces Potting of uniaxial stress-strain law of material \textbf {MAT}\_1.\relax }}{170}{figure.caption.85}%
+\contentsline {figure}{\numberline {G.9}{\ignorespaces Available predefined materials from the \textit {Standard materials} drop-down list.\relax }}{170}{figure.caption.86}%
+\contentsline {figure}{\numberline {G.10}{\ignorespaces Error when trying to add a standard material that was already added previously.\relax }}{170}{figure.caption.87}%
+\contentsline {figure}{\numberline {G.11}{\ignorespaces The \textit {Sections} tab with all essential parts marked in red cycles and enumerated.\relax }}{172}{figure.caption.88}%
+\contentsline {figure}{\numberline {G.12}{\ignorespaces Typical section definition process. A previously defined material \textbf {MAT\_1} is assigned to section \textbf {Rectangular\_Section}.\relax }}{173}{figure.caption.89}%
+\contentsline {figure}{\numberline {G.13}{\ignorespaces Successful section assignment for \textbf {Element 1}.\relax }}{173}{figure.caption.90}%
+\contentsline {figure}{\numberline {G.14}{\ignorespaces Indication that \textbf {Element 2} still needs to be assigned a cross-section.\relax }}{174}{figure.caption.91}%
+\contentsline {figure}{\numberline {G.15}{\ignorespaces The \textit {Boundary Conditions} tab with all essential parts marked in red cycles and enumerated.\relax }}{175}{figure.caption.92}%
+\contentsline {figure}{\numberline {G.16}{\ignorespaces Input example for external nodal loading specification.\relax }}{175}{figure.caption.93}%
+\contentsline {figure}{\numberline {G.17}{\ignorespaces Input example for nodal support specification.\relax }}{176}{figure.caption.94}%
+\contentsline {figure}{\numberline {G.18}{\ignorespaces The \textit {Analysis Controls} tab with all essential parts marked in red cycles and enumerated.\relax }}{179}{figure.caption.95}%
+\contentsline {figure}{\numberline {G.19}{\ignorespaces The \textit {Analysis Controls} tab with the advanced settings enabled.\relax }}{180}{figure.caption.96}%
+\contentsline {figure}{\numberline {G.20}{\ignorespaces The \textit {Analysis Controls} tab with the advanced settings enabled.\relax }}{180}{figure.caption.97}%
+\contentsline {figure}{\numberline {G.21}{\ignorespaces The \textit {Solve Job} tab.\relax }}{181}{figure.caption.98}%
+\contentsline {figure}{\numberline {G.22}{\ignorespaces The \textit {Post-processing} tab and the \textit {Deformation history} panel.\relax }}{183}{figure.caption.99}%
+\contentsline {figure}{\numberline {G.23}{\ignorespaces The \textit {Solve Job} tab and the \textit {Deformation history}.\relax }}{184}{figure.caption.100}%
+\contentsline {figure}{\numberline {G.24}{\ignorespaces Equilibrium path plot.\relax }}{185}{figure.caption.101}%
+\contentsline {figure}{\numberline {G.25}{\ignorespaces Deformation history plot of the structure.\relax }}{185}{figure.caption.102}%
+\contentsline {figure}{\numberline {G.26}{\ignorespaces Load problem using the input file.\relax }}{186}{figure.caption.103}%
+\contentsline {figure}{\numberline {G.27}{\ignorespaces How NODE part is typeset in the ASCII file and how it is stored in a cell data structure by MATLAB.\relax }}{188}{figure.caption.104}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ASCII file formatting.}}}{188}{subfigure.27.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MATLAB Cell storage.}}}{188}{subfigure.27.2}%
+\contentsline {figure}{\numberline {G.28}{\ignorespaces How ELEMENTS part is typeset in the ASCII file.\relax }}{188}{figure.caption.105}%
+\contentsline {figure}{\numberline {G.29}{\ignorespaces How MATERIALS part is typeset in the ASCII file, with multiple materials defined.\relax }}{189}{figure.caption.106}%
+\contentsline {figure}{\numberline {G.30}{\ignorespaces How SECTIONS part is typeset in the ASCII file, with multiple cross-sections defined.\relax }}{190}{figure.caption.107}%
+\contentsline {figure}{\numberline {G.31}{\ignorespaces The ELEMENT-SECTION ASSIGNMENT input block.\relax }}{191}{figure.caption.108}%
+\contentsline {figure}{\numberline {G.32}{\ignorespaces Defining load and displacement boundary conditions in the BOUNDARY CONDITIONS block for the ASCII input file.\relax }}{191}{figure.caption.109}%
+\contentsline {figure}{\numberline {G.33}{\ignorespaces The ANALYSIS CONTROLS template block for the ASCII input file.\relax }}{192}{figure.caption.110}%
+\contentsline {figure}{\numberline {G.34}{\ignorespaces The equilibrium plot for the elastoplastic cantilever, using the GUI post-processor utility.\relax }}{193}{figure.caption.111}%
+\contentsline {figure}{\numberline {G.35}{\ignorespaces The input file for a simple cantilever problem.\relax }}{194}{figure.caption.112}%

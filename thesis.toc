@@ -1,8 +1,8 @@
-\contentsline {chapter}{List of Figures}{x}{chapter*.1}%
-\contentsline {chapter}{List of Tables}{xv}{chapter*.2}%
-\contentsline {chapter}{Nomenclature}{xvi}{chapter*.3}%
-\contentsline {chapter}{Acronyms}{xxi}{section*.5}%
-\contentsline {chapter}{Acknowledgements}{xxiii}{chapter*.6}%
+\contentsline {chapter}{List of Figures}{ix}{chapter*.1}%
+\contentsline {chapter}{List of Tables}{xiv}{chapter*.2}%
+\contentsline {chapter}{Nomenclature}{xv}{chapter*.3}%
+\contentsline {chapter}{Acronyms}{xx}{section*.5}%
+\contentsline {chapter}{Acknowledgements}{xxii}{chapter*.6}%
 \contentsline {chapter}{\numberline {1}Introduction and Background}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Literature Review}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Beam Element Technologies}{1}{subsection.1.1.1}%
@@ -36,24 +36,24 @@
 \contentsline {subsubsection}{Frame with fixed supports}{43}{subsubsection*.22}%
 \contentsline {subsection}{\numberline {2.5.3}Two-Storey Frame}{44}{subsection.2.5.3}%
 \contentsline {section}{\numberline {2.6}Summary}{46}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Material Constitutive Model}{50}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduction}{50}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Three-dimensional Constitutive Model}{51}{section.3.2}%
-\contentsline {section}{\numberline {3.3}The $J_2$ Formulation for Fiber Stress State}{53}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Mapping on the Constrained Stress Space}{53}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Continuous Tangent Modulus}{56}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Implicit Integration of Rate Equations}{57}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Elastic Predictor - Plastic Corrector algorithm}{58}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Consistent Tangent Modulus}{59}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Consistent Section Stiffness}{60}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Numerical Examples}{62}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Accuracy of the Proposed Algorithm}{62}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Performance Against Non-Monotonic Strain Histories}{64}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Plastic Collapse of a Doubly Clamped Beam}{65}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Cyclic Loading of Shear Link}{70}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Elastoplastic Post-Buckling Behavior of Two-Beam Structure}{72}{subsection.3.5.5}%
-\contentsline {subsection}{\numberline {3.5.6}Three Story Frame With Shear Links}{76}{subsection.3.5.6}%
-\contentsline {section}{\numberline {3.6}Summary}{77}{section.3.6}%
+\contentsline {chapter}{\numberline {3}Material Constitutive Model}{49}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{49}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Three-dimensional Constitutive Model}{50}{section.3.2}%
+\contentsline {section}{\numberline {3.3}The $J_2$ Formulation for Fiber Stress State}{52}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Mapping on the Constrained Stress Space}{52}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Continuous Tangent Modulus}{55}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Implicit Integration of Rate Equations}{56}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Elastic Predictor - Plastic Corrector algorithm}{57}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Consistent Tangent Modulus}{58}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Consistent Section Stiffness}{59}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Numerical Examples}{61}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Accuracy of the Proposed Algorithm}{61}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Performance Against Non-Monotonic Strain Histories}{63}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Plastic Collapse of a Doubly Clamped Beam}{64}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Cyclic Loading of Shear Link}{69}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Elastoplastic Post-Buckling Behavior of Two-Beam Structure}{71}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}Three Story Frame With Shear Links}{75}{subsection.3.5.6}%
+\contentsline {section}{\numberline {3.6}Summary}{76}{section.3.6}%
 \contentsline {chapter}{\numberline {4}Naturally Parameterized NLP framework}{79}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduction}{79}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Homotopy Continuation}{81}{section.4.2}%
@@ -87,33 +87,17 @@
 \contentsline {subsection}{\numberline {5.5.3}Numerical Example 3}{131}{subsection.5.5.3}%
 \contentsline {subsection}{\numberline {5.5.4}Numerical Example 4}{132}{subsection.5.5.4}%
 \contentsline {section}{\numberline {5.6}Summary}{135}{section.5.6}%
-\contentsline {chapter}{\numberline {6}A Simple GUI for the Hybrid NLP Element}{137}{chapter.6}%
-\contentsline {section}{\numberline {6.1}The Mesh Tab}{137}{section.6.1}%
-\contentsline {section}{\numberline {6.2}The Materials Tab}{139}{section.6.2}%
-\contentsline {section}{\numberline {6.3}The Sections tab}{143}{section.6.3}%
-\contentsline {section}{\numberline {6.4}The Boundary Conditions tab}{149}{section.6.4}%
-\contentsline {section}{\numberline {6.5}The Analysis Controls tab}{151}{section.6.5}%
-\contentsline {section}{\numberline {6.6}The Solve Job tab}{156}{section.6.6}%
-\contentsline {section}{\numberline {6.7}The Post-processing tab}{157}{section.6.7}%
-\contentsline {section}{\numberline {6.8}The Input File}{159}{section.6.8}%
-\contentsline {subsection}{\numberline {6.8.1}The NODE input}{162}{subsection.6.8.1}%
-\contentsline {subsection}{\numberline {6.8.2}The ELEMENTS input}{162}{subsection.6.8.2}%
-\contentsline {subsection}{\numberline {6.8.3}The MATERIALS input}{163}{subsection.6.8.3}%
-\contentsline {subsection}{\numberline {6.8.4}The SECTIONS input}{164}{subsection.6.8.4}%
-\contentsline {subsection}{\numberline {6.8.5}The ELEMENT-SECTION ASSIGNMENT input}{165}{subsection.6.8.5}%
-\contentsline {subsection}{\numberline {6.8.6}The BOUNDARY CONDITION input}{166}{subsection.6.8.6}%
-\contentsline {subsection}{\numberline {6.8.7}The ANALYSIS CONTROLS input}{167}{subsection.6.8.7}%
-\contentsline {subsection}{\numberline {6.8.8}A Simple Problem Input File}{168}{subsection.6.8.8}%
-\contentsline {chapter}{\numberline {7}Conclusions and Suggestions for Future Research}{171}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Research Summary and Conclusions}{171}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Limitations}{171}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Future Directions}{172}{section.7.3}%
+\contentsline {chapter}{\numberline {6}Conclusions and Suggestions for Future Research}{137}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Research Summary and Conclusions}{137}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Limitations}{137}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Future Directions}{138}{section.6.3}%
 \renewcommand {\cftchappresnum }{Appendix }
 \renewcommand {\cftchapnumwidth }{6em}
-\contentsline {chapter}{\numberline {A}Notation}{177}{appendix.1.A}%
-\contentsline {chapter}{\numberline {B}Gradient of Hybrid NLP Lagrangian}{181}{appendix.1.B}%
-\contentsline {chapter}{\numberline {C}Hessian of Hybrid NLP Lagrangian}{186}{appendix.1.C}%
-\contentsline {chapter}{\numberline {D}Iterative Corrections for Plastic Parameter}{189}{appendix.1.D}%
-\contentsline {chapter}{\numberline {E}Analytical Derivation of Consistent Tangent Modulus}{191}{appendix.1.E}%
-\contentsline {chapter}{\numberline {F}Numerical Pathfollowing}{193}{appendix.1.F}%
-\contentsline {chapter}{References}{195}{figure.caption.112}%
+\contentsline {chapter}{\numberline {A}Notation}{143}{appendix.1.A}%
+\contentsline {chapter}{\numberline {B}Gradient of Hybrid NLP Lagrangian}{147}{appendix.1.B}%
+\contentsline {chapter}{\numberline {C}Hessian of Hybrid NLP Lagrangian}{152}{appendix.1.C}%
+\contentsline {chapter}{\numberline {D}Iterative Corrections for Plastic Parameter}{155}{appendix.1.D}%
+\contentsline {chapter}{\numberline {E}Analytical Derivation of Consistent Tangent Modulus}{157}{appendix.1.E}%
+\contentsline {chapter}{\numberline {F}Numerical Pathfollowing}{159}{appendix.1.F}%
+\contentsline {chapter}{\numberline {G}A Simple GUI for the Hybrid NLP Element}{162}{appendix.1.G}%
+\contentsline {chapter}{References}{193}{figure.caption.112}%
