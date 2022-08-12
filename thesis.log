@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.15)  9 AUG 2022 18:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.15)  12 AUG 2022 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2100,43 +2100,43 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.
 1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.133 \end{equation}
+l.132 \end{equation}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.
 2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.133 \end{equation}
+l.132 \end{equation}
                     ]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.
 4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.149 \begin{equation}
+l.148 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.
 4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.149 \begin{equation}
+l.148 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.
 4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.149 \begin{equation}
+l.148 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.
 4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.149 \begin{equation}
+l.148 \begin{equation}
                        [52
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.
 3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.185 I
+l.184 I
        n the von Mises $J_2$ framework, the hydrostatic pressure cannot caus...
 ]
 
@@ -2146,22 +2146,22 @@ ion: found PDF version <1.7>, but at most version <1.5> allowed
 File: ./figures//FIG16_YIELDLOCUS.pdf Graphic file (type pdf)
 <use ./figures//FIG16_YIELDLOCUS.pdf>
 Package pdftex.def Info: ./figures//FIG16_YIELDLOCUS.pdf  used on input line 20
-2.
+1.
 (pdftex.def)             Requested size: 265.79335pt x 211.18927pt.
 [53 <./figures//FIG16_YIELDLOCUS.pdf>] [54]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.3.
 5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.306 	\end{alignat}
+l.315 	\end{alignat}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.3.
 6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.306 	\end{alignat}
+l.315 	\end{alignat}
                      [55] [56]
-Overfull \hbox (5.8905pt too wide) in paragraph at lines 428--431
+Overfull \hbox (5.8905pt too wide) in paragraph at lines 439--442
 \OT1/ptm/m/n/12 It is con-ve-nient to re-cast sys-tem ([]3.18[]) purely in term
 s of stress by uti-liz-ing ([]3.19[]),([]3.18a[]),([]3.18c[]): 
  []
@@ -2171,45 +2171,45 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.483 
+l.495 
       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.483 
+l.495 
       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.483 
+l.495 
       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.483 
+l.495 
       ]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.496 		\end{align}
+l.508 		\end{align}
                    
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.496 		\end{align}
+l.508 		\end{align}
                    
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.496 		\end{align}
+l.508 		\end{align}
                    
-Overfull \hbox (15.24069pt too wide) in paragraph at lines 501--502
+Overfull \hbox (15.24069pt too wide) in paragraph at lines 513--514
 []$[]$ 
  []
 
@@ -2218,201 +2218,201 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.515 		\end{align}
+l.527 		\end{align}
                    
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.515 		\end{align}
+l.527 		\end{align}
                    
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.515 		\end{align}
-                   
+l.527 		\end{align}
+                    [58]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.555 	\begin{equation}
-                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
-1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.555 	\begin{equation}
+l.568 	\begin{equation}
                        
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.555 	\begin{equation}
+l.568 	\begin{equation}
                        
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.555 	\begin{equation}
-                        [58]
+l.568 	\begin{equation}
+                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
-2}) has been already used, duplicate ignored
+1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.570 	\begin{equation}
+l.568 	\begin{equation}
                        
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.570 	\begin{equation}
+l.583 	\begin{equation}
                        
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.570 	\begin{equation}
+l.583 	\begin{equation}
                        
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
 2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.570 	\begin{equation}
+l.583 	\begin{equation}
                        
-Overfull \hbox (55.91095pt too wide) detected at line 644
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4.
+2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.583 	\begin{equation}
+                        [59]
+Overfull \hbox (55.91095pt too wide) detected at line 658
 []
  []
 
 
-Overfull \hbox (74.71794pt too wide) detected at line 692
+Overfull \hbox (74.71794pt too wide) detected at line 706
 []
  []
 
 
-Overfull \hbox (1.22995pt too wide) detected at line 703
+Overfull \hbox (1.22995pt too wide) detected at line 717
 []
  []
 
-[59] [60]
+[60] [61]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG17_SCENARIOS.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG17_SCENARIOS.pdf, id=1682, 332.24126pt x 263.98625pt>
+<./figures//FIG17_SCENARIOS.pdf, id=1685, 332.24126pt x 263.98625pt>
 File: ./figures//FIG17_SCENARIOS.pdf Graphic file (type pdf)
 <use ./figures//FIG17_SCENARIOS.pdf>
-Package pdftex.def Info: ./figures//FIG17_SCENARIOS.pdf  used on input line 766
+Package pdftex.def Info: ./figures//FIG17_SCENARIOS.pdf  used on input line 782
 .
 (pdftex.def)             Requested size: 265.79335pt x 211.18927pt.
-[61
+[62
 
 ]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG18_A_ISOMAP_PERF_PLAST.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG18_A_ISOMAP_PERF_PLAST.pdf, id=1690, 365.29504pt x 297.61018pt>
+<./figures//FIG18_A_ISOMAP_PERF_PLAST.pdf, id=1693, 365.29504pt x 297.61018pt>
 File: ./figures//FIG18_A_ISOMAP_PERF_PLAST.pdf Graphic file (type pdf)
 <use ./figures//FIG18_A_ISOMAP_PERF_PLAST.pdf>
 Package pdftex.def Info: ./figures//FIG18_A_ISOMAP_PERF_PLAST.pdf  used on inpu
-t line 788.
+t line 805.
 (pdftex.def)             Requested size: 150.25023pt x 122.4115pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG18_B_ISOMAP_PERF_PLAST.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG18_B_ISOMAP_PERF_PLAST.pdf, id=1691, 366.9961pt x 299.99109pt>
+<./figures//FIG18_B_ISOMAP_PERF_PLAST.pdf, id=1694, 366.9961pt x 299.99109pt>
 File: ./figures//FIG18_B_ISOMAP_PERF_PLAST.pdf Graphic file (type pdf)
 <use ./figures//FIG18_B_ISOMAP_PERF_PLAST.pdf>
 Package pdftex.def Info: ./figures//FIG18_B_ISOMAP_PERF_PLAST.pdf  used on inpu
-t line 792.
+t line 809.
 (pdftex.def)             Requested size: 150.25023pt x 122.81862pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG18_C_ISOMAP_PERF_PLAST.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG18_C_ISOMAP_PERF_PLAST.pdf, id=1692, 367.33635pt x 299.3114pt>
+<./figures//FIG18_C_ISOMAP_PERF_PLAST.pdf, id=1695, 367.33635pt x 299.3114pt>
 File: ./figures//FIG18_C_ISOMAP_PERF_PLAST.pdf Graphic file (type pdf)
 <use ./figures//FIG18_C_ISOMAP_PERF_PLAST.pdf>
 Package pdftex.def Info: ./figures//FIG18_C_ISOMAP_PERF_PLAST.pdf  used on inpu
-t line 796.
+t line 813.
 (pdftex.def)             Requested size: 150.25023pt x 122.42616pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG19_A_ISOMAP_HARD.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG19_A_ISOMAP_HARD.pdf, id=1693, 367.03236pt x 297.95045pt>
+<./figures//FIG19_A_ISOMAP_HARD.pdf, id=1696, 367.03236pt x 297.95045pt>
 File: ./figures//FIG19_A_ISOMAP_HARD.pdf Graphic file (type pdf)
 <use ./figures//FIG19_A_ISOMAP_HARD.pdf>
 Package pdftex.def Info: ./figures//FIG19_A_ISOMAP_HARD.pdf  used on input line
- 806.
+ 823.
 (pdftex.def)             Requested size: 150.25023pt x 121.96953pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG19_B_ISOMAP_HARD.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG19_B_ISOMAP_HARD.pdf, id=1694, 367.03236pt x 298.63087pt>
+<./figures//FIG19_B_ISOMAP_HARD.pdf, id=1697, 367.03236pt x 298.63087pt>
 File: ./figures//FIG19_B_ISOMAP_HARD.pdf Graphic file (type pdf)
 <use ./figures//FIG19_B_ISOMAP_HARD.pdf>
 Package pdftex.def Info: ./figures//FIG19_B_ISOMAP_HARD.pdf  used on input line
- 810.
+ 827.
 (pdftex.def)             Requested size: 150.25023pt x 122.24806pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG19_C_ISOMAP_HARD.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG19_C_ISOMAP_HARD.pdf, id=1695, 367.03236pt x 299.3114pt>
+<./figures//FIG19_C_ISOMAP_HARD.pdf, id=1698, 367.03236pt x 299.3114pt>
 File: ./figures//FIG19_C_ISOMAP_HARD.pdf Graphic file (type pdf)
 <use ./figures//FIG19_C_ISOMAP_HARD.pdf>
 Package pdftex.def Info: ./figures//FIG19_C_ISOMAP_HARD.pdf  used on input line
- 814.
+ 831.
 (pdftex.def)             Requested size: 150.25023pt x 122.52664pt.
-[62 <./figures//FIG17_SCENARIOS.pdf> <./figures//FIG18_A_ISOMAP_PERF_PLAST.pdf>
+[63 <./figures//FIG17_SCENARIOS.pdf> <./figures//FIG18_A_ISOMAP_PERF_PLAST.pdf>
  <./figures//FIG18_B_ISOMAP_PERF_PLAST.pdf> <./figures//FIG18_C_ISOMAP_PERF_PLA
 ST.pdf>]
-<./figures//FIG20_STRAIN_HISTORIES.pdf, id=1728, 357.14229pt x 386.50798pt>
+<./figures//FIG20_STRAIN_HISTORIES.pdf, id=1732, 357.14229pt x 386.50798pt>
 File: ./figures//FIG20_STRAIN_HISTORIES.pdf Graphic file (type pdf)
 <use ./figures//FIG20_STRAIN_HISTORIES.pdf>
 Package pdftex.def Info: ./figures//FIG20_STRAIN_HISTORIES.pdf  used on input l
-ine 852.
+ine 869.
 (pdftex.def)             Requested size: 249.9979pt x 270.55374pt.
- [63 <./figures//FIG19_A_ISOMAP_HARD.pdf> <./figures//FIG19_B_ISOMAP_HARD.pdf> 
+ [64 <./figures//FIG19_A_ISOMAP_HARD.pdf> <./figures//FIG19_B_ISOMAP_HARD.pdf> 
 <./figures//FIG19_C_ISOMAP_HARD.pdf>]
-Overfull \hbox (15.97498pt too wide) in paragraph at lines 875--906
+Overfull \hbox (15.97498pt too wide) in paragraph at lines 892--923
 [][]
  []
 
 
-Overfull \hbox (18.97498pt too wide) in paragraph at lines 912--941
+Overfull \hbox (18.97498pt too wide) in paragraph at lines 929--958
 [][]
  []
 
 
-Overfull \hbox (15.97498pt too wide) in paragraph at lines 946--974
+Overfull \hbox (15.97498pt too wide) in paragraph at lines 963--991
 [][]
  []
 
 
-Overfull \hbox (8.60727pt too wide) in paragraph at lines 981--1009
+Overfull \hbox (8.60727pt too wide) in paragraph at lines 998--1026
 [][]
  []
 
-[64 <./figures//FIG20_STRAIN_HISTORIES.pdf>] [65] [66]
+[65 <./figures//FIG20_STRAIN_HISTORIES.pdf>] [66] [67]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG21_CLAMPED_BEAM.pdf): PDF incl
 usion: found PDF version <1.6>, but at most version <1.5> allowed
-<./figures//FIG21_CLAMPED_BEAM.pdf, id=1805, 282.0929pt x 200.95877pt>
+<./figures//FIG21_CLAMPED_BEAM.pdf, id=1808, 282.0929pt x 200.95877pt>
 File: ./figures//FIG21_CLAMPED_BEAM.pdf Graphic file (type pdf)
 <use ./figures//FIG21_CLAMPED_BEAM.pdf>
 Package pdftex.def Info: ./figures//FIG21_CLAMPED_BEAM.pdf  used on input line 
-1090.
+1107.
 (pdftex.def)             Requested size: 253.88124pt x 180.8612pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1121.
+(caption)                particular \caption on input line 1138.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.51299pt too wide) in paragraph at lines 1121--1121
+Overfull \hbox (12.51299pt too wide) in paragraph at lines 1138--1138
 [][] 
  []
 
@@ -2420,143 +2420,143 @@ Overfull \hbox (12.51299pt too wide) in paragraph at lines 1121--1121
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG22_A_CLAMPED_LH20.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG22_A_CLAMPED_LH20.pdf, id=1806, 381.71677pt x 300.09343pt>
+<./figures//FIG22_A_CLAMPED_LH20.pdf, id=1809, 381.71677pt x 300.09343pt>
 File: ./figures//FIG22_A_CLAMPED_LH20.pdf Graphic file (type pdf)
 <use ./figures//FIG22_A_CLAMPED_LH20.pdf>
 Package pdftex.def Info: ./figures//FIG22_A_CLAMPED_LH20.pdf  used on input lin
-e 1128.
+e 1145.
 (pdftex.def)             Requested size: 204.88416pt x 161.07727pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG22_B_CLAMPED_LH4.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG22_B_CLAMPED_LH4.pdf, id=1807, 385.44pt x 296.07338pt>
+<./figures//FIG22_B_CLAMPED_LH4.pdf, id=1810, 385.44pt x 296.07338pt>
 File: ./figures//FIG22_B_CLAMPED_LH4.pdf Graphic file (type pdf)
 <use ./figures//FIG22_B_CLAMPED_LH4.pdf>
 Package pdftex.def Info: ./figures//FIG22_B_CLAMPED_LH4.pdf  used on input line
- 1132.
+ 1149.
 (pdftex.def)             Requested size: 204.88416pt x 157.37894pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG23_PlastP10000.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG23_PlastP10000.pdf, id=1808, 328.21326pt x 134.5025pt>
+<./figures//FIG23_PlastP10000.pdf, id=1811, 328.21326pt x 134.5025pt>
 File: ./figures//FIG23_PlastP10000.pdf Graphic file (type pdf)
 <use ./figures//FIG23_PlastP10000.pdf>
 Package pdftex.def Info: ./figures//FIG23_PlastP10000.pdf  used on input line 1
-147.
+164.
 (pdftex.def)             Requested size: 130.88232pt x 45.525pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG23_PlastP13900.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG23_PlastP13900.pdf, id=1809, 328.42307pt x 134.5025pt>
+<./figures//FIG23_PlastP13900.pdf, id=1812, 328.42307pt x 134.5025pt>
 File: ./figures//FIG23_PlastP13900.pdf Graphic file (type pdf)
 <use ./figures//FIG23_PlastP13900.pdf>
 Package pdftex.def Info: ./figures//FIG23_PlastP13900.pdf  used on input line 1
-148.
+165.
 (pdftex.def)             Requested size: 130.8808pt x 45.525pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG23_PlastP14340.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG23_PlastP14340.pdf, id=1810, 328.2132pt x 134.5025pt>
+<./figures//FIG23_PlastP14340.pdf, id=1813, 328.2132pt x 134.5025pt>
 File: ./figures//FIG23_PlastP14340.pdf Graphic file (type pdf)
 <use ./figures//FIG23_PlastP14340.pdf>
 Package pdftex.def Info: ./figures//FIG23_PlastP14340.pdf  used on input line 1
-148.
+165.
 (pdftex.def)             Requested size: 130.8823pt x 45.525pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG23_PlastP10000_VM.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG23_PlastP10000_VM.pdf, id=1811, 326.56792pt x 136.13861pt>
+<./figures//FIG23_PlastP10000_VM.pdf, id=1814, 326.56792pt x 136.13861pt>
 File: ./figures//FIG23_PlastP10000_VM.pdf Graphic file (type pdf)
 <use ./figures//FIG23_PlastP10000_VM.pdf>
 Package pdftex.def Info: ./figures//FIG23_PlastP10000_VM.pdf  used on input lin
-e 1149.
+e 1166.
 (pdftex.def)             Requested size: 130.88396pt x 45.52414pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG23_PlastP13900_VM.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG23_PlastP13900_VM.pdf, id=1812, 328.42307pt x 135.71704pt>
+<./figures//FIG23_PlastP13900_VM.pdf, id=1815, 328.42307pt x 135.71704pt>
 File: ./figures//FIG23_PlastP13900_VM.pdf Graphic file (type pdf)
 <use ./figures//FIG23_PlastP13900_VM.pdf>
 Package pdftex.def Info: ./figures//FIG23_PlastP13900_VM.pdf  used on input lin
-e 1150.
+e 1167.
 (pdftex.def)             Requested size: 130.8808pt x 45.52399pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG23_PlastP14340_VM.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG23_PlastP14340_VM.pdf, id=1813, 326.14314pt x 135.50726pt>
+<./figures//FIG23_PlastP14340_VM.pdf, id=1816, 326.14314pt x 135.50726pt>
 File: ./figures//FIG23_PlastP14340_VM.pdf Graphic file (type pdf)
 <use ./figures//FIG23_PlastP14340_VM.pdf>
 Package pdftex.def Info: ./figures//FIG23_PlastP14340_VM.pdf  used on input lin
-e 1150.
+e 1167.
 (pdftex.def)             Requested size: 130.88292pt x 45.52391pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG23_PlastP10000_SXX.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG23_PlastP10000_SXX.pdf, id=1814, 326.95557pt x 139.04494pt>
+<./figures//FIG23_PlastP10000_SXX.pdf, id=1817, 326.95557pt x 139.04494pt>
 File: ./figures//FIG23_PlastP10000_SXX.pdf Graphic file (type pdf)
 <use ./figures//FIG23_PlastP10000_SXX.pdf>
 Package pdftex.def Info: ./figures//FIG23_PlastP10000_SXX.pdf  used on input li
-ne 1151.
+ne 1168.
 (pdftex.def)             Requested size: 130.87968pt x 45.52428pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG23_PlastP13900_SXX.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG23_PlastP13900_SXX.pdf, id=1815, 327.37514pt x 137.57693pt>
+<./figures//FIG23_PlastP13900_SXX.pdf, id=1818, 327.37514pt x 137.57693pt>
 File: ./figures//FIG23_PlastP13900_SXX.pdf Graphic file (type pdf)
 <use ./figures//FIG23_PlastP13900_SXX.pdf>
 Package pdftex.def Info: ./figures//FIG23_PlastP13900_SXX.pdf  used on input li
-ne 1152.
+ne 1169.
 (pdftex.def)             Requested size: 130.88779pt x 45.52437pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG23_PlastP14340_SXX.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG23_PlastP14340_SXX.pdf, id=1816, 326.7639pt x 140.14859pt>
+<./figures//FIG23_PlastP14340_SXX.pdf, id=1819, 326.7639pt x 140.14859pt>
 File: ./figures//FIG23_PlastP14340_SXX.pdf Graphic file (type pdf)
 <use ./figures//FIG23_PlastP14340_SXX.pdf>
 Package pdftex.def Info: ./figures//FIG23_PlastP14340_SXX.pdf  used on input li
-ne 1153.
+ne 1170.
 (pdftex.def)             Requested size: 130.88771pt x 45.52422pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG23_PlastP10000_SXY.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG23_PlastP10000_SXY.pdf, id=1817, 326.36697pt x 135.29344pt>
+<./figures//FIG23_PlastP10000_SXY.pdf, id=1820, 326.36697pt x 135.29344pt>
 File: ./figures//FIG23_PlastP10000_SXY.pdf Graphic file (type pdf)
 <use ./figures//FIG23_PlastP10000_SXY.pdf>
 Package pdftex.def Info: ./figures//FIG23_PlastP10000_SXY.pdf  used on input li
-ne 1154.
+ne 1171.
 (pdftex.def)             Requested size: 130.8831pt x 45.52434pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG23_PlastP13900_SXY.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG23_PlastP13900_SXY.pdf, id=1818, 327.59796pt x 135.89369pt>
+<./figures//FIG23_PlastP13900_SXY.pdf, id=1821, 327.59796pt x 135.89369pt>
 File: ./figures//FIG23_PlastP13900_SXY.pdf Graphic file (type pdf)
 <use ./figures//FIG23_PlastP13900_SXY.pdf>
 Package pdftex.def Info: ./figures//FIG23_PlastP13900_SXY.pdf  used on input li
-ne 1155.
+ne 1172.
 (pdftex.def)             Requested size: 130.8819pt x 45.52518pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG23_PlastP14340_SXY.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG23_PlastP14340_SXY.pdf, id=1819, 324.93303pt x 135.50626pt>
+<./figures//FIG23_PlastP14340_SXY.pdf, id=1822, 324.93303pt x 135.50626pt>
 File: ./figures//FIG23_PlastP14340_SXY.pdf Graphic file (type pdf)
 <use ./figures//FIG23_PlastP14340_SXY.pdf>
 Package pdftex.def Info: ./figures//FIG23_PlastP14340_SXY.pdf  used on input li
-ne 1155.
+ne 1172.
 (pdftex.def)             Requested size: 130.8832pt x 45.52357pt.
-[67 <./figures//FIG21_CLAMPED_BEAM.pdf>] [68 <./figures//FIG22_A_CLAMPED_LH20.p
+[68 <./figures//FIG21_CLAMPED_BEAM.pdf>] [69 <./figures//FIG22_A_CLAMPED_LH20.p
 df> <./figures//FIG22_B_CLAMPED_LH4.pdf> <./figures//FIG23_PlastP10000.pdf> <./
 figures//FIG23_PlastP13900.pdf> <./figures//FIG23_PlastP14340.pdf> <./figures//
 FIG23_PlastP10000_VM.pdf> <./figures//FIG23_PlastP13900_VM.pdf> <./figures//FIG
@@ -2567,14 +2567,14 @@ lastP14340_SXY.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG24_Structure.pdf): PDF inclusi
 on: found PDF version <1.6>, but at most version <1.5> allowed
-<./figures//FIG24_Structure.pdf, id=2304, 245.89465pt x 107.96938pt>
+<./figures//FIG24_Structure.pdf, id=2309, 245.89465pt x 107.96938pt>
 File: ./figures//FIG24_Structure.pdf Graphic file (type pdf)
 <use ./figures//FIG24_Structure.pdf>
-Package pdftex.def Info: ./figures//FIG24_Structure.pdf  used on input line 120
-9.
+Package pdftex.def Info: ./figures//FIG24_Structure.pdf  used on input line 123
+3.
 (pdftex.def)             Requested size: 196.71597pt x 86.3756pt.
 
-Overfull \hbox (14.59827pt too wide) in paragraph at lines 1209--1209
+Overfull \hbox (14.59827pt too wide) in paragraph at lines 1233--1233
 [][][][] 
  []
 
@@ -2582,14 +2582,14 @@ Overfull \hbox (14.59827pt too wide) in paragraph at lines 1209--1209
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG24_DISPHIST.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG24_DISPHIST.pdf, id=2305, 383.4325pt x 298.11375pt>
+<./figures//FIG24_DISPHIST.pdf, id=2310, 383.4325pt x 298.11375pt>
 File: ./figures//FIG24_DISPHIST.pdf Graphic file (type pdf)
 <use ./figures//FIG24_DISPHIST.pdf>
-Package pdftex.def Info: ./figures//FIG24_DISPHIST.pdf  used on input line 1222
+Package pdftex.def Info: ./figures//FIG24_DISPHIST.pdf  used on input line 1246
 .
 (pdftex.def)             Requested size: 230.06126pt x 178.86963pt.
 
-Overfull \hbox (2.05394pt too wide) in paragraph at lines 1232--1253
+Overfull \hbox (2.05394pt too wide) in paragraph at lines 1256--1277
 [][]
  []
 
@@ -2597,141 +2597,149 @@ Overfull \hbox (2.05394pt too wide) in paragraph at lines 1232--1253
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG25_HISTORIES.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG25_HISTORIES.pdf, id=2307, 378.41376pt x 313.17pt>
+<./figures//FIG25_HISTORIES.pdf, id=2312, 378.41376pt x 313.17pt>
 File: ./figures//FIG25_HISTORIES.pdf Graphic file (type pdf)
 <use ./figures//FIG25_HISTORIES.pdf>
-Package pdftex.def Info: ./figures//FIG25_HISTORIES.pdf  used on input line 125
-8.
+Package pdftex.def Info: ./figures//FIG25_HISTORIES.pdf  used on input line 128
+2.
 (pdftex.def)             Requested size: 340.56923pt x 281.85037pt.
-[69
+[70
 
-] [70 <./figures//FIG24_Structure.pdf> <./figures//FIG24_DISPHIST.pdf>]
+]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG_BARS.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG_BARS.pdf, id=2343, 356.33125pt x 291.0875pt>
+<./figures//FIG_BARS.pdf, id=2320, 356.33125pt x 291.0875pt>
 File: ./figures//FIG_BARS.pdf Graphic file (type pdf)
 <use ./figures//FIG_BARS.pdf>
-Package pdftex.def Info: ./figures//FIG_BARS.pdf  used on input line 1296.
+Package pdftex.def Info: ./figures//FIG_BARS.pdf  used on input line 1305.
 (pdftex.def)             Requested size: 320.69514pt x 261.97632pt.
-[71 <./figures//FIG25_HISTORIES.pdf>]
-Overfull \hbox (33.1361pt too wide) in paragraph at lines 1337--1349
+[71 <./figures//FIG24_Structure.pdf> <./figures//FIG24_DISPHIST.pdf>] [72 <./fi
+gures//FIG25_HISTORIES.pdf> <./figures//FIG_BARS.pdf>]
+Overfull \hbox (33.1361pt too wide) in paragraph at lines 1350--1362
 [][] 
  []
 
-[72 <./figures//FIG_BARS.pdf>]
+[73
+
+]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG26_A_STRUCTURE.pdf): PDF inclu
 sion: found PDF version <1.6>, but at most version <1.5> allowed
-<./figures//FIG26_A_STRUCTURE.pdf, id=2375, 312.67314pt x 233.41302pt>
+<./figures//FIG26_A_STRUCTURE.pdf, id=2376, 312.67314pt x 233.41302pt>
 File: ./figures//FIG26_A_STRUCTURE.pdf Graphic file (type pdf)
 <use ./figures//FIG26_A_STRUCTURE.pdf>
 Package pdftex.def Info: ./figures//FIG26_A_STRUCTURE.pdf  used on input line 1
-358.
+371.
 (pdftex.def)             Requested size: 204.88416pt x 152.9454pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG26_B_COMPARISON.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG26_B_COMPARISON.pdf, id=2376, 376.40625pt x 299.1175pt>
+<./figures//FIG26_B_COMPARISON.pdf, id=2377, 376.40625pt x 299.1175pt>
 File: ./figures//FIG26_B_COMPARISON.pdf Graphic file (type pdf)
 <use ./figures//FIG26_B_COMPARISON.pdf>
 Package pdftex.def Info: ./figures//FIG26_B_COMPARISON.pdf  used on input line 
-1362.
+1375.
 (pdftex.def)             Requested size: 204.88416pt x 162.81726pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG27_A_ELASTIC_COMPARISON.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG27_A_ELASTIC_COMPARISON.pdf, id=2377, 381.425pt x 301.125pt>
+<./figures//FIG27_A_ELASTIC_COMPARISON.pdf, id=2378, 381.425pt x 301.125pt>
 File: ./figures//FIG27_A_ELASTIC_COMPARISON.pdf Graphic file (type pdf)
 <use ./figures//FIG27_A_ELASTIC_COMPARISON.pdf>
 Package pdftex.def Info: ./figures//FIG27_A_ELASTIC_COMPARISON.pdf  used on inp
-ut line 1373.
+ut line 1386.
 (pdftex.def)             Requested size: 204.88416pt x 161.75044pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG27_B_PLASTIC_COMPARISON.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG27_B_PLASTIC_COMPARISON.pdf, id=2378, 374.39874pt x 301.125pt>
+<./figures//FIG27_B_PLASTIC_COMPARISON.pdf, id=2379, 374.39874pt x 301.125pt>
 File: ./figures//FIG27_B_PLASTIC_COMPARISON.pdf Graphic file (type pdf)
 <use ./figures//FIG27_B_PLASTIC_COMPARISON.pdf>
 Package pdftex.def Info: ./figures//FIG27_B_PLASTIC_COMPARISON.pdf  used on inp
-ut line 1377.
+ut line 1390.
 (pdftex.def)             Requested size: 204.88416pt x 164.7876pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//STEP_15_RATES.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//STEP_15_RATES.pdf, id=2380, 384.43625pt x 301.125pt>
+<./figures//STEP_15_RATES.pdf, id=2381, 384.43625pt x 301.125pt>
 File: ./figures//STEP_15_RATES.pdf Graphic file (type pdf)
 <use ./figures//STEP_15_RATES.pdf>
-Package pdftex.def Info: ./figures//STEP_15_RATES.pdf  used on input line 1399.
+Package pdftex.def Info: ./figures//STEP_15_RATES.pdf  used on input line 1412.
 
 (pdftex.def)             Requested size: 204.88416pt x 160.48686pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//STEP_25_RATES.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//STEP_25_RATES.pdf, id=2381, 384.43625pt x 301.125pt>
+<./figures//STEP_25_RATES.pdf, id=2382, 384.43625pt x 301.125pt>
 File: ./figures//STEP_25_RATES.pdf Graphic file (type pdf)
 <use ./figures//STEP_25_RATES.pdf>
-Package pdftex.def Info: ./figures//STEP_25_RATES.pdf  used on input line 1403.
+Package pdftex.def Info: ./figures//STEP_25_RATES.pdf  used on input line 1416.
 
 (pdftex.def)             Requested size: 204.88416pt x 160.48686pt.
 
-Overfull \hbox (29.08614pt too wide) in paragraph at lines 1416--1433
+Overfull \hbox (29.08614pt too wide) in paragraph at lines 1429--1446
 [][] 
  []
 
 
-Overfull \hbox (29.08614pt too wide) in paragraph at lines 1441--1459
+Overfull \hbox (29.08614pt too wide) in paragraph at lines 1454--1472
 [][] 
  []
 
-[73
+[74
 
  <./figures//FIG26_A_STRUCTURE.pdf> <./figures//FIG26_B_COMPARISON.pdf>]
-[74 <./figures//FIG27_A_ELASTIC_COMPARISON.pdf> <./figures//FIG27_B_PLASTIC_COM
+[75 <./figures//FIG27_A_ELASTIC_COMPARISON.pdf> <./figures//FIG27_B_PLASTIC_COM
 PARISON.pdf> <./figures//STEP_15_RATES.pdf> <./figures//STEP_25_RATES.pdf>]
-Overfull \hbox (24.24736pt too wide) in paragraph at lines 1478--1488
+
+LaTeX Warning: Reference `fig:FIG15_STRUCTURE' on page 76 undefined on input li
+ne 1481.
+
+
+Overfull \hbox (24.24736pt too wide) in paragraph at lines 1493--1503
 [][] 
  []
 
-[75
+[76
 
 ]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG28_STRUCTURE.pdf): PDF inclusi
 on: found PDF version <1.6>, but at most version <1.5> allowed
-<./figures//FIG28_STRUCTURE.pdf, id=2482, 355.73604pt x 249.63965pt>
+<./figures//FIG28_STRUCTURE.pdf, id=2481, 355.73604pt x 249.63965pt>
 File: ./figures//FIG28_STRUCTURE.pdf Graphic file (type pdf)
 <use ./figures//FIG28_STRUCTURE.pdf>
-Package pdftex.def Info: ./figures//FIG28_STRUCTURE.pdf  used on input line 154
-1.
+Package pdftex.def Info: ./figures//FIG28_STRUCTURE.pdf  used on input line 155
+6.
 (pdftex.def)             Requested size: 204.88416pt x 143.77785pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG28_EQPATHS.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<./figures//FIG28_EQPATHS.pdf, id=2483, 369.38pt x 296.10625pt>
+<./figures//FIG28_EQPATHS.pdf, id=2482, 369.38pt x 296.10625pt>
 File: ./figures//FIG28_EQPATHS.pdf Graphic file (type pdf)
 <use ./figures//FIG28_EQPATHS.pdf>
-Package pdftex.def Info: ./figures//FIG28_EQPATHS.pdf  used on input line 1545.
+Package pdftex.def Info: ./figures//FIG28_EQPATHS.pdf  used on input line 1560.
 
 (pdftex.def)             Requested size: 204.88416pt x 164.2415pt.
-) [76 <./figures//FIG28_STRUCTURE.pdf> <./figures//FIG28_EQPATHS.pdf>] [77]
-(chapter4.tex [78]
+) [77 <./figures//FIG28_STRUCTURE.pdf> <./figures//FIG28_EQPATHS.pdf>] [78]
+(chapter4.tex [79]
 Chapter 4.
-[79
+[80
 
-] [80] [81]
+] [81] [82]
 <./figures//FIG29.pdf, id=2595, 261.1104pt x 156.8791pt>
 File: ./figures//FIG29.pdf Graphic file (type pdf)
 <use ./figures//FIG29.pdf>
 Package pdftex.def Info: ./figures//FIG29.pdf  used on input line 150.
 (pdftex.def)             Requested size: 287.2223pt x 172.56754pt.
- [82 <./figures//FIG29.pdf>]
+ [83 <./figures//FIG29.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG30_POLYDEMO.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
@@ -2751,7 +2759,7 @@ File: ./figures//FIG30_POLYDEMO2.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures//FIG30_POLYDEMO2.pdf  used on input line 206
 .
 (pdftex.def)             Requested size: 203.43703pt x 159.19014pt.
-[83 <./figures//FIG30_POLYDEMO.pdf> <./figures//FIG30_POLYDEMO2.pdf>] [84
+[84 <./figures//FIG30_POLYDEMO.pdf> <./figures//FIG30_POLYDEMO2.pdf>] [85
 
 ]
 
@@ -2762,7 +2770,7 @@ File: ./figures//FIG31_MAP.pdf Graphic file (type pdf)
 <use ./figures//FIG31_MAP.pdf>
 Package pdftex.def Info: ./figures//FIG31_MAP.pdf  used on input line 287.
 (pdftex.def)             Requested size: 349.05518pt x 268.6721pt.
-[85 <./figures//FIG31_MAP.pdf>] [86]
+[86 <./figures//FIG31_MAP.pdf>] [87]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2.
 1}) has been already used, duplicate ignored
 <to be read again> 
@@ -2786,7 +2794,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2.
 <to be read again> 
                    \relax 
 l.422 	\end{alignat}
-                     [87] [88]
+                     [88] [89]
 Overfull \hbox (8.12283pt too wide) in paragraph at lines 484--487
 []\OT1/ptm/m/n/12 The set $\OMS/cmsy/m/n/12 [[]\OT1/cmr/m/n/12 [[]][]([])$ \OT1
 /ptm/m/n/12 is com-prised of piece-wise con-tin-u-ously dif-fer-en-tiable paths
@@ -2800,7 +2808,7 @@ Overfull \hbox (2.97816pt too wide) in paragraph at lines 496--501
 ML/cmm/m/it/12 W[]$
  []
 
-[89]
+[90]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG32_PCMAP.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.5> allowed
@@ -2821,7 +2829,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2.
 <to be read again> 
                    \relax 
 l.562 	\end{gather}
-                    [90]
+                    [91]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2.
 1}) has been already used, duplicate ignored
 <to be read again> 
@@ -2833,7 +2841,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2.
 <to be read again> 
                    \relax 
 l.584 	\end{gather}
-                    [91 <./figures//FIG32_PCMAP.pdf>] [92]
+                    [92 <./figures//FIG32_PCMAP.pdf>] [93]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3.
 1}) has been already used, duplicate ignored
 <to be read again> 
@@ -2845,11 +2853,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3.
 <to be read again> 
                    \relax 
 l.666 	\end{gather}
-                    [93] [94] [95] [96] [97] [98]
+                    [94] [95] [96] [97] [98] [99]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG33_Corner.pdf): PDF inclusion:
  found PDF version <1.6>, but at most version <1.5> allowed
-<./figures//FIG33_Corner.pdf, id=2925, 467.44939pt x 287.70888pt>
+<./figures//FIG33_Corner.pdf, id=2926, 467.44939pt x 287.70888pt>
 File: ./figures//FIG33_Corner.pdf Graphic file (type pdf)
 <use ./figures//FIG33_Corner.pdf>
 Package pdftex.def Info: ./figures//FIG33_Corner.pdf  used on input line 1002.
@@ -2860,7 +2868,7 @@ Overfull \hbox (14.8751pt too wide) in paragraph at lines 1009--1024
  pro-posed by Men-zel & Schwetlick[[]170[]],
  []
 
-[99 <./figures//FIG33_Corner.pdf>] [100]
+[100 <./figures//FIG33_Corner.pdf>] [101]
 Overfull \hbox (53.80856pt too wide) in paragraph at lines 1112--1134
 \OT1/ptm/m/n/12 Two paths are gen-er-ated, $\OT1/cmr/m/it/12 ^^@[]$ \OT1/ptm/m/
 n/12 and $\OT1/cmr/m/it/12 ^^@[]$\OT1/ptm/m/n/12 , us-ing imbed-ding $\OML/cmm/
@@ -2879,7 +2887,7 @@ ion-ary points of the ini-tial pro-gram $\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\
 OML/cmm/m/it/12 x[]; x[]; \OT1/cmr/m/n/12 0)$
  []
 
-[101]
+[102]
 Underfull \hbox (badness 2894) in paragraph at lines 1138--1138
 []\OT1/ptm/b/n/12 Table 4.1 |\OT1/ptm/m/n/12 Sta-tion-ary so-lu-tions of Eq.
  []
@@ -2897,10 +2905,10 @@ Package pdftex.def Info: ./figures//FIG34_EXAMPLE1_B.pdf  used on input line 11
 75.
 (pdftex.def)             Requested size: 213.39566pt x 181.67735pt.
 
-LaTeX Warning: Reference `fig:FIG7_A' on page 102 undefined on input line 1191.
+LaTeX Warning: Reference `fig:FIG7_A' on page 103 undefined on input line 1191.
 
 
-[102 <./figures//FIG34_EXAMPLE1_A.pdf> <./figures//FIG34_EXAMPLE1_B.pdf>]
+[103 <./figures//FIG34_EXAMPLE1_A.pdf> <./figures//FIG34_EXAMPLE1_B.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG35_Structure.pdf): PDF inclusi
 on: found PDF version <1.6>, but at most version <1.5> allowed
@@ -2916,27 +2924,27 @@ File: ./figures//FIG35_LOADPATH.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures//FIG35_LOADPATH.pdf  used on input line 1238
 .
 (pdftex.def)             Requested size: 209.12791pt x 164.0139pt.
-[103
+[104
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5.
 35}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.1251 \begin{gather}
-                     ] [104 <./figures//FIG35_Structure.pdf> <./figures//FIG35_
+                     ] [105 <./figures//FIG35_Structure.pdf> <./figures//FIG35_
 LOADPATH.pdf>]
-<./figures//FIG36_ASENSITIVITY.pdf, id=4101, 375.38544pt x 297.68013pt>
+<./figures//FIG36_ASENSITIVITY.pdf, id=4102, 375.38544pt x 297.68013pt>
 File: ./figures//FIG36_ASENSITIVITY.pdf Graphic file (type pdf)
 <use ./figures//FIG36_ASENSITIVITY.pdf>
 Package pdftex.def Info: ./figures//FIG36_ASENSITIVITY.pdf  used on input line 
 1339.
 (pdftex.def)             Requested size: 209.12791pt x 165.84125pt.
-<./figures//FIG36_TPEPATHS.pdf, id=4102, 365.365pt x 298.11375pt>
+<./figures//FIG36_TPEPATHS.pdf, id=4103, 365.365pt x 298.11375pt>
 File: ./figures//FIG36_TPEPATHS.pdf Graphic file (type pdf)
 <use ./figures//FIG36_TPEPATHS.pdf>
 Package pdftex.def Info: ./figures//FIG36_TPEPATHS.pdf  used on input line 1341
 .
 (pdftex.def)             Requested size: 209.12791pt x 170.63622pt.
- [105]
+ [106]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG37_STRUCT.pdf): PDF inclusion:
  found PDF version <1.6>, but at most version <1.5> allowed
@@ -2945,7 +2953,7 @@ File: ./figures//FIG37_STRUCT.pdf Graphic file (type pdf)
 <use ./figures//FIG37_STRUCT.pdf>
 Package pdftex.def Info: ./figures//FIG37_STRUCT.pdf  used on input line 1372.
 (pdftex.def)             Requested size: 183.11131pt x 181.23949pt.
-[106 <./figures//FIG36_ASENSITIVITY.pdf> <./figures//FIG36_TPEPATHS.pdf>]
+[107 <./figures//FIG36_ASENSITIVITY.pdf> <./figures//FIG36_TPEPATHS.pdf>]
 <./figures//FIG38_U2.pdf, id=4155, 371.13356pt x 297.2927pt>
 File: ./figures//FIG38_U2.pdf Graphic file (type pdf)
 <use ./figures//FIG38_U2.pdf>
@@ -2963,11 +2971,11 @@ Package pdftex.def Info: ./figures//FIG39_profiles.pdf  used on input line 1445
 .
 (pdftex.def)             Requested size: 409.48413pt x 98.96906pt.
 
-[107 <./figures//FIG37_STRUCT.pdf>] Excluding 'comment' comment.) [108 <./figur
+[108 <./figures//FIG37_STRUCT.pdf>] Excluding 'comment' comment.) [109 <./figur
 es//FIG38_U2.pdf> <./figures//FIG38_Mu.pdf> <./figures//FIG39_profiles.pdf>]
-[109] (chapter5.tex [110]
+[110] (chapter5.tex [111]
 Chapter 5.
-[111
+[112
 
 ]
 
@@ -2978,7 +2986,7 @@ File: ./figures//FIG41.pdf Graphic file (type pdf)
 <use ./figures//FIG41.pdf>
 Package pdftex.def Info: ./figures//FIG41.pdf  used on input line 87.
 (pdftex.def)             Requested size: 260.872pt x 193.47002pt.
-[112
+[113
 pdfTeX warning (ext4): destination with the same identifier (name{equation.5.2.
 1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2990,7 +2998,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.5.2.
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.111 
-      ] [113 <./figures//FIG41.pdf>]
+      ] [114 <./figures//FIG41.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG42_INTERP.pdf): PDF inclusion:
  found PDF version <1.6>, but at most version <1.5> allowed
@@ -3008,8 +3016,8 @@ File: ./figures//FIG42_TANGENT.pdf Graphic file (type pdf)
 <use ./figures//FIG42_TANGENT.pdf>
 Package pdftex.def Info: ./figures//FIG42_TANGENT.pdf  used on input line 178.
 (pdftex.def)             Requested size: 173.56198pt x 90.73477pt.
-[114] [115 <./figures//FIG42_INTERP.pdf> <./figures//FIG42_TANGENT.pdf>]
-[116] [117] [118] [119]
+[115] [116 <./figures//FIG42_INTERP.pdf> <./figures//FIG42_TANGENT.pdf>]
+[117] [118] [119] [120]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG43.pdf): PDF inclusion: found 
 PDF version <1.6>, but at most version <1.5> allowed
@@ -3018,11 +3026,11 @@ File: ./figures//FIG43.pdf Graphic file (type pdf)
 <use ./figures//FIG43.pdf>
 Package pdftex.def Info: ./figures//FIG43.pdf  used on input line 483.
 (pdftex.def)             Requested size: 340.75624pt x 174.12259pt.
-[120] [121 <./figures//FIG43.pdf>] [122]
+[121] [122 <./figures//FIG43.pdf>] [123]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG44.pdf): PDF inclusion: found 
 PDF version <1.6>, but at most version <1.5> allowed
-<./figures//FIG44.pdf, id=4510, 273.70558pt x 163.39644pt>
+<./figures//FIG44.pdf, id=4511, 273.70558pt x 163.39644pt>
 File: ./figures//FIG44.pdf Graphic file (type pdf)
 <use ./figures//FIG44.pdf>
 Package pdftex.def Info: ./figures//FIG44.pdf  used on input line 570.
@@ -3032,8 +3040,8 @@ Overfull \hbox (17.62482pt too wide) detected at line 624
 [][] 
  []
 
-[123 <./figures//FIG44.pdf, page is rotated 90 degrees>] [124] [125] [126]
-[127]
+[124 <./figures//FIG44.pdf, page is rotated 90 degrees>] [125] [126] [127]
+[128]
 Overfull \hbox (8.24771pt too wide) in paragraph at lines 841--866
 [][]
  []
@@ -3041,14 +3049,14 @@ Overfull \hbox (8.24771pt too wide) in paragraph at lines 841--866
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[128] [129]
+[129] [130]
 Overfull \hbox (5.60817pt too wide) in paragraph at lines 985--994
 \OT1/ptm/m/n/12 through all so-lu-tions but also back-tracked be-fore even-tu-a
 lly con-verg-ing. The case of [][]WLSE[]$\OT1/cmr/m/n/12 (2\OML/cmm/m/it/12 ; \
 OT1/cmr/m/n/12 5)$\OT1/ptm/m/n/12 ,
  []
 
-[130]
+[131]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG45.pdf): PDF inclusion: found 
 PDF version <1.6>, but at most version <1.5> allowed
@@ -3057,7 +3065,7 @@ File: ./figures//FIG45.pdf Graphic file (type pdf)
 <use ./figures//FIG45.pdf>
 Package pdftex.def Info: ./figures//FIG45.pdf  used on input line 1073.
 (pdftex.def)             Requested size: 263.48257pt x 208.67819pt.
-[131 <./figures//FIG45.pdf>] [132]
+[132 <./figures//FIG45.pdf>] [133]
 
 pdfTeX warning: pdflatex.exe (file ./figures//FIG46_A.pdf): PDF inclusion: foun
 d PDF version <1.6>, but at most version <1.5> allowed
@@ -3080,26 +3088,26 @@ Overfull \hbox (8.24771pt too wide) in paragraph at lines 1135--1173
 [][]
  []
 
-[133 <./figures//FIG46_A.pdf, page is rotated 90 degrees> <./figures//FIG46_B.p
-df>] [134]) [135
+[134 <./figures//FIG46_A.pdf, page is rotated 90 degrees> <./figures//FIG46_B.p
+df>] [135]) [136
 
-] (chapter6.tex [136]
+] (chapter6.tex [137]
 Chapter 6.
-[137
+[138
 
-] [138]
+] [139]
 Overfull \hbox (2.63762pt too wide) in paragraph at lines 109--120
 []\OT1/ptm/m/n/12 For the hy-brid beam el-e-ment, the use of dif-fer-ent non-li
 n-ear pro-gram-ming so-lu-tion schemes
  []
 
-[139]) [140] (appendix.tex [141] [142
+[140]) [141] (appendix.tex [142] [143
 
 ]
 Appendix A.
-[143
+[144
 
-] [144] [145] [146]
+] [145] [146] [147]
 Appendix B.
 
 Overfull \hbox (15.99367pt too wide) in paragraph at lines 223--231
@@ -3108,21 +3116,21 @@ Overfull \hbox (15.99367pt too wide) in paragraph at lines 223--231
 12 = [][]$\OT1/ptm/m/n/12 .
  []
 
-[147
+[148
 
-] [148] [149] [150] [151]
+] [149] [150] [151] [152]
 Appendix C.
-[152
+[153
 
-] [153] [154]
+] [154] [155]
 Appendix D.
-[155
+[156
 
-] [156]
+] [157]
 Appendix E.
-[157
+[158
 
-] [158]
+] [159]
 Appendix F.
 
 Overfull \hbox (23.65805pt too wide) in paragraph at lines 745--751
@@ -3132,7 +3140,7 @@ a user-defined step-length. Be-cause, in gen-eral, $\OMS/cmsy/m/n/12 k[]\OT1/cm
 r/m/n/12 ([])\OMS/cmsy/m/n/12 k \OML/cmm/m/it/12 >>
  []
 
-[159
+[160
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.F.
@@ -3155,11 +3163,11 @@ File: ./figures//FIG47.pdf Graphic file (type pdf)
 <use ./figures//FIG47.pdf>
 Package pdftex.def Info: ./figures//FIG47.pdf  used on input line 795.
 (pdftex.def)             Requested size: 310.95093pt x 189.70825pt.
-[160] [161 <./figures//FIG47.pdf>]
+[161] [162 <./figures//FIG47.pdf>]
 Appendix G.
-[162
+[163
 
-] [163]
+] [164]
 <./figures//GUIpics/TAB1/TAB1_marked.png, id=4983, 671.56557pt x 467.70963pt>
 File: ./figures//GUIpics/TAB1/TAB1_marked.png Graphic file (type png)
 <use ./figures//GUIpics/TAB1/TAB1_marked.png>
@@ -3194,9 +3202,9 @@ File: ./figures//GUIpics/TAB1/TAB1_mesh_example.png Graphic file (type png)
 Package pdftex.def Info: ./figures//GUIpics/TAB1/TAB1_mesh_example.png  used on
  input line 956.
 (pdftex.def)             Requested size: 402.94244pt x 280.62793pt.
- [164] [165 <./figures//GUIpics/TAB1/TAB1_marked.png> <./figures//GUIpics/TAB1/
-TAB1_node_error.png>] [166 <./figures//GUIpics/TAB1/TAB1_nodesfile.png> <./figu
-res//GUIpics/TAB1/TAB1_elementsfile.png>] [167 <./figures//GUIpics/TAB1/TAB1_me
+ [165] [166 <./figures//GUIpics/TAB1/TAB1_marked.png> <./figures//GUIpics/TAB1/
+TAB1_node_error.png>] [167 <./figures//GUIpics/TAB1/TAB1_nodesfile.png> <./figu
+res//GUIpics/TAB1/TAB1_elementsfile.png>] [168 <./figures//GUIpics/TAB1/TAB1_me
 sh_example.png>]
 <./figures//GUIpics/TAB2/TAB2_marked.png, id=5010, 670.88377pt x 467.70963pt>
 File: ./figures//GUIpics/TAB2/TAB2_marked.png Graphic file (type png)
@@ -3234,18 +3242,18 @@ ype png)
 Package pdftex.def Info: ./figures//GUIpics/TAB2/TAB2_adding_already_predefmat.
 png  used on input line 1050.
 (pdftex.def)             Requested size: 233.99297pt x 225.8114pt.
- [168] [169 <./figures//GUIpics/TAB2/TAB2_marked.png> <./figures//GUIpics/TAB2/
-TAB2_adding_mat_noname.png>] [170 <./figures//GUIpics/TAB2/TAB2_materials_added
+ [169] [170 <./figures//GUIpics/TAB2/TAB2_marked.png> <./figures//GUIpics/TAB2/
+TAB2_adding_mat_noname.png>] [171 <./figures//GUIpics/TAB2/TAB2_materials_added
 .png> <./figures//GUIpics/TAB2/TAB2_predefined_mats.png> <./figures//GUIpics/TA
 B2/TAB2_adding_already_predefmat.png>]
-<./figures//GUIpics/TAB3/TAB3_marked.png, id=5030, 671.56557pt x 467.70963pt>
+<./figures//GUIpics/TAB3/TAB3_marked.png, id=5031, 671.56557pt x 467.70963pt>
 File: ./figures//GUIpics/TAB3/TAB3_marked.png Graphic file (type png)
 <use ./figures//GUIpics/TAB3/TAB3_marked.png>
 Package pdftex.def Info: ./figures//GUIpics/TAB3/TAB3_marked.png  used on input
  line 1110.
 (pdftex.def)             Requested size: 402.94244pt x 280.62793pt.
- [171]
-[172 <./figures//GUIpics/TAB3/TAB3_marked.png>]
+ [172]
+[173 <./figures//GUIpics/TAB3/TAB3_marked.png>]
 <./figures//GUIpics/TAB3/TAB3_section_added.png, id=5039, 665.42943pt x 465.664
 25pt>
 File: ./figures//GUIpics/TAB3/TAB3_section_added.png Graphic file (type png)
@@ -3261,7 +3269,7 @@ File: ./figures//GUIpics/TAB3/TAB3_section_assigned.png Graphic file (type png)
 Package pdftex.def Info: ./figures//GUIpics/TAB3/TAB3_section_assigned.png  use
 d on input line 1134.
 (pdftex.def)             Requested size: 119.99516pt x 200.10559pt.
- [173 <./figures//GUIpics/TAB3/TAB3_section_added.png> <./figures//GUIpics/TAB3
+ [174 <./figures//GUIpics/TAB3/TAB3_section_added.png> <./figures//GUIpics/TAB3
 /TAB3_section_assigned.png>]
 <./figures//GUIpics/TAB3/TAB3_NOsection_assigned.png, id=5044, 279.53491pt x 13
 8.40387pt>
@@ -3272,7 +3280,7 @@ Package pdftex.def Info: ./figures//GUIpics/TAB3/TAB3_NOsection_assigned.png  u
 sed on input line 1141.
 (pdftex.def)             Requested size: 167.72223pt x 83.04295pt.
 
-[174
+[175
 
 
  <./figures//GUIpics/TAB3/TAB3_NOsection_assigned.png>]
@@ -3294,8 +3302,8 @@ File: ./figures//GUIpics/TAB4/TAB4_SUPPORTS.png Graphic file (type png)
 Package pdftex.def Info: ./figures//GUIpics/TAB4/TAB4_SUPPORTS.png  used on inp
 ut line 1204.
 (pdftex.def)             Requested size: 200.8576pt x 107.17859pt.
- [175 <./figures//GUIpics/TAB4/TAB4_marked.png> <./figures//GUIpics/TAB4/TAB4_L
-OADS.png>] [176 <./figures//GUIpics/TAB4/TAB4_SUPPORTS.png>] [177] [178]
+ [176 <./figures//GUIpics/TAB4/TAB4_marked.png> <./figures//GUIpics/TAB4/TAB4_L
+OADS.png>] [177 <./figures//GUIpics/TAB4/TAB4_SUPPORTS.png>] [178] [179]
 <./figures//GUIpics/TAB5/TAB5_marked.png, id=5094, 671.56557pt x 468.39142pt>
 File: ./figures//GUIpics/TAB5/TAB5_marked.png Graphic file (type png)
 <use ./figures//GUIpics/TAB5/TAB5_marked.png>
@@ -3315,7 +3323,7 @@ File: ./figures//GUIpics/TAB5/TAB5_solvers.png Graphic file (type png)
 Package pdftex.def Info: ./figures//GUIpics/TAB5/TAB5_solvers.png  used on inpu
 t line 1337.
 (pdftex.def)             Requested size: 123.54173pt x 58.08916pt.
- [179 <./figures//GUIpics/TAB5/TAB5_marked.png>] [180 <./figures//GUIpics/TAB5/
+ [180 <./figures//GUIpics/TAB5/TAB5_marked.png>] [181 <./figures//GUIpics/TAB5/
 TAB5_marked_advanced.png> <./figures//GUIpics/TAB5/TAB5_solvers.png>]
 <./figures//GUIpics/TAB6/TAB6_marked.png, id=5108, 670.88377pt x 467.70963pt>
 File: ./figures//GUIpics/TAB6/TAB6_marked.png Graphic file (type png)
@@ -3323,16 +3331,16 @@ File: ./figures//GUIpics/TAB6/TAB6_marked.png Graphic file (type png)
 Package pdftex.def Info: ./figures//GUIpics/TAB6/TAB6_marked.png  used on input
  line 1363.
 (pdftex.def)             Requested size: 335.44107pt x 233.85423pt.
- [181 <./figures//GUIpics/TAB6/TAB6_marked.png>] [182
+ [182 <./figures//GUIpics/TAB6/TAB6_marked.png>] [183
 
 ]
-<./figures//GUIpics/TAB7/TAB7_markedA.png, id=5122, 670.88377pt x 467.70963pt>
+<./figures//GUIpics/TAB7/TAB7_markedA.png, id=5123, 670.88377pt x 467.70963pt>
 File: ./figures//GUIpics/TAB7/TAB7_markedA.png Graphic file (type png)
 <use ./figures//GUIpics/TAB7/TAB7_markedA.png>
 Package pdftex.def Info: ./figures//GUIpics/TAB7/TAB7_markedA.png  used on inpu
 t line 1416.
 (pdftex.def)             Requested size: 402.53337pt x 280.62793pt.
- [183 <./figures//GUIpics/TAB7/TAB7_markedA.png>]
+ [184 <./figures//GUIpics/TAB7/TAB7_markedA.png>]
 <./figures//GUIpics/TAB7/TAB7_markedB.png, id=5129, 670.88377pt x 467.70963pt>
 File: ./figures//GUIpics/TAB7/TAB7_markedB.png Graphic file (type png)
 <use ./figures//GUIpics/TAB7/TAB7_markedB.png>
@@ -3358,8 +3366,8 @@ File: ./figures//GUIpics/INPUT_FILE/IMAGE_1.png Graphic file (type png)
 Package pdftex.def Info: ./figures//GUIpics/INPUT_FILE/IMAGE_1.png  used on inp
 ut line 1477.
 (pdftex.def)             Requested size: 402.53337pt x 280.62793pt.
- [184 <./figures//GUIpics/TAB7/TAB7_markedB.png>] [185 <./figures//GUIpics/TAB7
-/TAB7_EQPLOT.png> <./figures//GUIpics/TAB7/TAB7_slider.png>] [186 <./figures//G
+ [185 <./figures//GUIpics/TAB7/TAB7_markedB.png>] [186 <./figures//GUIpics/TAB7
+/TAB7_EQPLOT.png> <./figures//GUIpics/TAB7/TAB7_slider.png>] [187 <./figures//G
 UIpics/INPUT_FILE/IMAGE_1.png>]
 <./figures//GUIpics/INPUT_FILE/NODE_TXT.png, id=5159, 212.71924pt x 140.44925pt
 >
@@ -3382,16 +3390,16 @@ File: ./figures//GUIpics/INPUT_FILE/ELEMENT_TXT.png Graphic file (type png)
 Package pdftex.def Info: ./figures//GUIpics/INPUT_FILE/ELEMENT_TXT.png  used on
  input line 1552.
 (pdftex.def)             Requested size: 231.12706pt x 120.67696pt.
- [187] [188 <./figures//GUIpics/INPUT_FILE/NODE_TXT.png> <./figures//GUIpics/IN
+ [188] [189 <./figures//GUIpics/INPUT_FILE/NODE_TXT.png> <./figures//GUIpics/IN
 PUT_FILE/NODE_MAT.png> <./figures//GUIpics/INPUT_FILE/ELEMENT_TXT.png>]
-<./figures//GUIpics/INPUT_FILE/MATS_TXT.png, id=5175, 572.70566pt x 292.48897pt
+<./figures//GUIpics/INPUT_FILE/MATS_TXT.png, id=5176, 572.70566pt x 292.48897pt
 >
 File: ./figures//GUIpics/INPUT_FILE/MATS_TXT.png Graphic file (type png)
 <use ./figures//GUIpics/INPUT_FILE/MATS_TXT.png>
 Package pdftex.def Info: ./figures//GUIpics/INPUT_FILE/MATS_TXT.png  used on in
 put line 1574.
 (pdftex.def)             Requested size: 429.52818pt x 219.36618pt.
- [189 <./figures//GUIpics/INPUT_FILE/MATS_TXT.png>]
+ [190 <./figures//GUIpics/INPUT_FILE/MATS_TXT.png>]
 <./figures//GUIpics/INPUT_FILE/SECS_TXT.png, id=5190, 567.25133pt x 325.89679pt
 >
 File: ./figures//GUIpics/INPUT_FILE/SECS_TXT.png Graphic file (type png)
@@ -3399,7 +3407,7 @@ File: ./figures//GUIpics/INPUT_FILE/SECS_TXT.png Graphic file (type png)
 Package pdftex.def Info: ./figures//GUIpics/INPUT_FILE/SECS_TXT.png  used on in
 put line 1605.
 (pdftex.def)             Requested size: 425.43745pt x 244.42198pt.
- [190 <./figures//GUIpics/INPUT_FILE/SECS_TXT.png>]
+ [191 <./figures//GUIpics/INPUT_FILE/SECS_TXT.png>]
 <./figures//GUIpics/INPUT_FILE/ELESEC_TXT.png, id=5201, 390.66707pt x 128.85878
 pt>
 File: ./figures//GUIpics/INPUT_FILE/ELESEC_TXT.png Graphic file (type png)
@@ -3422,8 +3430,8 @@ File: ./figures//GUIpics/INPUT_FILE/ANALYSISCONTROLS_TXT.png Graphic file (type
 Package pdftex.def Info: ./figures//GUIpics/INPUT_FILE/ANALYSISCONTROLS_TXT.png
   used on input line 1650.
 (pdftex.def)             Requested size: 452.53862pt x 321.6348pt.
- [191 <./figures//GUIpics/INPUT_FILE/ELESEC_TXT.png> <./figures//GUIpics/INPUT_
-FILE/BCS_TXT.png>] [192 <./figures//GUIpics/INPUT_FILE/ANALYSISCONTROLS_TXT.png
+ [192 <./figures//GUIpics/INPUT_FILE/ELESEC_TXT.png> <./figures//GUIpics/INPUT_
+FILE/BCS_TXT.png>] [193 <./figures//GUIpics/INPUT_FILE/ANALYSISCONTROLS_TXT.png
 >]
 <./figures//GUIpics/INPUT_FILE/CANTIRES.png, id=5220, 670.88377pt x 467.70963pt
 >
@@ -3443,7 +3451,7 @@ File: ./figures//GUIpics/INPUT_FILE/CANTI_TXT.png Graphic file (type png)
 Package pdftex.def Info: ./figures//GUIpics/INPUT_FILE/CANTI_TXT.png  used on i
 nput line 1690.
 (pdftex.def)             Requested size: 454.584pt x 514.92249pt.
-) [193 <./figures//GUIpics/INPUT_FILE/CANTIRES.png>] [194 <./figures//GUIpics/I
+) [194 <./figures//GUIpics/INPUT_FILE/CANTIRES.png>] [195 <./figures//GUIpics/I
 NPUT_FILE/CANTI_TXT.png>]
 Overfull \hbox (16.02937pt too wide) in paragraph at lines 358--358
 []\OT1/ptm/m/n/12 E. Reiss-ner, ``On one-dimensional finite-strain beam the-ory
@@ -3456,7 +3464,7 @@ Overfull \hbox (13.65059pt too wide) in paragraph at lines 358--358
 ms un-der large over-all motions---
  []
 
-[195
+[196
 
 ]
 Overfull \hbox (12.32214pt too wide) in paragraph at lines 358--358
@@ -3476,25 +3484,25 @@ Overfull \hbox (21.989pt too wide) in paragraph at lines 358--358
 o-met-ri-cally ex-act three-dimensional
  []
 
-[196] [197] [198]
+[197] [198] [199]
 Overfull \hbox (13.7795pt too wide) in paragraph at lines 358--358
 []\OT1/ptm/m/n/12 M. Cr-isfield, ``A fast in-cre-men-tal/iterative so-lu-tion p
 ro-ce-dure that han-dles "snap-through",''
  []
 
-[199]
+[200]
 Overfull \hbox (13.17111pt too wide) in paragraph at lines 358--358
 \OT1/ptm/m/n/12 gen-eral non-lin-ear pro-gram-ming prob-lems,'' \OT1/ptm/m/it/1
 2 Ap-plied math-e-mat-ics and com-pu-ta-tion\OT1/ptm/m/n/12 , vol. 80,
  []
 
-[200]
+[201]
 Overfull \hbox (24.0425pt too wide) in paragraph at lines 358--358
 []\OT1/ptm/m/n/12 M. Yu and Z. Wang, ``Ho-mo-topy con-tin-u-a-tion of the high-
 order flux re-con-struc-tion/correction
  []
 
-[201] [202] [203] [204] [205] (vita.tex [206]) [207
+[202] [203] [204] [205] [206] (vita.tex [207]) [208
 
 ] (thesis.aux)
 
@@ -3513,9 +3521,9 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46541 strings out of 478304
- 938557 string characters out of 2833182
- 1665166 words of memory out of 3000000
+ 46540 strings out of 478304
+ 938537 string characters out of 2833182
+ 1666132 words of memory out of 3000000
  63317 multiletter control sequences out of 15000+600000
  520606 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3561,9 +3569,9 @@ pfb><C:/Users/chari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utm
 bi8a.pfb><C:/Users/chari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
 s/utmr8a.pfb><C:/Users/chari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on thesis.pdf (229 pages, 19607284 bytes).
+Output written on thesis.pdf (230 pages, 19606801 bytes).
 PDF statistics:
  5876 PDF objects out of 6186 (max. 8388607)
- 795 named destinations out of 1000 (max. 500000)
+ 794 named destinations out of 1000 (max. 500000)
  1402 words of extra memory for PDF output out of 10000 (max. 10000000)
 

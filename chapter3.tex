@@ -34,7 +34,7 @@ fiber stress state. The algorithm introduced in this chapter bypasses the need
 for additional outer iterations, thereby resulting in a much faster stress 
 update procedure.
 
-For the exposition we adopted the $J2$ consitutive model which is based on the 
+For the exposition we adopted the $J_2$ consitutive model which is based on the 
 von Mises yield criterion, which is suited for modelling the elastoplastic 
 response of metals. Linear kinematic and general isotropic hardening are 
 incorporated in the formulation. Moreover, infinitesimal strains and a 
@@ -65,9 +65,9 @@ algorithm proposed herein.
 %%%%%%%%%%%%%%%%%%%%  SECTION 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Three-dimensional Constitutive Model}\label{section:CH3-S2}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Below we outline the general rate form of rate-independent elastoplasticity 
+Below we outline the general form of rate-independent elastoplasticity 
 with combined isotropic and linear kinematic hardening. Infinitesimal strains 
-and associateive plasticity are assumed, while the yield criterion is 
+and associative plasticity are assumed, while the yield criterion is 
 purposefully unspecified at this state in order to maintain generality. 
 
 Let $\bm{\sigma},\ \bm{\epsilon}$ be the second order symmetric stress and 
@@ -109,7 +109,7 @@ above is the following:
 	\label{eq:THREE_D_RATE}
 \end{subequations}
 
-In the above system of differential algebraic equations, $\lambda$ is the 
+In the above system of differential-algebraic equations, $\lambda$ is the 
 plastic
 parameter, $H_{kin}$ is the kinematic hardening modulus, $\mathbb{C}^{el}$ is 
 the elastic moduli, a fourth order tensor, of the material and $\sigma_{eq}$ is 
@@ -119,10 +119,9 @@ isotropic hardening with modulus $H_{iso}$, the corresponding harening law (Eq.
 \ref{eq:CURRENT_YIELD_STRESS}) becomes $\dot{q} =
 H_{iso}\dot{e}^{pl}$, where $e^{pl}$ is the equivalent plastic strain. Finally, 
 with the inequality in Eq. (\ref{eq:YIELD_FUNC})
-we define a feasible stress space. Stress points stictly satisfying the
-inequality, $\Phi<0$ represent an elastic state while those that cause plastic 
-flow
-render $\Phi$ zero.
+we define a feasible stress space such that stress points stictly satisfying the
+inequality, $\Phi<0$ represent an elastic state while these points that cause 
+plastic flow render $\Phi$ zero.
 
 The so-called Karush-Kuhn-Tucker loading/unloading conditions derived from the 
 underlying constrained variational problem\cite{Simo2006} can be stated as
@@ -163,7 +162,7 @@ We begin by defining the admissible stress space for a planar beam fiber,
 $\mathcal{S}$:
 \begin{equation*}
 	\mathcal{S} = \{\bvec{\sigma}\in\mathbb{R}^6\ |\
-	\sigma_{22}=\sigma_{33}=\sigma{23}=\sigma_{13}=0\}
+	\sigma_{22}=\sigma_{33}=\sigma_{23}=\sigma_{13}=0\}
 \end{equation*}
 
 \noindent The von Mises yield criterion is stated as follows:
@@ -179,7 +178,7 @@ is the second invariant of the deviatoric stress tensor:
 \end{equation}
 The deviatoric part of any tensor is given by $(\ )^d=(\ 
 )-\frac{1}{3}\bmat{I}\cdot\text{trace}[(\ )]$, with $\bmat{I}$ being the 
-identity tensor and symbol <:> designates the contraction operator: 
+identity tensor and symbol ":" designates the contraction operator: 
 $\bm{\sigma}^d:\bm{\sigma}^d = \sum_{i,j}\sigma_{ij}^d\sigma_{ij}^d$.
 
 In the von Mises $J_2$ framework, the hydrostatic pressure cannot cause plastic
@@ -193,30 +192,35 @@ the back stress tensor in Eq. (\ref{eq:BACK_STRESS}) deviatoric.
 
 In active stress space $\mathcal{S}$ the yield function is 
 $\Phi = \sqrt{\sigma_{11}^2 + 3\sigma_{12}^2}-q$ describes an ellipse, shown
-in \ref{fig:FIG16_YIELDLOCUS}, with
+in Fig. \ref{fig:FIG16_YIELDLOCUS}, with
 semi-major and semi-minor axes $\sigma_y$, $\sqrt{3}^{}/3\sigma_y$, 
 respectively.
 
 \begin{figure}[t]
 	\centering
 	\includegraphics[scale=0.8]{FIG16_YIELDLOCUS}
-	\caption{Feasible space and yield locus for the $J_2$ model. At the 
-	boundary of the ellipse,
-		$\sqrt{3J_2}=q$.}
+	\caption{Feasible space and yield locus for the planar fiber constrained 
+	$J_2$ model. At the ellipse boundary we have $\sqrt{3J_2}=q$.}
 	\label{fig:FIG16_YIELDLOCUS}
 \end{figure}
 
 When kinematic
-hardening is included, we introduce the effective stress tensor and its
-deviatoric part in order to facilitate notational simplicity:
+hardening is included, we introduce the effective stress tensor, 
+$\bm{\zeta}$, in order to facilitate notational simplicity. Its deviatoric 
+part, 
+which plays central role in the three-dimensional formulation of the $J_2$ 
+model is given by:
 \begin{equation}
-	\bm{\zeta} = \bm{\sigma}-\bm{\alpha},\qquad \bm{\zeta}^d =
-	\bm{\sigma}^d-\bm{\alpha}^d
+	\bm{\zeta}^d =	\bm{\sigma}^d-\bm{\alpha}^d
 	\label{eq:EFFECTIVE_STRESS}
 \end{equation}
 
-We now define the following vectors associated with the active tensor
-components that explicitly enter subsequent derivations:
+We now seek a mapping from the deviatoric stress space onto the fiber stress 
+space $S$ such that the inner product in the expression for $J_2$ is preserved. 
+For this purpose, and in line with the vector notation for stress and strain 
+tensors adopted earlier, we define the following vectors which involve only 
+these tensor components that explicitly enter subsequent derivations:
+
 \begin{gather}
 	\bvec{\alpha}_f = \begin{bmatrix} \alpha_{11} \\ \alpha_{12} 
 	\end{bmatrix},\quad
@@ -235,18 +239,9 @@ components that explicitly enter subsequent derivations:
 	\end{bmatrix}\nonumber
 %	\label{eq:FIBER_J2_VECTORS}
 \end{gather}
-The vector representation of (\ref{eq:J2}) in terms of the effective stress is:
-\begin{equation}
-	J_2 = \frac{1}{2}(\bvec{\zeta}^d)^T\bmat{J}\bvec{\zeta}^d 
-	\label{eq:VECTOR_J2_3D}
-\end{equation}
-\noindent where matrix $\bmat{J} = \text{diag}[1, 1, 1, 2,2,2]$ is introduced to
-account for the symmetry of $\bm{\zeta}^d$.
 
-We now seek a mapping from the deviatoric stress space onto the fiber stress 
-space $S$ of the deviatoric
-effective stress vector $\bvec{\zeta}^d$ that preserves the inner product and, 
-thus, the second deviatoric invariant $J_2$. The non-zero components of 
+The subscript $f$ indicates that the vector involves only these tensor 
+components pertinent to the fiber stress state. The non-zero components of 
 $\bvec{\zeta}^d$ are $\zeta_{11}^d,\ \zeta_{22}^d,\ \zeta_{33}^d,\
 \zeta_{12}^d,\ \zeta_{21}^d$ and thus we can establish the following mappings
 between the active components of $\bvec{\zeta}^d$ and $\bvec{\zeta}_f$:
@@ -266,7 +261,21 @@ where the mapping matrices above are given by:
 	\end{bmatrix}
 	\label{eq:MAPPING_MATRIX}
 \end{equation}
-We can now express $J_2$ purely in terms of $\bvec{\zeta}_f$:
+where the value of $Q_{24} = 2$ because of the stress tensor symmetry.
+
+%%%%%%%%%5
+
+The vector representation of (\ref{eq:J2}) in terms of the effective stress is:
+\begin{equation}
+	J_2 = \frac{1}{2}(\bvec{\zeta}^d)^T\bmat{J}\bvec{\zeta}^d 
+	\label{eq:VECTOR_J2_3D}
+\end{equation}
+\noindent where matrix $\bmat{J} = \text{diag}[1, 1, 1, 2,2,2]$ is introduced to
+account for the symmetry of $\bm{\zeta}^d$. If the axisymmetric version of 
+vectors is used, where only 4 tensor components are stored, then $\bmat{J} = 
+\text{diag}[1, 1, 1, 2,]$.
+
+We can now express $J_2$ in terms of $\bvec{\zeta}_f$:
 \begin{equation}
 	J_2 = \frac{1}{2}(\bvec{\zeta}^d)^T\bmat{J}\bvec{\zeta}^d = 
 	\frac{1}{2}\bvec{\zeta}_f^T\bmat{Q}^T\bmat{J}\bmat{Q}\bvec{\zeta}_f =
@@ -369,7 +378,8 @@ constitutive equations in system (\ref{eq:FIBER_RATE_SYSTEM}) in the pseudotime
 interval $[t_n,t_{n+1}]$. We regard the incremental/iterative process as strain
 driven, in that at the start of increment $n$, the dependent state variables 
 for each fiber,
-$S_n=\{\bvec{\epsilon}_f,\bvec{\epsilon}_f^{pl},\bvec{\alpha}_f,e_f^{pl}\}_n$, 
+$S_{f,n}=\{\bvec{\epsilon}_f,\bvec{\epsilon}_f^{pl},\bvec{\alpha}_f,e_f^{pl}\}_n$,
+ 
 are
 known and stored. We also know the increment in the centerline strain vector
 $\bvec{d}$, $\Delta\bvec{d}$. The incremental strain vector for the current
@@ -379,13 +389,14 @@ fiber is then determined using eq. (\ref{eq:f2}):
 	\label{eq:INCREMENTAL_STRAINS}
 \end{equation*}
 Given the incremental strain vector $\Delta\bvec{\epsilon}_f$, 
-we need to update the state variables for $t_{n+1}$:  $S_n\rightarrow S_{n+1}$.
-In what follows we ommit the subscript denoting the vector pertains to the fiber
-state: 
+we need to update the state variables for $t_{n+1}$:  $S_{f,n}\rightarrow 
+S_{f,n+1}$.
+In what follows we ommit the subscript "f" which indicated that the involved 
+measure pertains to the fiber state: 
 \begin{equation*}
-	S_n \equiv
+	S_{f,n} \equiv S_n = 
 	\{\bvec{\epsilon}_n,\bvec{\epsilon}_n^{pl},\bvec{\alpha}_n,e_n^{pl}\},\qquad
-	S_{n+1} \equiv
+	S_{f,n+1} \equiv S_{n+1} =
 	\{\bvec{\epsilon}_{n+1},\bvec{\epsilon}_{n+1}^{pl},\bvec{\alpha}_{n+1},e_{n+1}^{pl}\},
 \end{equation*}
 
@@ -465,7 +476,8 @@ We need not differentiate between initial and final value for the plastic
 parameter $\lambda$ since it is initialized to zero at the beginning of every
 step: $\lambda_n = 0$. The solution of (\ref{eq:REDUCED_DISCR_SYS}) is based on
 a two-step procedure. The first phase is called trial elastic step, where 
-we assume that the increment $\Delta\bvec{\epsilon}$ is elastic and all state 
+we assume that the increment $\Delta\bvec{\epsilon}$ is entirely elastic and 
+all state 
 variables are updated by setting $\lambda=0$: $S_n\rightarrow S_{n+1}^{TR}$. If 
 the trial stresses satisfy the yield condition $\Phi^{TR}_{n+1} < 0$, then the 
 step
@@ -518,15 +530,16 @@ and the basic relations for each step are summarized below.
 	\label{eq:PLASTIC_CORRECTOR_SYS}
 \end{minipage}
 
-The Plastic Corrector step is a system of 4 nonlinear algebraic equations with 
-4 unknowns, $\{\zeta_{11,n+1}, \zeta_{12,n+1}, q_{n+1}, \lambda\}$, and
-generally a local Newton method is required to determined the unknowns. It
+For the planar fiber formulation, the Plastic Corrector step is a system of 
+four nonlinear algebraic equations with 
+four unknowns, $\{\zeta_{11,n+1}, \zeta_{12,n+1}, q_{n+1}, \lambda\}$, and
+generally a local Newton method is required to determine find a solution. It
 should be stressed here that, in multiaxial constitutive algorithms that do not
 make use of the mapping as developed here, this local process is nested within 
 an upper level Newton procedure that enforces the zero transverse
 stress condition.
 
-Substituting Eqs. (\ref{eq:CORRECTOR_EFFECTIVE}),(\ref{eq:CORRECTOR_YIELD})
+Substitution of Eqs. (\ref{eq:CORRECTOR_EFFECTIVE}),(\ref{eq:CORRECTOR_YIELD})
 into (\ref{eq:CORRECTOR_YIELDFUN}) furnishes a nonlinear scalar equation that
 needs to be solved for $\lambda$. Once $\lambda$ is computed, then the fiber
 state can be updated $S_{n+1}^{TR}\rightarrow S_{n+1}$. Refer also to
@@ -602,7 +615,8 @@ furnishes the formula for the consistent tangent modulus:
 Details regarding all newly defined vectors and matrices involved in the
 derivation of $\bmat{C}_c^{pl}$ is given in Appendix \ref{appendix:APPENDIX_D}. 
 In Box ~\ref{Box:BOX1} 
-we have summarised the return mapping algorithnm for a fiber.
+we have summarised the return mapping algorithnm for a cross-section fiber of a 
+planar problem.
 
 %%%%%%%%%%%%%%%%%%%%  SECTION 4 - SUBSECTION 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Consistent Section Stiffness}\label{section:CH3-S4SS3}
@@ -610,7 +624,7 @@ we have summarised the return mapping algorithnm for a fiber.
 Once the stress update on a particular fiber has been carried out, its
 contribution to the stress resultant vector and the section stiffness are
 accounted for via a midpoint integration rule along the section height (see Eqs.
-(\ref{eq:STRESS_RES_CONJUGATE}), (\ref{eq:FIB_STIFF_CONTRIB}).
+(\ref{eq:STRESS_RES_CONJUGATE}), (\ref{eq:FIB_STIFF_CONTRIB})).
 
 % ~~~~~~~~~~~~~~~~~~~~~~ BOX 1  ~~~~~~~~~~~~~~~~~~~~~``
 {
@@ -719,7 +733,7 @@ Notice that while in the present formulation $C_{21}=C_{12}$, this will not be
 the case if a generalized integration rule is used for the rate equations. In
 such a scenario, if enforcement of the plastic consistency does not correspond
 to the interior time $t_a\in[t_n, t_{n+1}]$ chosen, that is $\Phi_a=0$, then 
-the consistenttangent will not be symmetric. For more details on this refer to
+the consistent tangent will not be symmetric. For more details on this refer to
 \cite{Ortiz1985}.
 
 %%%%%%%%%%%%%%%%%%%%  SECTION 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -734,10 +748,11 @@ algorithms in elastoplasticity\cite{DeSouza2011}. The contours are generated by
 imposing a family of stress or strain prescribed loadings from a selected point 
 on the yield surface which cause further plastification (no unloading). For 
 each load incrementation, the error is computed as the relative difference 
-between the stress predicted by the proposed algorithm and ``exact"" stress. 
+between the stress predicted by the proposed algorithm and ``exact" stress. 
 The exact stress is typically found by imposing the same increment in a number 
 of sequencial subincrements, $n_s$. A convergence analysis is required to 
-ensure that subincrementation indeed converges to a stress point. In the 
+ensure that subincrementation indeed converges asymptotically to a stress 
+point. In the 
 present study it was found that for $n_s\geq 500$ the stress components had 
 achieved convergence with respect to the first 7 decimal points. Therefore, we 
 use $n_s = 500$. The error plotted is given by:
@@ -747,13 +762,14 @@ use $n_s = 500$. The error plotted is given by:
 	\label{eq:ERROR}
 \end{equation}
 \noindent where $\bvec{\sigma}^*$ is the exact stress vector and 
-$\bvec{\sigma}$ the one predicted by the proposed scheme by solving in one 
-step. The three points on the yield surface that are selected and shown
+$\bvec{\sigma}$ the one predicted by the proposed scheme by solving the return 
+mapping problem in one 
+increment. The three points on the yield surface that are selected and shown
 in Fig. \ref{fig:FIG17_ISO_MAP_SCENARIOS} correspond to an initial state of 
 pure shear (A), mixed 
 state where $\sigma_{11,0}=\sigma_{12,0}$ (B) and a pure uniaxial stress state 
 (C). 
-For each of these initial states the family of strain increments are imposed 
+For each of these initial states the family of strain increments is imposed 
 along the directions shown, with range up to 
 $\Delta\Vert\bvec{\epsilon}\Vert=5\epsilon_y$, where $\epsilon_y$ is the yield 
 strain in tension/compression. The material data used are: $E=2.1\times 10^5,\ 
@@ -774,9 +790,10 @@ are defined in the following way: $a_1=\Delta\bvec{\epsilon}_1^{}/\epsilon_y$,
 $a_2=\Delta\bvec{\epsilon}_2^{}/\epsilon_y$. As  can be seen from figures 
 \ref{fig:FIG18_ISO_MAPS_PERF_PLAST}, \ref{fig:FIG19_ISO_MAPS_HARD}, the 
 relative error 
-remains small even for quite large increments in the strain vector. Note also 
-that for along the semi-major and semi-minor axes in the cases of pure uniaxial 
-state and pure shear respectively, the return mapping gives the exact stress 
+remains small even for quite large increments in the strain vector.Note also 
+that along the semi-major and semi-minor axes, which correspond to the cases of 
+pure uniaxial and pure shear states respectively, the return mapping gives the 
+exact stress 
 even without subincrementation. The same is true for point B when the strain 
 increments are along a direction around $68^{\circ}$ with respect to $a_1$ axis.
 
@@ -826,13 +843,13 @@ beam elements when shear-flexure interaction is taken into account using a
 multiaxial law at the fiber level. We also compare it with the plane stress 
 projection 
 algorithm by Simo\cite{Simo1985}, which we followed in our derivations. In the 
-former approach, the return mapping using an implicit integration results in 
+former approach, the return mapping using implicit integration results in 
 the so-called radial return, which doesn't require iterations in the case of 
 $J_2$ with perfect plasticity or linear hardening\cite{Wilkins1963}. In 
 constrast, the latter requires iterations since the topology of the stress 
 space is not as simple as the von Mises cylinder anymore. We show below the 
 drastic performance boost when 
-using the present algorithm. As already state earlier, this is mainly due to 
+using the present algorithm. As stated earlier, this is mainly due to 
 the fact that we avoid an additional Newton procedure to enforce the zero 
 transverse stress condition. The results for each scenario are shown in the 
 tables below. A perfectly plastic material was assumed and both the average 
@@ -1033,7 +1050,7 @@ mesh density. Lastly, each cross-section is discretized into 15 layers.
 The shear strain distribution function, $k_q\varphi(X_2)$, is assumed to be 
 parabolic and defined as follows:
 \begin{equation}
-	\varphi(X_2) = (1-4\frac{X_2^2}{h^2})
+	\varphi(X_2) = 1-4\frac{X_2^2}{h^2}
 	\label{eq:SHEAR_DISTR_FUN}
 \end{equation}
 \noindent where $k_q$ is a parameter introduced in order to establish shear 
@@ -1050,26 +1067,26 @@ of the exact one, assuming elastic behavior:
 \end{equation}
 \noindent where $k_s$ is the shear coefficient for uniform shear strain 
 assumption. For rectangular sections with $\nu=0.3$, 
-$k_s=0.886$ and solving eq. \ref{eq:SHEAR_COEFF} for $k_q$ we 
+$k_s=0.886$ and solving eq. (\ref{eq:SHEAR_COEFF}) for $k_q$ we 
 get:
 \begin{equation}
 	k_q = \sqrt{\frac{k_s A}{\int_A \varphi(X_2)^2 dA}}
 	\label{eq:QUAD_COEFF}
 \end{equation}
 
-A first observation from fig \ref{fig:FIG22_EQUILIBRIUM_PATHS} is that 
-Gauss-Legendre quadrature tends to overestimate the capacity load in both edges 
-of the slenderness spectrum and . Gauss-Lobatto quadrature, in contrast, is 
+A first observation from Fig. \ref{fig:FIG22_EQUILIBRIUM_PATHS} is that 
+Gauss-Legendre quadrature tends to overestimate the capacity load on both edges 
+of the slenderness spectrum. Gauss-Lobatto quadrature, in contrast, is 
 more accurate and converges to the ``exact'' capacity from ``below''. In 
-addition, it provides accuracy with juts 5 quadrature points whereas even with 
-9 points, Gauss-Legendre still is not as accurate and converges from ``above''. 
+addition, it provides accuracy with just five quadrature points whereas even 
+with nine points, Gauss-Legendre still is not as accurate and converges from 
+``above''. 
 The results are in agreement with the ones reported by Papachristidis et 
-al.\cite{Papachristidis2010} in a similar investigation but using a flexibility 
-element.
+al.\cite{Papachristidis2010} in a similar investigation.
 
 When it comes to the influence of slenderness in the plastic capacity, the 
 collapse 
-load for the $L^{}/h$ case predicted by the multiaxial constitutive law is 
+load for the $L^{}/h=4$ case predicted by the multiaxial constitutive law is 
 lower than the one based on limit analysis. Interestingly, the uncoupled 
 constitutive law results in a purely flexural collapse mode, thus yielding a 
 ultimate load coinciding with the theoretical from limit analysis. When the 
@@ -1171,31 +1188,38 @@ loading. The specimen we are concerned with was part of an experimental
 investigation by Hjelmstad \& Popov\cite{Hjelmstad1983} and later was 
 numerically analyzed by Saritas \& Filippou\cite{Saritas2009} using a mixed 
 beam element formulation with shear-flexure interaction at the fiber level. In 
-our analsys the specimen was modelled using one hybrid element with 5 
-Gauss-Lobatto points and 31 layers at each section with five layers on each 
+our analsys the specimen was modelled using one hybrid element with five 
+Gauss-Lobatto points and 21 layers at each section with three layers on each 
 flange. 
 
-The specimen length is $L=28$ in. and the cross-section type is W $18\ \times\ 
-40$ with basic dimensions 
+The specimen length is $L=28$ in. and the cross-section type is W $18\times40$ 
+with basic dimensions 
 specified as follows: total height $h=17.88$ in., flange width $b=5.985$ in., 
-web and flange thickness, $t_w=0.314$ in. and $t_F=0.521$ in. respectively. The 
+web and flange thickness, $t_w=0.314$ in. and $t_f=0.521$ in. respectively. The 
 material properties are summarized in Table \ref{table:TABLE6}, while the 
 displacement history, in 
 accordance with Hjelmstad \& Popov's experiment, is shown in 
-Fig.\ref{fig:FIG24B} The plastic 
-modulus corresponding to linear kinematic hardening was determined from  
-uniaxial data to be $H_{kin}=102$ kips/in${}^2$. A nonlinear hardening law was 
-specified for the isotropic part, which is given as follows:
-\begin{equation}
-	q(e^{pl}) = \sigma_y + C(1-\text{exp}(-\rho e^{pl}))
-	\label{eq:NONLIN_ISOTROPIC_HARD}
-\end{equation}
-\noindent where $C=\sigma_u-\sigma_y$, $\sigma_u$, $\sigma_y$ the ultimate and 
-yield stresses respectively and $\epsilon_u$, $\epsilon_y$ the corresponding 
-strains. Parameter $\rho$ is specified as 
-$\rho=20$ in this analysis. The shear strain distribution is again assumed to 
-be quadratic, where $k_s=0.466$ and, using eq. (\ref{eq:QUAD_COEFF}),  
-$k_q=1.33$.
+Fig.\ref{fig:FIG24B}. 
+
+
+ Satisfactory agreement with the experimental results is achieved when setting 
+$H_{kin}=78.4$  kips/in${}^2$ and $H_{iso} = 8.40$ kips/in${}^2$ and assuming 
+a quadratic shear strain distribution along the cross-section height, in 
+accordance with the previous example. More specifically, it was found that 
+better agreement with the experimental results was achieved by sligtly 
+increasing the shear factor $k_q$ to $1.62$ from the default value of $1.33$, 
+as determined by eq. (\ref{eq:QUAD_COEFF}). The main cause for the discrepancy 
+is that with the procedure outlined in Example 3 for the determination of the 
+equivalent ``quadratic'' shear coefficient, an assumption for the shear stress 
+distribution is not considered and this can be a source of non-negligible 
+inaccuracies when open thin-walled sections are used. Nevertheless, since 
+neither the distribution of shear fields on the cross-section shapes nor the 
+particularization of flow and hardening laws for cyclic loading are the main 
+focus of this study, some inaccuracies during cyclic plastification are to be 
+expected and tolerated. In addition, a slight divergence during the unloading 
+phases can be observed between the numerical and experimental tests. As 
+explained in \cite{Saritas2009}, this is due to 
+improper restraint of the specimen during the experiment.
 
 \begin{figure}[t]
 	\centering
@@ -1260,38 +1284,23 @@ $k_q=1.33$.
 	\label{fig:FIG25}
 \end{figure}
 
-As can be seen from Fig.\ref{fig:FIG25}, during the first cycle we have 
-satisfactory agreement between the present analysis and the experimental 
-result, while for all cycles after the third, we have almost excellent match 
-between all cyclic histories shown. For the second and third cycles, with peak 
-displacement at $1$ inch, the present analysis exhibits a more abrupt yielding. 
-This happens because most of the core becomes plastified within a smaller range 
-of increments. While the hardening rules adopted might affect this behavior, it 
-is the assumed shear strain distribution that playes a central role in 
-transitioning from the elastic to plastic regime. Formulations that also 
-consider shear stress distribution functions along the cross-section, section 
-warping or even more accurate shear strain distribution models can definitely 
-improve the approximation. We can also observe that both numerical models show 
-identical accuracy during the unloading steps and a noticable discrepancy with 
-the experimental analysis. As explained in \cite{Saritas2009}, this is due to 
-improper restraint of the specimen during the experiment.
-
 Performance analysis of the three different return-mapping schemes is also 
 conducted for this example, where now we will examine the total number of 
 constitutive iterations during the whole history of the imposed displacement. 
 This helps highlight the significant acceleration the proposed algorithm offers 
-when a complex analysis that involves nonlinear response of an element 
-comprised of different sections, each of which is discretized in several 
+during a more complex analysis that involves nonlinear response of an element 
+comprised of multiple sections, each of which is discretized in several 
 layers. The results when we use the three-dimensional/axisymmetric, Simo's 
 plane stress and the proposed algorithm are shown in Fig. \ref{fig:FIG_BARS}. 
-As mentioned earlier, the constitutive model even tends to favor the 
+As mentioned earlier, the linear hardening constitutive model even tends to 
+favor the 
 three-dimensional algorithm since the plastic correction reduces to the 
-so-called radial return for this particular constitutive model. However, in a 
+so-called radial return. However, in a 
 more general setting where nonlinear hardening or a different material model is 
 used, the perfromance differentials between the proposed scheme and the its 
 three-dimensional counterpart would be even more pronounced.
 
- \begin{figure}[t]
+ \begin{figure}[b]
  	\centering
  	\includegraphics[scale=0.9]{FIG_BARS}
  	\caption{Performance of the three different return-mapping algorithms 
@@ -1299,24 +1308,28 @@ three-dimensional counterpart would be even more pronounced.
  	imposed displacement history.}
  	\label{fig:FIG_BARS}
  \end{figure}
+\clearpage
 %%%%%%%%%%%%%%%%%%%%  EXAMPLE 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Elastoplastic Post-Buckling Behavior of Two-Beam Structure}
 
 This problem has been previously analyzed in \cite{Argyris1982,Ridha1971}. The 
 structure, shown in Fig. \ref{fig:FIG26_STRUCTURE}, enters its inelastic regime 
-imediatelly after the buckling 
+immediately after the buckling 
 load is reached, whereby point B starts moving inwards. In 
 Fig. \ref{fig:FIG26_COMPARISON} we compare the 
-results we get using just 3 hybrid elements and 5 Gauss-Lobatto points in each 
-element with Argyris et al.\cite{Argyris1982}. In addition, we include the 
+results we get using just three hybrid elements and five Gauss-Lobatto points 
+in each 
+element with the ones of Argyris et al.\cite{Argyris1982}. In addition, we 
+include the 
 inelastic analysis, which demonstrates that plastification starts immediately 
-after then instability. The material and geometric data are shown in 
+after the instability. Material and geometric data are shown in 
 Table \ref{table:TABLE7}. Again, we highlight the impact of a coupled 
 multiaxial law by 
 investigating a variation of this problem. For all cases, inelastic response 
-with kinematic hardening is assumed. The convergence rates in residual norm and 
-energy norms for the case of thick members is also shown in Tables 
-\ref{table:TABLE8}, \ref{table:TABLE9}. In Fig. \ref{fig:RATES} we also show 
+with kinematic hardening is assumed. Convergence data in residual norm and 
+energy norms for the case of thick members are also shown in Tables 
+\ref{table:TABLE8}, \ref{table:TABLE9} for selected steps. In Fig. 
+\ref{fig:RATES} we also show 
 plots of convergence rates for the global Newton method when using the 
 consistent and continuous tangent respectively for two representative steps. It 
 is evident that use of the continuous tangent modulus slows down convergence 
@@ -1464,8 +1477,10 @@ model.
 %%%%%%%%%%%%%%%%%%%%  EXAMPLE 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Three Story Frame With Shear Links}
 
-The three-story four-bay steel frame, first analyzed in \cite{Amir2022}, is 
-shown in Fig. \ref{fig:FIG28_STRUCTURE}, where the diagonal braces are ignored. 
+In this example we are concerned with the three-story four-bay steel frame 
+shown in Fig. \ref{fig:FIG15_STRUCTURE}. It was first analyzed in 
+\cite{Amir2022} and in the present investigation the diagonal braces are 
+ignored. 
 Gravity loads are 
 derived from the material and geometric properties of the elements and, for 
 simplicity, are assumed to be acting on frame joints only. The values for each 
@@ -1565,7 +1580,7 @@ shear-axial-flexure
 interaction. The proposed formulation is particularly suited for 
 flexibility-based or 
 hybrid-type elements, which tend to rely more on higher order quadrature rules. 
-Focusing our attention in the von Mises yield criterion with both linear 
+Focusing our attention on the von Mises yield criterion with both linear 
 kinematic and 
 isotropic hardening, we have shown that the proposed model is much faster in 
 terms of computational cost than 
