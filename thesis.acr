@@ -122,7 +122,7 @@
 		\setentrycounter[]{page}\glsnumberformat{179}}}%
 \glossentry{wlst}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{122}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{128}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{127\delimN 128}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{131}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{179}}}%
 \end{theglossary}\glossarypostamble

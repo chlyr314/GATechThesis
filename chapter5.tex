@@ -6,7 +6,7 @@
 
 In this chapter, an efficient prediction 
 scheme for numerical continuation of systems of the form $\bvec{F}=\bvec{0}$, 
-where $\bvec{F}:\mathbb{R}^{n+1}\rightarrow\mathbb{R}^n$. 
+where $\bvec{F}:\mathbb{R}^{n+1}\rightarrow\mathbb{R}^n$ 
 is developed. The formulation does not require second order information, yields 
 predictor 
 directions consistent with the local geometry of the solution set and remains 
@@ -121,7 +121,8 @@ prediction for $\bvec{y}_{N+1}$ is first made, $\bvec{y}_{N+1}^p$, followed by
 a 
 correction phase 
 whereby the initial prediction is iteratively improved, usually by employing a
-Newton type iteration to enforce condition \ref{eq:Problem}. Satisfaction of
+Newton type iterative procedure to enforce condition \ref{eq:Problem}. 
+Satisfaction of
 this condition is usually tested using an appropriate norm and a
 prescribed tolerance. 
 
@@ -191,7 +192,7 @@ larger. For that reason, predictors of order higher than two are rarely
 used\cite{Seydel87,Salgovic81}. On the other side, type 2 or 3
 predictors\cite{Schwetlick87,Gervais04,Syam02,Syam03,Watson87,Deuflhard87,Lundberg93},
  tend to yield better approximations for larger step-lengths but are 
-considerably more computationally expensive. Tangent vectors need to be
+considerably more expensive. Tangent vectors need to be
 extracted from the nullspace of $\bmat{J}$ at the beginning of each step and
 the determination of higher order derivatives require additional linear systems
 to be solved. Alternatively, finite difference schemes can be employed to
@@ -623,10 +624,12 @@ $N$ are known.
 	\end{algorithmic}
 \end{algorithm}
 
-As can be seen from \ref{alg:WLS}, the \acrshort{wls} process requires the 
+As can be seen from Algorithm \ref{alg:WLS}, the \acrshort{wls} process 
+requires the 
 polynomial degree  $m$ we use for the fitting, the number of solution 
 points $k$ we take into account starting from the current one at step $N$, 
-along with the curve lengths at those points. We also need to specify values for
+along with the curve length up to these points. We also need to specify values 
+for
 parameter $\alpha$ (see \ref{eq:WeightFunction}) and $z$, in case the 
 \acrshort{wlsit}
 predictor is selected. Finally, a step-length, $\Delta s$, also needs to be
@@ -725,11 +728,13 @@ approximations to those of the actual solution curve, provided the polynomial
 basis is of adequate order. In addition, parameter $z$ involved in the 
 \acrshort{wlsit}
 variant can also be varied depending on the local geometry. It has been
-observed that, if only $\bvec{y}_N$ for the points supplied to \acrshort{wlsit} 
-predictor is located past a 
+observed that, if only $\bm{y}_N$ is located past a 
 turning point,
-using $z=1$, or even $z>1$ yields much better predictions compared
-to both WLSE and WLST. Conversely, if $\bvec{y}_{N-k+1}$  lies before a turning
+using the \acrshort{wlsit} predictor with $z=1$, or even $z>1$ yields much 
+better 
+predictions compared
+to both \acrshort{wlse} and \acrshort{wlst}. Conversely, if $\bvec{y}_{N-k+1}$  
+lies before a turning
 point and the rest are located beyond it, then WLST gives better predictions and
 in most cases, using tangents at $s<s_N$ yield even better ones (case $z<0$). 
 
@@ -769,7 +774,7 @@ following formulas\footnote{Expressions for a one-dimensional problem.}:
 	\item Two-step Adams-Bashforth (\acrshort{ab2}): $y^p=y_N+\Delta
 	s\dfrac{1}{2}(3\dot{y}_N-\dot{y}_{N-1})$
 	\item Three-step Adams-Bashforth (\acrshort{ab3}): $y^p=y_N+\Delta
-	s\dfrac{1}{12}(23\dot{y}_N-16\dot{y}_{N-1}+5\dot{y}_{N-1})$ 
+	s\dfrac{1}{12}(23\dot{y}_N-16\dot{y}_{N-1}+5\dot{y}_{N-2})$ 
 \end{itemize}
 While
 step-length $\Delta s$ control and adjustment is an important aspect of 
@@ -800,10 +805,10 @@ the neutral axis in the deformed configuration, as was the case in Chapter
 	\label{eq:MProb}
 \end{equation}
 and its Jacobian, considered to have maximal rank at all points, is $\bmat{J} =
-\bigl[\begin{bmatrix}
+\begin{bmatrix}
 	\bmat{F}_x & \bmat{F}_t
 \end{bmatrix}
-\bigr]$. Data such as tolerance $\epsilon_{tol}$, initial value for $t$,
+$. Data such as tolerance $\epsilon_{tol}$, initial value for $t$,
 $t_0$, and its maximum prescribed value, $t_{max}$ are included in
 the table caption for each problem.
 
@@ -883,7 +888,7 @@ zero:
 	\end{bmatrix}=0
 	\label{eq:P2}
 \end{equation}
-and numerical continuation is used on the following system:
+and numerical continuation is used on the following homotopy imbedding:
 \begin{equation}
 	\bvec{F}(x,t) = \nabla f(x)-(1-t)\nabla f_0
 	\label{eq:NewtonHomotopy}
@@ -997,10 +1002,10 @@ perform on par with the Adams-Bashforth ones.
 We consider the following fixed point 
 problem\cite{Watson79,Georg81,Schwetlick87}:
 \begin{equation}
-	F_i(x,t) = x_i-\lambda\bigl[\cos(i\sum_{j=1}^{10} x_j)\bigr]=0
+	F_i(x,t) = x_i-t\bigl[\cos(i\sum_{j=1}^{10} x_j)\bigr]=0
 	\label{eq:P3}
 \end{equation}
-or $F(x,\lambda)=0$, $F:\mathbb{R}^{11}\rightarrow\mathbb{R}^{10}$. This is 
+or $F(x,t)=0$, $F:\mathbb{R}^{11}\rightarrow\mathbb{R}^{10}$. This is 
 solved using the Probability-one
 homotopy\cite{Chow78,Watson:1990} for system \ref{eq:P3}:
 \begin{equation}
@@ -1011,7 +1016,8 @@ The resulting solution path exhibits more than 40 turning points with respect to
 $t$ and is considered very difficult to solve. Starting from
 $(\bvec{x}_0,t_0)=(\bvec{0},0)\in\mathbb{R}^{11}$, we follow the path until the
 first intersection with hyperplane $t=1$. The so-called Normal Flow
-corrector is used in this test case, where the Moore-Penrose inverse of the
+corrector\cite{Watson86} is used in this test case, where the Moore-Penrose 
+inverse of the
 $n\times(n+1)$ Jacobian of \ref{eq:HomotopyOneP3A} is used during the Newton 
 iterations.
 
