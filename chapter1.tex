@@ -16,7 +16,8 @@ description of beam kinematics and equilibrium have to take into account that
 the deformed geometry of the beam can be drastically different from the
 undeformed one.  Within the Lagrangian framework, one chooses a body configuration
 to refer to, giving rise to the notion of total and updated
-Lagrangian formulations\cite{Bathe:1979}. In the former, the initial (or undeformed)
+Lagrangian formulations \cite{Bathe:1979}. In the former, the initial (or 
+undeformed)
 configuration is chosen as a reference, whereas in the latter, typically
 associated with path-dependent problems, one refers to the current (or deformed)
 one.
@@ -53,10 +54,10 @@ The geometrically-exact formulation is particularly attractive because the
 kinematic description is expressed directly in a global inertial frame for all
 elements, as opposed to local element-specific frames in the co-rotational method. For 
 three-dimensional problems, the description of finite rotations requires
-special treatment (e.g. see \cite{Argyris:1982,Romero:2004}) due to their
+special treatment (e.g., see \cite{Argyris:1982,Romero:2004}) due to their
 non-commutative algebraic character. There are, however, methods that
 are able to tackle large rotation problems without considering nodal rotational
-variables (e.g. see Romero \cite{Romero:2008}, Shabana and Yakoub 
+variables (e.g., see Romero \cite{Romero:2008}, Shabana and Yakoub 
 \cite{Shabana}).
 For a comparison between co-rotational and geometrically-exact approaches,
 see Mathisen et al. \cite{Mathisen}.
@@ -221,7 +222,7 @@ Rheinboldt\cite{Rheinboldt:1981}. Other disciplines that have employed numerical
 continuation in applications include
 optimization\cite{Poore:1988,Watson:1989,Zhenghua:1996,Hillermeier:2001,Song:2008},
 chemical engineering\cite{Byrne:1985,Lin:1987,Kovach:1987}, transfer problems
-in electrical circuits\cite{Ushida:1984} and, more recently, for problems with 
+in electrical circuits\cite{Ushida:1984} and, more recently, problems with 
 variational structure and energy
 minimization\cite{Hughes:2013,Mehta:2015,Mobahi:2015}, structural
 mechanics\cite{Bilasse:2009,Banerjee:2013,Ligursky:2014,Sideris:2017,Groh:2018} and 
@@ -268,7 +269,8 @@ More specifically, this study proposes:
 	constraint at the fiber level, thereby, avoids a nested local Newton iteration. In 
 	addition, it requires less memory storage for the state variables. 
 	
-	\item Develop a parametric nonlinear programming framework for the hybrid beam 
+	\item The development of a parametric nonlinear programming framework for 
+	the hybrid beam 
 	element that will provide the capability to perform analyses on a structural 
 	system that are of general consideration. Such analyses include but are not 
 	limited to: static response to load history, design and parameter optimization, 
@@ -282,7 +284,8 @@ More specifically, this study proposes:
 	connects the initial configuration state, which is considered known, with at least 
 	one equilibrium state of a specified potential. 
 	
-	\item Incorporate a fast and reliable prediction scheme in the global solution 
+	\item Incorporation of a fast and reliable prediction scheme in the global 
+	solution 
 	algorithm used for solving the nonlinear system of equations. Numerical 
 	continuation is utilized in approximating stationary points (or, equivalently, 
 	solutions) of a system if the initial guess is not in their proximity. The class 
@@ -293,7 +296,8 @@ More specifically, this study proposes:
 	estimate of the solution we seek. A predictor based on a weighted least squares 
 	process is proposed, whereby the next solution estimate is determined from a 
 	locally fitted curve. It bypasses the need to rely on second derivative 
-	information, as is usually the case and avoids the penalizing constraints imposed 
+	information, as is usually the case, and avoids the penalizing constraints 
+	imposed 
 	by interpolatory prediction schemes. In addition, it provides reliable initial 
 	estimates of sought solutions at a fraction of computational cost compared to most 
 	other options.
@@ -319,7 +323,8 @@ The scope of this research, based on the aforementioned objectives, is listed be
 	adopted in the present study, where linear kinematic and general isotropic 
 	hardening are incorporated in the derivations. The numerical integration of rate 
 	constitutive equations of elastoplasticity is carried out using the fully 
-	implicity backward Euler method. The consistent tangent modulus for the proposed 
+	implicit backward Euler method. The consistent tangent modulus for the 
+	proposed 
 	model is also derived.
 	
 	\item The parametric nonlinear programming framework assumes the total potential 
@@ -330,14 +335,18 @@ The scope of this research, based on the aforementioned objectives, is listed be
 	Furthermore, in the presence of inequality constraints, we assume that the linear 
 	independence constraint qualification and the strict complementarity condition 
 	hold for the whole domain, with the exception of maybe a finite number of points. 
-	This allows usto establish the existence of piecewise smooth paths that lead to 
+	This allows us to establish the existence of piecewise smooth paths that 
+	lead to 
 	stationary points and a numerical solution algorithm to track such paths is 
-	developed.
+	developed. The derivation of the framework heavily relies on homotopy 
+	continuation principles and optimization in order to establish criteria for 
+	a truly global method.
 	
 	\item The development of the weighted least squares predictor assumes an 
 	underlying polynomial basis and that a number of previously converged solution 
-	points is stored in memory. The proposed algorithm is general and can be applied 
-	as is for arbitrary problems where the task is to solve systems of nonlinear 
+	points is stored in memory. The proposed algorithm is general and can be 
+	applied for arbitrary, general problems where the task is to solve systems 
+	of nonlinear 
 	equations by numerical continuation using a predictor-corrector approach. 
 \end{itemize}
 \section{Organization of the Manuscript}
@@ -365,8 +374,10 @@ a number of elastoplastic simulation examples.
 Chapter 4 is concerned with the development of the parametric nonlinear programming 
 framework for the hybrid beam element. The Chapter starts with a brief but detailed 
 outline of homotopy continuation theory as applied to solving systems of equations, as 
-well as its extension treat parametric and global optimization problems. The next 
-section introduces a naturally parameterized nonlinear programming frameowork suited 
+well as its extension treating parametric and global optimization problems. The 
+next 
+section introduces a naturally parameterized nonlinear programming framework 
+suited 
 for structural mechanics applications that use the proposed beam element. The 
 conditions that guarantee global convergence are stated and an appropriate 
 predictor-corrector continuation algorithm is proposed that can track piecewise smooth 
@@ -378,7 +389,8 @@ elastic constitutive law.
 Chapter 5 develops the weighted least squares predictor for use in the 
 predictor-corrector algorithm proposed in the previous chapter. The Chapter first 
 provides a summary on the use of numerical continuation and, specifically, the role of 
-the prediction phase in it. After that the main idea of a local weighted least squares 
+the prediction phase in it. After that the main idea of a locally weighted 
+least squares 
 fitting using a user-defined number of previously converged solution points is 
 presented, along with various additional features provided by this prediction scheme, 
 such as the weighting function, stabilization and the different predictor variants 
@@ -388,17 +400,18 @@ examples that test the performance of the proposed predictor with i) the Euler
 predictor and ii) two-step and three-step Adams-Bashforth predictors. 
 
 Lastly, Chapter 6 contains a summary of the present research work, a discussion of its 
-findings, advantages and its limitations and suggestions regarding potential future 
+findings, advantages, and its limitations and suggestions regarding potential 
+future 
 research directions.
 
  
-Unless state otherwise, boldface lowercase letters indicate second order 
+Unless stated otherwise, boldface lowercase letters indicate second order 
 tensor. Wherever 
 the same letters appear with an overhead arrow, this indicates the vector 
 notation for the tensor represented with that letter.
 In addition, any boldface letter, lowercase or uppercase, with an overhead 
 arrow indicates a vector object. In constrast, matrices are represented 
-exclusively by uppercase, non-italic or calligraphic, boldface letters.
+exclusively by uppercase, non-italic or calligraphic, boldface letters,
 whereas normal font letters indicate scalar quantities.  For more details 
 regarding the convention used, see Appendix \ref{appendix:0}.
 
