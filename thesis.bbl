@@ -5582,6 +5582,38 @@
     \field{year}{1992}
   \endentry
 
+  \entry{Clarke:1990}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CMJ}{%
+         family={Clarke},
+         familyi={C\bibinitperiod},
+         given={Murray\bibnamedelima J},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=HGJ}{%
+         family={Hancock},
+         familyi={H\bibinitperiod},
+         given={Gregory\bibnamedelima J},
+         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{CMJHGJ1}
+    \strng{fullhash}{CMJHGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{7}
+    \field{pages}{1365\bibrangedash 1391}
+    \field{title}{A study of incremental-iterative strategies for non-linear
+  analyses}
+    \field{volume}{29}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
+    \field{year}{1990}
+  \endentry
+
   \entry{Rheinboldt75}{book}{}
     \name{author}{1}{}{%
       {{hash=RWC}{%
@@ -6187,38 +6219,6 @@
     \field{volume}{32}
     \field{journaltitle}{Mathematics of Computation}
     \field{year}{1978}
-  \endentry
-
-  \entry{Clarke:1990}{article}{}
-    \name{author}{2}{}{%
-      {{hash=CMJ}{%
-         family={Clarke},
-         familyi={C\bibinitperiod},
-         given={Murray\bibnamedelima J},
-         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=HGJ}{%
-         family={Hancock},
-         familyi={H\bibinitperiod},
-         given={Gregory\bibnamedelima J},
-         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Wiley Online Library}%
-    }
-    \strng{namehash}{CMJHGJ1}
-    \strng{fullhash}{CMJHGJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{7}
-    \field{pages}{1365\bibrangedash 1391}
-    \field{title}{A study of incremental-iterative strategies for non-linear
-  analyses}
-    \field{volume}{29}
-    \field{journaltitle}{International Journal for Numerical Methods in
-  Engineering}
-    \field{year}{1990}
   \endentry
 
   \entry{Ragon:2002}{article}{}

@@ -77,56 +77,63 @@
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Initial geometry for Example 3.\relax }}{106}{figure.caption.65}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Projection of path \textbf {(a)} on $u_2-t$ plane and \textbf {(b)} $\mu -t$ plane.\relax }}{107}{figure.caption.66}%
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Configuration profiles during deformation.\relax }}{107}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces \textbf {(a)} Shallow arch structure and loading, \textbf {(b)} equilibrium path using the NPNLP framework.\relax }}{109}{figure.caption.68}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Advancing from step $N$ to step $N+1$ using a PC approach.\relax }}{111}{figure.caption.68}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Two types of predictors: (a) interpolatory and (b) Euler predictor.\relax }}{113}{figure.caption.69}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Geometric interpretation of predictors (i)WLSE (blue), (ii) WLSIT (light blue, $z=1$), and (iii) WLST (red, $z=0$).\relax }}{119}{figure.caption.70}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Weight function $w(s)$ of the WLS predictor.\relax }}{121}{figure.caption.71}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Solution path of Eq. (\ref {eq:HomotopyOneP3A}).\relax }}{130}{figure.caption.77}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces \textbf {(a)} Shallow arch structure and loading, \textbf {(b)} equilibrium path.\relax }}{131}{figure.caption.78}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Advancing from step $N$ to step $N+1$ using a PC approach.\relax }}{113}{figure.caption.69}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Two types of predictors: (a) interpolatory and (b) Euler predictor.\relax }}{115}{figure.caption.70}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Geometric interpretation of predictors (i)WLSE (blue), (ii) WLSIT (light blue, $z=1$), and (iii) WLST (red, $z=0$).\relax }}{121}{figure.caption.71}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Weight function $w(s)$ of the WLS predictor.\relax }}{123}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Solution path of Eq. (\ref {eq:HomotopyOneP3A}).\relax }}{132}{figure.caption.78}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces \textbf {(a)} Shallow arch structure and loading, \textbf {(b)} equilibrium path.\relax }}{133}{figure.caption.79}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {F.1}{\ignorespaces Two correction algorithms: Normal Flow and Normal Plane.\relax }}{157}{figure.caption.80}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {G.1}{\ignorespaces The \textit {Mesh} tab with relevant facilities A-M marked in red circles and enumerated with capital english letters.\relax }}{161}{figure.caption.81}%
-\contentsline {figure}{\numberline {G.2}{\ignorespaces Error when attempting to add a node with coordinates already defined for an existing node.\relax }}{161}{figure.caption.82}%
-\contentsline {figure}{\numberline {G.3}{\ignorespaces A .txt file with the required format for nodal input. First column is X coordinate, second is Y coordinate. The $k$-th row represents Node $k$.\relax }}{162}{figure.caption.83}%
-\contentsline {figure}{\numberline {G.4}{\ignorespaces A .txt file with the required format for element input. First column is start node $i$, second is end node $j$. The $k$-th row represents Element $k$.\relax }}{162}{figure.caption.84}%
-\contentsline {figure}{\numberline {G.5}{\ignorespaces The \textit {Mesh} tab with a completed mesh.\relax }}{163}{figure.caption.85}%
-\contentsline {figure}{\numberline {G.6}{\ignorespaces The \textit {Materials} tab with relevant facilities A-M marked in red circles and enumerated with capital english letters.\relax }}{165}{figure.caption.86}%
-\contentsline {figure}{\numberline {G.7}{\ignorespaces Multiple materials defined without a specified material name.\relax }}{165}{figure.caption.87}%
-\contentsline {figure}{\numberline {G.8}{\ignorespaces Potting of uniaxial stress-strain law of material \textbf {MAT}\_1.\relax }}{166}{figure.caption.88}%
-\contentsline {figure}{\numberline {G.9}{\ignorespaces Available predefined materials from the \textit {Standard materials} drop-down list.\relax }}{166}{figure.caption.89}%
-\contentsline {figure}{\numberline {G.10}{\ignorespaces Error when trying to add a standard material that was already added previously.\relax }}{166}{figure.caption.90}%
-\contentsline {figure}{\numberline {G.11}{\ignorespaces The \textit {Sections} tab with all essential parts marked in red cycles and enumerated.\relax }}{168}{figure.caption.91}%
-\contentsline {figure}{\numberline {G.12}{\ignorespaces Typical section definition process. A previously defined material \textbf {MAT\_1} is assigned to section \textbf {Rectangular\_Section}.\relax }}{169}{figure.caption.92}%
-\contentsline {figure}{\numberline {G.13}{\ignorespaces Successful section assignment for \textbf {Element 1}.\relax }}{169}{figure.caption.93}%
-\contentsline {figure}{\numberline {G.14}{\ignorespaces Indication that \textbf {Element 2} still needs to be assigned a cross-section.\relax }}{170}{figure.caption.94}%
-\contentsline {figure}{\numberline {G.15}{\ignorespaces The \textit {Boundary Conditions} tab with all essential parts marked in red cycles and enumerated.\relax }}{171}{figure.caption.95}%
-\contentsline {figure}{\numberline {G.16}{\ignorespaces Input example for external nodal loading specification.\relax }}{171}{figure.caption.96}%
-\contentsline {figure}{\numberline {G.17}{\ignorespaces Input example for nodal support specification.\relax }}{172}{figure.caption.97}%
-\contentsline {figure}{\numberline {G.18}{\ignorespaces The \textit {Analysis Controls} tab with all essential parts marked in red cycles and enumerated.\relax }}{175}{figure.caption.98}%
-\contentsline {figure}{\numberline {G.19}{\ignorespaces The \textit {Analysis Controls} tab with the advanced settings enabled.\relax }}{176}{figure.caption.99}%
-\contentsline {figure}{\numberline {G.20}{\ignorespaces The \textit {Analysis Controls} tab with the advanced settings enabled.\relax }}{176}{figure.caption.100}%
-\contentsline {figure}{\numberline {G.21}{\ignorespaces The \textit {Solve Job} tab.\relax }}{177}{figure.caption.101}%
-\contentsline {figure}{\numberline {G.22}{\ignorespaces The \textit {Post-processing} tab and the \textit {Deformation history} panel.\relax }}{179}{figure.caption.102}%
-\contentsline {figure}{\numberline {G.23}{\ignorespaces The \textit {Solve Job} tab and the \textit {Deformation history}.\relax }}{180}{figure.caption.103}%
-\contentsline {figure}{\numberline {G.24}{\ignorespaces Equilibrium path plot.\relax }}{181}{figure.caption.104}%
-\contentsline {figure}{\numberline {G.25}{\ignorespaces Deformation history plot of the structure.\relax }}{181}{figure.caption.105}%
-\contentsline {figure}{\numberline {G.26}{\ignorespaces Load problem using the input file.\relax }}{182}{figure.caption.106}%
-\contentsline {figure}{\numberline {G.27}{\ignorespaces How NODE part is typeset in the ASCII file and how it is stored in a cell data structure by MATLAB.\relax }}{184}{figure.caption.107}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ASCII file formatting.}}}{184}{subfigure.27.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MATLAB Cell storage.}}}{184}{subfigure.27.2}%
-\contentsline {figure}{\numberline {G.28}{\ignorespaces How ELEMENTS part is typeset in the ASCII file.\relax }}{184}{figure.caption.108}%
-\contentsline {figure}{\numberline {G.29}{\ignorespaces How MATERIALS part is typeset in the ASCII file, with multiple materials defined.\relax }}{185}{figure.caption.109}%
-\contentsline {figure}{\numberline {G.30}{\ignorespaces How SECTIONS part is typeset in the ASCII file, with multiple cross-sections defined.\relax }}{186}{figure.caption.110}%
-\contentsline {figure}{\numberline {G.31}{\ignorespaces The ELEMENT-SECTION ASSIGNMENT input block.\relax }}{187}{figure.caption.111}%
-\contentsline {figure}{\numberline {G.32}{\ignorespaces Defining load and displacement boundary conditions in the BOUNDARY CONDITIONS block for the ASCII input file.\relax }}{187}{figure.caption.112}%
-\contentsline {figure}{\numberline {G.33}{\ignorespaces The ANALYSIS CONTROLS template block for the ASCII input file.\relax }}{188}{figure.caption.113}%
-\contentsline {figure}{\numberline {G.34}{\ignorespaces The equilibrium plot for the elastoplastic cantilever, using the GUI post-processor utility.\relax }}{189}{figure.caption.114}%
-\contentsline {figure}{\numberline {G.35}{\ignorespaces The input file for a simple cantilever problem.\relax }}{190}{figure.caption.115}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Two correction algorithms: Normal Flow and Normal Plane.\relax }}{159}{figure.caption.81}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {G.1}{\ignorespaces The \textit {Mesh} tab with relevant facilities A-M marked in red circles and enumerated with capital english letters.\relax }}{163}{figure.caption.82}%
+\contentsline {figure}{\numberline {G.2}{\ignorespaces Error when attempting to add a node with coordinates already defined for an existing node.\relax }}{163}{figure.caption.83}%
+\contentsline {figure}{\numberline {G.3}{\ignorespaces A .txt file with the required format for nodal input. First column is X coordinate, second is Y coordinate. The $k$-th row represents Node $k$.\relax }}{164}{figure.caption.84}%
+\contentsline {figure}{\numberline {G.4}{\ignorespaces A .txt file with the required format for element input. First column is start node $i$, second is end node $j$. The $k$-th row represents Element $k$.\relax }}{164}{figure.caption.85}%
+\contentsline {figure}{\numberline {G.5}{\ignorespaces The \textit {Mesh} tab with a completed mesh.\relax }}{165}{figure.caption.86}%
+\contentsline {figure}{\numberline {G.6}{\ignorespaces The \textit {Materials} tab with relevant facilities A-M marked in red circles and enumerated with capital english letters.\relax }}{167}{figure.caption.87}%
+\contentsline {figure}{\numberline {G.7}{\ignorespaces Multiple materials defined without a specified material name.\relax }}{167}{figure.caption.88}%
+\contentsline {figure}{\numberline {G.8}{\ignorespaces Potting of uniaxial stress-strain law of material \textbf {MAT}\_1.\relax }}{168}{figure.caption.89}%
+\contentsline {figure}{\numberline {G.9}{\ignorespaces Available predefined materials from the \textit {Standard materials} drop-down list.\relax }}{168}{figure.caption.90}%
+\contentsline {figure}{\numberline {G.10}{\ignorespaces Error when trying to add a standard material that was already added previously.\relax }}{168}{figure.caption.91}%
+\contentsline {figure}{\numberline {G.11}{\ignorespaces The \textit {Sections} tab with all essential parts marked in red cycles and enumerated.\relax }}{170}{figure.caption.92}%
+\contentsline {figure}{\numberline {G.12}{\ignorespaces Typical section definition process. A previously defined material \textbf {MAT\_1} is assigned to section \textbf {Rectangular\_Section}.\relax }}{171}{figure.caption.93}%
+\contentsline {figure}{\numberline {G.13}{\ignorespaces Successful section assignment for \textbf {Element 1}.\relax }}{171}{figure.caption.94}%
+\contentsline {figure}{\numberline {G.14}{\ignorespaces Indication that \textbf {Element 2} still needs to be assigned a cross-section.\relax }}{172}{figure.caption.95}%
+\contentsline {figure}{\numberline {G.15}{\ignorespaces The \textit {Boundary Conditions} tab with all essential parts marked in red cycles and enumerated.\relax }}{173}{figure.caption.96}%
+\contentsline {figure}{\numberline {G.16}{\ignorespaces Input example for external nodal loading specification.\relax }}{173}{figure.caption.97}%
+\contentsline {figure}{\numberline {G.17}{\ignorespaces Input example for nodal support specification.\relax }}{174}{figure.caption.98}%
+\contentsline {figure}{\numberline {G.18}{\ignorespaces The \textit {Analysis Controls} tab with all essential parts marked in red cycles and enumerated.\relax }}{177}{figure.caption.99}%
+\contentsline {figure}{\numberline {G.19}{\ignorespaces The \textit {Analysis Controls} tab with the advanced settings enabled.\relax }}{178}{figure.caption.100}%
+\contentsline {figure}{\numberline {G.20}{\ignorespaces The \textit {Analysis Controls} tab with the advanced settings enabled.\relax }}{178}{figure.caption.101}%
+\contentsline {figure}{\numberline {G.21}{\ignorespaces The \textit {Solve Job} tab.\relax }}{179}{figure.caption.102}%
+\contentsline {figure}{\numberline {G.22}{\ignorespaces The \textit {Post-processing} tab and the \textit {Deformation history} panel.\relax }}{181}{figure.caption.103}%
+\contentsline {figure}{\numberline {G.23}{\ignorespaces The \textit {Solve Job} tab and the \textit {Deformation history}.\relax }}{182}{figure.caption.104}%
+\contentsline {figure}{\numberline {G.24}{\ignorespaces Equilibrium path plot.\relax }}{183}{figure.caption.105}%
+\contentsline {figure}{\numberline {G.25}{\ignorespaces Deformation history plot of the structure.\relax }}{183}{figure.caption.106}%
+\contentsline {figure}{\numberline {G.26}{\ignorespaces Load problem using the input file.\relax }}{184}{figure.caption.107}%
+\contentsline {figure}{\numberline {G.27}{\ignorespaces How NODE part is typeset in the ASCII file and how it is stored in a cell data structure by MATLAB.\relax }}{186}{figure.caption.108}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ASCII file formatting.}}}{186}{subfigure.27.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MATLAB Cell storage.}}}{186}{subfigure.27.2}%
+\contentsline {figure}{\numberline {G.28}{\ignorespaces How ELEMENTS part is typeset in the ASCII file.\relax }}{186}{figure.caption.109}%
+\contentsline {figure}{\numberline {G.29}{\ignorespaces How MATERIALS part is typeset in the ASCII file, with multiple materials defined.\relax }}{187}{figure.caption.110}%
+\contentsline {figure}{\numberline {G.30}{\ignorespaces How SECTIONS part is typeset in the ASCII file, with multiple cross-sections defined.\relax }}{188}{figure.caption.111}%
+\contentsline {figure}{\numberline {G.31}{\ignorespaces The ELEMENT-SECTION ASSIGNMENT input block.\relax }}{189}{figure.caption.112}%
+\contentsline {figure}{\numberline {G.32}{\ignorespaces Defining load and displacement boundary conditions in the BOUNDARY CONDITIONS block for the ASCII input file.\relax }}{189}{figure.caption.113}%
+\contentsline {figure}{\numberline {G.33}{\ignorespaces The ANALYSIS CONTROLS template block for the ASCII input file.\relax }}{190}{figure.caption.114}%
+\contentsline {figure}{\numberline {G.34}{\ignorespaces The equilibrium plot for the elastoplastic cantilever, using the GUI post-processor utility.\relax }}{191}{figure.caption.115}%
+\contentsline {figure}{\numberline {G.35}{\ignorespaces The input file for a simple cantilever problem.\relax }}{192}{figure.caption.116}%
+\contentsline {figure}{\numberline {G.36}{\ignorespaces The \textbf {main.m} file of the hybrid code.\relax }}{194}{figure.caption.117}%
+\contentsline {figure}{\numberline {G.37}{\ignorespaces The geometry of the frame used as input.\relax }}{194}{figure.caption.118}%
+\contentsline {figure}{\numberline {G.38}{\ignorespaces First portion of Matlab input file.\relax }}{195}{figure.caption.119}%
+\contentsline {figure}{\numberline {G.39}{\ignorespaces Second portion of Matlab input file.\relax }}{196}{figure.caption.120}%
+\contentsline {figure}{\numberline {G.40}{\ignorespaces Third portion of Matlab input file.\relax }}{197}{figure.caption.121}%
+\contentsline {figure}{\numberline {G.41}{\ignorespaces Fourth and final portion of Matlab input file.\relax }}{198}{figure.caption.122}%

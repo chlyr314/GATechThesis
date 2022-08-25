@@ -1,8 +1,8 @@
 \contentsline {chapter}{List of Figures}{viii}{section*.2}%
-\contentsline {chapter}{List of Tables}{xiii}{section*.4}%
-\contentsline {chapter}{Nomenclature}{xiv}{section*.6}%
-\contentsline {chapter}{Acronyms}{xix}{section*.8}%
-\contentsline {chapter}{Acknowledgements}{xxi}{chapter*.9}%
+\contentsline {chapter}{List of Tables}{xiv}{section*.4}%
+\contentsline {chapter}{Nomenclature}{xv}{section*.6}%
+\contentsline {chapter}{Acronyms}{xx}{section*.8}%
+\contentsline {chapter}{Acknowledgements}{xxii}{chapter*.9}%
 \contentsline {chapter}{\numberline {1}Introduction and Background}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Literature Review}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Beam Element Technologies}{1}{subsection.1.1.1}%
@@ -68,36 +68,37 @@
 \contentsline {subsection}{\numberline {4.5.1}Example 1 - Global Optimization}{99}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}Example 2 - Global Sensitivity}{102}{subsection.4.5.2}%
 \contentsline {subsection}{\numberline {4.5.3}Example 3 - Frictionless Contact}{105}{subsection.4.5.3}%
-\contentsline {section}{\numberline {4.6}Summary}{108}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Weighted least squares predictor for numerical continuation}{109}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{109}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Numerical Continuation}{110}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Weighted Least Squares Predictor}{113}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Matrix Formulation of WLS Approximation}{116}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}WLS Prediction Variants}{118}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Arc-length Stabilization}{119}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}The Weight Function}{120}{subsection.5.3.4}%
-\contentsline {section}{\numberline {5.4}Implementation}{121}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Algorithm}{121}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Arc-Length Measurement}{122}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Discussion}{123}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Numerical Examples}{125}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Numerical Example 1}{126}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Numerical Example 2}{127}{subsection.5.5.2}%
-\contentsline {subsection}{\numberline {5.5.3}Numerical Example 3}{129}{subsection.5.5.3}%
-\contentsline {subsection}{\numberline {5.5.4}Numerical Example 4}{131}{subsection.5.5.4}%
-\contentsline {section}{\numberline {5.6}Summary}{133}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Conclusions and Suggestions for Future Research}{134}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Research Summary and Conclusions}{134}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Limitations}{134}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Future Directions}{135}{section.6.3}%
+\contentsline {subsection}{\numberline {4.5.4}Example 4 - Nonlinear Analysis of Shallow Arch}{108}{subsection.4.5.4}%
+\contentsline {section}{\numberline {4.6}Summary}{109}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Weighted least squares predictor for numerical continuation}{111}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{111}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Numerical Continuation}{112}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Weighted Least Squares Predictor}{115}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Matrix Formulation of WLS Approximation}{118}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}WLS Prediction Variants}{120}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Arc-length Stabilization}{121}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}The Weight Function}{122}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}Implementation}{123}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Algorithm}{123}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Arc-Length Measurement}{124}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Discussion}{125}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Numerical Examples}{127}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Numerical Example 1}{128}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Numerical Example 2}{129}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Numerical Example 3}{131}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Numerical Example 4}{133}{subsection.5.5.4}%
+\contentsline {section}{\numberline {5.6}Summary}{135}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Conclusions and Suggestions for Future Research}{136}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Research Summary and Conclusions}{136}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Limitations}{136}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Future Directions}{137}{section.6.3}%
 \renewcommand {\cftchappresnum }{Appendix }
 \renewcommand {\cftchapnumwidth }{6em}
-\contentsline {chapter}{\numberline {A}Notation}{139}{appendix.1.A}%
-\contentsline {chapter}{\numberline {B}Gradient of Hybrid NLP Lagrangian}{143}{appendix.1.B}%
-\contentsline {chapter}{\numberline {C}Hessian of Hybrid NLP Lagrangian}{148}{appendix.1.C}%
-\contentsline {chapter}{\numberline {D}Iterative Corrections for Plastic Parameter}{151}{appendix.1.D}%
-\contentsline {chapter}{\numberline {E}Analytical Derivation of Consistent Tangent Modulus}{153}{appendix.1.E}%
-\contentsline {chapter}{\numberline {F}Numerical Path-following}{155}{appendix.1.F}%
-\contentsline {chapter}{\numberline {G}A Simple GUI for the Hybrid NLP Element}{158}{appendix.1.G}%
-\contentsline {chapter}{References}{191}{section*.116}%
+\contentsline {chapter}{\numberline {A}Notation}{141}{appendix.1.A}%
+\contentsline {chapter}{\numberline {B}Gradient of Hybrid NLP Lagrangian}{145}{appendix.1.B}%
+\contentsline {chapter}{\numberline {C}Hessian of Hybrid NLP Lagrangian}{150}{appendix.1.C}%
+\contentsline {chapter}{\numberline {D}Iterative Corrections for Plastic Parameter}{153}{appendix.1.D}%
+\contentsline {chapter}{\numberline {E}Analytical Derivation of Consistent Tangent Modulus}{155}{appendix.1.E}%
+\contentsline {chapter}{\numberline {F}Numerical Path-following}{157}{appendix.1.F}%
+\contentsline {chapter}{\numberline {G}A Simple GUI for the Hybrid NLP Element}{160}{appendix.1.G}%
+\contentsline {chapter}{References}{200}{section*.123}%

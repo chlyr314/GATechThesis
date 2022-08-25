@@ -252,13 +252,16 @@ be used during the numerical solution of the parametric nonlinear program.
 More specifically, this study proposes:
 \begin{itemize}
 	\item The development of a beam element that utilizes exact kinematics and is 
-	based on nonlinear programming principles. The element would be able to capture 
+	based on nonlinear programming principles. The element would be able to 
+	capture 
 	arbitrarily large displacements and rotations, as well as curvature localization 
-	during inelastic response, with just one element per member. In addition, it would 
-	incorporate shear deformation effects without locking behavior. The hybridization 
-	of the element is carried out by incorporating the exact kinematic equations in 
-	the minimization statement of the potential energy by introducing a set of 
-	Lagrange multipliers.
+	during inelastic response, with just one element per member. This is a 
+	unique capability which, to our knowledge, no beam implementation possesses 
+	in commercial and academic software. In addition, the element
+	incorporates shear deformation effects without suffering from locking 
+	behavior. The element hybridization is carried out by incorporating the 
+	exact kinematic equations in the minimization statement of the potential 
+	energy by introducing a set of Lagrange multipliers.
 	
 	\item The formulation of a fast and robust return-mapping algorithm for the 
 	numerical integration of fiber-discretized beam cross-sections. The proposed 
@@ -267,7 +270,10 @@ More specifically, this study proposes:
 	planar hybrid beam element. Because it does not incorporate non-active components 
 	of the stress tensor, there is no need to enforce the zero transverse stress 
 	constraint at the fiber level, thereby, avoids a nested local Newton iteration. In 
-	addition, it requires less memory storage for the state variables. 
+	addition, it requires less memory storage for the state variables. Thus, 
+	the stress-update algorithm is considerably faster than current 
+	formulations which are based on fibre elements and multiaxial material 
+	constitutive models.
 	
 	\item The development of a parametric nonlinear programming framework for 
 	the hybrid beam 
@@ -300,7 +306,9 @@ More specifically, this study proposes:
 	imposed 
 	by interpolatory prediction schemes. In addition, it provides reliable initial 
 	estimates of sought solutions at a fraction of computational cost compared to most 
-	other options.
+	other options. Lastly, if an iterative solver is used for the correction 
+	phase, such as MINRES or the more general GMRES, then the numerical 
+	continuation can, in principle, be further accelerated.
 	
 \end{itemize}
 

@@ -1692,4 +1692,148 @@ Here we show the input file and the U2-P2 equilibrium path on the application
 	\label{fig:CANTINPUT}
 \end{figure}
 
+\subsection*{Input File for Matlab Source Code}
+
+In this final section we will outline the basic structure of the input file 
+when the user intends to use the source code directly. The source code is 
+written in MATLAB and the problem input files are matlab functions. Figure 
+\ref{fig:MAINFILE} below shows the core pre-processing and processing routines 
+of the \textbf{main.m} file, which can be considered as the first and most 
+primitive interface of the hybrid code.
+
+Before the input file is read, the code ensures that the existing data in 
+workspace memory are cleared and pertinent folders are added the search path. 
+In addition, the directory \textit{output} is created if it does not exist 
+already. If it does, all files inside that directory are deleted. This is the 
+folder where we save the files where we write analysis output.
+
+Then the problem input file is called (line 14 in \textbf{main.m}). The matlab 
+function does not take any argument since everything is prepared by the user in 
+the respective input file. However, in the case repeated parametric analyses 
+are to be performed, the user will need to modify the function definition in 
+the relevant input file so that it accepts pertinent arguments, if necessary. 
+The input file function returns three Matlab \textbf{struct} data structures:
+
+\begin{itemize}
+	\item \textbf{snode}: Data structure where the coordinates, elements and 
+	\acrshort{dof} status are stored for each node. Its dimension is equal to 
+	the total number of nodes.
+	\item \textbf{element}: Data structure where all parameters relevant to the 
+	all elements are stored. Its dimension is equal to the total number of 
+	elements.
+	\item \textbf{anlsData}: Data structure where the general analysis settings 
+	are stored. It contains 28 fields which will be briefly discussed below.
+\end{itemize}
+
+Next, the \textit{processInput.m} routine is called(line 18 in \textbf{main.m}) 
+in order to perform the necessary pre-processing steps on the aforementioned 
+data structures. Finally, the main processing routine, \textbf{solveJob.m}, is 
+called once pre-processing is complete. It accepts the \textbf{anlsData} and 
+\textbf{element} data structures, which it updates during the analysis and then 
+returns them to be used by the post-processing routines.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.75]{FIG_MAINFILE.png}
+	\caption{The \textbf{main.m} file of the hybrid code.}
+	\label{fig:MAINFILE}
+\end{figure}
+
+When it comes to the input file layout, the user does not have to follow a 
+strict sequence for parameter definition, however, it is highly recommended 
+that a structured approach similar to the GUI input file is followed. In order 
+to facilitate the exposition, a simple two-beam structure shown in Fig. 
+\ref{fig:FIG_TOGGLEFRAME} will be used as input case. 
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.75]{FIG_TOGGLEFRAME}
+	\caption{The geometry of the frame used as input.}
+	\label{fig:FIG_TOGGLEFRAME}
+\end{figure}
+
+All sections in the matlab input file are shown in the figure sequence 
+\ref{fig:FIG_INPUT1}, \ref{fig:FIG_INPUT2}, \ref{fig:FIG_INPUT3}, 
+\ref{fig:FIG_INPUT4}.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.80]{FIG_INPUT1}
+	\caption{First portion of Matlab input file.}
+	\label{fig:FIG_INPUT1}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.75]{FIG_INPUT2}
+	\caption{Second portion of Matlab input file.}
+	\label{fig:FIG_INPUT2}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.75]{FIG_INPUT3}
+	\caption{Third portion of Matlab input file.}
+	\label{fig:FIG_INPUT3}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.75]{FIG_INPUT4}
+	\caption{Fourth and final portion of Matlab input file.}
+	\label{fig:FIG_INPUT4}
+\end{figure}
+
+The parts pertinent to material and geometry definitions are similar in 
+structure to the GUI input file. It is required that the user specifies a 
+flange and web width even if a rectangular section is to be used. The values 
+will be ignored in this case. The same holds for the fiber discretization. An 
+integer value has to be assigned to variable \textit{nlayer} (line 18) even if 
+an elastic analysis is scheduled. In that case, the value is, again, ignored.
+
+As far as node and element definition, the user must assign the pertinent data 
+directly to the corresponding structure. For the definition of 
+node $n$, a $1\times 2$ vector containing the $x$ and $y$ coordinates is 
+assigned directly to field \textit{coor} of the $n$-th component of structure 
+\textbf{snode} as follows:
+\begin{center}
+	\textbf{snode(n).coor} = [1.25 0.5];
+\end{center}
+
+\noindent See also lines 24-26 in Fig. \ref{fig:FIG_INPUT1}. In a similar 
+fashion, for the definition of element $m$, we assign the vector $[node_I 
+node_J]$ directly to field \textit{nodes} of the $m$-th component of structure 
+\textbf{element}, as shown in lines 29-30 of Fig. \ref{fig:FIG_INPUT1}. The 
+general format is:
+
+\begin{center}
+	\textbf{element(m).nodes} = [2 3];
+\end{center}
+\noindent where element $m$ connects $node_I=2$ and $node_J=3$.
+
+For each parameter that needs to be defined by the user there are brief but 
+detailed tooltips in the form of comments on the same line. Two features that 
+are available in this form of input but are not in the GUI version are 1) the 
+option to define ``gravity'' loads which remain constant throughout the 
+analysis and 2) the option to perform a displacement control incremental 
+analysis. If this option is chosen (see line 53 in Fig. \ref{fig:FIG_INPUT2}, 
+then the user needs to also specify the nodal \acrshort{dof} that is controlled 
+and the target displacement up to which the said \acrshort{dof} is to be 
+incremented to. The relevant lines for these definitions are 65-66 in Fig. 
+\ref{fig:FIG_INPUT2}.
+
+The user can choose any name for the variables they define, however they should 
+ensure that all variables are stored in a consistent fashion and the 
+correspondece with the basic data structures \textbf{snode}, \textbf{element} 
+and \textbf{anlsData} is not spoiled. As can be seen in the third and fourth 
+portions of the input file in Figs. \ref{fig:FIG_INPUT3}, \ref{fig:FIG_INPUT4}, 
+if a different name is chosen for a parameter (left-hand side during 
+definition), then the same name has to be assigned to the relevant structure 
+field (right-hand side during assignment). In addition, using matlab functions 
+to do analysis with the hybrid code, while more versatile, it is also more 
+error-prone. The numerous error checks implemented for the \acrshort{gui} 
+version are not carried out when setting up a problem using matlab input files, 
+so users should be more cautious in the latter case.
+
+
 \end{appendices}

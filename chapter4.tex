@@ -1449,27 +1449,22 @@ $k=30$.
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%  EXAMPLE 4  %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{comment}
-\subsection{Example 4 - Nonlinear analysis of shallow arch}
+
+\subsection{Example 4 - Nonlinear Analysis of Shallow Arch}
 
 In this application we are concerned with geometrically 
 nonlinear static response 
 of a shallow arch using a constrained \acrshort{npnlp} framework, for both 
-elastic and inelastic behavior. We will compare the performance of three 
-different continuation algorithms - the one proposed in Sec. REF, the Normal 
-Plane and the Normal Flow methods. The Normal Plane method was independently 
-derived by Riks\cite{Riks:1979} and Wempner\cite{Wempner:1971} in the context 
-of structural mechanics and stability analysis. The Normal Flow method is a 
-well-known corrector algorithm in the implementation of homotpy 
-continuation\cite{Watson:1989,Watson:1990} and has even been employed to solve 
-structural mechanics 
-problems\cite{Ragon:2002,Sideris:2017}. Under this particular parameterization, the 
-proposed algorithm coincides with the spherical arc-length method\cite{Crisfield3}.
+elastic and inelastic behavior. In this application, the parameterized variable 
+is the external load and, for this reason, the 
+proposed algorithm used here coincides with the spherical arc-length 
+method\cite{Crisfield3}.
 
 The structure configuration, seen in Fig. \ref{fig:FIG40_A}, and material 
 properties are 
-taken from Clarke \& Hanckock\cite{Clarke:1990}(see Table 
-\ref{table:TABLE_CH4EX3}). 
+taken from Clarke \& Hanckock\cite{Clarke:1990}: the Young's modulus is 
+$E=200$, the beam cross-sectional area is $A= 10^4$ with moment of inertia 
+$I=10^8$, while the maximum value for the external load is $P_{max}=1300$.
 For the numerical discretization, we used $N_e=21$ straight \acrshort{nlp} 
 hybrid beam elements. The discretized \acrshort{tpe}, which is of the 
 form (\ref{eq:NLP_ELEM}), is parameterized with respect to the applied load, 
@@ -1485,7 +1480,7 @@ $\bvec{P}$, and the resulting \acrshort{npnlp} takes the following form:
 	t\in\mathbb{R}\nonumber
 \end{align}
 \nonumber where $n_i$ is the number of integration points in each element,
-$\bvec{\epsilon}$,$\bvec{\gamma}$ and $\bvec{\kappa}$ are the vectors of axial 
+$\bvec{\epsilon}$, $\bvec{\gamma}$ and $\bvec{\kappa}$ are the vectors of axial 
 strain,
 shear strain and curvature respectively. Vector $\bvec{h}$ contains the 
 discretized equality constraints (\ref{eq:impsd1}),(\ref{eq:impsd2}).
@@ -1496,25 +1491,19 @@ discretized equality constraints (\ref{eq:impsd1}),(\ref{eq:impsd2}).
 	\qquad
 	\subfloat[][]{{\includegraphics[width=7.35cm]{FIG40_B.pdf}}\label{fig:FIG40_B}}%
 	\caption{\textbf{(a)} Shallow arch structure and loading, \textbf{(b)}
-		equilibrium path using Normal Flow continuation and step-length $\Delta 
-		s=150$.}%
+		equilibrium path using the NPNLP framework.}%
 	\label{fig:FIG40}%
 \end{figure*}
 
-No step-length adjustments are made during the solution process and convergence 
-within 
+Convergence within 
 a step is reached when the norm of the \acrshort{kkt} system 
 (\ref{eq:NPNLPKKT}) becomes smaller than a prescribed tolerance, 
-$\epsilon_{tol}$. 
-In Tables \ref{table:TABLE_CH4EX3}, \ref{table:TABLE_CH4EX3_2} we compare the 
-results associated with the three aforementioned continuation algorithms for 
-two different 
-step-lengths, $\Delta s$. The performance metrics are i) the total steps needed 
-to reach the 
-target state corresponding to $t=1$ and ii) the total stiffness 
-factorizations performed. The relevant material and geometric
-data used are also provided in that table.
+$\epsilon_{tol}$. For the inelastic analysis, the multiaxial constitutive fiber 
+model proposed in the previous Chapter was used, however, since the structure 
+is fairly slender, the interaction effects between shear and flexure are 
+negligible.
 
+\begin{comment}
 \begin{table}[b]
 	\centering
 	\begin{minipage}{0.55\textwidth}
@@ -1546,6 +1535,7 @@ data used are also provided in that table.
 		\end{tabular}
 	\end{minipage}
 \end{table}
+
 
 As can be seen from the tables \ref{table:TABLE_CH4EX3},\ref{table:TABLE_CH4EX3_2}, 
 all three algorithms perform comparably for both small and large step-lengths. Fixing 
@@ -1589,10 +1579,7 @@ require more resources to compute their inverse.
 	\end{tabular}
 \end{minipage}
 \end{table}
-
 \end{comment}
-
-
 \section{Summary}
 
 In this chapter, we have utilized homotopy continuation principles in the
@@ -1630,7 +1617,8 @@ pseudoinverse or Augmented Jacobian approaches and that is agnostic with regards
 to the parameterization.
 The efficacy of the proposed \acrshort{npnlp} framework and continuation scheme 
 is
-demonstrated through a selection of 
+demonstrated through a diverse selection of 
 applications such as global unconstrained optimization, global 
-sensitivity of a simple structure and a simple contact problem in nonlinear
-elastostatics.
+sensitivity of a simple structure, a frictionles contact problem in nonlinear
+elastostatics and a load parameterized continuation of a shallow arch for both 
+elastic and inelastic response.
