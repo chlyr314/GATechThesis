@@ -322,7 +322,8 @@ $\bvec{y}_i$, is:
 		\nabla_{\mathbf{q}_i}\bvec{h}_g^B & \dfrac{d \bvec{h}_g^B}{d\phi_i}
 	\end{bmatrix} = \begin{bmatrix}
 		\bvec{0} & \bvec{0} & -\bmat{T}\hat{\mathbf{E}}_i & \hat{\mathbf{E}}_i
-	\end{bmatrix}\nonumber
+	\end{bmatrix}
+	\label{eq:grad_Hb_y}
 \end{gather}
 
 \noindent where $\hat{\mathbf{E}}_i\in\mathbb{R}^{n_q}$ is a unit vector with 
@@ -1801,7 +1802,7 @@ assigned directly to field \textit{coor} of the $n$-th component of structure
 \end{center}
 
 \noindent See also lines 24-26 in Fig. \ref{fig:FIG_INPUT1}. In a similar 
-fashion, for the definition of element $m$, we assign the vector $[node_I 
+fashion, for the definition of element $m$, we assign the vector $[node_I\  
 node_J]$ directly to field \textit{nodes} of the $m$-th component of structure 
 \textbf{element}, as shown in lines 29-30 of Fig. \ref{fig:FIG_INPUT1}. The 
 general format is:
@@ -1816,7 +1817,7 @@ detailed tooltips in the form of comments on the same line. Two features that
 are available in this form of input but are not in the GUI version are 1) the 
 option to define ``gravity'' loads which remain constant throughout the 
 analysis and 2) the option to perform a displacement control incremental 
-analysis. If this option is chosen (see line 53 in Fig. \ref{fig:FIG_INPUT2}, 
+analysis. If this option is chosen (see line 53 in Fig. \ref{fig:FIG_INPUT2}), 
 then the user needs to also specify the nodal \acrshort{dof} that is controlled 
 and the target displacement up to which the said \acrshort{dof} is to be 
 incremented to. The relevant lines for these definitions are 65-66 in Fig. 
@@ -1835,5 +1836,173 @@ error-prone. The numerous error checks implemented for the \acrshort{gui}
 version are not carried out when setting up a problem using matlab input files, 
 so users should be more cautious in the latter case.
 
+\subsubsection*{The main data structures}
 
+As mentioned earlier, the three main data structures are 1) \textbf{snode}, 2) 
+\textbf{element} and 3) \textbf{anlsData}. For the structure in Fig. 
+\ref{fig:FIG_TOGGLEFRAME}, the \textbf{snode} data structure with its fields 
+are shown Fig. \ref{fig:FIG_SNODE}. For a particular node m, \textbf{snode(m)}, 
+the \textit{els} field is a vector with components the labels (integers) of 
+those elements that include node m. The field \textit{dofstatus} returns a 
+vector that contains the nodal \acrshort{dof}s for node m that are restrained. 
+For example, since node 1 in the frame above is fixed on the ground, then the 
+field returns \textbf{snode(1).dofstatus} = [1 2 3] since all 3 \acrshort{dof}s 
+are restrained. If no \acrshort{dof}s are restrained, \textit{dofstatus} 
+returns an empty vector. 
+
+
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.90]{FIG_SNODE}
+	\caption{The \textbf{snode} data structure.}
+	\label{fig:FIG_SNODE}
+\end{figure}
+
+Next, we have the \textbf{element} structure, which is used to store data 
+pertaining to individual elements that will be used and updated during analysis 
+and, then, stored for post-processing purposes. The relevant fields are shown 
+in Fig. \ref{fig:FIG_element_struct} for the 2-beam frame. We can see that 
+\textbf{element} is of 
+dimension 2, since there are only two elements. For most fields, the 
+description added in the figure is adequate. The field \textit{data} is a 
+$1\times 11$ vector that contains the following parameters:
+
+\begin{center}
+	\textbf{element(m).data} = $[E\ G\ A\ I\ H_{iso}\ H_{kin}\ n_l\ k_s\ u_p]$
+\end{center}
+	
+	\noindent where these parameters are: Young's modulus, shear modulus, 
+	cross-section area, moment of inertia, isotropic hardening modulus, 
+	kinematic 
+	hardening modulus, $n_l$ is the number of layers, shear coefficient and, 
+	latsly, $u_p$ is a 
+	parameter given by the following integral over a cross-section:
+	
+	$$ u_p = \int_A \varphi(X_2)^2\text{d}A $$
+	
+	\noindent and is used to determine the shear coefficient $k_q$ for 
+	quadratic 
+	shear strain distribution (see Eqs. \ref{eq:SHEAR_COEFF}, 
+	\ref{eq:QUAD_COEFF}). The \textit{secArrays} field returns a $2\times n_l$ 
+	vector where the first column contains the area of fibers and the second 
+	contains the heights of these fibers on the cross-section. The field 
+	\textit{gradHyb} stores matrix $\nabla_{\mathbf{y}_i}\bvec{h}_g^B$, given 
+	in Appendix \ref{eq:grad_Hb_y}, at each element quadrature point. 
+	
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.85]{FIG_element_struct}
+		\caption{The \textbf{element} data structure.}
+		\label{fig:FIG_element_struct}
+	\end{figure}
+
+
+Lastly, we use the \textbf{anlsData} structure to store all parameters 
+pertaining to the analysis settings. Its dimension is one and the relevant 
+fields it encapsulates are shown in Fig. \ref{fig:FIG_anlsData}. Again, short 
+descriptions are 
+provided in the figure and below we discuss certain fields whose use might not 
+be apparent. 
+
+The \textit{incrs} field returns the number of incremental steps for the 
+Load-Controlled Newton method. It is overridden by parameter max\_steps (see 
+Line 74 in Fig. \ref{fig:FIG_INPUT3}), which is stored in the second place of 
+field \textit{solscheme}. Both \textit{force} and \textit{bcond} fields, which 
+pertain to external loading and support specification respectively, are defined 
+to in the 
+same way as with the \acrshort{gui} input. Field \textit{formulation} 
+determines which solver is 
+called to handle the linearized system of the Lagrangian gradient. It should 
+always be set to 2, which leads to a solution by block elimination of the 
+Hessian. The \textit{ConstantForce} field returns the vector of ``gravity'' 
+loads that remain constant during the incremental analysis. While the proper 
+way to handle the presence of such loads is to perform a separate initial, 
+usually load-controlled analysis and then proceed with the nonlinear 
+incremental analysis by using the solution of the former one as starting state, 
+presently, no such approach is followed. Instead, all loads are assumed to be 
+present from the start and only the loads in the \textit{force} field are 
+incremented. For that reason, caution is advised when setting values for the 
+gravity loads, since large values might cause early termination due to the 
+solution not being close to the initial state. The \textit{Hessian} and 
+\textit{Gradient} fields return the updated Hessian and Gradient of the 
+Lagrangian, respectively, for the whole structure for the current step. When 
+the analysis is concluded, both of these objects pertain to the last step. The 
+field \textit{totdofs} returns the total number of \acrshort{dof}s for the 
+problem, including Lagrange multipliers. The \textit{dhis} stores nodal 
+displacements and quadrature point strain measures for each step, which are 
+then used for post-processing purposes. Field $\lambda$ is the homotopy 
+parameter. When the load is parameterized in the context of the 
+\acrshort{npnlp} framework, this field returns a vector with the values of the 
+load proportionality parameter at each step. The field \textit{CurveLength} 
+stores the length of the homotopy/equilibrium curve up to each step. It returns 
+a $1\times steps$ vector. Field \textit{ResultantHis} stores the three 
+stress resultants at all nodes and all element quadrature points at each step. 
+If Displacement Control is selected, then the additional necessary data are 
+stored in the \textit{DisplControl}. The \textit{numintflag} field determines 
+the quadrature rule. If \textit{numintflag=1} then the Gauss-Lobatto quadrature 
+will be used, while for Gauss-Legendre, the option is \textit{numintflag=2}. 
+Notice that this is different compared to the GUI input, where Lobatto is still 
+1 but Gauss-Legendre is 0.
+Lastly, the \textit{solscheme} field stores the following analysis parameters:
+\begin{center}
+	\textbf{anlsData.solscheme} = [solflag max\_steps $\Delta S$ 
+	min$\Delta S$ max$\Delta S$ NumN COR s\_con PRE m N\_o 
+	WLS\_par force\_stop beta]
+\end{center}
+
+\noindent
+\begin{itemize}
+	\item \textbf{solflag} is the flag that determines which solver is used 
+	(see Line 
+	53, Fig. \ref{fig:FIG_INPUT2}).
+	\item \textbf{max\_steps} determines the maximum number of incremental 
+	steps.
+	\item $\Delta S$ is the step-length when the arc-length or the homotopy 
+	solvers are used.
+	\item min$\Delta S$ is the minimum allowed step-length. 
+	\item max$\Delta S$ is the maximum allowed step-length. 
+	\item \textbf{NumN} is the number of load-controlled steps to perform 
+	before 
+	switching to \acrshort{wls} predictor.
+	\item \textbf{COR} specifies which corrector is to be used. If 
+	\textbf{COR=1}, the Normal 
+	Flow corrector is used. If \textbf{COR=2}, the arc-length/secant-length 
+	correctors 
+	are used. if \textbf{COR=3}, the Normal Plane corrector is used.
+	\item \textbf{s\_con} determines whether step-length controls are to be 
+	performed. If \textbf{s\_con =1}, then $\Delta S$ is adjusted at the end of 
+	each 
+	step.
+	\item \textbf{PRE} determines which predictor will be used. If 
+	\textbf{PRE=1} then the 
+	tangent predictor is used. If \textbf{PRE=2} then the \acrshort{wls} 
+	predictor is 
+	used.
+	\item \textbf{m} determines the order of polynomial basis for the 
+	\acrshort{wls} 
+	approximation.
+	\item \textbf{N\_o} specifies the number of previously converged points 
+	passed to 
+	the \acrshort{wls} predictor.
+	\item \textbf{WLS\_par} determines which \acrshort{wls} predictor variant 
+	is to 
+	be used. For \textbf{WLS\_par}=1, then the predictor is \acrshort{wlse}, 
+	while 
+	for \textbf{WLS\_par=2} and \textbf{WLS\_par=3}, the predictors are the 
+	\acrshort{wlst} and \acrshort{wlsit} respectively.
+	\item \textbf{force\_stop} is a flag that determines if analysis should 
+	stop when 
+	the load proportionality parameter becomes larger than 1.
+	\item \textbf{beta} is the weighting function parameter used in the 
+	\acrshort{wls} 
+	predictor. 
+\end{itemize}
+
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.85]{FIG_anlsData}
+		\caption{The \textbf{anlsData} data structure.}
+		\label{fig:FIG_anlsData}
+	\end{figure}
 \end{appendices}

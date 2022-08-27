@@ -101,4 +101,4 @@
 \contentsline {chapter}{\numberline {E}Analytical Derivation of Consistent Tangent Modulus}{155}{appendix.1.E}%
 \contentsline {chapter}{\numberline {F}Numerical Path-following}{157}{appendix.1.F}%
 \contentsline {chapter}{\numberline {G}A Simple GUI for the Hybrid NLP Element}{160}{appendix.1.G}%
-\contentsline {chapter}{References}{200}{section*.123}%
+\contentsline {chapter}{References}{205}{section*.126}%
