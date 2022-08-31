@@ -583,7 +583,7 @@ eq. (\ref{eq:CORRECTOR_EFFECTIVE}) and the fact that $\bvec{n} =
 	\label{eq:EFFECTIVE_TRIAL}
 \end{equation}
 In the first phase of a plastic step we assume that no plastic flow occurs
-(Elsatic Prediction), therefore, for the purposes of the iterative strategy we
+(Elastic Prediction), therefore, for the purposes of the iterative strategy we
 can consider the following identity:
 \begin{equation}
 	f_{n+1} = 0 \rightarrow
@@ -1149,7 +1149,8 @@ We now proceed with the description of the essential parts of the
 
 In the \textit{Boundary Conditions} tab the user specifies the externally 
 applied nodal loads \textit{and} and the nodal support conditions so that rigid 
-body modes are excluded. The layout of the tab is shown in Fig. FIG and parts 
+body modes are excluded. The layout of the tab is shown in Fig. 
+\ref{fig:TAB4_marked} and parts 
 from A to F are discussed below:
 
 \begin{itemize}
@@ -1541,7 +1542,7 @@ input is next.
 Note the way the first line is typeset in \ref{fig:NODEA}. It is crucial  that 
 the first line in the input file starts with the comment character $\#$ and 
 also includes at least 4 commas. This is done in order to ensure that MATLAB 
-will store all data in a cell with \textbf{at least for columns}.
+will store all data in a cell with \textbf{at least four columns}.
 
 \subsection*{The ELEMENTS input}
 Like the NODE part, the ELEMENT input takes two numeric values per line 

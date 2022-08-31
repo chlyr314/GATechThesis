@@ -1171,6 +1171,243 @@
     \field{year}{1991}
   \endentry
 
+  \entry{Amir2020}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AM}{%
+         family={Amir},
+         familyi={A\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Papakonstantinou},
+         familyi={P\bibinitperiod},
+         given={K.G.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WG}{%
+         family={Warn},
+         familyi={W\bibinitperiod},
+         given={G.P.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AM+1}
+    \strng{fullhash}{AMPKWG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.ijnonlinmec.2019.07.003
+    \endverb
+    \field{issn}{0020-7462}
+    \field{pages}{103218}
+    \field{title}{A consistent Timoshenko hysteretic beam finite element model}
+    \field{volume}{119}
+    \field{journaltitle}{International Journal of Non-Linear Mechanics}
+    \field{year}{2020}
+  \endentry
+
+  \entry{KOTTARI2014}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KA}{%
+         family={Kottari},
+         familyi={K\bibinitperiod},
+         given={A.K.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Charalampakis},
+         familyi={C\bibinitperiod},
+         given={A.E.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KV}{%
+         family={Koumousis},
+         familyi={K\bibinitperiod},
+         given={V.K.},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KA+1}
+    \strng{fullhash}{KACAKV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.engstruct.2013.12.025
+    \endverb
+    \field{issn}{0141-0296}
+    \field{pages}{235\bibrangedash 240}
+    \field{title}{A consistent degrading Bouc–Wen model}
+    \field{volume}{60}
+    \field{journaltitle}{Engineering Structures}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Scott1}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SMH}{%
+         family={Scott},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima H.},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=RKL}{%
+         family={Ryan},
+         familyi={R\bibinitperiod},
+         given={Keri\bibnamedelima L.},
+         giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMHRKL1}
+    \strng{fullhash}{SMHRKL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{597\bibrangedash 607}
+    \field{title}{{Moment-Rotation Behavior of Force-Based Plastic Hinge
+  Elements}}
+    \field{volume}{29}
+    \field{journaltitle}{Earthquake Spectra}
+    \field{month}{05}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Scott2}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SMH}{%
+         family={Scott},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima H},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=FGL}{%
+         family={Fenves},
+         familyi={F\bibinitperiod},
+         given={Gregory\bibnamedelima L},
+         giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{SMHFGL1}
+    \strng{fullhash}{SMHFGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{244\bibrangedash 252}
+    \field{title}{Plastic hinge integration methods for force-based
+  beam--column elements}
+    \field{volume}{132}
+    \field{journaltitle}{Journal of Structural Engineering}
+    \field{year}{2006}
+  \endentry
+
+  \entry{berry2008}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BMP}{%
+         family={Berry},
+         familyi={B\bibinitperiod},
+         given={Michael\bibnamedelima P},
+         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=LDE}{%
+         family={Lehman},
+         familyi={L\bibinitperiod},
+         given={Dawn\bibnamedelima E},
+         giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=LLN}{%
+         family={Lowes},
+         familyi={L\bibinitperiod},
+         given={Laura\bibnamedelima N},
+         giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Concrete Institute}%
+    }
+    \strng{namehash}{BMP+1}
+    \strng{fullhash}{BMPLDELLN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{270}
+    \field{title}{Lumped-plasticity models for performance simulation of bridge
+  columns}
+    \field{volume}{105}
+    \field{journaltitle}{ACI Structural Journal}
+    \field{year}{2008}
+  \endentry
+
+  \entry{triantafyllou211}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TSP}{%
+         family={Triantafyllou},
+         familyi={T\bibinitperiod},
+         given={Savvas\bibnamedelima P},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=KVK}{%
+         family={Koumousis},
+         familyi={K\bibinitperiod},
+         given={Vlasis\bibnamedelima K},
+         giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{TSPKVK1}
+    \strng{fullhash}{TSPKVK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{713\bibrangedash 727}
+    \field{title}{An inelastic Timoshenko beam element with
+  axial--shear--flexural interaction}
+    \field{volume}{48}
+    \field{journaltitle}{Computational Mechanics}
+    \field{year}{2011}
+  \endentry
+
+  \entry{SimoShear}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SJC}{%
+         family={Simo},
+         familyi={S\bibinitperiod},
+         given={Juan\bibnamedelima C},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=HKD}{%
+         family={Hjelmstad},
+         familyi={H\bibinitperiod},
+         given={Keith\bibnamedelima D},
+         giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=TRL}{%
+         family={Taylor},
+         familyi={T\bibinitperiod},
+         given={Robert\bibnamedelima L},
+         giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SJC+1}
+    \strng{fullhash}{SJCHKDTRL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{301\bibrangedash 330}
+    \field{title}{Numerical formulations of elasto-viscoplastic response of
+  beams accounting for the effect of shear}
+    \field{volume}{42}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+    \field{year}{1984}
+  \endentry
+
   \entry{Kaba1984}{book}{}
     \name{author}{2}{}{%
       {{hash=KSA}{%
@@ -5035,8 +5272,8 @@
     \list{publisher}{1}{%
       {American Society of Civil Engineers}%
     }
-    \strng{namehash}{AM+1}
-    \strng{fullhash}{AMPKWG1}
+    \strng{namehash}{AM+2}
+    \strng{fullhash}{AMPKWG2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{number}{2}

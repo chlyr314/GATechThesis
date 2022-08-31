@@ -104,7 +104,9 @@ constitutive, assumptions that can account for the localized character of
 elastoplastic response. These phenomenological formulations are commonly known
 as concentrated or lumped plasticity models and have 
 enjoyed widespread use, especially for reinforced concrete applications, 
-while also offering low computational costs.  
+while also offering low computational 
+costs\cite{Amir2020,KOTTARI2014,Scott1,Scott2,berry2008,triantafyllou211,SimoShear}.
+  
 
 An alternative approach is based on discretization of the beam cross-section
 into an number of fibers or layers. This allows for the employment of 
@@ -242,12 +244,33 @@ The objective of this research is to develop a high-performance, geometrically-e
 hybrid beam element that is formulated in terms of nonlinear programming principles, 
 whereby the total potential energy of the structure is treaded as the objective 
 function. The formulation will offer the capability to model a structural member with 
-just one element in both linear and nonlinear response spectrum. Since the element 
+just one element in both linear and nonlinear response spectrum.  This is a 
+unique capability which, to our knowledge, no beam implementation possesses 
+in commercial and academic software.
+
+Furthermore, since the element 
 formulation is recast using optimization concepts, we aim to also develop a parametric 
 nonlinear programming framework for the hybrid beam element, which would provide the 
 necessary tools for general purpose parametric analyses with global convergence 
-characteristics. In addition, we aim to develop a fast and robust prediction scheme to 
-be used during the numerical solution of the parametric nonlinear program. 
+characteristics. This again is a distinctive feature since non-conventional 
+analyses involving additional considerations such as contact or design 
+optimization, are generally implemented in an compartmentalized fashion. While 
+a degree of case-specific implementations is likely unavoidable, the proposed 
+parametric framework offers the potential to encompass a wide class of such 
+problem considerations, while also providing the necessary mathematical tools, 
+at the most abstract level, that allow us to investigate the convergence 
+properties of any applicable problem. 
+
+In addition, we aim to develop a fast and robust prediction scheme to 
+be used during the (incremental) numerical solution of the parametric nonlinear 
+program. The 
+unique feature it offers is a considerable cost reduction in terms of 
+operations required to attain a first approximation to the a nearby solution, 
+while also maintaining a stable continuation process even when larger 
+step-lengths or increments are prescribed. This again is in contrast with most 
+prediction schemes, which rely on costly first or, in some cases, even second 
+derivative information or other interpolatory schemes which tend to be 
+computationally fast but not particularly stable for larger increments.
 
 More specifically, this study proposes:
 \begin{itemize}
@@ -255,9 +278,8 @@ More specifically, this study proposes:
 	based on nonlinear programming principles. The element would be able to 
 	capture 
 	arbitrarily large displacements and rotations, as well as curvature localization 
-	during inelastic response, with just one element per member. This is a 
-	unique capability which, to our knowledge, no beam implementation possesses 
-	in commercial and academic software. In addition, the element
+	during inelastic response, with just one element per member. In addition, 
+	the element
 	incorporates shear deformation effects without suffering from locking 
 	behavior. The element hybridization is carried out by incorporating the 
 	exact kinematic equations in the minimization statement of the potential 
@@ -288,7 +310,9 @@ More specifically, this study proposes:
 	utilizing principles from homotopy theory, we highlight what specific
 	regularity conditions need to hold so that a unique and smooth path exists which
 	connects the initial configuration state, which is considered known, with at least 
-	one equilibrium state of a specified potential. 
+	one equilibrium state of a specified potential. Lastly, a path-following 
+	algorithm capable of tracking piecewise smooth paths, which generally occur 
+	in the context of parametric nonlinear programming.
 	
 	\item Incorporation of a fast and reliable prediction scheme in the global 
 	solution 

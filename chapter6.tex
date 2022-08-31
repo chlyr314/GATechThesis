@@ -22,13 +22,19 @@ based on a local weighted least squares fitting and provides superior
 computational 
 performance when compared to other conventional prediction schemes. In 
 addition, it is 
-a generally applicable algorith that offers even more considerable advantages 
+a generally applicable algorithm that offers even more considerable advantages 
 when 
-problems possess dense, non-symmetric Jacobians.
+problems possess dense, non-symmetric Jacobians. Thus, a unique framework for 
+static structural analysis is presented herein that offers capabilities beyond 
+the conventional load parameterized analyses by utilizing parametric 
+optimization principles. Another unique feature is pertains to the capabilities 
+of the beam element to capture general nonlinear response with just one element 
+per member, while also accounting for potential shear-flexural interaction 
+effects.
 
 \section{Limitations}
 
-Limitations of the research material presented herein are primarily a direct 
+Limitations of the work presented herein are primarily a direct 
 result of 
 assumptions set initially during the formulation of the relevant parts. As far 
 as the 
@@ -39,7 +45,7 @@ plane after deformation, even if not perpendicular to the beam centerline. This
 means 
 that warping effects are not taken into account. Another issue related to 
 cross-section 
-kinematics is that simple, even though not simplistic, shear strain 
+kinematics is that simple shear strain 
 distribution 
 patterns 
 were assumed, such as uniform and quadratic, and energetic consistency with the 
@@ -96,7 +102,8 @@ relatively large step-length is used.
 
 \section{Future Directions}
 %%%%%%%%% HYBRID BEAM
-This investigation has been a first attempt to establish a parametric nonlinear 
+This investigation has been a first unique attempt to establish a parametric 
+nonlinear 
 programming framework for the general parametric study of planar frames using a 
 high 
 performance, hybrid, \acrshort{nlp}-based element. There are, therefore, many 
@@ -125,7 +132,7 @@ Below we list some recommendations:
 	return 
 	mapping algorithm shown for the von Mises criterion can be extended for 
 	other 
-	materials. Lastly modifying the relevant rate expressions to account for 
+	materials. Lastly, modifying the relevant rate expressions to account for 
 	the 
 	effect of nonlinear kinematic hardening is also an additional feature that 
 	can be 

@@ -24,13 +24,15 @@ the solution set of such systems is a curve, the parameterization best suited
 for the proposed algorithm is the arc-length of the curve. 
 
 The chapter is structured as follows: in the first section we provide a summary 
+of 
 numerical continuation. In the second section, the formulation of the Weighted 
 Least Squares (\acrshort{wls}) prediction scheme is introduced, followed by a 
 section dealing with implementation details. The chapter concludes with a 
 section dedicated to numerical tests. We
 demonstrate that predictions based on the proposed scheme are competitive
 compared to more expensive approaches utilizing the tangent predictor in
-terms of total steps, function evaluations and linear solves. Furthermore, it
+terms of total steps, function evaluations and linear system solutions. 
+Furthermore, it
 is shown that they can facilitate the continuation of the tracking process 
 even in cases where conventional prediction schemes lead to premature
 termination. 
@@ -176,9 +178,9 @@ predictors are illustrated.
 
 \begin{figure*}[t]
 	\centering
-	\subfloat[][]{{\includegraphics[width=6.1cm]{FIG42_INTERP.pdf}}\label{FIG42_INTERP}}%
+	\subfloat[][]{{\includegraphics[width=7.5cm]{FIG42_INTERP.pdf}}\label{FIG42_INTERP}}%
 	\qquad
-	\subfloat[][]{{\includegraphics[width=6.1cm]{FIG42_TANGENT.pdf}}\label{FIG42_TANGENT}}%
+	\subfloat[][]{{\includegraphics[width=7.5cm]{FIG42_TANGENT.pdf}}\label{FIG42_TANGENT}}%
 	\caption{Two types of predictors: (a) interpolatory and (b) Euler
 		predictor.}%
 	\label{fig:FIG42}%
@@ -569,7 +571,7 @@ ensured points closer to the current solution are assigned higher importance,
 with $\bvec{y}_N$ having the highest weight by construction. If the unit ramp is
 used, it is crucial that the implementation ensures there are enough points for
 the least squares algorithm to commence. This is because the point that
-corresponds to step $N-k+1$ is now assigned a zero weight and, thus, it doesn't
+corresponds to step $N-k+1$ is now assigned a zero weight and, thus, it does not
 contribute in the moment matrices $\bmat{A},\ \bmat{A}_c$(see Eqs.
 (\ref{eq:LeastSquarefun}), (\ref{eq:moment})). This issue arises when the 
 mimimum
@@ -702,7 +704,7 @@ is uncoupled from the number of points supplied, while in conventional
 interpolatory
 schemes this is not the case. We suspect this is one of the reasons some
 researchers claim higher order predictors based on extrapolation generally 
-behave poorer than the secant 
+behave worse than the secant 
 predictor\cite{Seydel87,Salgovic81}. In addition, the \acrshort{wls} predictor 
 does
 not rely on derivative information of $\bvec{F}$ and, therefore, its 
@@ -842,14 +844,22 @@ f_3\ f_4]^T$ and:
 	\item[] $f_4 = 10x_1-10(1+ \beta_2)x_2+t
 	B(1-x_4)\text{exp}(\dfrac{10x_2}{1+10x_2^{}/\gamma})+\beta_2\theta_{c2}$
 \end{itemize}
-and values for parameters $\gamma$, $B$, $\beta_1$, $\beta_2$, $\theta_{c1}$,
-$\theta_{c2}$ are taken from the aforementioned investigation. The continuation
+with values for the parameters set as follows: $\gamma=1000$, $B=22$, 
+$\beta_1=2$, $\beta_2=2$, $\theta_{c1}=0$,
+$\theta_{c2}=0$. These values are taken from the aforementioned investigation. 
+The continuation
 process is initialized from point $x_0=(0,0,0,0)$ with corresponding
 $t_0=0$. Parameter $\alpha$ in the weight function (see Eq. 
 (\ref{eq:WeightFunction})) is taken equal to $0.2$. The correction algorithm 
 used
 here is the one proposed in Chapter \ref{CH4}, Sec. \ref{CH4-S3}. The results 
-for this problem are listed in Table \ref{table:TABLE_CH5EX1}. 
+for this problem are listed in Table \ref{table:TABLE_CH5EX1}. In particular, 
+for the small step-size, all predictors perform similarly. The AB2 and AB3 
+predictors result in analyses that require the smallest number of evaluations 
+and system solutions, closely followed by the \acrshort{wlst} variant, which 
+outperforms in this case the Euler predictor. For the large step-length, the 
+only predictors that result in a succesfully convergent analysis are the 
+\acrshort{wlse} variant and the \acrshort{wlsit} variant for $m=2$ and $k=4$.
 
 \begin{table*}[h]
 	\centering
@@ -921,7 +931,17 @@ The results are listed in Table \ref{table:TABLE_CH5EX2_A}, where we used
 two different weigthting paramterers, $\alpha$, for the larger step-length. Only
 analyses that i) found all 9 solutions and ii) converged to
 $t=t_{max}=1.2$ were deemed successfull. 
-The same correction scheme was used here as in Example 1.
+The same correction scheme was used here as in Example 1. As can be seen from 
+that table, again all predictors performed similarly for the smaller 
+step-length. For the larger step-length, when $\alpha=0.1$ all \acrshort{wls} 
+variants had instances that resulted in a successfully convergent analysis. In 
+particular, the cubic fit yielded the most robust and competitive results, when 
+compared to the also convergent \acrshort{ab2} and \acrshort{ab3} predictors. 
+When a larger significance is assigned to previous points ($\alpha=0.5$ case), 
+we see that the performance of \acrshort{wls} predictors worsens. The cubic 
+fitting still results in competitive performance in the cases of 
+\acrshort{wlse} and \acrshort{wlsit}, but we have fewer instances that 
+converged successfully.
 
 \begin{table*}
 	\caption{Results for Example 2, $\epsilon_{tol}=10^{-6}$, $t_0=0$, 
@@ -1101,52 +1121,46 @@ The results are shown in Table \ref{table:TABLE_CH5EX3}, where now for both
 step-lengths
 the optimal performance of the \acrshort{wls} predictors with respect to 
 variations in 
-the weighting parameter $\alpha$ are listed. This is because even for the 
-smaller $\Delta s$, convergence was difficult to achieve. For reference, in an
+the weighting parameter $\alpha$ are listed. The best-case scenario of 
+convergence for the \acrshort{wls} variants was chosen in order to assess their 
+optimal performance in a difficult problem, since it is know that even for the 
+smaller $\Delta s$, convergence is difficult to achieve for this test. For 
+reference, in an
 investigation\cite{Georg81} of the same problem with the same arc-length
 parameterization but with step-length control, the smallest reported step-length
 was 0.000195 and on average, it was between 0.1 and 0.2. The solution
 path of problem (\ref{eq:HomotopyOneP3A}), projected on the $t-x_1$
-plane, is shown in Fig. \ref{fig:FIG45}.
+plane, is shown in Fig. \ref{fig:FIG45}. As can be seen from the table, the 
+\acrshort{wls} variants can result in a considerably faster analysis compared 
+to the Euler tangent predictor, which does not converge for $\Delta s= 0.15$, 
+and both the \acrshort{ab2} and \acrshort{ab3} predictors, of which the latter 
+did not converge for the larger step-length. It is to be expected that for a 
+problem like this, where a large number of turning points are present, larger 
+step-lengths will lead either to premature termination due to divergence or to 
+a track solution path of lower fidelity. 
 
 
 \subsection{Numerical Example 4}
 Here, we investigate the performance of the proposed predictors in a
 practical application pertaining to elastostatics. More specifically, we are
 concerned with the geometrically nonlinear elastic response of the double pinned
-shallow arch shown in Fig. \ref{fig:FIG46_A} The structure is
+shallow arch shown in Fig. \ref{fig:FIG40_A} and analyzed in Example 4 of the 
+previous chapter. The structure is, again,
 discretized into 42 hybrid \acrshort{nlp} finite elements and solved for the 
 external load
-applied with a geometric imperfection, as shown in Fig. \ref{fig:FIG46_B}. The 
-geometry and material properties 
-considered here are the same as in \cite{Clarke:1990}. The parameterized 
-equilibrium system has the following form:
-\begin{equation}
-	\bvec{R}(\bvec{u},t)=\bvec{F}_{int}(\bvec{u})-t \bvec{P}
-	\label{eq:P4}
-\end{equation}
-where $\bvec{F}_{int}$ is the vector of internal forces at the nodes, $P=1300$ 
-is the
-prescribed external load and $\bvec{u}$ is the nodal
-displacement vector. There a total of 43 nodes, with 41 nodes in the interior. 
-The total number of primary degrees of
-freedom (problem dimension) is $n=41\cdot 3+2=125$. Thus,
-$R:\mathbb{R}^{126}\rightarrow\mathbb{R}^{125}$. The equilibrium path, shown in 
-Fig. \ref{fig:FIG46_B}, is tracked from
-the undeformed configuration ($0\in\mathbb{R}^{126}$) up to the first full 
-application of external load $P=1300$, at which point, $t=1$. The results are
-listed in Table \ref{table:TABLE_CH5EX5}, where $a=0.2$ for all WLS prediction 
-variants. 
+applied with a geometric imperfection, as shown in Fig. \ref{fig:FIG38_B}.
 
-\begin{figure}[t]
-	\centering
-	\subfloat[][]{{\includegraphics[width=6.cm]{FIG46_A.pdf}}\label{fig:FIG46_A}}%
-	\qquad
-	\subfloat[][]{{\includegraphics[width=6.cm]{FIG46_B.pdf}}\label{fig:FIG46_B}}%
-	\caption{\textbf{(a)} Shallow arch structure and loading, \textbf{(b)}
-		equilibrium path.}%
-	\label{fig:FIG64}%
-\end{figure}
+%\begin{figure}[t]
+%	\centering
+%	
+%\subfloat[][]{{\includegraphics[width=6.cm]{FIG46_A.pdf}}\label{fig:FIG46_A}}%
+%	\qquad
+%	
+%\subfloat[][]{{\includegraphics[width=7.5cm]{FIG46_B.pdf}}\label{fig:FIG46_B}}%
+%	\caption{\textbf{(a)} Shallow arch structure and loading, \textbf{(b)}
+%		equilibrium path.}%
+%	\label{fig:FIG64}%
+%\end{figure}
 
 \begin{table}
 	\centering
@@ -1194,16 +1208,43 @@ variants.
 		\label{table:TABLE_CH5EX5}
 	\end{minipage}
 \end{table}
-
 \clearpage
+ The 
+parameterized 
+equilibrium system has the following form:
+\begin{equation}
+	\bvec{R}(\bvec{u},t)=\bvec{F}_{int}(\bvec{u})-t \bvec{P}
+	\label{eq:P4}
+\end{equation}
+where $\bvec{F}_{int}$ is the vector of internal forces at the nodes, $P=1300$ 
+is the
+prescribed external load and $\bvec{u}$ is the nodal
+displacement vector. There a total of 43 nodes, with 41 nodes in the interior. 
+The total number of primary degrees of
+freedom (problem dimension) is $n=41\cdot 3+2=125$. Thus,
+$R:\mathbb{R}^{126}\rightarrow\mathbb{R}^{125}$. The elastic equilibrium path, 
+shown in 
+Fig. \ref{fig:FIG40_A}, is tracked from
+the undeformed configuration ($0\in\mathbb{R}^{126}$) up to the first full 
+application of external load $P=1300$, at which point, $t=1$. The results are
+listed in Table \ref{table:TABLE_CH5EX5}, where $a=0.2$ for all WLS prediction 
+variants. Here we see again that for the small step-length, all predictors 
+performed similarly. However, for the larger step-length, besides the 
+\acrshort{wlse} and \acrshort{wlsit} variants with $(m,k)=(3,5)$ that did not 
+manage to converge, all other \acrshort{wls} instances converged with 
+considerably better performance metrics than both the Euler and both the 
+Adams-Bashforth predictors. 
+
+
 \section{Summary}
 
-a fast and reliable multistep prediction scheme was developed to
+A fast and reliable multistep prediction scheme was developed to
 facilitate the tracking of implicitly defined curves using numerical
 continuation coupled with predictor-corrector methods. It is based
 on a weighted least squares process, whereby the solution point at the current
 step, along with a prescribed number of precceding points are used to fit a
-local polynomial. Due its non-interpolating feature, it can represent the local
+local polynomial. Due to its non-interpolating feature, it can represent the 
+local
 geometry of the solution curve more faithfully. In addition, it exhibits linear
 time complexity with regards to the problem dimension, it does not
 require any derivative information and is versatile in
@@ -1220,15 +1261,15 @@ arc-length of the solution curve.
 
 As can be seen from the numerical examples, the \acrshort{wls} 
 variants offer comparable and can even outperform the Euler and the 
-\acrshort{ab2} \& \acrshort{ab3} 
-higher order predictors, which employ the exact tangent. For larger steps in 
+Adams-Bashforth higher order predictors, which employ the exact tangent. For 
+larger steps in 
 particular, we see that achieving reliable estimates of the next solution point 
 can greatly enhance the performance of the continuation process. The proposed 
 prediction schemes do so without utilizing expensive second order information 
-but by reserving an additional portion of available memory, not large, for 
-storing the a number of previously converged solution points. In practice, 
+but by reserving a modest additional portion of available memory for 
+storing the number of previously converged solution points. In practice, 
 \acrshort{wls} prediction is unlikely to use a polynomial order higher than 
-$m=4$ and, thus, at each step, we can simply ensure that the last $k=5$ 
+$m=4$ and, thus, at each step, we can simply ensure that merely the last $k=5$ 
 solution points are available in memory. 
 
 

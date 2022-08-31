@@ -612,19 +612,7 @@ furnishes the formula for the consistent tangent modulus:
 	\bmat{\Xi}_{11}-\frac{\bvec{N}_{n+1}\bvec{N}_{n+1}^T}{1+\delta_{n+1}}
 	\label{eq:CONSISTENT TANGENT MOD}
 \end{equation}
-Details regarding all newly defined vectors and matrices involved in the
-derivation of $\bmat{C}_c^{pl}$ is given in Appendix \ref{appendix:APPENDIX_D}. 
-In Box ~\ref{Box:BOX1} 
-we have summarised the return mapping algorithnm for a cross-section fiber of a 
-planar problem.
 
-%%%%%%%%%%%%%%%%%%%%  SECTION 4 - SUBSECTION 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Consistent Section Stiffness}\label{section:CH3-S4SS3}
-
-Once the stress update on a particular fiber has been carried out, its
-contribution to the stress resultant vector and the section stiffness are
-accounted for via a midpoint integration rule along the section height (see Eqs.
-(\ref{eq:STRESS_RES_CONJUGATE}), (\ref{eq:FIB_STIFF_CONTRIB})).
 
 % ~~~~~~~~~~~~~~~~~~~~~~ BOX 1  ~~~~~~~~~~~~~~~~~~~~~``
 {
@@ -728,6 +716,20 @@ accounted for via a midpoint integration rule along the section height (see Eqs.
 	\end{tcolorbox}
 }
 \clearpage
+
+Details regarding all newly defined vectors and matrices involved in the
+derivation of $\bmat{C}_c^{pl}$ is given in Appendix \ref{appendix:APPENDIX_D}. 
+In Box ~\ref{Box:BOX1} 
+we have summarised the return mapping algorithnm for a cross-section fiber of a 
+planar problem.
+
+%%%%%%%%%%%%%%%%%%%%  SECTION 4 - SUBSECTION 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Consistent Section Stiffness}\label{section:CH3-S4SS3}
+
+Once the stress update on a particular fiber has been carried out, its
+contribution to the stress resultant vector and the section stiffness are
+accounted for via a midpoint integration rule along the section height (see Eqs.
+(\ref{eq:STRESS_RES_CONJUGATE}), (\ref{eq:FIB_STIFF_CONTRIB})).
 
 Notice that while in the present formulation $C_{21}=C_{12}$, this will not be
 the case if a generalized integration rule is used for the rate equations. In
@@ -1060,7 +1062,7 @@ hypothesis coupled with the corresponding shear coefficient as a representation
 of the exact one, assuming elastic behavior:
 \begin{equation}
 	\mathcal{U}_{shear}^{exact}=k_s\mathcal{U}_{shear}^{unif} = 
-	\mathcal{U}_{shear}^{quad}\Longleftrightarrow 
+	k_q\mathcal{U}_{shear}^{quad}\Longleftrightarrow 
 	\frac{1}{2}k_sGA\gamma ^2=\frac{1}{2}G k_q^2\bigg(\int_A \varphi(X_2)^2 dA 
 	\bigg) \gamma ^2
 	\label{eq:SHEAR_COEFF}
@@ -1103,10 +1105,10 @@ we observe that the lower
 capacity captured by the multiaxial model in the $L^{}/h=4$ case, which Fig. 
 \ref{fig:FIG23} pertains to, is due to shear plastification of the shrinking 
 elastic core, a phenomenon which is neglected in a purely uniaxial formulation.
-
-\begin{figure}
+\clearpage
+\begin{figure}[t]
 	\centering
-	\includegraphics[scale=0.9]{FIG21_CLAMPED_BEAM}
+	\includegraphics[scale=0.7]{FIG21_CLAMPED_BEAM}
 	\caption{Geometry, initial and final configuration of clamped beam, along 
 		with cross-section dimensions.}
 	\label{fig:FIG21_CLAMPED_BEAM}
@@ -1139,7 +1141,7 @@ elastic core, a phenomenon which is neglected in a purely uniaxial formulation.
 	\end{minipage}
 }
 
-\begin{figure}[t]
+\begin{figure}
 	\centering
 	\subfloat[$L^{}/h=20$]{%
 		\hspace{-0.2cm}\includegraphics[width=0.45\textwidth]{FIG22_A_CLAMPED_LH20}%
@@ -1153,6 +1155,7 @@ elastic core, a phenomenon which is neglected in a purely uniaxial formulation.
 		of quadrature type and number of points.}
 	\label{fig:FIG22_EQUILIBRIUM_PATHS}
 \end{figure} 
+\clearpage
 
 \begin{figure}
 	\centering
@@ -1179,7 +1182,7 @@ elastic core, a phenomenon which is neglected in a purely uniaxial formulation.
 	\label{fig:FIG23}
 \end{figure}
 
-\clearpage
+
 %%%%%%%%%%%%%%%%%%%%  EXAMPLE 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Cyclic Loading of Shear Link}\label{CH3EX4}
 
@@ -1287,6 +1290,16 @@ improper restraint of the specimen during the experiment.
 	\label{fig:FIG25}
 \end{figure}
 
+\begin{figure}[b]
+	\centering
+	\includegraphics[scale=0.7]{FIG_BARS}
+	\caption{Performance of the three different return-mapping algorithms 
+		applied for the section state determination of the shear link under the 
+		imposed displacement history.}
+	\label{fig:FIG_BARS}
+\end{figure}
+\clearpage
+
 Performance analysis of the three different return-mapping schemes is also 
 conducted for this example, where now we will examine the total number of 
 constitutive iterations during the whole history of the imposed displacement. 
@@ -1303,15 +1316,6 @@ more general setting where nonlinear hardening or a different material model is
 used, the performance differentials between the proposed scheme and its 
 three-dimensional counterpart would be even more pronounced.
 
- \begin{figure}[b]
- 	\centering
- 	\includegraphics[scale=0.7]{FIG_BARS}
- 	\caption{Performance of the three different return-mapping algorithms 
- 	applied for the section state determination of the shear link under the 
- 	imposed displacement history.}
- 	\label{fig:FIG_BARS}
- \end{figure}
-\clearpage
 %%%%%%%%%%%%%%%%%%%%  EXAMPLE 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Elastoplastic Post-Buckling Behavior of Two-Beam Structure}
 
@@ -1329,20 +1333,9 @@ after the instability. Material and geometric data are shown in
 Table \ref{table:TABLE7}. Again, we highlight the impact of a coupled 
 multiaxial law by 
 investigating a variation of this problem. For all cases, inelastic response 
-with kinematic hardening is assumed. Convergence data in residual norm and 
-energy norms for the case of thick members are also shown in Tables 
-\ref{table:TABLE8}, \ref{table:TABLE9} for selected steps. In Fig. 
-\ref{fig:RATES} we also show 
-plots of convergence rates for the global Newton method when using the 
-consistent and continuous tangent respectively for two representative steps. It 
-is evident that use of the continuous tangent modulus slows down convergence 
-significantly.
+with kinematic hardening is assumed. 
 
-As can be seen from 
-Fig. \ref{fig:FIG27_PLASTIC} for the inelastc analysis of 
-the thick member variation, the equilibrium paths corresponding to a coupled 
-and uncoupled constitutive law tend to diverge shortly after the start of 
-plastic deformation.
+
 
 \begin{table}
 	\centering
@@ -1365,7 +1358,6 @@ plastic deformation.
  	\end{minipage}
 \end{table}
 
-\clearpage
 \begin{figure}[t]
 	\centering
 	\subfloat[Structure.]{%
@@ -1381,6 +1373,8 @@ plastic deformation.
 	\label{fig:FIG26}
 \end{figure} 
 
+
+
 \begin{figure}[b]
 	\centering
 	\subfloat[Elastic.]{%
@@ -1394,34 +1388,17 @@ plastic deformation.
 	\caption{Influence of slenderness and constitutive model on the response 
 		for elastic and elastoplastic behavior.}
 	\label{fig:FIG27}
-\end{figure} 
+\end{figure}
 
- The full post-buckling elastoplastic equilibrium curve for 
-the slender model is also provided for comparison. In 
-Fig. \ref{fig:FIG27_ELASTIC} the post-buckling response of both slender and 
-thick 
-models are illustrated. In the former, both uniaxial and multiaxial 
-constitutive models yield identical results, assuming an infinite yield stress.
-
-As we reduce the slenderness, slight differences arise compared to a purely 
-uniaxial behavior at the fiber. This is mainly due to the assumed strain 
-distribution, which is user defined and not accounted in the purely flexural 
-model.
-\begin{figure}[b]
-	\centering
-	\subfloat[Step 15.]{%
-		\hspace{-0.2cm}\includegraphics[width=0.45\textwidth]{STEP_15_RATES}%
-		\label{fig:STEP15_RATES}%
-	}
-	\subfloat[Step 25.]{%
-		\includegraphics[width=0.45\textwidth]{STEP_25_RATES}%
-		\label{fig:STEP25_RATES}%
-	}
-	\caption{Convergence rates for two representative steps when using the 
-	consistent and continuous tangents at fibers.}
-	\label{fig:RATES}
-\end{figure} 
-
+\clearpage
+Convergence data in residual norm and 
+energy norms for the case of thick members are also shown in Tables 
+\ref{table:TABLE8}, \ref{table:TABLE9} for selected steps. In Fig. 
+\ref{fig:RATES} we also show 
+plots of convergence rates for the global Newton method when using the 
+consistent and continuous tangent respectively for two representative steps. It 
+is evident that use of the continuous tangent modulus slows down convergence 
+significantly.
 %% RESIDUAL NORM
 \begin{table}
 	\centering
@@ -1475,7 +1452,43 @@ model.
 	\end{minipage}
 \end{table}
 
-\clearpage
+
+
+
+As can be seen from 
+Fig. \ref{fig:FIG27_PLASTIC} for the inelastc analysis of 
+the thick member variation, the equilibrium paths corresponding to a coupled 
+and uncoupled constitutive law tend to diverge shortly after the start of 
+plastic deformation.
+
+The full post-buckling elastoplastic equilibrium curve for 
+the slender model is also provided for comparison. In 
+Fig. \ref{fig:FIG27_ELASTIC} the post-buckling response of both slender and 
+thick 
+models are illustrated. In the former, both uniaxial and multiaxial 
+constitutive models yield identical results, assuming an infinite yield stress.
+
+
+\begin{figure}[t]
+	\centering
+	\subfloat[Step 15.]{%
+		\hspace{-0.2cm}\includegraphics[width=0.45\textwidth]{STEP_15_RATES}%
+		\label{fig:STEP15_RATES}%
+	}
+	\subfloat[Step 25.]{%
+		\includegraphics[width=0.45\textwidth]{STEP_25_RATES}%
+		\label{fig:STEP25_RATES}%
+	}
+	\caption{Convergence rates for two representative steps when using the 
+		consistent and continuous tangents at fibers.}
+	\label{fig:RATES}
+\end{figure}
+
+As we reduce the slenderness, slight differences arise compared to a purely 
+uniaxial behavior at the fiber. This is mainly due to the assumed strain 
+distribution, which is user defined and not accounted in the purely flexural 
+model. 
+
 
 %%%%%%%%%%%%%%%%%%%%  EXAMPLE 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Three Story Frame With Shear Links}
@@ -1512,7 +1525,23 @@ and 4. All members have
 the same yield stress and Young's modulus: $\sigma_y = 290$ MPa, $E = 210$ GPa, 
 and the Poisson's ratio is set to $\nu= 0.3$. Both material and geometric 
 nonlinearity options are activated for the 
-analysis and perfect plasticity is assumed. In Fig. \ref{fig:FIG28_EQPATHS} we 
+analysis and perfect plasticity is assumed. 
+\begin{figure}[H]
+	\centering
+	\subfloat[Frame structure.]{%
+		\hspace{-0.2cm}\includegraphics[width=0.45\textwidth]{FIG28_STRUCTURE}%
+		\label{fig:FIG28_STRUCTURE}%
+	}
+	\subfloat[Equilibrium paths.]{%
+		\includegraphics[width=0.45\textwidth]{FIG28_EQPATHS}%
+		\label{fig:FIG28_EQPATHS}%
+	}
+	\caption{Geometry of the steel frame and \ref{fig:FIG28_EQPATHS} response 
+		curves for three different models.}
+	\label{fig:FIG28}
+\end{figure}
+
+In Fig. \ref{fig:FIG28_EQPATHS} we 
 compare the results we get using the hybrid \acrshort{nlp} element with the 
 nonlinear flexibility element in 
 OpenSees\cite{OpenSees}. In OpenSees we used two different modelling approaches 
@@ -1537,7 +1566,34 @@ result. The purely flexural model in OpenSees gives an even slightly higher
 collapse load than the uncoupled models. It is clear that, in the presence of 
 shearing components, such as the effective shear wall in this example, a purely 
 flexural model will result in non-conservative estimates even in simple 
-push-over analyses.  
+push-over analyses. 
+
+\begin{figure}[H]
+	\centering
+	\subfloat[Shear force - centerline shear strain plot.]{%
+		\hspace{-0.2cm}\includegraphics[width=0.45\textwidth]{FIG_LINKSHEAR}%
+		\label{fig:FIG_LINKSHEAR}%
+	}
+	\subfloat[Moment - centerline curvature plot.]{%
+		\includegraphics[width=0.45\textwidth]{FIG_LINKMOMENT}%
+		\label{fig:FIG_LINKMOMENT}%
+	}
+	\caption{Stress resultant response for the left end of shear link 10-14 for 
+		the multiaxial model.}
+	\label{fig:FIGLINKS}
+\end{figure}
+
+
+
+Figures \ref{fig:FIG_LINKSHEAR}, \ref{fig:FIG_LINKMOMENT} highlight the 
+differences in the response of shear link 10-14 (left end) when the multiaxial 
+constitutive law is used compared to the uncoupled behavior of the section. It 
+can be seen that, in addition to higher capacity, the flexural plastification 
+for the uncoupled model occurs considerably earlier than the shear one. In 
+contrast, the coupled model reaches capacity for both shear and flexural 
+response in the same step, which is naturally expected when multiaxial effects 
+are considered. These results are derived from the models using the hybrid 
+element.
 
 To 
 achieve convergent results, the analyses with OpenSees required 90 elements 
@@ -1551,19 +1607,30 @@ quadrature points per
 element. Both models account for second order effects under the presence of 
 gravity loads.
 
-\begin{figure}
+Lastly, Fig. \ref{fig:COLLAPSE} depicts the progressive plastic hinge formation 
+and the eventual collapse mechanism for of the frame. Note that the plastic 
+mechanism is the same for both the coupled and uncoupled model.
+
+\begin{figure}[H]
 	\centering
-	\subfloat[Frame structure.]{%
-		\hspace{-0.2cm}\includegraphics[width=0.45\textwidth]{FIG28_STRUCTURE}%
-		\label{fig:FIG28_STRUCTURE}%
+	\subfloat[Step 30.]{%
+		\hspace{-0.2cm}\includegraphics[width=0.24\textwidth]{FIG_STEP30}%
+		\label{fig:FIG_STEP30}%
 	}
-	\subfloat[Equilibrium paths.]{%
-		\includegraphics[width=0.45\textwidth]{FIG28_EQPATHS}%
-		\label{fig:FIG28_EQPATHS}%
+	\subfloat[Step 45.]{%
+		\includegraphics[width=0.24\textwidth]{FIG_STEP45}%
+		\label{fig:FIG_STEP45}%
 	}
-	\caption{Geometry of the steel frame and \ref{fig:FIG28_EQPATHS} response 
-		curves for three different models.}
-	\label{fig:FIG28}
+	\subfloat[Step 55.]{%
+	\includegraphics[width=0.24\textwidth]{FIG_STEP55}%
+	\label{fig:FIG_STEP55}%
+	}
+	\subfloat[Step 68.]{%
+	\includegraphics[width=0.24\textwidth]{FIG_STEP68}%
+	\label{fig:FIG_STEP68}%
+	}
+	\caption{Progressive collapse of the frame.}
+	\label{fig:COLLAPSE}
 \end{figure}
 
 %the results we get for 3 
