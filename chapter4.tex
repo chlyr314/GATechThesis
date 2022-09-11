@@ -92,7 +92,7 @@ mechanics and applied mathematics literature.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%  SECTION 1 - SUBSECTION 1  %%%%%%%%%%%%%%%%%%
-\subsection{Main idea}\label{CH4-S1SS1}
+\subsection{Main Idea}\label{CH4-S1SS1}
 
 The application of numerical approximation methods in virtually all engineering
 and scientific problems leads, generally, to an algebraic system of equations,
@@ -550,7 +550,7 @@ the textbook by Guddat, Vasquez \& Jongen\cite{Guddat:1990}.
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%  SECTION 1 - SUBSECTION 4  %%%%%%%%%%%%%%%%%%
-\subsection{Global Optimization}\label{CH4-S1SS4}
+\subsection{Homotopy Continuation and Global Optimization}\label{CH4-S1SS4}
 
 Consider the following NLP:
 \begin{subequations}
@@ -774,9 +774,8 @@ $\bmat{H}_{\bm{z}}=\bmat{H}=\bmat{K}$,
 where $\bmat{K}$ is the global stiffness matrix. The following conditions
 guarantee that a path $\mathit{\Gamma_0}$ emanating 
 from the couple $(\bm{d}_0,0)$ (initial ``guess") converges
-to a solution of \textbf{P} $=\bm{\mathcal{P}}(1)$ at least once if the 
-following
-conditions hold\cite{Gfrerer:1985}:
+to a solution of \textbf{P} $=\bm{\mathcal{P}}(1)$ at least 
+once\cite{Gfrerer:1985}:
 \begin{enumerate}
 	\item The \acrshort{tpe} function, $\Pi$, and the constraints, $h_i$, 
 	should be $C^k$
@@ -1190,7 +1189,7 @@ freedom
 truss structure with respect to the axial stifness of one member. The example,
 which has appeared in different forms in various
 investigations\cite{Powell:1981,Bathe:1983}, is adopted from \cite{Sideris:2017}
-and modified in accordance with Fig. \ref{fig:FIG7_A}. Assuming
+and modified in accordance with Fig. \ref{fig:FIG35_A}. Assuming
 linear elastic constitutive law, the system \acrshort{tpe} is as follows:
 \begin{equation}
 	\Pi(u_1,u_2) =
@@ -1429,7 +1428,7 @@ on the $u_2-t$ and $\mu-t$ planes for four levels of $k$ are
 depicted in Fig. \ref{fig:FIG38}, with the case $k=0.01$ corresponding to an 
 effectively
 flat contact surface. The transition from the first active index set
-$I^1=\{\emptyset\}$ to the second, $I^2=\{1\}$ happens $t\approx 0.25$.
+$I^1=\{\emptyset\}$ to the second, $I^2=\{1\}$ happens at $t\approx 0.25$.
 The configuration profiles at four distinct levels of $t$, shown in
 Fig. \ref{fig:FIG39_Profiles}, correspond to a surface $g$ determined with 
 $k=30$.
@@ -1458,14 +1457,14 @@ nonlinear static response
 of a shallow arch using a constrained \acrshort{npnlp} framework, for both 
 elastic and inelastic behavior. In this application, the parameterized variable 
 is the external load and, for this reason, the 
-proposed algorithm used here coincides with the spherical arc-length 
+proposed algorithm used here resembles the spherical arc-length 
 method\cite{Crisfield3}.
 
 The structure configuration, seen in Fig. \ref{fig:FIG40_A}, and material 
 properties are 
 taken from Clarke \& Hanckock\cite{Clarke:1990}: the Young's modulus is 
 $E=200$, the beam cross-sectional area is $A= 10^4$ with moment of inertia 
-$I=10^8$, while the maximum value for the external load is $P_{max}=1300$.
+$I=10^8$, while the maximum value for the external load is $P_{max}=1,300$.
 For the numerical discretization, we used $N_e=21$ straight \acrshort{nlp} 
 hybrid beam elements. The discretized \acrshort{tpe}, which is of the 
 form (\ref{eq:NLP_ELEM}), is parameterized with respect to the applied load, 
@@ -1488,9 +1487,10 @@ discretized equality constraints (\ref{eq:impsd1}),(\ref{eq:impsd2}).
 
 \begin{figure*}[t]
 	\centering
-	\subfloat[][]{{\includegraphics[width=7.35cm]{FIG40_A.pdf}}\label{fig:FIG40_A}}%
+	\subfloat[Structure][]{{\includegraphics[width=7.35cm]{FIG40_A.pdf}}\label{fig:FIG40_A}}%
 	\qquad
-	\subfloat[][]{{\includegraphics[width=7.35cm]{FIG40_B.pdf}}\label{fig:FIG40_B}}%
+	\subfloat[Equilibrium 
+	paths][]{{\includegraphics[width=7.35cm]{FIG40_B.pdf}}\label{fig:FIG40_B}}%
 	\caption{\textbf{(a)} Shallow arch structure and loading, \textbf{(b)}
 		equilibrium path using the NPNLP framework.}%
 	\label{fig:FIG40}%
@@ -1499,10 +1499,13 @@ discretized equality constraints (\ref{eq:impsd1}),(\ref{eq:impsd2}).
 Convergence within 
 a step is reached when the norm of the \acrshort{kkt} system 
 (\ref{eq:NPNLPKKT}) becomes smaller than a prescribed tolerance, 
-$\epsilon_{tol}$. For the inelastic analysis, the multiaxial constitutive fiber 
-model proposed in the previous Chapter was used, however, since the structure 
+$\epsilon_{tol}$. The elastic solution path exhibits severe nonlinearities 
+whereas the inelastic one is relatively smooth, consisting of only two turning 
+points. For the inelastic analysis, the multiaxial constitutive fiber 
+model proposed in the previous Chapter was used. However, since the structure 
 is fairly slender, the interaction effects between shear and flexure are 
-negligible.
+negligible. For both analyses a constant step-length of $\Delta S= 75$ was 
+used. Both equlibrium paths are shown in Fig. \ref{fig:FIG40_B}.
 
 \begin{comment}
 \begin{table}[b]

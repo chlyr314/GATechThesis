@@ -277,7 +277,7 @@
     \field{number}{21-24}
     \field{pages}{2285\bibrangedash 2335}
     \field{title}{A unified formulation of small-strain corotational finite
-  elements: I. Theory}
+  elements: I. {T}heory}
     \field{volume}{194}
     \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
     \field{year}{2005}
@@ -933,8 +933,8 @@
     \endverb
     \field{number}{39-41}
     \field{pages}{4135\bibrangedash 4195}
-    \field{title}{Isogeometric analysis: CAD, finite elements, NURBS, exact
-  geometry and mesh refinement}
+    \field{title}{Isogeometric analysis: {C}{A}{D}, finite elements,
+  {N}{U}{R}{B}{S}, exact geometry and mesh refinement}
     \field{volume}{194}
     \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
     \field{year}{2005}
@@ -1171,138 +1171,6 @@
     \field{year}{1991}
   \endentry
 
-  \entry{Amir2020}{article}{}
-    \name{author}{3}{}{%
-      {{hash=AM}{%
-         family={Amir},
-         familyi={A\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=PK}{%
-         family={Papakonstantinou},
-         familyi={P\bibinitperiod},
-         given={K.G.},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=WG}{%
-         family={Warn},
-         familyi={W\bibinitperiod},
-         given={G.P.},
-         giveni={G\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{AM+1}
-    \strng{fullhash}{AMPKWG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb https://doi.org/10.1016/j.ijnonlinmec.2019.07.003
-    \endverb
-    \field{issn}{0020-7462}
-    \field{pages}{103218}
-    \field{title}{A consistent Timoshenko hysteretic beam finite element model}
-    \field{volume}{119}
-    \field{journaltitle}{International Journal of Non-Linear Mechanics}
-    \field{year}{2020}
-  \endentry
-
-  \entry{KOTTARI2014}{article}{}
-    \name{author}{3}{}{%
-      {{hash=KA}{%
-         family={Kottari},
-         familyi={K\bibinitperiod},
-         given={A.K.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=CA}{%
-         family={Charalampakis},
-         familyi={C\bibinitperiod},
-         given={A.E.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=KV}{%
-         family={Koumousis},
-         familyi={K\bibinitperiod},
-         given={V.K.},
-         giveni={V\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KA+1}
-    \strng{fullhash}{KACAKV1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb https://doi.org/10.1016/j.engstruct.2013.12.025
-    \endverb
-    \field{issn}{0141-0296}
-    \field{pages}{235\bibrangedash 240}
-    \field{title}{A consistent degrading Bouc–Wen model}
-    \field{volume}{60}
-    \field{journaltitle}{Engineering Structures}
-    \field{year}{2014}
-  \endentry
-
-  \entry{Scott1}{article}{}
-    \name{author}{2}{}{%
-      {{hash=SMH}{%
-         family={Scott},
-         familyi={S\bibinitperiod},
-         given={Michael\bibnamedelima H.},
-         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-      {{hash=RKL}{%
-         family={Ryan},
-         familyi={R\bibinitperiod},
-         given={Keri\bibnamedelima L.},
-         giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SMHRKL1}
-    \strng{fullhash}{SMHRKL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{2}
-    \field{pages}{597\bibrangedash 607}
-    \field{title}{{Moment-Rotation Behavior of Force-Based Plastic Hinge
-  Elements}}
-    \field{volume}{29}
-    \field{journaltitle}{Earthquake Spectra}
-    \field{month}{05}
-    \field{year}{2013}
-  \endentry
-
-  \entry{Scott2}{article}{}
-    \name{author}{2}{}{%
-      {{hash=SMH}{%
-         family={Scott},
-         familyi={S\bibinitperiod},
-         given={Michael\bibnamedelima H},
-         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-      {{hash=FGL}{%
-         family={Fenves},
-         familyi={F\bibinitperiod},
-         given={Gregory\bibnamedelima L},
-         giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Society of Civil Engineers}%
-    }
-    \strng{namehash}{SMHFGL1}
-    \strng{fullhash}{SMHFGL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{2}
-    \field{pages}{244\bibrangedash 252}
-    \field{title}{Plastic hinge integration methods for force-based
-  beam--column elements}
-    \field{volume}{132}
-    \field{journaltitle}{Journal of Structural Engineering}
-    \field{year}{2006}
-  \endentry
-
   \entry{berry2008}{article}{}
     \name{author}{3}{}{%
       {{hash=BMP}{%
@@ -1340,6 +1208,143 @@
     \field{year}{2008}
   \endentry
 
+  \entry{lowes2003}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LLN}{%
+         family={Lowes},
+         familyi={L\bibinitperiod},
+         given={Laura\bibnamedelima N},
+         giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Altoontash},
+         familyi={A\bibinitperiod},
+         given={Arash},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{LLNAA1}
+    \strng{fullhash}{LLNAA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{12}
+    \field{pages}{1686\bibrangedash 1697}
+    \field{title}{Modeling reinforced-concrete beam-column joints subjected to
+  cyclic loading}
+    \field{volume}{129}
+    \field{journaltitle}{Journal of Structural Engineering}
+    \field{year}{2003}
+  \endentry
+
+  \entry{Amir2020}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AM}{%
+         family={Amir},
+         familyi={A\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Papakonstantinou},
+         familyi={P\bibinitperiod},
+         given={K.G.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WG}{%
+         family={Warn},
+         familyi={W\bibinitperiod},
+         given={G.P.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AM+1}
+    \strng{fullhash}{AMPKWG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.ijnonlinmec.2019.07.003
+    \endverb
+    \field{issn}{0020-7462}
+    \field{pages}{103218}
+    \field{title}{A consistent {T}imoshenko hysteretic beam finite element
+  model}
+    \field{volume}{119}
+    \field{journaltitle}{International Journal of Non-Linear Mechanics}
+    \field{year}{2020}
+  \endentry
+
+  \entry{amir2020hysteretic}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AM}{%
+         family={Amir},
+         familyi={A\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+      {{hash=PK}{%
+         family={Papakonstantinou},
+         familyi={P\bibinitperiod},
+         given={KG},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WG}{%
+         family={Warn},
+         familyi={W\bibinitperiod},
+         given={GP},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AM+2}
+    \strng{fullhash}{AMPKWG2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{9}
+    \field{title}{Hysteretic beam finite-element model including multiaxial
+  yield/capacity surface evolution with degradations}
+    \field{volume}{146}
+    \field{journaltitle}{Journal of Engineering Mechanics}
+    \field{year}{2020}
+  \endentry
+
+  \entry{KOTTARI2014}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KA}{%
+         family={Kottari},
+         familyi={K\bibinitperiod},
+         given={A.K.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Charalampakis},
+         familyi={C\bibinitperiod},
+         given={A.E.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KV}{%
+         family={Koumousis},
+         familyi={K\bibinitperiod},
+         given={V.K.},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KA+1}
+    \strng{fullhash}{KACAKV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.engstruct.2013.12.025
+    \endverb
+    \field{issn}{0141-0296}
+    \field{pages}{235\bibrangedash 240}
+    \field{title}{A consistent degrading {B}ouc–{W}en model}
+    \field{volume}{60}
+    \field{journaltitle}{Engineering Structures}
+    \field{year}{2014}
+  \endentry
+
   \entry{triantafyllou211}{article}{}
     \name{author}{2}{}{%
       {{hash=TSP}{%
@@ -1364,7 +1369,7 @@
     \field{labeltitlesource}{title}
     \field{number}{6}
     \field{pages}{713\bibrangedash 727}
-    \field{title}{An inelastic Timoshenko beam element with
+    \field{title}{An inelastic {T}imoshenko beam element with
   axial--shear--flexural interaction}
     \field{volume}{48}
     \field{journaltitle}{Computational Mechanics}
@@ -1406,6 +1411,96 @@
     \field{volume}{42}
     \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
     \field{year}{1984}
+  \endentry
+
+  \entry{Scott1}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SMH}{%
+         family={Scott},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima H.},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=RKL}{%
+         family={Ryan},
+         familyi={R\bibinitperiod},
+         given={Keri\bibnamedelima L.},
+         giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMHRKL1}
+    \strng{fullhash}{SMHRKL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{597\bibrangedash 607}
+    \field{title}{Moment-Rotation Behavior of Force-Based Plastic Hinge
+  Elements}
+    \field{volume}{29}
+    \field{journaltitle}{Earthquake Spectra}
+    \field{month}{05}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Scott2}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SMH}{%
+         family={Scott},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima H},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=FGL}{%
+         family={Fenves},
+         familyi={F\bibinitperiod},
+         given={Gregory\bibnamedelima L},
+         giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{SMHFGL1}
+    \strng{fullhash}{SMHFGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{244\bibrangedash 252}
+    \field{title}{Plastic hinge integration methods for force-based
+  beam--column elements}
+    \field{volume}{132}
+    \field{journaltitle}{Journal of Structural Engineering}
+    \field{year}{2006}
+  \endentry
+
+  \entry{bae2008}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BS}{%
+         family={Bae},
+         familyi={B\bibinitperiod},
+         given={Sungjin},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BO}{%
+         family={Bayrak},
+         familyi={B\bibinitperiod},
+         given={Oguzhan},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Concrete Institute}%
+    }
+    \strng{namehash}{BSBO1}
+    \strng{fullhash}{BSBO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{290}
+    \field{title}{Plastic hinge length of reinforced concrete columns}
+    \field{volume}{105}
+    \field{journaltitle}{ACI Structural Journal}
+    \field{year}{2008}
   \endentry
 
   \entry{Kaba1984}{book}{}
@@ -1462,7 +1557,7 @@
     \field{title}{Analysis of reinforced concrete beam-columns under uniaxial
   excitation}
     \field{volume}{114}
-    \field{journaltitle}{Journal of structural engineering}
+    \field{journaltitle}{Journal of Structural Engineering}
     \field{year}{1988}
   \endentry
 
@@ -1489,7 +1584,7 @@
     }
     \list{publisher}{1}{%
       {Earthquake Engineering Research Center, College of Engineering,
-  University~…}%
+  University of California}%
     }
     \strng{namehash}{TF+1}
     \strng{fullhash}{TFSEFFC1}
@@ -1606,7 +1701,7 @@
     \field{title}{The modified compression-field theory for reinforced concrete
   elements subjected to shear.}
     \field{volume}{83}
-    \field{journaltitle}{ACI J.}
+    \field{journaltitle}{ACI Journal}
     \field{year}{1986}
   \endentry
 
@@ -1806,7 +1901,7 @@
     \field{pages}{192\bibrangedash 203}
     \field{title}{A mixed finite element method for beam and frame problems}
     \field{volume}{31}
-    \field{journaltitle}{Computational mechanics}
+    \field{journaltitle}{Computational Mechanics}
     \field{year}{2003}
   \endentry
 
@@ -2057,7 +2152,7 @@
     \field{labeltitlesource}{title}
     \field{number}{3}
     \field{pages}{254\bibrangedash 271}
-    \field{title}{Using finite strain 3D-material models in beam and shell
+    \field{title}{Using finite strain 3{D}-material models in beam and shell
   elements}
     \field{volume}{19}
     \field{journaltitle}{Engineering Computations}
@@ -2142,9 +2237,9 @@
     \field{labeltitlesource}{title}
     \field{number}{4}
     \field{pages}{531\bibrangedash 551}
-    \field{title}{Historical development of the Newton--Raphson method}
+    \field{title}{Historical development of the {N}ewton--{R}aphson method}
     \field{volume}{37}
-    \field{journaltitle}{SIAM review}
+    \field{journaltitle}{SIAM Review}
     \field{year}{1995}
   \endentry
 
@@ -2196,7 +2291,7 @@
     \field{title}{A class of methods for solving nonlinear simultaneous
   equations}
     \field{volume}{19}
-    \field{journaltitle}{Mathematics of computation}
+    \field{journaltitle}{Mathematics of Computation}
     \field{year}{1965}
   \endentry
 
@@ -2291,8 +2386,8 @@
     \field{pages}{1613\bibrangedash 1626}
     \field{title}{The solution of nonlinear finite element equations}
     \field{volume}{14}
-    \field{journaltitle}{International journal for numerical methods in
-  engineering}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
     \field{year}{1979}
   \endentry
 
@@ -2360,7 +2455,7 @@
     \field{title}{On the limited memory BFGS method for large scale
   optimization}
     \field{volume}{45}
-    \field{journaltitle}{Mathematical programming}
+    \field{journaltitle}{Mathematical Programming}
     \field{year}{1989}
   \endentry
 
@@ -2410,7 +2505,7 @@
     \field{pages}{229\bibrangedash 244}
     \field{title}{Numerical continuation methods: a perspective}
     \field{volume}{124}
-    \field{journaltitle}{Journal of computational and applied mathematics}
+    \field{journaltitle}{Journal of Computational and Applied Mathematics}
     \field{year}{2000}
   \endentry
 
@@ -2430,9 +2525,9 @@
     \strng{fullhash}{KHB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Recent advances in numerical analysis}
+    \field{booktitle}{Recent Advances in Numerical Analysis}
     \field{pages}{73\bibrangedash 94}
-    \field{title}{Global homotopies and Newton methods}
+    \field{title}{Global homotopies and {N}ewton methods}
     \field{year}{1978}
   \endentry
 
@@ -2527,8 +2622,8 @@
     \strng{fullhash}{CSNMPJYJA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Functional differential equations and approximation of
-  fixed points}
+    \field{booktitle}{Functional Differential Equations and Approximation of
+  Fixed Points}
     \field{pages}{77\bibrangedash 88}
     \field{title}{A homotopy method for locating all zeros of a system of
   polynomials}
@@ -2599,7 +2694,7 @@
     \strng{fullhash}{AEL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Numerical solution of nonlinear equations}
+    \field{booktitle}{Numerical Solution of Nonlinear Equations}
     \field{pages}{1\bibrangedash 29}
     \field{title}{A survey of homotopy methods for smooth mappings}
     \field{year}{1981}
@@ -2903,7 +2998,7 @@
     \field{title}{Solution of large displacement and instability problems using
   the current stiffness parameter}
     \field{volume}{2}
-    \field{journaltitle}{Finite elements in nonlinear mechanics}
+    \field{journaltitle}{Finite Elements in Nonlinear Mechanics}
     \field{year}{1978}
   \endentry
 
@@ -2959,7 +3054,7 @@
     \field{title}{An incremental approach to the solution of snapping and
   buckling problems}
     \field{volume}{15}
-    \field{journaltitle}{International journal of solids and structures}
+    \field{journaltitle}{International Journal of Solids and Structures}
     \field{year}{1979}
   \endentry
 
@@ -2979,8 +3074,8 @@
     \strng{fullhash}{RE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Nonlinear finite element analysis in structural
-  mechanics}
+    \field{booktitle}{Nonlinear Finite Element Analysis in Structural
+  Mechanics}
     \field{pages}{63\bibrangedash 89}
     \field{title}{Strategies for tracing the nonlinear response near limit
   points}
@@ -3080,19 +3175,19 @@
   \entry{Stricklin:1971}{article}{}
     \name{author}{3}{}{%
       {{hash=SJA}{%
-         family={STKICKLIN},
+         family={Stkicklin},
          familyi={S\bibinitperiod},
          given={JAMES\bibnamedelima A},
          giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
       {{hash=HWE}{%
-         family={HAISLER},
+         family={Haisler},
          familyi={H\bibinitperiod},
          given={WALTER\bibnamedelima E},
          giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
       {{hash=VRWA}{%
-         family={VON\bibnamedelima RIESEMANN},
+         family={Von\bibnamedelima Riesemann},
          familyi={V\bibinitperiod\bibinitdelim R\bibinitperiod},
          given={WALTER\bibnamedelima A},
          giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
@@ -3132,7 +3227,7 @@
     \field{title}{A method for the automatic evaluation of the dynamic
   relaxation parameters}
     \field{volume}{25}
-    \field{journaltitle}{Computer methods in applied mechanics and engineering}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
     \field{year}{1981}
   \endentry
 
@@ -3189,7 +3284,7 @@
     \field{title}{Analysis of static non-linear response by explicit time
   integration}
     \field{volume}{7}
-    \field{journaltitle}{International journal for numerical methods in
+    \field{journaltitle}{International Journal for Numerical Methods in
   Engineering}
     \field{year}{1973}
   \endentry
@@ -3313,7 +3408,7 @@
     \field{title}{The expanded Lagrangian system for constrained optimization
   problems}
     \field{volume}{26}
-    \field{journaltitle}{SIAM journal on control and optimization}
+    \field{journaltitle}{SIAM Journal on Control and Optimization}
     \field{year}{1988}
   \endentry
 
@@ -3350,7 +3445,7 @@
     \field{title}{A combined homotopy interior point method for general
   nonlinear programming problems}
     \field{volume}{80}
-    \field{journaltitle}{Applied mathematics and computation}
+    \field{journaltitle}{Applied Mathematics and Computation}
     \field{year}{1996}
   \endentry
 
@@ -3436,7 +3531,7 @@
     \field{title}{Distillation calculations using a locally paramaterized
   continuation method}
     \field{volume}{9}
-    \field{journaltitle}{Computers \& chemical engineering}
+    \field{journaltitle}{Computers \& Chemical Engineering}
     \field{year}{1985}
   \endentry
 
@@ -3498,7 +3593,7 @@
     \field{title}{Heterogenous azeotropic distillaion-homotopy-continuation
   methods}
     \field{volume}{11}
-    \field{journaltitle}{Computers \& chemical engineering}
+    \field{journaltitle}{Computers \& Chemical Engineering}
     \field{year}{1987}
   \endentry
 
@@ -3529,8 +3624,8 @@
     \field{title}{Tracing solution curves of non-linear equations with sharp
   turning points}
     \field{volume}{12}
-    \field{journaltitle}{International journal of circuit theory and
-  applications}
+    \field{journaltitle}{International Journal of Circuit Theory and
+  Applications}
     \field{year}{1984}
   \endentry
 
@@ -3606,9 +3701,9 @@
     \field{number}{19}
     \field{pages}{194113}
     \field{title}{Exploring the potential energy landscape of the Thomson
-  problem via Newton homotopies}
+  problem via {N}ewton homotopies}
     \field{volume}{142}
-    \field{journaltitle}{The Journal of chemical physics}
+    \field{journaltitle}{The Journal of Chemical Physics}
     \field{year}{2015}
   \endentry
 
@@ -3719,7 +3814,7 @@
     \field{title}{Large scale parameter estimation problems in frequency-domain
   elastodynamics using an error in constitutive equation functional}
     \field{volume}{253}
-    \field{journaltitle}{Computer methods in applied mechanics and engineering}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
     \field{year}{2013}
   \endentry
 
@@ -4156,8 +4251,69 @@
     \field{pages}{1281\bibrangedash 1295}
     \field{title}{Role of continuation in engineering analysis}
     \field{volume}{42}
-    \field{journaltitle}{Chemical engineering science}
+    \field{journaltitle}{Chemical Engineering Science}
     \field{year}{1987}
+  \endentry
+
+  \entry{paige1975solution}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PCC}{%
+         family={Paige},
+         familyi={P\bibinitperiod},
+         given={Christopher\bibnamedelima C},
+         giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SMA}{%
+         family={Saunders},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima A},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{PCCSMA1}
+    \strng{fullhash}{PCCSMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{617\bibrangedash 629}
+    \field{title}{Solution of sparse indefinite systems of linear equations}
+    \field{volume}{12}
+    \field{journaltitle}{SIAM journal on numerical analysis}
+    \field{year}{1975}
+  \endentry
+
+  \entry{saad1986gmres}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SY}{%
+         family={Saad},
+         familyi={S\bibinitperiod},
+         given={Youcef},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SMH}{%
+         family={Schultz},
+         familyi={S\bibinitperiod},
+         given={Martin\bibnamedelima H},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{SYSMH1}
+    \strng{fullhash}{SYSMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{856\bibrangedash 869}
+    \field{title}{GMRES: A generalized minimal residual algorithm for solving
+  nonsymmetric linear systems}
+    \field{volume}{7}
+    \field{journaltitle}{SIAM Journal on scientific and statistical computing}
+    \field{year}{1986}
   \endentry
 
   \entry{Neuenhofer}{article}{}
@@ -4446,7 +4602,7 @@
     \endverb
     \field{number}{2}
     \field{pages}{335\bibrangedash 340}
-    \field{title}{The shear coefficient in Timoshenko's beam theory}
+    \field{title}{The shear coefficient in {T}imoshenko's beam theory}
     \field{volume}{33}
     \field{journaltitle}{Journal of Applied Mechanics}
     \field{year}{1966}
@@ -5097,7 +5253,7 @@
     \field{title}{Consistent tangent operators for rate-independent
   elastoplasticity}
     \field{volume}{48}
-    \field{journaltitle}{Computer methods in applied mechanics and engineering}
+    \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
     \field{year}{1985}
   \endentry
 
@@ -5131,8 +5287,8 @@
     \field{title}{Accuracy and stability of integration algorithms for
   elastoplastic constitutive relations}
     \field{volume}{21}
-    \field{journaltitle}{International journal for numerical methods in
-  engineering}
+    \field{journaltitle}{International Journal for Numerical Methods in
+  Engineering}
     \field{year}{1985}
   \endentry
 
@@ -5577,7 +5733,7 @@
     \field{labeltitlesource}{title}
     \field{number}{2}
     \field{pages}{107\bibrangedash 120}
-    \field{title}{A convergent process of price adjustment and global Newton
+    \field{title}{A convergent process of price adjustment and global {N}ewton
   methods}
     \field{volume}{3}
     \field{journaltitle}{Journal of Mathematical Economics}
@@ -5609,9 +5765,9 @@
     \field{number}{3}
     \field{pages}{263\bibrangedash 274}
     \field{title}{Relations between several path following algorithms and local
-  and global Newton methods}
+  and global {N}ewton methods}
     \field{volume}{22}
-    \field{journaltitle}{Siam Review}
+    \field{journaltitle}{SIAM Review}
     \field{year}{1980}
   \endentry
 
@@ -5704,7 +5860,7 @@
     \field{title}{Computing all real solutions to systems of nonlinear
   equations with a global fixed-point homotopy}
     \field{volume}{27}
-    \field{journaltitle}{Industrial \& engineering chemistry research}
+    \field{journaltitle}{Industrial \& Engineering Chemistry Research}
     \field{year}{1988}
   \endentry
 
@@ -5791,7 +5947,7 @@
     \field{title}{On discrete and discretized non-linear elastic structures in
   unilateral contact (stability, uniqueness and variational principles)}
     \field{volume}{24}
-    \field{journaltitle}{International journal of solids and structures}
+    \field{journaltitle}{International Journal of Solids and Structures}
     \field{year}{1988}
   \endentry
 
@@ -5968,7 +6124,7 @@
     \field{pages}{1281\bibrangedash 1295}
     \field{title}{Role of continuation in engineering analysis}
     \field{volume}{42}
-    \field{journaltitle}{Chemical engineering science}
+    \field{journaltitle}{Chemical Engineering Science}
     \field{year}{1987}
   \endentry
 
@@ -6042,7 +6198,7 @@
     \field{title}{Higher order predictors and adaptive steplength control in
   path following algorithms}
     \field{volume}{24}
-    \field{journaltitle}{SIAM journal on numerical analysis}
+    \field{journaltitle}{SIAM Journal on Numerical Analysis}
     \field{year}{1987}
   \endentry
 
@@ -6133,7 +6289,7 @@
     \field{title}{Cubic spline interpolation predictors over implicitly defined
   curves}
     \field{volume}{157}
-    \field{journaltitle}{Journal of computational and applied mathematics}
+    \field{journaltitle}{Journal of Computational and Applied Mathematics}
     \field{year}{2003}
   \endentry
 
@@ -6306,7 +6462,7 @@
     \field{title}{Variable order Adams-Bashforth predictors with an
   error-stepsize control for continuation methods}
     \field{volume}{12}
-    \field{journaltitle}{SIAM journal on scientific and statistical computing}
+    \field{journaltitle}{SIAM Journal on Scientific and Statistical Computing}
     \field{year}{1991}
   \endentry
 
@@ -6414,8 +6570,8 @@
     \endverb
     \field{number}{1}
     \field{pages}{35\bibrangedash 50}
-    \field{title}{On tracing an implicitly defined curve by quasi-Newton steps
-  and calculating bifurcation by local perturbations}
+    \field{title}{On tracing an implicitly defined curve by quasi-{N}ewton
+  steps and calculating bifurcation by local perturbations}
     \field{volume}{2}
     \field{journaltitle}{SIAM Journal on Scientific and Statistical Computing}
     \field{year}{1981}
@@ -6491,7 +6647,7 @@
     \field{title}{A comparison of three algorithms for tracing nonlinear
   equilibrium paths of structural systems}
     \field{volume}{39}
-    \field{journaltitle}{International journal of solids and structures}
+    \field{journaltitle}{International Journal of Solids and Structures}
     \field{year}{2002}
   \endentry
 
@@ -6544,7 +6700,7 @@
     \field{labeltitlesource}{title}
     \field{number}{4}
     \field{pages}{1060\bibrangedash 1065}
-    \field{title}{The application of Newton’s method to the problem of
+    \field{title}{The application of {N}ewton’s method to the problem of
   elastic stability}
     \field{volume}{39}
     \field{journaltitle}{ASME Journal of Applied Mechanics}
@@ -6572,7 +6728,7 @@
     \field{title}{The bordering algorithm and path following near singular
   points of higher nullity}
     \field{volume}{4}
-    \field{journaltitle}{SIAM journal on scientific and statistical computing}
+    \field{journaltitle}{SIAM Journal on Scientific and Statistical Computing}
     \field{year}{1983}
   \endentry
 
@@ -6628,7 +6784,7 @@
     \field{title}{On solving nonlinear equations with simple singularities or
   nearly singular solutions}
     \field{volume}{27}
-    \field{journaltitle}{SIAM review}
+    \field{journaltitle}{SIAM Review}
     \field{year}{1985}
   \endentry
 \enddatalist

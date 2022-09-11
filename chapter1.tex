@@ -99,13 +99,28 @@ localized and complicated nature of processes at the material level
 becomes more difficult to capture with numerical models developed at a 
 higher abstraction level, such as beams. Since candidate locations for 
 plastification in frame structures are usually known a priori, 
-analytical models have been developed based on macroscopic, geometric and 
-constitutive, assumptions that can account for the localized character of
-elastoplastic response. These phenomenological formulations are commonly known
-as concentrated or lumped plasticity models and have 
+analytical models have been developed based on macroscopic assumptions, 
+both geometric and 
+constitutive, that can account for the localized character of
+elastoplastic response. These phenomenological formulations can further be used 
+in both concentrated or lumped plasticity models and so-called distributed 
+plasticity models. In the former category, inelastic deformations are usually 
+condensed in the element end sections, which are represented as a dimensionless 
+plastic hinge, and the response is determined from a moment-rotation 
+representation and stress resultant yield surfaces\cite{berry2008,lowes2003}. 
+In the latter case, plastification can be distributed by either using a number 
+of sections in the interior element, represented either as points or following 
+a fiber discretization process, and coupled with a phenomenological hysteretic 
+law\cite{Amir2020,amir2020hysteretic,KOTTARI2014,triantafyllou211,SimoShear} or 
+using 
+finite-length plastic hinge\cite{Scott1,Scott2,bae2008} models. Since they 
+rely, primarily, on parameter identification for the model at hand, 
+phenomenilogical models generally do not require dense meshes and are suited 
+for modelling complex section behaviors which may include fracture and 
+degradation effects. For these reasons, such models have 
 enjoyed widespread use, especially for reinforced concrete applications, 
 while also offering low computational 
-costs\cite{Amir2020,KOTTARI2014,Scott1,Scott2,berry2008,triantafyllou211,SimoShear}.
+costs.
   
 
 An alternative approach is based on discretization of the beam cross-section
@@ -115,9 +130,10 @@ stiffness and internal nodal forces are then determined by integrating
 the elastoplastic rate equations over selected cross-sections in the element
 interior, which are encapsulated by the quadrature points. In addition, 
 this enables the
-modelling of plastic zone spread over the element, thus allowing for a more 
-faithful representation of the response. Elements formulated this way
-are called fibre or distributed plasticity beam
+modelling of plastic zone spread over the element, thus deriving the section 
+and, therefore, structural response from a more fundamental level. Elements 
+formulated this way, so that plastic zone spread is accurately simulated,
+are called fibre beam
 elements\cite{Kaba1984,Zeris1988,Taucer1991,Spacone1992,Scordelis1984} and
 have seen active development for almost 30 years. In the simplest case where
 only uniaxial constitutive law is considered at the level of fibers, these
@@ -245,29 +261,37 @@ hybrid beam element that is formulated in terms of nonlinear programming princip
 whereby the total potential energy of the structure is treaded as the objective 
 function. The formulation will offer the capability to model a structural member with 
 just one element in both linear and nonlinear response spectrum.  This is a 
-unique capability which, to our knowledge, no beam implementation possesses 
-in commercial and academic software.
+unique capability which, to our best knowledge, no beam model implementation 
+possesses 
+in commercial and academic software. In addition, a fast and consistent 
+return-mapping algorithm is proposed that outperforms current alternative 
+options in terms of operations needed to perform the stress update at each 
+fiber. This is crucial because the proposed hybrid element relies on higher 
+order quadrature rules instead of dense meshes and, therefore, an optimal state 
+determination procedure is paramount to the elements overall performance. 
 
 Furthermore, since the element 
 formulation is recast using optimization concepts, we aim to also develop a parametric 
 nonlinear programming framework for the hybrid beam element, which would provide the 
 necessary tools for general purpose parametric analyses with global convergence 
 characteristics. This again is a distinctive feature since non-conventional 
-analyses involving additional considerations such as contact or design 
+analyses involving additional considerations, such as contact problems or 
+design 
 optimization, are generally implemented in an compartmentalized fashion. While 
 a degree of case-specific implementations is likely unavoidable, the proposed 
 parametric framework offers the potential to encompass a wide class of such 
 problem considerations, while also providing the necessary mathematical tools, 
-at the most abstract level, that allow us to investigate the convergence 
+at the most general level, that allow us to investigate the convergence 
 properties of any applicable problem. 
 
 In addition, we aim to develop a fast and robust prediction scheme to 
 be used during the (incremental) numerical solution of the parametric nonlinear 
 program. The 
 unique feature it offers is a considerable cost reduction in terms of 
-operations required to attain a first approximation to the a nearby solution, 
+operations required to attain a first approximation to a nearby solution, 
 while also maintaining a stable continuation process even when larger 
 step-lengths or increments are prescribed. This again is in contrast with most 
+currently available
 prediction schemes, which rely on costly first or, in some cases, even second 
 derivative information or other interpolatory schemes which tend to be 
 computationally fast but not particularly stable for larger increments.
@@ -331,10 +355,19 @@ More specifically, this study proposes:
 	by interpolatory prediction schemes. In addition, it provides reliable initial 
 	estimates of sought solutions at a fraction of computational cost compared to most 
 	other options. Lastly, if an iterative solver is used for the correction 
-	phase, such as MINRES or the more general GMRES, then the numerical 
+	phase, such as MINRES\cite{paige1975solution} or the more general 
+	GMRES\cite{saad1986gmres}, then 
+	the numerical 
 	continuation can, in principle, be further accelerated.
 	
 \end{itemize}
+
+In addition, a simple Graphical User Interface (\acrshort{gui}) is developed 
+and (see Appendix \ref{appendix:APPENDIX_G}) which incorporates most core 
+features presented in this work. Aspects not included in the GUI version of the 
+code include the Displacement Control incremental solver and some generic 
+features pertaining to the parametric optimization framework that still require 
+further development and will be incorporated in the near future.
 
 \section{Research Scope}
 The scope of this research, based on the aforementioned objectives, is listed below:
@@ -400,7 +433,7 @@ with the assumption of a von Mises yield criterion. Then, implementation details
 pertaining to the application of the fully implicit Euler scheme are detailed and the 
 elastic predictor-plastic correct return mapping algorithm is outlined for the 
 constrained stress-update problem. The Chapter closes with a set of numerical examples 
-that test the accuracy of both the algorithm, as well as its performance when used on 
+that test the accuracy and performance of the algorithm on 
 a number of elastoplastic simulation examples.
 
 Chapter 4 is concerned with the development of the parametric nonlinear programming 
@@ -415,13 +448,14 @@ conditions that guarantee global convergence are stated and an appropriate
 predictor-corrector continuation algorithm is proposed that can track piecewise smooth 
 paths. The Chapter concludes with a set of examples involving optimization of a 
 function, a study of global sensitivity of a structural system to changes in axial 
-stiffness of a member, as well as a frictionless contact problem using a nonlinear 
-elastic constitutive law.
+stiffness of a member, a frictionless contact problem using a nonlinear 
+elastic constitutive law and, finally, an investigation on the nonlinear 
+elastic and elastoplastic response of a shallow arch.
 
 Chapter 5 develops the weighted least squares predictor for use in the 
 predictor-corrector algorithm proposed in the previous chapter. The Chapter first 
 provides a summary on the use of numerical continuation and, specifically, the role of 
-the prediction phase in it. After that the main idea of a locally weighted 
+the prediction phase in it. After that, the main idea of a locally weighted 
 least squares 
 fitting using a user-defined number of previously converged solution points is 
 presented, along with various additional features provided by this prediction scheme, 
@@ -445,7 +479,7 @@ In addition, any boldface letter, lowercase or uppercase, with an overhead
 arrow indicates a vector object. In constrast, matrices are represented 
 exclusively by uppercase, non-italic or calligraphic, boldface letters,
 whereas normal font letters indicate scalar quantities.  For more details 
-regarding the convention used, see Appendix \ref{appendix:0}.
+regarding the convention used see Appendix \ref{appendix:0}.
 
 
 

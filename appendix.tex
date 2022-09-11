@@ -1826,15 +1826,15 @@ incremented to. The relevant lines for these definitions are 65-66 in Fig.
 
 The user can choose any name for the variables they define, however they should 
 ensure that all variables are stored in a consistent fashion and the 
-correspondece with the basic data structures \textbf{snode}, \textbf{element} 
+correspondence with the basic data structures \textbf{snode}, \textbf{element} 
 and \textbf{anlsData} is not spoiled. As can be seen in the third and fourth 
 portions of the input file in Figs. \ref{fig:FIG_INPUT3}, \ref{fig:FIG_INPUT4}, 
 if a different name is chosen for a parameter (left-hand side during 
 definition), then the same name has to be assigned to the relevant structure 
-field (right-hand side during assignment). In addition, using matlab functions 
+field (right-hand side during assignment). In addition, using Matlab functions 
 to do analysis with the hybrid code, while more versatile, it is also more 
 error-prone. The numerous error checks implemented for the \acrshort{gui} 
-version are not carried out when setting up a problem using matlab input files, 
+version are not carried out when setting up a problem using Matlab input files, 
 so users should be more cautious in the latter case.
 
 \subsubsection*{The main data structures}
@@ -1877,7 +1877,7 @@ $1\times 11$ vector that contains the following parameters:
 	cross-section area, moment of inertia, isotropic hardening modulus, 
 	kinematic 
 	hardening modulus, $n_l$ is the number of layers, shear coefficient and, 
-	latsly, $u_p$ is a 
+	lastly, $u_p$ is a 
 	parameter given by the following integral over a cross-section:
 	
 	$$ u_p = \int_A \varphi(X_2)^2\text{d}A $$
@@ -1942,9 +1942,8 @@ stress resultants at all nodes and all element quadrature points at each step.
 If Displacement Control is selected, then the additional necessary data are 
 stored in the \textit{DisplControl}. The \textit{numintflag} field determines 
 the quadrature rule. If \textit{numintflag=1} then the Gauss-Lobatto quadrature 
-will be used, while for Gauss-Legendre, the option is \textit{numintflag=2}. 
-Notice that this is different compared to the GUI input, where Lobatto is still 
-1 but Gauss-Legendre is 0.
+will be used, while for Gauss-Legendre, the option is again set 
+to\textit{numintflag=0}. 
 Lastly, the \textit{solscheme} field stores the following analysis parameters:
 \begin{center}
 	\textbf{anlsData.solscheme} = [solflag max\_steps $\Delta S$ 

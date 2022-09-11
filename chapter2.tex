@@ -12,7 +12,7 @@ capturing arbitrarily large displacements and rotations, as well as
 accounting for the effect of shear deformation at the section level. 
 
 As opposed to deriving the system equations
-from the Galerkin form,, we recast the
+from the Galerkin form, we recast the
 problem in an \acrshort{nlp} framework by utilizing the underlying
 variational structure. The total potential energy (\acrshort{tpe}) functional 
 is augmented with
@@ -207,7 +207,8 @@ express all fields involved in matrix notation, as follows:
 will be subsequently utilized in the formulation of the beam model.
 
 %%%%%%%%%%%%%%%%%%%%% CHAPTER 2 - SECTION 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Nonlinear Programming Formulation}\label{section:CH2-S3}
+\section{Nonlinear Programming Formulation of the Hybrid Beam 
+Element}\label{section:CH2-S3}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The hybrid beam element discretization is presented by utilizing the underlying
@@ -219,7 +220,7 @@ incorporated, representing the equality constraints of the problem.
 %%%%%%%%%%% CHAPTER 2 - SECTION 3 -S UBSECTION 1%%%%%%%%%%%%
 \subsection{NLP Framework}\label{subsection:CH2-S3SS1}
 
-The NLP problem adopted herein is of the following form:
+The \acrshort{nlp} problem adopted herein is of the following form:
 \begin{align}
 	&\text{minimize} \hspace{1cm}f(\bvec{x})\nonumber\\
 	&\text{subject to}\hspace{1.cm}  \bvec{h}(\bvec{x})=\bvec{0}\label{eq:nlp}\\
@@ -246,7 +247,8 @@ program with equality constraints, as encountered in the literature (e.g.
 \cite{Luenberger}).
 
 %%%%%%%%%%% CHAPTER 2 - SECTION 3 -S UBSECTION 2 %%%%%%%%%%%%
-\subsection{Total Potential Energy}\label{subsection:CH2-S3SS2}
+\subsection{Discretization of Total Potential 
+Energy}\label{subsection:CH2-S3SS2}
 
 We consider the following decomposition of the total potential energy of a beam:
 \begin{gather}
@@ -313,7 +315,8 @@ Eq. (\ref{eq:obj}) serves as the objective function of the \acrshort{nlp} of
 Eq. (\ref{eq:nlp}).
 
 %%%%%%%%%%% CHAPTER 2 - SECTION 3 - SUBSECTION 3 %%%%%%%%%%%%
-\subsection{Strain-Displacement Constraints}\label{subsection:CH2-S3SS3}
+\subsection{Discretization of Strain-Displacement 
+Relations}\label{subsection:CH2-S3SS3}
 
 The constrained conditions are derived by applying the same quadrature rule on
 the integral form of the strain-displacement equations (\ref{eq:mainsd}):
@@ -428,7 +431,7 @@ in vector
 $\bvec{h}^B$ will depend on the chosen quadrature rule.
 
 %%%%%%%%%%% CHAPTER 2 - SECTION 3 - SUBSECTION 4 %%%%%%%%%%%%
-\subsection{Lagrangian Function}\label{subsection:CH2-S3SS4}
+\subsection{Lagrangian Function for the Structure}\label{subsection:CH2-S3SS4}
 
 In order to derive the Lagrangian function in the form of Eq. (\ref{eq:lagr}),
 we introduce a vector $\bvec{\lambda}$ of additional Lagrange multiplier
@@ -567,7 +570,8 @@ system and $\bvec{y} = \begin{bmatrix}
 the structure.
 
 %%%%%%%%%%% CHAPTER 2 - SECTION 4 - SUBSECTION 1 %%%%%%%%%%%%
-\subsection{Equilibrium}\label{subsection:CH2-S4SS1}
+\subsection{Optimality Conditions as Structural Equilibrium Equations 
+}\label{subsection:CH2-S4SS1}
 
 In what follows, it is assumed we are dealing with quantities pertaining to
 the total assemblage, after all element contributions have been resolved.
@@ -600,7 +604,7 @@ numerically during the \emph{cross-section state determination} phase in Sec.
 (\ref{subsection:CH2-S4SS4}).
 
 %%%%%%%%%%% CHAPTER 2 - SECTION 4 - SUBSECTION 2 %%%%%%%%%%%%
-\subsection{Hessian Matrix}\label{subsection:CH2-S4SS2}
+\subsection{The Hessian Matrix}\label{subsection:CH2-S4SS2}
 
 The Hessian matrix of the Lagrangian function contains second order
 information of the system and is utilized during the solution phase.
@@ -633,7 +637,7 @@ block-diagonal (see Appendix \ref{appendix:B}) and its
 symmetry guarantees the full symmetry of $\bmat{H}$.
 
 %%%%%%%%%%% CHAPTER 2 - SECTION 4 - SUBSECTION 3 %%%%%%%%%%%%
-\subsection{Solution Scheme}\label{subsection:CH2-S4SS3}
+\subsection{Linearization of Equilibrium Equations}\label{subsection:CH2-S4SS3}
 
 As mentioned in Appendix \ref{appendix:B}, the nonlinear system of equations in 
 Eq.
@@ -854,12 +858,14 @@ After the determination, at an arbitrary iteration $k$ within
 step $j$, of the iterative
 displacement vector $\delta\bvec{d}_g^k$ from Eq. (\ref{eq:stiffsys}), the 
 strain
-and Lagrange multiplier vectors in Eqs. (\ref{eq:e1}),(\ref{eq:e3}) have
+and Lagrange multiplier vectors in Eqs. (\ref{eq:e1}), (\ref{eq:e3}) have
 then to be updated.  The detailed steps of the updating procedure are as
-follows:
+described in \cref{BoxElement}.
 
 \vspace{0.4cm}
-
+{
+\centering
+\begin{Thesisbox}[label={BoxElement}]{Solution Updating.}
 \noindent \textit{Step $j$, iteration $k$:} $ \begin{Bmatrix}
 	\bvec{y}^0_j, & \bvec{d}^0_{g,j}, & \bvec{\lambda}^0_j, & \bvec{P}_j, &
 	\Delta\bvec{y}^{k-1}_j, &
@@ -879,17 +885,17 @@ follows:
 	\item Solve Eq. (\ref{eq:stiffsys}) for $\delta\bvec{d}_g^k$.
 	\item Update incremental displacement vector: $\Delta\bvec{d}_{g,j}^k 
 	\leftarrow
-	\Delta\bvec{d}_{g,j}^{k-1} +\delta\bvec{d}_g^k$
+\Delta\bvec{d}_{g,j}^{k-1} +\delta\bvec{d}_g^k$.
 	\item Update displacement vector: $\bvec{d}_{g,j}^k \leftarrow
-	\bvec{d}_{g,j}^0 + \Delta\bvec{d}_g^k$
+	\bvec{d}_{g,j}^0 + \Delta\bvec{d}_g^k$.
 	\item Update Langrange multiplier $\bvec{\lambda}_j^k$ from Eq.
 	(\ref{eq:e3}).
 	\item Evaluate iterative strain vector $\delta\bvec{y}^k$ from Eq.
 	(\ref{eq:e1}).
 	\item Update incremental strain vector: $\Delta\bvec{y}_j^k
-	\leftarrow\Delta\bvec{y}_j^{k-1}+\delta\bvec{y}^k$
+	\leftarrow\Delta\bvec{y}_j^{k-1}+\delta\bvec{y}^k$.
 	\item Update total strain vector: $\bvec{y}_{j}^k \leftarrow \bvec{y}_j^0 +
-	\Delta\bvec{y}_j^k$
+	\Delta\bvec{y}_j^k$.
 	\item Evaluate $\bvec{F}_{int}^k$ from Eq. (\ref{eq:sub2}) (or,
 	alternatively, from Eqs. (\ref{eq:Fassemb}), (\ref{eq:localforce})).
 	\item Check $\Vert \bvec{P}_j-\bvec{F}_{int}^k\Vert \leq
@@ -899,7 +905,8 @@ follows:
 	\bvec{y}^k_{j-1}$, $\bvec{d}^0_{g,j}\leftarrow \bvec{d}^k_{g,j-1}$, 
 	$\bvec{\lambda}^0_j\leftarrow \bvec{\lambda}^k_{j-1}$.
 \end{enumerate}
-
+\end{Thesisbox}
+}
 %%%%%%%%%%% CHAPTER 2 - SECTION 4 - SUBSECTION 5 %%%%%%%%%%%%
 \subsection{Cross-Section State Determination}\label{subsection:CH2-S4SS5}
 
@@ -1096,17 +1103,18 @@ are used.
 In this section we present the capabilities and efficiency of the proposed
 element in a number of well-known benchmark examples. In cases where analytical
 solutions are available, they are included in the comparisons. Our results are
-compared against the ones achieved i) with the structural FEM software
+compared against the ones achieved i) with the structural \acrshort{fem} 
+software
 OpenSees\cite{OpenSees}, using its flexibility-based beam element
 \cite{Neuenhofer,Neuenhofer2} with five quadrature points and fiber section
-integration, and ii) with the FEM software Abaqus\cite{Abaqus}, using
+integration, and ii) with the \acrshort{fem} software Abaqus\cite{Abaqus}, using
 plane-stress modeling for the frame members. For the
 elastic analyses, reduced integration linear quadrilateral elements (CPS4R) were
 used in Abaqus to avoid shear-locking, while for the elastoplastic
 simulations, reduced integration quadratic quadrilaterals (CPS8R) elements
 were used instead. For all cases the Gauss-Legendre
 quadrature rule is used for approximating the integrals in Eqs.
-(\ref{eq:tpe2}),(\ref{eq:cintform}). For the elastoplastic analyses, we assume
+(\ref{eq:tpe2}), (\ref{eq:cintform}). For the elastoplastic analyses, we assume
 a linear isotropic hardening law and the elastoplastic modulus is given
 as a percentage $r$ of the elastic modulus $E$. Moreover, we assume a
 rigid rectangular cross-section shape for all cases, with shear coefficient
@@ -1169,10 +1177,10 @@ change in the transverse and axial displacement with respect to the shear-rigid
 case is consistent and about $5.30\%$ and $5.40\%$,
 respectively.
 
-\begin{figure*}[b]
+\begin{figure*}[t]
 	\centering
 	\subfloat[Elastic
-	analysis]{{\includegraphics[width=6.6cm]{FIG5_cantiElastic_Review.pdf}}}%
+	analysis]{{\includegraphics[width=6.5cm]{FIG5_cantiElastic_Review.pdf}}}%
 	\qquad
 	\subfloat[Inelastic
 	analysis]{{\includegraphics[width=6.5cm]{FIG5_cantiPlastic_Review.pdf}}}%
@@ -1180,7 +1188,18 @@ respectively.
 	\label{fig:FIG5_cantielastic}%
 \end{figure*}
 
-\begin{table*}[t]\centering
+
+
+\begin{figure}[t]
+	\centering
+	\hspace*{-0.47cm}\subfloat[Elastic.]{\includegraphics[scale=0.45]{FIG6_ElasticMQN.pdf}\label{fig:elasticMQN}}\\
+	\hspace*{-0.47cm}\subfloat[Inelastic.]{\includegraphics[scale=0.45]{FIG6_PlasticMQN.pdf}\label{fig:plasticMQN}}
+	\caption{Moment and curvature distributions for the nonlinear 
+		analyses of the cantilever.}
+	\label{fig:FIG6_MQN}
+\end{figure}
+
+\begin{table*}[b]\centering
 	\caption{Comparison of tip normalized displacements for different load 
 	levels
 		for elastic response.}
@@ -1221,14 +1240,7 @@ to capture curvature localization when plastic hinges are also formed. In
 displacement-based conventional beam elements, a fine mesh is in constrast 
 required in the areas where plastification is expected.
 
-\begin{figure}[b]
-	\centering
-	\hspace*{-0.47cm}\subfloat[Elastic.]{\includegraphics[scale=0.5]{FIG6_ElasticMQN.pdf}\label{fig:elasticMQN}}\\
-	\hspace*{-0.47cm}\subfloat[Inelastic.]{\includegraphics[scale=0.5]{FIG6_PlasticMQN.pdf}\label{fig:plasticMQN}}
-	\caption{Moment and curvature distributions for the nonlinear 
-		analyses of the cantilever - one element with $n=6$ quadrature points.}
-	\label{fig:FIG6_MQN}
-\end{figure}
+
 
 \clearpage
 
@@ -1481,8 +1493,9 @@ ranging from 5 to 10. The presented approach is also capable to capturing
 flexural strain localization due to plastification even when geometric 
 nonlinearities are present. The efficiency of the suggested formulation is 
 demonstrated through several benchmark examples and is shown to be
-capable to accurately capture highly nonlinear structural behaviors with one
+capable to accurately capture highly nonlinear structural behaviors with just 
+one
 element per member in all cases, accounting for shear flexibility and 
-locking-free capabilities, while also favorably comparing against 
+locking-free capabilities, while also very favorably comparing against 
 well-established 
 beam-column and quadrilateral finite element methodologies.
